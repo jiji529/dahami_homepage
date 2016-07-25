@@ -1,0 +1,51 @@
+{
+ 
+   "name": "flare2",
+   "children": [
+    {
+     "name": "분류1",
+     "text": "분류1_텍스트",
+     "children": [
+      {"name": "분류1_하위분류1",
+	     "children": [
+	      {"name": "1111", "keyword":"a1_0"},
+	      {"name": "2222"},
+	      {"name": "3333", "keyword":"a2_1"}	
+	      ]      
+      },
+      {"name": "CommunityStructure", "keyword":"a1_2"},
+      {"name": "HierarchicalCluster", "keyword":"a1_3"},
+      {"name": "MergeEdge"}
+     ]
+    },
+    {
+     "name": "분류2",
+     "children": [
+      {"name": "BetweennessCentrality"},
+      {"name": "LinkDistance"},
+      {"name": "MaxFlowMinCut"}, 
+      {"name": "ShortestPaths"},
+      {"name": "SpanningTree", "keyword":"a2_4"}
+     ]
+    },
+    {
+     "name": "분류3",
+     "children": [
+      {"name": "AspectRatioBanker", "keyword":"a1_5"}
+     ]
+    }
+   ]
+ ,
+ "nodes":[
+	{"name": "a1"},
+	{"name": "a2"}
+ ],
+"links":[
+	{"source":0,"target":0,"value":1, "id":0},
+	{"source":1,"target":0,"value":1, "id":1},
+	{"source":0,"target":0,"value":1, "id":2},
+	{"source":0,"target":0,"value":1, "id":3},
+	{"source":1,"target":0,"value":1, "id":4},
+	{"source":0,"target":0,"value":1, "id":5}
+]
+}

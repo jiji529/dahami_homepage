@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>범위 선택 설정[Popup]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../css/popup.css" />
+<link rel="stylesheet" type="text/css" href="../css/tree.css" />
+<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+</head>
+<body>
+<div id="pop_wrap" class="minwidth400">
+	<!-- header -->
+	<div id="pop_header" class="pop_backcolor">
+		<div class="pop_header_box">
+			<h1 class="pop_header_title02">범위 선택 설정</h1>
+		</div>
+	</div>
+	<!-- //header -->
+
+	<div id="pop_container"><!-- container -->
+		<div class="pop_content2">
+			<fieldset class="rangset_block">
+				<legend>각 항목별 설정</legend>
+				<ul>
+					<li class="llist">
+						<span class="listitem">출원년도</span>
+						<div class="listcon">
+							<select>
+								<option>2000</option>
+							</select>
+							<span class="space_bar"> ~ </span>
+							<select>
+								<option>2008</option>
+							</select>
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li class="llist">
+						<span class="listitem">국가</span>
+						<div class="listcon">
+							<ul>
+								<li class="slist"><input type="checkbox" id="" name="" class="instyle" /><label for=""> 전체 선택</label></li>
+								<li class="slist02"><input type="checkbox" id="" name="" class="instyle" /><label for=""> KR</label></li>
+								<li class="slist02"><input type="checkbox" id="" name="" class="instyle" /><label for=""> US</label></li>
+								<li class="slist02"><input type="checkbox" id="" name="" class="instyle" /><label for=""> JP</label></li>
+								<li class="slist02"><input type="checkbox" id="" name="" class="instyle" /><label for=""> EP</label></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li class="llist">
+						<span class="listitem">기술분류</span>
+						<div class="listcon02">
+							<div class="treeblock">
+								<ul>
+									<li class="block open">
+										<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">전체 선택</a></label></p>
+										<p class="clear"></p>
+										<div class="tree">
+											<ul>
+												<li class="open">
+													<button type="button" class="toggle minus">-</button>
+													<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 1 (110)</a></label></p>
+													<p class="clear"></p>
+														<ul>
+															<li>
+																<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 2</a></label></p>
+																<p class="clear"></p>
+															</li>
+															<li class="last">
+																<button type="button" class="toggle minus">-</button>
+																<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 2 (20)</a></label></p>
+																<p class="clear"></p>
+																	<ul>
+																		<li class="last">
+																			<button type="button" class="toggle minus">-</button>
+																			<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 3  (5)</a></label></p>
+																			<p class="clear"></p>
+																			<ul>
+																				<li>
+																					<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 4</a></label></p>
+																					<p class="clear"></p>
+																				</li>
+																				<li>
+																					<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 4</a></label></p>
+																					<p class="clear"></p>
+																				</li>
+																				<li class="last">
+																					<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 4</a></label></p>
+																					<p class="clear"></p>
+																				</li>
+																			</ul>
+																		</li>
+																	</ul>
+															</li>
+														</ul>
+												</li>
+												<li>
+													<button type="button" class="toggle plus">+</button>
+													<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 1 (72)</a></label></p>
+													<p class="clear"></p>
+														<ul style="display: none;">
+															<li>
+																<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 2</a></label></p>
+																<p class="clear"></p>
+															</li>
+															<li class="last">
+																<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 2</a></label></p>
+																<p class="clear"></p>
+															</li>
+														</ul>
+												</li>
+												<li class="last">
+													<p class="float_l"><input type="checkbox" name="" /><label for=""><a href="">Depth 1 (8)</a></label></p>
+													<p class="clear"></p>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li class="llist_noline">
+						<span class="listitem">국가</span>
+						<div class="listcon">
+							<ul>
+								<li class="slist03"><input type="radio" id="" name="" class="instyle03" /><label for=""><span class="textstyle"> 전체 선택</span></label></li>
+								<li class="slist03"><input type="radio" id="" name="" class="instyle03" /><label for=""><span class="textstyle"> 주요 출원인</span></label></li>
+								<li class="slist03"><input type="radio" id="" name="" class="instyle03" /><label for=""><span class="textstyle"> 최다 상위 출원인</span></label>
+									<span class="contype">
+										<select>
+											<option>10</option>
+										</select>
+									</span>
+								</li>
+								<li class="slist03"><input type="radio" id="" name="" class="instyle03" /><label for=""><span class="textstyle"> 사용자 설정</span></label>
+								<span class="contype02"><img src="../image/btn/btn_set.gif" alt="설정하기" /></span></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</fieldset>
+			<div class="rangset_block02">
+				<p class="select_text">선택문헌 <span class="font_color_blue03">200</span> 건</p>
+				<div class="float_l">
+					<span><a href="#"><img src="../image/btn/btn_pop_apply1.gif" alt="확인" /></a></span>
+					<span><a href="#"><img src="../image/btn/btn_pop_cancel1.gif" alt="취소" /></a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

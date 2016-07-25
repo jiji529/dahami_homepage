@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="tre_ATCdb">
+
+	<typeAlias alias="memberVO" type="com.forme.api.lgn.service.vo.MemberVO" />
+	<resultMap id="membrCdResultMap" class="com.forme.api.lgn.service.vo.MemberVO">
+		<result property="usLevel" column="us_level" />
+		<result property="membrId" column="us_id" />
+		<result property="membrNm" column="us_nm" />
+	</resultMap>
+	
+	<select id="selectMemberInfo" parameterClass="memberVO" resultMap="membrCdResultMap">
+		SELECT us_id, us_nm, us_level
+			FROM TB_WIPS_USER
+			WHERE membr_id = #membrId#
+	</select>
+	
+</sqlMap>

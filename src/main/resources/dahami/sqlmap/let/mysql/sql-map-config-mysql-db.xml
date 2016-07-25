@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="tre_ATCdb">
+
+	<typeAlias alias="boardVO" type="com.dahami.api.main.service.vo.BoardVO" />
+	
+	<resultMap id="NoticeLstMap" class="com.dahami.api.main.service.vo.BoardVO">
+		<result property="Uid" 			column="f_uid" />
+		<result property="Gid" 			column="f_gid" />
+		<result property="Hit" 			column="f_hit" />
+		<result property="Title" 		column="f_title" />
+		<result property="Body" 		column="f_body" />
+		<result property="State" 		column="f_state" />
+		<result property="File1" 		column="f_file1" />
+		<result property="Regdate"		column="f_regdate" />
+	</resultMap>
+	
+	<select id="NoticeLst" parameterClass="boardVO" resultMap="NoticeLstMap">
+		SELECT
+			f_uid,
+			f_gid,
+			f_hit,
+			f_title,
+			f_body,
+			f_state,
+			f_file1,
+			f_regdate
+		FROM
+			tbl_news
+		WHERE
+			f_state = 1
+		<isNotEmpty prepend="and" property="Title" >
+			f_title LIKE "%$Title$%" or f_body LIKE "%$Title$%"
+		</isNotEmpty>
+		ORDER BY f_uid desc
+		LIMIT #stPageSize# , #endPageSize#
+	</select>
+	
+	<select id="NoticeCnt" parameterClass="boardVO" resultClass="Integer">
+		SELECT
+			count(f_uid)as cnt
+		FROM
+			tbl_news
+		WHERE
+			f_state = 1
+		<isNotEmpty prepend="and" property="Title" >
+			f_title LIKE "%$Title$%" or f_body LIKE "%$Title$%"
+		</isNotEmpty>
+		ORDER BY f_uid desc
+	</select>
+</sqlMap>
