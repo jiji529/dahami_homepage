@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="ko" class= >
 <head>
-<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta charset="UTF-8">
+<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
 <title>dahami</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/basic.css">

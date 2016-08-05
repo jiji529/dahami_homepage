@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="ko" class= >
 <head>
-<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta charset="UTF-8">
+<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
 <title>dahami</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
@@ -37,10 +37,10 @@
 			 if ($(window).scrollTop() > 490 && $(window).scrollTop() < 890) {
 				 $(".sub_navi_li > li").removeClass();
 				 $(".sub_navi_li > li:eq(0)").addClass("on");
-			 }else if($(window).scrollTop() > 890 && $(window).scrollTop() < 1490) { 
+			 }else if($(window).scrollTop() > 890 && $(window).scrollTop() < 1390) { 
 				 $(".sub_navi_li > li").removeClass();
 				 $(".sub_navi_li > li:eq(1)").addClass("on");
-			 }else if($(window).scrollTop() > 1490 && $(window).scrollTop() < 1990) { 
+			 }else if($(window).scrollTop() > 1390 && $(window).scrollTop() < 1990) { 
 				 $(".sub_navi_li > li").removeClass();
 				 $(".sub_navi_li > li:eq(2)").addClass("on");
 			 }
@@ -141,7 +141,7 @@
         </div>
         <div class="sub_navi">
             <ul class="sub_navi_li">
-                <li class="on"><a href="#talent"">인재상</a></li>
+                <li class="on"><a href="#talent">인재상</a></li>
                 <li><a href="#employ">채용전형</a></li>
                 <li><a href="#welfare">복리후생</a></li>
             </ul>
@@ -271,57 +271,44 @@
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img1.png"></div>
                         <div class="wel_tit">생일, 결혼기념일 지원</div>
-                        <div class="wel_txt">매월 생일인 임직원들을 대상으로 생일파티가 마련됩니다. <br>
-                            생일자에게 상품권을 지원합니다. <br>
-                            결혼한 임직원에게는 결혼기념일에 소정의 선물을 지원합니다.</div>
+                        <div class="wel_txt">매월 생일인 임직원들을 대상으로 생일파티가 마련됩니다.<br>생일자에게 생일선물을 지원합니다.<br>결혼한 임직원에게는 결혼기념일에 소정의 선물을 지원합니다.
+                            </div>
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img2.png"></div>
-                        <div class="wel_tit">자녀 학자금 지원</div>
-                        <div class="wel_txt">임직원의 취학 자녀에 대하여 학자금을 지원합니다.</div>
+                        <div class="wel_tit">자녀 학자금, 자녀 육아수당 지원</div>
+                        <div class="wel_txt">임직원 자녀의 보육과 교육을 위해 육아수당 및 자녀 학자금을 지원합니다.</div>
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img3.png"></div>
                         <div class="wel_tit">경조금, 경조휴가 지원</div>
-                        <div class="wel_txt">경조사 발생 시 경조사를 원활하게 치를 수 있도록 <br>
-                            경조휴가를 부여하고, 회사차원에서 예를 표하기 위하여<br>
-                            경조금을 지원합니다.</div>
-                    </li>
-                    <li>
-                        <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img4.png"></div>
-                        <div class="wel_tit">동호회 지원</div>
-                        <div class="wel_txt">건전한 동호회 활동을 통하여 사원들간 친목을 도모하고,<br>자기개발의 계기를 부여하여 즐겁게 일할 수 있도록<br>동호회 활동을 지원합니다.
-</div>
+                        <div class="wel_txt">각종 경조사 발생 시 경조사를 원활하게 치를 수 있도록 경조휴가를 부여하고, 회사 차원에서 예를 표하기 위하여 경조금을 지원합니다.</div>
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img5.png"></div>
-                        <div class="wel_tit">우수사원 포상 지원</div>
-                        <div class="wel_txt">매 분기별 뛰어난 업무 역량을 보여준 우수사원을 <br>
-                            선정하여 시상합니다. <br>
-                            다하미의 우수사원이 되면 격려금을 지원합합니다.</div>
+                        <div class="wel_tit">우수사원 포상</div>
+                        <div class="wel_txt">모범적이고 뛰어난 업무역량을 보여준 직원에 대해서 공로상 및 모범사원 포상 제도를 운영하고 있습니다.
+</div>
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img6.png"></div>
-                        <div class="wel_tit">창립기념일 및 명절 선물 지원</div>
-                        <div class="wel_txt">창립기념일 기념선물, 명절선물 등<br>시기와 상황에 맞는 다양한 선물을 지원해<br>그 의미를 더합니다.</div>
+                        <div class="wel_tit">장기근속 시상</div>
+                        <div class="wel_txt">본사에 장기근속한 임원 및 정직원을 축하하고 포상금 및 포상휴가를 지원합니다.</div>
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img7.png"></div>
-                        <div class="wel_tit">부서회식 지원</div>
-                        <div class="wel_txt">부서 회식비를 지원하여 단합된 팀 운영을 <br>
-                            지원합니다.</div>
+                        <div class="wel_tit">사우회 활동 지원</div>
+                        <div class="wel_txt">사원들간 친목을 도모하고 공동생활 내에 서로 상부상조하여 즐겁게 일할 수 있도록 하는 사우회의 활동을 지원합니다.</div>
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img8.png"></div>
-                        <div class="wel_tit">업무위탁교육 지원</div>
-                        <div class="wel_txt">역량 강화를 위해 외부에서 시행하는<br>각종 직무교육 수강을 지원합니다.</div>
+                        <div class="wel_tit">업무 위탁교육 지원</div>
+                        <div class="wel_txt">직원 개개인의 관리 역량 개발과 원활한 수행을 위해 외부에서 시행하는 각종 직무교육 수강을 지원합니다.</div>
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img9.png"></div>
-                        <div class="wel_tit">기타 4대보험, 퇴직금 사외 적립 등</div>
-                        <div class="wel_txt">이외에도 4대보험, 퇴직금 사외 적립 등<br>
-                            다하미 임직원들을 위한 다양한 복리후생 지원에 <br>
-                            힘쓰고 있습니다.</div>
+                        <div class="wel_tit">기타 4대 보험, 퇴직금 사외 적립 등</div>
+                        <div class="wel_txt">이외에도 4대 보험, 퇴직금 사외 적립 등 다하미 임직원들을 위한 다양한 복리후생 지원에 힘쓰고 있습니다.</div>
                     </li>
                 </ul>
             </div>

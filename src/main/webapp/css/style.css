@@ -33,7 +33,7 @@
 .intro_box1 { float:left; width:100%; padding-bottom:30px; }
 .intro_box2 { width:100%; height:400px; background-size:cover; float:left; }
 .intro_box3 { float:left; width:100%; padding:40px 0; }
-.intro_box4 { float:left; width:100%; height:400px; background:#404040; }
+.intro_box4 { float:left; width:100%; height:400px; background:url(../images/company/ceo.png) center no-repeat; }
 
 .intro_box1 h2.intro_tit { font-size:20px; line-height:32px; color:#737373; font-weight:500; margin-top:30px; }
 .intro_box1 p.intro_txt {font-size:14px; color:#808080; line-height:22px; margin-top:10px;}

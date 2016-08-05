@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta charset="UTF-8">
+<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
 <title>dahami</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
@@ -42,10 +42,10 @@
 			 $('.sub_navi').removeClass('fixed');
 		 }
 		 
-		 if ($(window).scrollTop() > 490 && $(window).scrollTop() < 2020) {
+		 if ($(window).scrollTop() > 490 && $(window).scrollTop() < 1960) {
 			 $(".sub_navi_li > li").removeClass();
 			 $(".sub_navi_li > li:eq(0)").addClass("on");
-		 }else if($(window).scrollTop() > 2020 && $(window).scrollTop() < 2420) { 
+		 }else if($(window).scrollTop() > 1960 && $(window).scrollTop() < 2420) { 
 			 $(".sub_navi_li > li").removeClass();
 			 $(".sub_navi_li > li:eq(1)").addClass("on");
 		 }else if($(window).scrollTop() > 2420 && $(window).scrollTop() < 2800) { 
@@ -169,9 +169,8 @@
 이제 다하미커뮤니케이션즈의 고객은 뉴스를 모니터링하는 홍보부서를 넘어 디지털미디어 콘텐츠를 활용하고자 하는 다양한 분야의 고객 층으로 확대되고 있습니다.
 </p>
             </div>
-            <div class="intro_box4 parallax-window" data-parallax="scroll" data-image-src="<%=request.getContextPath()%>/images/company/ceo.png"><div class="ceo">
-                          <!--  <div class="box_line"></div>
-                <h5>Our Message</h5> -->
+            <div class="intro_box4"><div class="ceo">
+                          <!--  <div class="box_line"></div> <h5>Our Message</h5> -->
                 <p>고객의 환한 웃음을 지상의 과제로 알고<br>
                     열정과 패기,<br>
                     그리고 책임감과 도전 정신을 바탕으로<br>
@@ -268,10 +267,6 @@
                         <li>
                             <div class="year">2015</div>
                             <div class="cont">중앙일보 시사매거진 서비스 출시</div>
-                        </li>
-                        <li>
-                            <div class="year">2014</div>
-                            <div class="cont">박용립 대표이사 취임</div>
                         </li>
                         <li>
                             <div class="year">2014</div>

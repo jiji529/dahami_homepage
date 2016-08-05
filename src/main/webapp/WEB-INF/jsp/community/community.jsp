@@ -9,9 +9,9 @@
 <!DOCTYPE html>
 <html lang="ko" class= >
 <head>
-<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta charset="UTF-8">
+<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
 <title>dahami</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
@@ -366,11 +366,12 @@ function evt(newwin){
 	if(objid.style.display=="block")
 	{
 	  objid.style.display="none";
-	  $("#dt"+newwin).removeClass();
+	  $("#boardlst dt").removeClass();
 	}
 	else{
+	  $('#boardlst dd').css('display','none');
+	  $("#boardlst dt").removeClass();
 	  objid.style.display="block";
-	  $("#dt*").removeClass();
 	  $("#dt"+newwin).addClass("on");
 	}
 }
@@ -564,12 +565,12 @@ function resetBoard(){
                     <tr>
                         <td>매체 제휴</td>
                         <td>02-593-4174 (내선번호 408)</td>
-                        <td>wkdth2@dahami.com</td>
+                        <td><a href="mailto:wkdth2@dahami.com">wkdth2@dahami.com</a></td>
                     </tr>
                     <tr>
                         <td>서비스 상담</td>
                         <td>02-593-4174 (내선번호 216)</td>
-                        <td>jjunghyo2@dahami.com</td>
+                        <td><a href="mailto:jjunghyo2@dahami.com">jjunghyo2@dahami.com</a></td>
                     </tr>
                 </table>
                 <div class="call_box"> <h3>개인정보 수집 및 이용동의</h3>

@@ -76,14 +76,15 @@ public class MainController {
 		int NoticeCnt = 0;
 		int DivideCnt = 0;
 		
-		boardVO.setStPageSize(1);
-		boardVO.setEndPageSize(10);
+		boardVO.setStPageSize(0);
+		boardVO.setEndPageSize(9);
 		
 		boardCdList = mainService.SelectNotLst(boardVO);
 		NoticeCnt = mainService.SelectNotCnt(boardVO);
 		
 		for(int i=0; i<boardCdList.size(); i++) {
 			boardCdList.get(i).setRegdate(convertDate(boardCdList.get(i).getRegdate()));
+			boardCdList.get(i).setBody(boardCdList.get(i).getBody().replaceAll("\r", "<br/>"));
 		}
 		
 		if(NoticeCnt !=0){
