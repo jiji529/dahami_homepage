@@ -14,6 +14,20 @@
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/gnb.js"></script>
+<script type="text/javascript">
+
+/********************** 추석 **************************/
+
+var winWidth = 370;
+var winHeight = 540; 
+var winURL = "http://scrapmaster.co.kr/event/20160913.html"; 
+var winName = "popup"; 
+var winPosLeft = (screen.width - winWidth) / 2; 
+var winPosTop = (screen.height - winHeight) / 2; 
+var winOpt = "width="+winWidth+",height="+winHeight+",top="+winPosTop+",left="+winPosLeft; 
+window.open(winURL, winName, winOpt + ""); 
+
+</script>
 </head>
 <body onResize="confLayout();" onLoad="confLayout();">
 <div id="wrap" class="main">
