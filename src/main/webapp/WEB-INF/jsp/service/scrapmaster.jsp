@@ -51,7 +51,7 @@
                                         <p>세계 최초 종이신문 <b>온라인스크랩 솔루션</b></p>
                                         <h3>스크랩마스터</h3>
                                 </div>
-                                <div class="laptop">
+                                <div class="laptop laptop_sm">
                                         <div class="overflow">
                                             <ul class="bxslider">
 											<li><img src="<%=request.getContextPath()%>/images/service/screen_sm1.png" /></li>
