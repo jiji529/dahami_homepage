@@ -228,10 +228,6 @@
                             <div class="cont">터치형 T-Paper 런칭</div>
                         </li>
                         <li>
-                            <div class="year">2009</div>
-                            <div class="cont">온라인 뉴스 모니터링 서비스 구축</div>
-                        </li>
-                        <li>
                             <div class="year">2008</div>
                             <div class="cont">스크랩마스터 프리미엄 개발</div>
                         </li>
@@ -260,6 +256,10 @@
                         <p>2012 ~ 현재</p>
                     </div>
                     <ul>
+                        <li>
+                            <div class="year">2016</div>
+                            <div class="cont">스크랩마스터 GS인증 획득</div>
+                        </li>
                         <li>
                             <div class="year">2016</div>
                             <div class="cont">뉴스뱅크 서비스 사업 양수</div>
