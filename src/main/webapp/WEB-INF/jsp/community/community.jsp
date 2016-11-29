@@ -564,8 +564,8 @@ function resetBoard(){
                     </tr>
                     <tr>
                         <td>매체 제휴</td>
-                        <td>02-593-4174 (내선번호 408)</td>
-                        <td><a href="mailto:wkdth2@dahami.com">wkdth2@dahami.com</a></td>
+                        <td>02-593-4174 (내선번호 201)</td>
+                        <td><a href="mailto:willwin@dahami.com">willwin@dahami.com</a></td>
                     </tr>
                     <tr>
                         <td>서비스 상담</td>
