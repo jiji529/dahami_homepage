@@ -12,7 +12,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta charset="UTF-8">
 <link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
-<title>dahami</title>
+<title>다하미커뮤니케이션즈</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -41,13 +41,15 @@ $(document).ready(function (){
 		 }else { 
 			 $('.sub_navi').removeClass('fixed');
 		 }
-		 
-		 if ($(window).scrollTop() > 490 && $(window).scrollTop() < 1070) {
+		 if ($(window).scrollTop() > 490 && $(window).scrollTop() < 1000) {
 			 $(".sub_navi_li > li").removeClass();
 			 $(".sub_navi_li > li:eq(0)").addClass("on");
-		 }else if($(window).scrollTop() > 1070 && $(window).scrollTop() < 1490) { 
+		 }else if($(window).scrollTop() > 1000 && $(window).scrollTop() < 1500) { 
 			 $(".sub_navi_li > li").removeClass();
 			 $(".sub_navi_li > li:eq(1)").addClass("on");
+		 }else if($(window).scrollTop() > 1500 && $(window).scrollTop() < 2000) { 
+			 $(".sub_navi_li > li").removeClass();
+			 $(".sub_navi_li > li:eq(2)").addClass("on");
 		 }
 	});
 	
@@ -61,12 +63,18 @@ $(document).ready(function (){
 			$('html, body').animate({
 		        scrollTop: $("#new .inner").offset().top
 		    }, 1000);
-	   	}else if(loc == "call"){
+	   	}else if(loc == "faq"){
 	   		$(".sub_navi_li > li").removeClass();
 			$(".sub_navi_li > li:eq(1)").addClass("on");
 	   		$('html, body').animate({
-		        scrollTop: $("#call .inner").offset().top
+		        scrollTop: $("#faq .inner").offset().top
 		    }, 1500);
+	   	}else if(loc == "call"){
+	   		$(".sub_navi_li > li").removeClass();
+			$(".sub_navi_li > li:eq(2)").addClass("on");
+	   		$('html, body').animate({
+		        scrollTop: $("#call .inner").offset().top
+		    }, 2000);
 	   	}else if(loc == "calls"){
 	   		$(".sub_navi_li > li").removeClass();
 			$(".sub_navi_li > li:eq(1)").addClass("on");
@@ -95,10 +103,19 @@ $(document).ready(function (){
 	    }, 1500);
 	});
 	
-	//문의하기 클릭시
+	//자주묻는 질문 클릭시
 	$(".sub_navi_li > li:eq(1)").on('click', function(e) {
 		$(".sub_navi_li > li").removeClass();
 		$(".sub_navi_li > li:eq(1)").addClass("on");
+		$('html, body').animate({
+	        scrollTop: $("#faq .inner").offset().top
+	    }, 1500);
+	});
+	
+	//문의하기 클릭시
+	$(".sub_navi_li > li:eq(2)").on('click', function(e) {
+		$(".sub_navi_li > li").removeClass();
+		$(".sub_navi_li > li:eq(2)").addClass("on");
 		$('html, body').animate({
 	        scrollTop: $("#call .inner").offset().top
 	    }, 1500);
@@ -224,6 +241,44 @@ $(document).ready(function (){
 					keyword : keyword
 		        },
 				success: board_jsonlst
+			});
+		}
+	});
+	
+	$("#searchTxt1").on('click', function(e) {
+		var pages = 1;
+		var keyword = $("#searchInput1").val();
+		$("#startgo1").val("1");
+		
+		$.ajax({
+			url : "../community/qnaLst.html",
+			cache : false,
+		    dataType: 'json',
+		    contentType: 'application/json; charset=utf-8',
+			data: {
+				pages: pages,
+				keyword : keyword
+	        },
+			success: qna_jsonlst
+		});
+	});
+	
+	$('#searchInput1').on('keypress', function(e) {
+		if (e.which == 13) {/* 13 == enter key@ascii */
+			var pages = 1;
+			var keyword = $("#searchInput1").val();
+			$("#startgo1").val("1");
+			
+			$.ajax({
+				url : "../community/qnaLst.html",
+				cache : false,
+			    dataType: 'json',
+			    contentType: 'application/json; charset=utf-8',
+				data: {
+					pages: pages,
+					keyword : keyword
+		        },
+				success: qna_jsonlst
 			});
 		}
 	});
@@ -376,6 +431,24 @@ function evt(newwin){
 	}
 }
 
+//새소식 클릭시 반응
+function evt1(newwin){
+	var objid=document.getElementById("faq_dd"+newwin);
+	
+	//class='on'
+	
+	if(objid.style.display=="block")
+	{
+	  objid.style.display="none";
+	  $("#faqlst dt").removeClass();
+	}
+	else{
+	  $('#faqlst dd').css('display','none');
+	  $("#faqlst dt").removeClass();
+	  objid.style.display="block";
+	  $("#faq_dt"+newwin).addClass("on");
+	}
+}
 
 // 페이징 처리
 function pagingw(page){
@@ -440,6 +513,45 @@ function board_jsonlst(json){
 	pagings(totpage);
 }
 
+//success성공시 관련 리스트 출력
+function qna_jsonlst(json){
+	
+	var faqList = json;
+	$('#faqlst').empty();
+	var html = "";
+	var totpage;
+		
+	if(faqList.length == 0){
+		html +=  "<dt style='cursor: pointer;' align='center'>";
+		html +=  "<span align='center'>결과내 검색 결과가 없습니다.</span>";
+		html +=  "</dt>";
+		html +=  "<p><br/><p></p></p>";
+		html +=  "</dt>";
+		
+	}else{
+		$.each(faqList, function(key){
+			var curNum = key+1;
+			html +=  "<dt id='faq_dt"+key+"' style='cursor: pointer;'>";
+			html +=  "<a onclick='evt1("+key+")'>";
+			html +=  "<span class='faq_date'>"+faqList[key].gubun+"</span>";
+			html +=  "<span class='faq_tit'>"+faqList[key].quest+"</span>";
+			html +=  "<span class='faq_ico'></span></a></dt>";
+			html +=  "<dd id='faq_dd"+key+"' style='display: none;'>";
+			html +=  "<p class='faq_contit'>"+faqList[key].quest+"<br/><p>"+faqList[key].answer+"</p></p>";
+			html +=  "</dd></dt>";
+		});
+	}
+	
+	$('#faqlst').append(html);
+	
+	if(faqList.length > 0){
+		totpage = faqList[0].totPage;
+	}
+	
+	//페이징
+	pagings1(totpage);
+}
+
 function newInfo(){
 	$(".sub_navi_li > li").removeClass();
 	$(".sub_navi_li > li:eq(0)").addClass("on");
@@ -485,11 +597,56 @@ function pagings(tot){
 	resetBoard();
 }
 
+function pagings1(tot){
+	
+	var firval = 1;
+	var realtot = 1;
+	var startpage = $("#startgo1").val();
+	$("#lastvalue1").val(tot);
+	
+	if($("#totcnt1").val() != ""){
+		if(startpage == "1"){
+			firval = parseInt(startpage);
+		}else{
+			firval = parseInt($("#totcnt1").val());
+		}
+	}
+	if(tot == "0"){
+		tot = 1;
+	}
+	
+	
+	realtot = parseInt(tot);
+		
+	
+	$('.paging1').empty();
+	$('.paging1').html('<ul id="pagination1-demo" class="pagination1-sm"></ul>');
+	
+	$('#pagination1-demo').twbsPagination({
+		startPage: firval,
+	    totalPages: realtot,
+	    visiblePages: 10,
+	    onPageClick: function (event, page) {
+	    	$('#page-content1').text('Page ' + page);
+        }
+	});
+	
+	resetBoard1();
+}
+
 function resetBoard(){
 	$(".sub_navi_li > li").removeClass();
 	$(".sub_navi_li > li:eq(0)").addClass("on");
 	$('html, body').animate({
         scrollTop: $("#new .inner").offset().top
+    }, 10);
+}
+
+function resetBoard1(){
+	$(".sub_navi_li > li").removeClass();
+	$(".sub_navi_li > li:eq(1)").addClass("on");
+	$('html, body').animate({
+        scrollTop: $("#faq .inner").offset().top
     }, 10);
 }
 
@@ -512,6 +669,7 @@ function resetBoard(){
         <div class="sub_navi">
             <ul class="sub_navi_li">
                 <li class="on"><a href="#new">새소식</a></li>
+                <li><a href="#faq">자주 묻는 질문</a></li>
                 <li><a href="#call">문의하기</a></li>
             </ul>
         </div>
@@ -523,7 +681,7 @@ function resetBoard(){
                </div>
                <div class="search">
                 <input type="text" name="searchInput" id="searchInput" value="">
-                <a href="#" id="searchTxt">검색</a>
+                <a style="cursor: pointer" id="searchTxt">검색</a>
 				</div>
                <dl id="boardlst">
                		<c:forEach var="result" items="${boardCdList}" varStatus="status">
@@ -539,13 +697,39 @@ function resetBoard(){
 							<img src="http://dahami.com/file/${boardCdList[status.count-1].file1}" width='900px' />
 						</c:if>
 						</dd>
-						</dt>
 					</c:forEach>
                </dl>
                <div class="paging">
                    <ul id="pagination-demo" class="pagination-sm"></ul>
                </div>
                 
+            </div>
+        </div>
+        <div id="faq">
+            <div class="faq">
+                <div class="inner">
+                    <h3>자주 묻는 질문</h3>
+                    <p>다하미커뮤니케이션즈의서비스에 대해 자주 묻는 질문들 입니다. <br />
+                        궁금하신 사항을 선택 해 주세요.</p>
+                </div>
+                <div class="search">
+                	<input type="text" name="searchInput1" id="searchInput1" value="">
+                    <a style="cursor: pointer" id="searchTxt1">검색</a> </div>
+                <dl id="faqlst">
+                    <c:forEach var="result" items="${faqList}" varStatus="status">
+						<dt id="faq_dt${status.count}" style="cursor: pointer;" onClick="evt1(${status.count})">
+							<span class="faq_date">${faqList[status.count-1].gubun}</span>
+							<span class="faq_tit">${faqList[status.count-1].quest}</span>
+							<span class="faq_ico"></span>
+						</dt>
+						<dd id="faq_dd${status.count}" style="display: none;">
+						<p class="faq_contit">
+							${faqList[status.count-1].quest}<br/>
+							<p>${faqList[status.count-1].answer}</p>
+						</p>
+						</dd>
+					</c:forEach>
+                </dl>
             </div>
         </div>
         <div id="call">
@@ -564,13 +748,13 @@ function resetBoard(){
                     </tr>
                     <tr>
                         <td>매체 제휴</td>
-                        <td>02-593-4174 (내선번호 201)</td>
-                        <td><a href="mailto:willwin@dahami.com">willwin@dahami.com</a></td>
+                        <td>02-593-4174 (내선번호 218)</td>
+                        <td><a href="mailto:seoki@dahami.com">seoki@dahami.com</a></td>
                     </tr>
                     <tr>
                         <td>서비스 상담</td>
-                        <td>02-593-4174 (내선번호 216)</td>
-                        <td><a href="mailto:jjunghyo2@dahami.com">jjunghyo2@dahami.com</a></td>
+                        <td>02-593-4174 (내선번호 206,212)</td>
+                        <td><a href="mailto:kdhmns@dahami.com">kdhmns@dahami.com<br/>khim83@dahami.com</a></td>
                     </tr>
                 </table>
                 <div class="call_box"> <h3>개인정보 수집 및 이용동의</h3>

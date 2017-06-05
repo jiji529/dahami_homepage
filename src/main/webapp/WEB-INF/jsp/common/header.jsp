@@ -47,6 +47,7 @@
                     <dd class="">
                         <ul class="navi_sub_ul">
                             <li><a href="/community/community.html?loc=new" target="_parent">새소식</a></li>
+                            <li><a href="/community/community.html?loc=faq" target="_parent">자주 묻는 질문</a></li>
                             <li><a href="/community/community.html?loc=call" target="_parent">문의하기</a></li>
                         </ul>
                     </dd>

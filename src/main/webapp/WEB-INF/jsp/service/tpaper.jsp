@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta charset="UTF-8">
 <link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
-<title>dahami</title>
+<title>다하미커뮤니케이션즈</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>

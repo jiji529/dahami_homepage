@@ -9,11 +9,11 @@ import java.util.Locale;
 
 
 class time {
-
 	public static void main(String[] args){
-		Date dt = new java.util.Date(new Long(1294190381)*1000);
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-		System.out.println(dateFormat.format(dt)); //2013/10/15 16:16:39
+		long dtlong = Long.parseLong("1477218726");
+		Date dts = new java.util.Date(new Long(dtlong)*1000);
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 		
+		System.out.println(df.format(dts)); //2013/10/15 16:16:39
 	}
 }

@@ -1,8 +1,6 @@
 package com.dahami.api.main.service.vo;
 
 import java.io.Serializable;
-import java.util.List;
-
 import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 
 
@@ -20,10 +18,47 @@ public class BoardVO extends PaginationInfo implements Serializable {
 	private String File1;
 	private String Regdate;
 	
+	private String seq;
+	private String gubun;
+	private String quest;
+	private String answer;
+	private String question;
+	
 	private int StPageSize = 0;
 	private int EndPageSize = 0;
 	
 	
+	
+	public String getQuestion() {
+		return question;
+	}
+	public void setQuestion(String question) {
+		this.question = question;
+	}
+	public String getSeq() {
+		return seq;
+	}
+	public void setSeq(String seq) {
+		this.seq = seq;
+	}
+	public String getGubun() {
+		return gubun;
+	}
+	public void setGubun(String gubun) {
+		this.gubun = gubun;
+	}
+	public String getQuest() {
+		return quest;
+	}
+	public void setQuest(String quest) {
+		this.quest = quest;
+	}
+	public String getAnswer() {
+		return answer;
+	}
+	public void setAnswer(String answer) {
+		this.answer = answer;
+	}
 	public int getStPageSize() {
 		return StPageSize;
 	}

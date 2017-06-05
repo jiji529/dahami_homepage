@@ -8,5 +8,8 @@ import com.dahami.api.main.service.vo.BoardVO;
 public interface MainService {
 	
 	List<BoardVO> SelectNotLst(BoardVO boardVO) throws Exception;
+	List<BoardVO> FaqLst(BoardVO boardVO) throws Exception;
+	
 	int SelectNotCnt(BoardVO boardVO) throws Exception;
+	int FaqCnt(BoardVO boardVO) throws Exception;
 }

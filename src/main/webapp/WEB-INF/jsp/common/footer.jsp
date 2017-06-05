@@ -15,6 +15,7 @@
 	                        <li><a href="http://www.t-paper.co.kr/" target="_blank">티페이퍼</a></li>
 	                        <li><a href="http://forme.or.kr/" target="_blank">e-NIE</a></li>
 	                        <li><a href="http://www.newsbank.co.kr/" target="_blank">뉴스뱅크</a></li>
+	                        <li><a href="http://www.news-plaza.co.kr" target="_blank">뉴스플라자</a></li>
 	                    </ul>
 	                </div>
 	            </div>
@@ -171,9 +172,9 @@
 						            연락처: 02-593-4174 (월~금 08:00~17:00, 공휴일 제외)<br />
 						            <br />
 						            [개인정보 보호 담당자]<br />
-						            성명: 장소희 팀장<br />
-						            소속: 마케팅본부<br />
-						            연락처: 02-593-4174, wkdth2@dahami.com (월~금 08:00~17:00, 공휴일 제외)<br />
+						            성명: 최고운 전임<br />
+						            소속: 기술개발연구소<br />
+						            연락처: 02-593-4174, gwchoi@dahami.com (월~금 08:00~17:00, 공휴일 제외)<br />
 						            <br />
 						            2. 이용자는 자신의 개인정보에 관하여 침해의 발생 또는 그 염려로 인하여 상담이 필요한 때에는 제1항의 회사 개인정보보호 담당부서뿐만 아니라 다음의 기관 등에 문의할 수 있습니다.<br />
 						            <br />
@@ -281,6 +282,7 @@
 	                        <dt>커뮤니티</dt>
 	      		        <dd><div class="box_line"></div></dd>
 	                        <dd><a href="/community/community.html?loc=new">새소식</a></dd>
+	                        <dd><a href="/community/community.html?loc=faq">자주 묻는 질문</a></dd>
 	                        <dd><a href="/community/community.html?loc=call">문의하기</a></dd>
 	                    </dl>
 	                </div>

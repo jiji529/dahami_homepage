@@ -29,8 +29,22 @@ public class MainServiceImpl extends AbstractServiceImpl implements MainService 
 	}
 	
 	@Override
+	public List<BoardVO> FaqLst(BoardVO boardVO) throws Exception {
+		List<BoardVO> noticeLst = this.myCDAO.selectFaqLst(boardVO);
+		
+		return noticeLst;
+	}
+	
+	@Override
 	public int SelectNotCnt(BoardVO boardVO) throws Exception {
 		int boardCnt = this.myCDAO.selectNoticeCnt(boardVO);
+		
+		return boardCnt;
+	}
+	
+	@Override
+	public int FaqCnt(BoardVO boardVO) throws Exception {
+		int boardCnt = this.myCDAO.selectFaqCnt(boardVO);
 		
 		return boardCnt;
 	}

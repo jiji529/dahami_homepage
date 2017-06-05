@@ -97,8 +97,8 @@
 	
 	<!-- 파일업로드를 위한 MultipartResolver 정의 -->
 	<bean id="spring.RegularCommonsMultipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<property name="maxUploadSize" value="13145728" />
-		<property name="maxInMemorySize" value="13145728" />
+		<property name="maxUploadSize" value="53145728" />
+		<property name="maxInMemorySize" value="53145728" />
 	</bean>
 
 	<alias name="spring.RegularCommonsMultipartResolver" alias="multipartResolver" />

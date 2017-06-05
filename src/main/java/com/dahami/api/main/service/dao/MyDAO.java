@@ -31,4 +31,12 @@ public class MyDAO extends EgovAbstractDAO {
 	public int selectNoticeCnt(BoardVO boardVO) {
 		return (Integer)selectByPk("NoticeCnt", boardVO);
 	}
+	
+	public List<BoardVO> selectFaqLst(BoardVO boardVO) {
+		return (List<BoardVO>)list("FaqLst", boardVO);
+	}
+	
+	public int selectFaqCnt(BoardVO boardVO) {
+		return (Integer)selectByPk("FaqCnt", boardVO);
+	}
 }

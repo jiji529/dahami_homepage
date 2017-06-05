@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta charset="UTF-8">
 <link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
-<title>dahami</title>
+<title>다하미커뮤니케이션즈</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -125,7 +125,13 @@
 		});
 		
 		$('.gnb_menu .menu:eq(2) .gnb_dl dt').addClass('on');
+		
+		$('.btn_employ').on('click', function(e) {
+			alert("현재 진행중인 채용 공고가 없습니다.");		
+		});
 	});
+	
+	
 	
 </script>
 </head>
@@ -259,6 +265,11 @@
                         </li>
                     </ul>
                 </div>
+                <!--
+                <div class="btn_employ"><a href="/job/jobLst.html" target="_blank">지원하기</a></div>
+                 -->
+                 
+                 <div class="btn_employ"><a href="#employ">지원하기</a></div>
             </div>
         </div>
         <div id="welfare">

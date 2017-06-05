@@ -3,12 +3,12 @@
 @import url("font.css");
 
 
-*{margin:0; padding:0; font-family: "NotoSans", sans-serif; }
+*{margin:0; padding:0; font-family: "nbg","NotoSans", sans-serif; }
 body,html{height:100%; text-align:center;}
 body{background:#f5f5f5;}
 ul,ol,dl{list-style:none;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
-body,h1,h2,h3,h4,input,button{font-family:"NotoSans",Helvetica,AppleSDGothicNeo, Dotum,'돋움',sans-serif;}
+body,h1,h2,h3,h4,input,button{font-family:"nbg","NotoSans",Helvetica,AppleSDGothicNeo, Dotum,'돋움',sans-serif;}
 a{text-decoration: none;}
 .color{ color:#2d91ff!important;}
 .block {display:block;}
@@ -16,7 +16,9 @@ a{text-decoration: none;}
 #wrap {width:100%;position:relative;background-color: #f3f3f3;min-width:1024px; max-width:2000px; margin:0 auto; }
 
 /*gnb*/
-
+#gnbcruit {width:100%;height:90px;position:absolute;left:0;top:0;z-index:100; background-color:#fff;}
+#gnbcruit h1  { width:270px; height:90px;position:absolute;left:0;top:0;overflow:hidden;z-index:105; background:url(../images/logo_recruit.png) center 24px no-repeat; text-indent:-9999px;}
+#gnbcruit h1 a{display:block; width:270px; height:90px;}
 #gnb {width:100%;height:90px;position:absolute;left:0;top:0;z-index:100; background-color:#fff;}
 #gnb h1  { width:160px; height:90px;position:absolute;left:0;top:0;overflow:hidden;z-index:105; background:url(../images/logo.png) center 24px no-repeat; text-indent:-9999px;}
 #gnb h1 a{display:block; width:160px; height:90px;}
@@ -38,9 +40,12 @@ a{text-decoration: none;}
 #gnb .gnb_menu li.menu dd .navi_sub_ul li a:hover {color:#2d91ff;}
 
 #gnb .navi_layer {width:100%;height:0;position:absolute;left:0;top:90px;overflow:hidden;background:#f9f9f9;border-bottom:1px solid #e3e3e3;border-top:1px solid #e3e3e3; display:block;}
-
 #gnb .callcenter { width: 92px; height: 28px;  border: 1px #d7d7d7 solid; border-radius: 20px; position:absolute; background: url('../images/ico_call.png') no-repeat 12px 7px #fff; top:30px; right:20px; z-index: 104; font-size:12px;line-height:29px; } 
 #gnb .callcenter a{ color:#999; display:block;  padding-left:22px; width:70px;} 
+
+#gnbcruit .navi_layer {width:100%;height:0;position:absolute;left:0;top:90px;overflow:hidden;background:#f9f9f9;border-bottom:1px solid #e3e3e3;border-top:1px solid #e3e3e3; display:block;}
+#gnbcruit .callcenter { width: 92px; height: 28px;  border: 1px #d7d7d7 solid; border-radius: 20px; position:absolute; background: url('../images/ico_call.png') no-repeat 12px 7px #fff; top:30px; right:20px; z-index: 104; font-size:12px;line-height:29px; } 
+#gnbcruit .callcenter a{ color:#999; display:block;  padding-left:22px; width:70px;} 
 
 
 
@@ -56,7 +61,7 @@ a{text-decoration: none;}
 .contents{ width:100%; position:relative; padding-top:90px; padding-bottom:56px; }
 
 .main #top{display:none;}
-#top{width:100%; max-width:2000px; z-index:1000;  position:fixed; bottom:70px;}
+#top{ max-width:2000px; z-index:1000;  position:fixed; bottom:70px; right:30px;}
 #top a{display:block; text-decoration:none; text-indent:-9999px;  width:48px; height:48px;float:right; background:url(../images/top.jpg) 0 0 no-repeat; margin-right:30px; }
 
 
@@ -103,6 +108,14 @@ a{text-decoration: none;}
 #pop2 .pop_layer .pop_wrap .pop_cont .sitemap dd .box_line{ margin:10px auto; width:30px; height:2px; background:#444;}
 
 
+#pop3{ position:fixed; left:0; top:0; bottom:0; width:100%; z-index:3000; display:none; overflow:hidden;overflow-y:auto;}
+#pop3 .pop_bg {position:fixed;top:0;bottom:0;left:0;width:100%; height:100%;cursor:pointer;background:rgba(0, 0, 0, .5); overflow:hidden;overflow-y: auto;}
+#pop3 .pop_layer { background:#fff;} 
+#pop3 .pop_layer.pop_1 { width:400px; height:450px; position:absolute; top:50%; left:50%; margin:-225px 0 0 -200px;}
+#pop3 .pop_layer h1{height:60px;background:#2d91ff;color:#fff;font-size:22px;line-height:60px; font-weight:400; display:inline-block; width:100%}
+#pop3 .pop_layer .pop_wrap { padding:20px;overflow: hidden;    overflow:hidden;}
+#pop3 .pop_layer .pop_wrap .pop_close{position:absolute;top:16px;right:20px}
+#pop3 .pop_layer .pop_wrap .pop_close p{display:block; width:28px; height:28px; background:url(../images/pop_close.png) 0 0 no-repeat; text-indent:-9999px; cursor:pointer;}
 
 #select-title { float: left; text-align:left; cursor:pointer;  width:120px;padding:0 20px 0 10px; }
 #select-title:hover { text-decoration: none; color: #222; }

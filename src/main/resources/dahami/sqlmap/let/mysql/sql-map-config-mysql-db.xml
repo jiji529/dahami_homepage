@@ -15,6 +15,13 @@
 		<result property="Regdate"		column="f_regdate" />
 	</resultMap>
 	
+	<resultMap id="QnaLstMap" class="com.dahami.api.main.service.vo.BoardVO">
+		<result property="seq" 			column="seq" />
+		<result property="gubun" 		column="gubun" />
+		<result property="quest" 		column="quest" />
+		<result property="answer" 		column="answer" />
+	</resultMap>
+	
 	<select id="NoticeLst" parameterClass="boardVO" resultMap="NoticeLstMap">
 		SELECT
 			f_uid,
@@ -26,7 +33,7 @@
 			f_file1,
 			f_regdate
 		FROM
-			tbl_news
+			dahami_board.tbl_news
 		WHERE
 			f_state = 1
 		<isNotEmpty prepend="and" property="Title" >
@@ -40,7 +47,7 @@
 		SELECT
 			count(f_uid)as cnt
 		FROM
-			tbl_news
+			dahami_board.tbl_news
 		WHERE
 			f_state = 1
 		<isNotEmpty prepend="and" property="Title" >
@@ -48,4 +55,34 @@
 		</isNotEmpty>
 		ORDER BY f_uid desc
 	</select>
+	
+	<select id="FaqLst" parameterClass="boardVO" resultMap="QnaLstMap">
+		SELECT
+			seq,
+			gubun,
+			quest,
+			answer
+		FROM
+			new_scrapmaster.qna
+		WHERE
+			gubun='서비스/계약/저작권'
+		<isNotEmpty prepend="and" property="question" >
+			(quest LIKE "%$question$%" or answer LIKE "%$question$%")
+		</isNotEmpty>
+		ORDER BY seq desc
+		LIMIT #stPageSize# , #endPageSize#
+	</select>
+	
+	<select id="FaqCnt" parameterClass="boardVO" resultClass="Integer">
+		SELECT
+			count(seq)as cnt
+		FROM
+			new_scrapmaster.qna
+		WHERE
+			gubun='서비스/계약/저작권'
+		<isNotEmpty prepend="and" property="question" >
+			(quest LIKE "%$question$%" or answer LIKE "%$question$%")
+		</isNotEmpty>
+		ORDER BY seq desc
+	</select>	
 </sqlMap>

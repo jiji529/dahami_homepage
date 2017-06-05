@@ -2,14 +2,17 @@
 <!DOCTYPE html>
 <html lang="ko" class= >
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" >
-<meta charset="UTF-8">
-<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
-<title>dahami</title>
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/basic.css">
-<link rel="stylesheet" href="css/jquery.fullPage.css">
-<link rel="stylesheet" href="css/animate.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="UTF-8" />
+<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico" />
+<title>다하미커뮤니케이션즈</title>
+<meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
+<meta name="keywords" content="다하미, 다하미커뮤니케이션즈, dahami, 스크랩">
+<meta name="description" content="text" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/basic.css" />
+<link rel="stylesheet" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" href="css/animate.css" />
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
@@ -19,13 +22,13 @@
 /********************** 추석 **************************/
 
 var winWidth = 370;
-var winHeight = 540; 
-var winURL = "http://scrapmaster.co.kr/event/20160913.html"; 
+var winHeight = 307; 
+var winURL = "/images/20170125.jpg"; 
 var winName = "popup"; 
 var winPosLeft = (screen.width - winWidth) / 2; 
 var winPosTop = (screen.height - winHeight) / 2; 
 var winOpt = "width="+winWidth+",height="+winHeight+",top="+winPosTop+",left="+winPosLeft; 
-window.open(winURL, winName, winOpt + ""); 
+//window.open(winURL, winName, winOpt + "");
 
 </script>
 </head>
