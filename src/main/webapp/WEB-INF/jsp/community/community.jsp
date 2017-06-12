@@ -753,7 +753,7 @@ function resetBoard1(){
                     </tr>
                     <tr>
                         <td>서비스 상담</td>
-                        <td>02-593-4174 (내선번호 206,212)</td>
+                        <td>02-593-4174 (내선번호 206,220)</td>
                         <td><a href="mailto:kdhmns@dahami.com">kdhmns@dahami.com<br/>khim83@dahami.com</a></td>
                     </tr>
                 </table>
