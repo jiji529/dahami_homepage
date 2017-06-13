@@ -107,7 +107,7 @@
         </div>
     </div>
     <div id="footer">
-        <div class="foot_lt">Copyright ⓒ DAHAMI Communications. All rights reserved.</div>
+        <div class="foot_lt">Copyright ⓒ DAHAMI Communications. All rights reserved!</div>
         <div class="foot_rt">
             <ul class="foot_menu">
                 <li class="color">개인정보처리방침</li>
