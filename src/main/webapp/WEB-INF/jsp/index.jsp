@@ -29,44 +29,71 @@ var winPosLeft = (screen.width - winWidth) / 2;
 var winPosTop = (screen.height - winHeight) / 2; 
 var winOpt = "width="+winWidth+",height="+winHeight+",top="+winPosTop+",left="+winPosLeft; 
 //window.open(winURL, winName, winOpt + "");
-
+	
+	function getCookie(name){    
+		var wcname = name + '=';
+		var wcstart, wcend, end;
+		var i = 0;   
+	
+		  while(i <= document.cookie.length) {            
+		   wcstart = i;  
+		 wcend   = (i + wcname.length);            
+		 if(document.cookie.substring(wcstart, wcend) == wcname) {                    
+		  if((end = document.cookie.indexOf(';', wcend)) == -1)                           
+		   end = document.cookie.length;                    
+		  return document.cookie.substring(wcend, end);            
+		   }           
+	
+		 i = document.cookie.indexOf('', i) + 1;            
+		  
+		   if(i == 0)                    
+		  break;    
+		  }    
+		  return '';
+	}
 </script>
 </head>
 <body onResize="confLayout();" onLoad="confLayout();">
 <div id="wrap" class="main">
     <div id="gnb">
         <jsp:include page="common/header.jsp"></jsp:include>
-    </div>
+    </div>    
     <div id="fullpage">
-        <div class="section" id="section0">
-            <div class="item">
-                <div class="bg bg1"></div>
-                <div class="box_intro">
-                    <h2 class="title">What we do</h2>
-                    <div class="separator"></div>
-                    <p>다하미커뮤니케이션즈는 원하는 정보를 쉽고 빠르게 찾아드립니다.</p>
-                </div>
-            </div>
+        <div class="section" id="section0"> 
+        	<a href="/company/company.html">   
+	            <div class="item">
+	                <div class="bg bg1"></div>
+	                <div class="box_intro">
+	                    <h2 class="title">What we do</h2>
+	                    <div class="separator"></div>                    
+	                    <p>다하미커뮤니케이션즈는 원하는 정보를 쉽고 빠르게 찾아드립니다.</p>
+	                </div>
+	            </div>
+            </a>
         </div>
     	<div class="section" id="section1">
-            <div class="item">
-                <div class="bg bg2"></div>
-                <div class="box_intro">
-                    <h2 class="title">What we deliver</h2>
-                    <div class="separator"></div>
-                    <p>정보를 소비하는 새로운 방식을 제공해 고객의 비즈니스에 가치를 더합니다.</p>
-                </div>
-            </div>
+    		<a href="/service/scrapmaster.html">
+	            <div class="item">
+	                <div class="bg bg2"></div>
+	                <div class="box_intro">
+	                    <h2 class="title">What we deliver</h2>
+	                    <div class="separator"></div>
+	                    <p>정보를 소비하는 새로운 방식을 제공해 고객의 비즈니스에 가치를 더합니다.</p>
+	                </div>
+	            </div>
+            </a>
         </div>
         <div class="section" id="section2">
-            <div class="item">
-                <div class="bg bg3"></div>
-                <div class="box_intro">
-                    <h2 class="title">What we promise</h2>
-                    <div class="separator"></div>
-                    <p>고객 만족과 신뢰를 위해 최선을 다해 정도를 지킵니다.</p>
-                </div>
-            </div> 
+        	<a href="/recruit/recruit.html">
+	            <div class="item">
+	                <div class="bg bg3"></div>
+	                <div class="box_intro">
+	                    <h2 class="title">What we promise</h2>
+	                    <div class="separator"></div>
+	                    <p>고객 만족과 신뢰를 위해 최선을 다해 정도를 지킵니다.</p>
+	                </div>
+	            </div> 
+            </a>
         </div>
     </div>
     <div id="bottom">

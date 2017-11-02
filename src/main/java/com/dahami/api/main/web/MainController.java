@@ -116,6 +116,11 @@ public class MainController {
 		return "/community/community";
 	}
 	
+	@RequestMapping("/common/popup.html")
+	public String popup(ModelMap model, HttpServletRequest request) throws Exception {
+		return "/common/popup";
+	}
+	
 	@RequestMapping("/company/company.html")
 	public String company(ModelMap model, HttpServletRequest request) throws Exception {
 		return "/company/company";
