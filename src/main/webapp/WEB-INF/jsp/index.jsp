@@ -51,6 +51,17 @@ var winOpt = "width="+winWidth+",height="+winHeight+",top="+winPosTop+",left="+w
 		  }    
 		  return '';
 	}
+	
+	function popup(){ // 오늘 하루동안 그만 보기 팝업
+		var url = "/common/popup.html";
+		window.open(url, "공지사항", "width=400, height=400, status=no, scrollbars=no, toolbar=no, menubar=no");
+	}
+	
+	$(document).ready(function() {
+		if(getCookie('popup') != 'start') {       
+			popup();
+		}
+	});
 </script>
 </head>
 <body onResize="confLayout();" onLoad="confLayout();">

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>명절 공지사항</title>
+<title>공지사항</title>
 <script type="text/javascript">
 	function setCookie(name, value, expiredays) {
 	var today = new Date();
@@ -22,7 +22,7 @@
 </head>
 <body>
 	<form>
-		<img src="../images/popup_20170927.jpg" />
+		<img src="../images/popup_20171227.png" />
 		<input type="checkbox" name="todayPop" onClick="closePop()">
 		오늘 하루 그만보기
 	</form>
