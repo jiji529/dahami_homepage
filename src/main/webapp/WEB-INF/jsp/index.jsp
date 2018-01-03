@@ -58,9 +58,9 @@ var winOpt = "width="+winWidth+",height="+winHeight+",top="+winPosTop+",left="+w
 	}
 	
 	$(document).ready(function() {
-		if(getCookie('popup') != 'start') {       
+		/* if(getCookie('popup') != 'start') {       
 			popup();
-		}
+		} */
 	});
 </script>
 </head>
