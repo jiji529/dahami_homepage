@@ -125,7 +125,7 @@ public class MainController {
 	public String company(ModelMap model, HttpServletRequest request) throws Exception {
 		return "/company/company";
 	}
-	
+		
 	@RequestMapping("/main/main.html")
 	public String main(ModelMap model, HttpServletRequest request) throws Exception {
 		return "/main/main";

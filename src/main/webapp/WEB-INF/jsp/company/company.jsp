@@ -150,7 +150,11 @@
                 <div class="inner">
                 	<h3>다하미소개</h3>
                     <p>디지털미디어 콘텐츠 서비스의 HUB를 지향하며</p>
-                </div>                <div class="box_line"></div>
+                </div>
+                <p align="center">   
+                	<iframe width="800" height="534" src="https://www.youtube.com/embed/0CZi0OffvXA?rel=0&loop=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </p>         
+                <div class="box_line"></div>
              <!--   <h5>Our Company</h5> -->
                                 <p>다하미커뮤니케이션즈는 1998년 창업 이래 신문, 방송, 잡지, 인터넷 기사, 보도 사진 등 미디어 서비스 분야의 혁신을 지속하고 있는 IT기업입니다.
 <br>
