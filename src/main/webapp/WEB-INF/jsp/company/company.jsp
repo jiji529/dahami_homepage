@@ -152,7 +152,7 @@
                     <p>디지털미디어 콘텐츠 서비스의 HUB를 지향하며</p>
                 </div>
                 <p align="center">   
-                	<iframe width="800" height="533" src="https://www.youtube.com/embed/0CZi0OffvXA?rel=0&loop=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                	<iframe width="800" height="533" src="https://www.youtube.com/embed/vRsUcoi6PJ8?rel=0&loop=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </p>         
                 <div class="box_line"></div>
              <!--   <h5>Our Company</h5> -->
