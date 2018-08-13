@@ -164,7 +164,7 @@
 </p>
 
             </div>
-            <div class="intro_box2 parallax-window" data-parallax="scroll" data-image-src="<%=request.getContextPath()%>/images/company/company_img1.png"></div>
+            <div class="intro_box2 parallax-window" data-parallax="scroll" data-image-src="<%=request.getContextPath()%>/images/company/company_img.jpg"></div>
             <div class="intro_box3">
                 <div class="box_line"></div>
                 <!--<h5>Our Customer</h5> -->
