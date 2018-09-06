@@ -287,7 +287,7 @@ a:hover { text-decoration: underline; color: #2d91ff;}
 		</p>	</section><section class="policy_cont" id="section13">
 
 		<h4>부칙</h4>
-<p>			2018.08.23   이 방침은 2018년 9월 1일부터  시행됩니다. </p>
+<p>			2018.08.23   이 방침은 2018년 9월 6일부터  시행됩니다. </p>
 	</section>
 </section>
 </body>
