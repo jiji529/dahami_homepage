@@ -36,10 +36,10 @@
     function animationCss1(){
     	$('.bg2').removeAttr("style");
     	$('.bg3').removeAttr("style");
-    	$('.bg1').css('-webkit-transform', 'scale(1.05)').css({"opacity" : 0.6})
-        .css('-ms-transform', 'scale(1.05)').css({"opacity" : 0.6})
-        .css('-moz-transform', 'scale(1.05)').css({"opacity" : 0.6})
-        .css('-o-transform', 'scale(1.05)').css({"opacity" : 0.6});
+    	$('.bg1').css('-webkit-transform', 'scale(1.05)').css({"opacity" : 0.4})
+        .css('-ms-transform', 'scale(1.05)').css({"opacity" : 0.4})
+        .css('-moz-transform', 'scale(1.05)').css({"opacity" : 0.4})
+        .css('-o-transform', 'scale(1.05)').css({"opacity" : 0.4});
     	$('#section0 .title').addClass('animated slideInRight');
     	$('#section1 .title').removeClass('animated slideInRight');
     	$('#section2 .title').removeClass('animated slideInRight');

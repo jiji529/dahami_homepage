@@ -280,11 +280,20 @@
                 </div>
                 <ul class="wel_list">
                     <li>
-                        <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img1.png"></div>
-                        <div class="wel_tit">생일, 결혼기념일 지원</div>
-                        <div class="wel_txt">매월 생일인 임직원들을 대상으로 생일파티가 마련됩니다.<br>생일자에게 생일선물을 지원합니다.<br>결혼한 임직원에게는 결혼기념일에 소정의 선물을 지원합니다.
-                            </div>
+                        <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img9.png"></div>
+                        <div class="wel_tit"> 4대 보험, 퇴직금 사외 적립 등</div>
+                        <div class="wel_txt"> 4대 보험, 퇴직금 사외 적립 등 다하미 임직원들을 위한 다양한 복리후생 지원에 힘쓰고 있습니다.</div>
                     </li>
+                    <li>
+                        <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img6.png"></div>
+                        <div class="wel_tit">장기근속 시상</div>
+                        <div class="wel_txt">본사에 장기근속한 임원 및 정직원을 축하하고 포상금 및 포상휴가를 지원합니다.</div>
+                    </li>
+                    <li>
+                        <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img5.png"></div>
+                        <div class="wel_tit">우수사원 포상</div>
+                        <div class="wel_txt">모범적이고 뛰어난 업무역량을 보여준 직원에 대해서 공로상 및 모범사원 포상 제도를 운영하고 있습니다.</div>
+                    </li>               
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img2.png"></div>
                         <div class="wel_tit">자녀 학자금, 자녀 육아수당 지원</div>
@@ -294,17 +303,6 @@
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img3.png"></div>
                         <div class="wel_tit">경조금, 경조휴가 지원</div>
                         <div class="wel_txt">각종 경조사 발생 시 경조사를 원활하게 치를 수 있도록 경조휴가를 부여하고, 회사 차원에서 예를 표하기 위하여 경조금을 지원합니다.</div>
-                    </li>
-                    <li>
-                        <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img5.png"></div>
-                        <div class="wel_tit">우수사원 포상</div>
-                        <div class="wel_txt">모범적이고 뛰어난 업무역량을 보여준 직원에 대해서 공로상 및 모범사원 포상 제도를 운영하고 있습니다.
-</div>
-                    </li>
-                    <li>
-                        <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img6.png"></div>
-                        <div class="wel_tit">장기근속 시상</div>
-                        <div class="wel_txt">본사에 장기근속한 임원 및 정직원을 축하하고 포상금 및 포상휴가를 지원합니다.</div>
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img7.png"></div>
@@ -317,9 +315,9 @@
                         <div class="wel_txt">직원 개개인의 관리 역량 개발과 원활한 수행을 위해 외부에서 시행하는 각종 직무교육 수강을 지원합니다.</div>
                     </li>
                     <li>
-                        <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img9.png"></div>
-                        <div class="wel_tit">기타 4대 보험, 퇴직금 사외 적립 등</div>
-                        <div class="wel_txt">이외에도 4대 보험, 퇴직금 사외 적립 등 다하미 임직원들을 위한 다양한 복리후생 지원에 힘쓰고 있습니다.</div>
+                        <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img1.png"></div>
+                        <div class="wel_tit">생일, 결혼기념일 지원</div>
+                        <div class="wel_txt">매월 생일인 임직원들을 대상으로 생일파티가 마련됩니다.<br>생일자에게 생일선물을 지원합니다.<br>결혼한 임직원에게는 결혼기념일에 소정의 선물을 지원합니다.                            </div>
                     </li>
                 </ul>
             </div>
