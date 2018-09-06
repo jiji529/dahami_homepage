@@ -141,19 +141,15 @@
                 <li><a href="#map">오시는 길</a></li>
             </ul>
         </div>
-        <div id="intros">
-            <div class="intro_top parallax-window" data-parallax="scroll" data-image-src="<%=request.getContextPath()%>/images/company/company_intro.png">
-                <h2>다하미커뮤니케이션즈는 참신한 아이디어와 기술혁신을 통해<br>디지털미디어 콘텐츠 분야의 리딩 컴퍼니로서의 역할을 다하고자 합니다.
-</h2>
-            </div>
+        <div id="intros">           
             <div class="intro_box1">
                 <div class="inner">
                 	<h3>다하미소개</h3>
                     <p>디지털미디어 콘텐츠 서비스의 HUB를 지향하며</p>
                 </div>
                 <p align="center">   
-                	<iframe width="800" height="533" src="https://www.youtube.com/embed/vRsUcoi6PJ8?rel=0&loop=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                </p>         
+                	<iframe width="900" height="600" src="https://www.youtube.com/embed/vRsUcoi6PJ8?rel=0&amp;loop=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                </p>     
                 <div class="box_line"></div>
              <!--   <h5>Our Company</h5> -->
                                 <p>다하미커뮤니케이션즈는 1998년 창업 이래 신문, 방송, 잡지, 인터넷 기사, 보도 사진 등 미디어 서비스 분야의 혁신을 지속하고 있는 IT기업입니다.
@@ -173,8 +169,7 @@
 이제 다하미커뮤니케이션즈의 고객은 뉴스를 모니터링하는 홍보부서를 넘어 디지털미디어 콘텐츠를 활용하고자 하는 다양한 분야의 고객 층으로 확대되고 있습니다.
 </p>
             </div>
-            <div class="intro_box4"><div class="ceo">
-                          <!--  <div class="box_line"></div> <h5>Our Message</h5> -->
+            <div class="intro_box4 intro_top parallax-window" data-parallax="scroll" data-image-src="<%=request.getContextPath()%>/images/company/ceo.png"><div class="ceo">
                 <p>고객의 환한 웃음을 지상의 과제로 알고<br>
                     열정과 패기,<br>
                     그리고 책임감과 도전 정신을 바탕으로<br>
@@ -260,6 +255,14 @@
                         <p>2012 ~ 현재</p>
                     </div>
                     <ul>
+                        <li>
+                            <div class="year">2018</div>
+                            <div class="cont">카이스트 양방향 T-PAPER 런칭</div>
+                        </li>
+                        <li>
+                            <div class="year">2017</div>
+                            <div class="cont">클리핑온 플러스 서비스 확대</div>
+                        </li>
                         <li>
                             <div class="year">2016</div>
                             <div class="cont">스크랩마스터 GS인증 획득</div>

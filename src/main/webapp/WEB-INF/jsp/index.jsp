@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/basic.css" />
 <link rel="stylesheet" href="css/jquery.fullPage.css" />
 <link rel="stylesheet" href="css/animate.css" />
+<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&amp;subset=korean" rel="stylesheet" />
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
