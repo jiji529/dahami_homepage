@@ -176,12 +176,24 @@
 
 #welfare {width:100%; float:left; background:#fff;}
 .welfare{ width:1000px; margin:0 auto;}
+.welfare h4{width:986px; padding-left:14px; float:left; text-align:left; font-size:20px; font-weight:400; color:#333; margin-bottom:10px;}
+.welfare h4:before{content:''; width:5px; height:18px; background-color:#2d91ff; float:left; margin:2px 0 0 -14px;}
+.wel1{float:left; width:860px; padding:30px 69px; border:1px #ddd solid; margin-bottom:80px; background-color:#f9f9f9;}
+.wel_list {float:left; width:860px; padding:20px 69px; border:1px #ddd solid; margin-bottom:80px; background-color:#f9f9f9;}
+.wel_list li {float:left; width:400px; height:80px; margin:20px 0; text-align:left;}
+.wel_list li:nth-child(even){margin-left:60px}
+.wel_list li .wel_img {float:left; width:65px ; height:80px; margin-right:15px;}
+.wel_list li .wel_img img { width:65px; height:65px; margin:5px 0; }
+.wel_list li .wel_tit {float:left; width:320px; font-size:18px; color:#666; }
+.wel_list li .wel_txt {float:left; width:320px; font-size:14px; line-height:22px; color:#999; font-weight:100; margin-top:6px;}
+/*
 .wel_list {float:left; width:100%;margin-bottom:80px;}
 .wel_list li {float:left; width:440px; height:100px; margin:10px 30px; text-align:left;}
 .wel_list li .wel_img {float:left; width:65px ; height:100px; margin-right:15px;}
 .wel_list li .wel_img img { width:65px; height:65px; margin:15px 0; }
 .wel_list li .wel_tit {float:left; width:360px; font-size:18px; color:#666; }
 .wel_list li .wel_txt {float:left; width:360px; font-size:14px; line-height:22px; color:#999; font-weight:100; margin-top:6px;}
+*/
 
 /* 서비스 소개 */
 #sub_cont { width:100%; float:left; } 
