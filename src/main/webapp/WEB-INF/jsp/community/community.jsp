@@ -749,7 +749,7 @@ function resetBoard1(){
                     <tr>
                         <td>매체 제휴</td>
                         <td>02-593-4174 (내선번호 218)</td>
-                        <td><a href="mailto:seoki@dahami.com">seoki@dahami.com</a></td>
+                        <td><a href="mailto:seoski@dahami.com">seoski@dahami.com</a></td>
                     </tr>
                     <tr>
                         <td>서비스 상담</td>

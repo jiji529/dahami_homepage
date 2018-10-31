@@ -22,7 +22,7 @@
 </head>
 <body>
 	<form>
-		<img src="../images/popup_20171227.png" />
+		<img src="../images/popup_20180921.jpg" />
 		<input type="checkbox" name="todayPop" onClick="closePop()">
 		오늘 하루 그만보기
 	</form>
