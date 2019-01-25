@@ -55,18 +55,19 @@ var winOpt = "width="+winWidth+",height="+winHeight+",top="+winPosTop+",left="+w
 	
 	function popup(){ // 오늘 하루동안 그만 보기 팝업
 		var url = "/common/popup.html";
-		window.open(url, "공지사항", "width=390, height=470, status=no, scrollbars=no, toolbar=no, menubar=no");
+		window.open(url, "공지사항", "width=390, height=407, status=no, scrollbars=no, toolbar=no, menubar=no");
 	}
 	
 	$(document).ready(function() {
 		var today = new Date();
-	    var holiday = new Date(2018, 8, 26); // 추석연휴 마지막날까지
+	    var holiday = new Date(2019, 0, 2); // 2019년 1월 2일까지 공지발생
 	    
 	    console.log(getCookie('popup') != 'start' && (today <= holiday));
 	    
-		if(getCookie('popup') != 'start' && (today <= holiday)) {       
+	 	// 공지사항 팝업 (필요시 주석 해제)
+		/* if(getCookie('popup') != 'start' && (today <= holiday)) {       
 			popup();
-		}
+		} */
 	});
 </script>
 </head>
