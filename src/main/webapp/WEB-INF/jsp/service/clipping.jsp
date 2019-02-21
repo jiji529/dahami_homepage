@@ -12,7 +12,7 @@
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/jquery.bxslider.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js"></script>
-
+<jsp:include page="../common/google_analytics.jsp"></jsp:include>
 <script type="text/javascript">
 	$(document).ready(function(){
 	 slider = $('.bxslider').bxSlider({

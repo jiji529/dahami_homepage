@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style1.css">
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js"></script>
+<jsp:include page="../common/google_analytics.jsp"></jsp:include>
 <script type="text/javascript">
 $(document).ready(function (){
 	$('.gnb_menu .menu:eq(1) .gnb_dl dt').addClass('on');

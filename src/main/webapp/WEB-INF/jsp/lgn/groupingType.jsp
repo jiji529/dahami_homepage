@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="../css/grouping.css" />
 <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui.js"></script>
+<jsp:include page="../common/google_analytics.jsp"></jsp:include>
 </head>
 <body>
 	<div id="wrap">

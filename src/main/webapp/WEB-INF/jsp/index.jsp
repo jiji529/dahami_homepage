@@ -18,6 +18,8 @@
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/gnb.js"></script>
+<jsp:include page="common/google_analytics.jsp"></jsp:include>
+
 <script type="text/javascript">
 
 /********************** 추석 **************************/
