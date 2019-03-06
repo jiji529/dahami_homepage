@@ -498,7 +498,9 @@ function board_jsonlst(json){
 			html +=  "<dd id='"+key+"' style='display: none;'>";
 			html +=  "<p class='new_contit'>"+mainImgList[key].title+"<br/><p>"+mainImgList[key].body+"</p></p>";
 			if(mainImgList[key].file != ""){
-				html +=  "<img src='http://dahami.com/file/"+mainImgList[key].file+"' width='900px' />";
+				// 관리자 페이지와 첨부파일 자동 연동되도록 경로 변경 -- 2019.03.06. hoyadev
+				// "http://dahami.com/file/"  -->  "http://board.scrapmaster.co.kr/files/"으로 변경   
+				html +=  "<img src='http://board.scrapmaster.co.kr/files/"+mainImgList[key].file+"' width='900px' />";
 			}
 			html +=  "</dd></dt>";
 		});
@@ -695,7 +697,7 @@ function resetBoard1(){
 						<p>${boardCdList[status.count-1].body}</p>
 						</p>
 						<c:if test="${boardCdList[status.count-1].file1 ne ''}">
-							<img src="http://dahami.com/file/${boardCdList[status.count-1].file1}" width='900px' />
+							<img src="http://board.scrapmaster.co.kr/files/${boardCdList[status.count-1].file1}" width='900px' />
 						</c:if>
 						</dd>
 					</c:forEach>
