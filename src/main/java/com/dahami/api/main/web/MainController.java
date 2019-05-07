@@ -227,7 +227,6 @@ public class MainController {
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(TmpEmail));
 			message.setRecipients(Message.RecipientType.TO,
-				//InternetAddress.parse("elecs9@dahami.com"));
 				InternetAddress.parse("helpdesk@dahami.com"));
 			message.setSubject(TmpTitle);
 			message.setText("작성자 : "+tmpName+"\n\n "+"연락처 : "+TmpPhone+"\n\n "+TmpContents);

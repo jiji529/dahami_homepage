@@ -64,12 +64,14 @@ var winOpt = "width="+winWidth+",height="+winHeight+",top="+winPosTop+",left="+w
 		var today = new Date();
 	    var holiday = new Date(2019, 1, 6); // 2019년 2월 6일까지 공지발생
 	    
-	    console.log(getCookie('popup') != 'start' && (today <= holiday));
+	    //console.log(getCookie('popup') != 'start' && (today <= holiday));
 	    
 	 	// 공지사항 팝업 (필요시 주석 해제)
+	 	/*
 		if(getCookie('popup') != 'start' && (today <= holiday)) {       
 			popup();
 		}
+	 	*/
 	});
 </script>
 </head>

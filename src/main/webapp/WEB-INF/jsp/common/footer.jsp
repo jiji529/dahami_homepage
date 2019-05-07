@@ -34,7 +34,7 @@
 				<p>닫기</p>
 			</div>
 			<div class="pop_cont">
-				<iframe width="100%" src="/common/policy.php"></iframe>
+				<iframe width="100%" src="/common/policy.jsp"></iframe>
 			</div>
 			<div class="pop_ok">
 				<p>확인</p>
