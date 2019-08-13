@@ -126,10 +126,4 @@
 			$("#select-layer").css('display','block');
 		}
 	});
-	function showOtherPrivacy(arg) {
-		var file = '/common/policy';
-		if(arg) file += '_' + arg;
-		file += '.jsp';
-		$('#iframePrivacy').attr('src', file);
-	}
 </script>
