@@ -31,6 +31,9 @@ a:hover {
 	text-decoration: underline;
 	color: #2d91ff;
 }
+a.otherPrivacy {
+	cursor: pointer;
+}
 .block {
 	display: block;
 }
@@ -452,6 +455,10 @@ a:hover {
 	<section class="policy_cont" id="section13">
 		<h4>부칙</h4>
 		<p>2019. 8. 13. 이 방침은 2019년 8월 13일부터 시행됩니다.</p>
+	</section>
+	<section class="policy_cont" id="section14">
+		<h4>개인정보처리방침 변경사항</h4>
+		<p><a class="otherPrivacy" onclick="parent.showOtherPrivacy('180901')">이전 개인정보처리방침(2018. 09.01 ~) 보기</a></p>
 	</section>
 </section>
 </body>

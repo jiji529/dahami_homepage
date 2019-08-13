@@ -34,7 +34,7 @@
 				<p>닫기</p>
 			</div>
 			<div class="pop_cont">
-				<iframe width="100%" src="/common/policy.jsp"></iframe>
+				<iframe width="100%" src="/common/policy.jsp" id="iframePrivacy"></iframe>
 			</div>
 			<div class="pop_ok">
 				<p>확인</p>
@@ -126,5 +126,10 @@
 			$("#select-layer").css('display','block');
 		}
 	});
-	
+	function showOtherPrivacy(arg) {
+		var file = '/common/policy';
+		if(arg) file += '_' + arg;
+		file += '.jsp';
+		$('#iframePrivacy').attr('src', file);
+	}
 </script>
