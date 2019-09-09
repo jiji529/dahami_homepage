@@ -24,14 +24,14 @@
 
 /********************** 추석 **************************/
 
-var winWidth = 370;
-var winHeight = 307; 
-var winURL = "/images/20170125.jpg"; 
+var winWidth = 382;
+var winHeight = 222; 
+var winURL = "/images/popup_20190909.jpg"; 
 var winName = "popup"; 
 var winPosLeft = (screen.width - winWidth) / 2; 
 var winPosTop = (screen.height - winHeight) / 2; 
 var winOpt = "width="+winWidth+",height="+winHeight+",top="+winPosTop+",left="+winPosLeft; 
-//window.open(winURL, winName, winOpt + "");
+window.open(winURL, winName, winOpt + "");
 	
 	function getCookie(name){    
 		var wcname = name + '=';
