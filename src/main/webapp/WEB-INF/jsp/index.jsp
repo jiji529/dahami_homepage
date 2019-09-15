@@ -31,7 +31,7 @@ var winName = "popup";
 var winPosLeft = (screen.width - winWidth) / 2; 
 var winPosTop = (screen.height - winHeight) / 2; 
 var winOpt = "width="+winWidth+",height="+winHeight+",top="+winPosTop+",left="+winPosLeft; 
-window.open(winURL, winName, winOpt + "");
+//window.open(winURL, winName, winOpt + "");
 	
 	function getCookie(name){    
 		var wcname = name + '=';
