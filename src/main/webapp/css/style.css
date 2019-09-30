@@ -29,21 +29,55 @@
 .intro_top h2{ color:#fff; font-weight:500; font-size:27px; margin:180px auto 15px; line-height:52px;}
 .intro_top p {color:#fff; font-weight:100; font-size:18px;}
 
-.intro_box1 { float:left; width:100%; padding:60px 0; }
+.intro_box1 { float:left; width:100%; padding:0 0; }
 .intro_box2 { width:100%; height:500px; background-size:cover; float:left; }
 .intro_box3 { float:left; width:100%; padding:100px 0; }
 .intro_box4 { float:left; width:100%; height:500px; }
 
 .intro_box1 h2.intro_tit { font-size:20px; line-height:32px; color:#737373; font-weight:500; margin-top:30px; }
 .intro_box1 p.intro_txt {font-size:14px; color:#808080; line-height:22px; margin-top:10px;}
+.intro_box1 .video{position: relative; width: 100%; height: 0; padding-bottom: 66.7%;}
 
+.intro_box1 iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+#intros {float: left; padding-top: 51px;}
 #intros .box_line {background:#444; width:30px; height:4px; margin:0 auto;}
 #intros h5 { float:left; width:100%; margin:10px 0; font-weight:100;}
-#intros p{ float:left; width:100%; margin:20px 0; font-size:18px; line-height:28px; color:#444; font-weight:100;}
+#intros p{ float:left; width:100%; margin:0; font-size:18px; line-height:28px; color:#444; font-weight:100;}
 #intros .inner p{ margin:0;}
 #intros .intro_box1 .box_line { margin-top:165px; }
 
+#intros .intro_new1{float:left; width: 100%; height: 440px; background: url(../images/company/company_new1.png) right no-repeat; text-align: left; padding: 100px 0 60px;}
+#intros .intro_new2{float:left; width: 100%; height: 240px; background: url(../images/company/company_new2.png) center no-repeat; background-size: cover; padding: 150px 0; color: #fff;}
+#intros .intro_new3{float:left; width: 100%; height: 520px; background: url(../images/company/company_new3.png) center no-repeat; background-size: cover; padding: 180px 0; }
+#intros .intro_new4{float:left; width: 100%; height: 160px; background: url(../images/company/company_new4.png) center no-repeat; background-size: cover;padding: 180px 0; }
 
+#intros section .inner{width: 1200px; margin: 0 auto; float: none; padding: initial;}
+
+#intros .intro_new1 h1{width: 100%; font-size: 50px; color: #093887; letter-spacing: -1px; line-height: 1.2; float: left; margin-bottom: 40px;}
+#intros .intro_new1 p{width: 100%; font-size: 22px; color: #333; line-height: 1.5; float: left; font-weight: 400;}
+#intros .intro_new1 p strong{color: #2d91ff;}
+#intros .intro_new2 h1{width: 100%; font-size: 70px; color: #fff; letter-spacing: 1px; float: left; margin-bottom: 40px;}
+#intros .intro_new2 p{width: 100%; font-size: 21px; color: #fff; line-height: 1.5; float: left; font-weight: 300;}
+#intros .intro_new3 h1{width: 100%; font-size: 50px; color: #333; letter-spacing: -1px; line-height: 1.2; float: left; margin-bottom: 40px;}
+#intros .intro_new3 p{width: 100%; font-size: 18px; color: #333; line-height: 1.6; float: left; font-weight: 400;}
+#intros .intro_new4 h1{width: 100%; font-size: 52px; color: #333; letter-spacing: -1px; line-height: 1.6; float: left; margin-bottom: 40px;}
+.gradation{
+background: #55ffaa;
+    background: -webkit-linear-gradient(left, #00f, #0ff);
+    background:    -moz-linear-gradient(right, #00f, #0ff);
+    background:      -o-linear-gradient(right, #00f, #0ff);
+    background:         linear-gradient(to right, #00f, #0ff);
+    -webkit-background-clip: text;
+            background-clip: text;
+        color: transparent;}
+
+#intros .intro_new3 .txt_box {float: left; width: 100%; margin: 120px 0}
+#intros .intro_new3 .txt_box > div{float: left; width: 299px; height: 140px; padding: 20px 0; border-left:1px rgba(0,0,0,0.1) solid;}
+#intros .intro_new3 .txt_box > div:first-child{border-left:0;}
+#intros .intro_new3 .txt_box .box_tit{font-size: 30px; font-weight: 700; color: #2d91ff; width: 100%; float: left; margin-bottom: 24px;}
+#intros .intro_new3 .txt_box .box_cont{font-size: 22px;}
+#intros .intro_new3 .txt_box .box_cont span{font-size: 18px; font-weight: 300; width: 100%; float: left;}
 
 #intros p .intro_box4 p{margin-top:30px;}
 .intro_box4 p span{font-size:16px; color:#888;}

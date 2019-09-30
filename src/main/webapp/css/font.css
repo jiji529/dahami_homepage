@@ -1,47 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
-@font-face {
-    font-family: 'NotoSans';
-    font-style: normal;
-    font-weight: 100;
-    src: url(../font/NotoSansKR-Light-subset.eot);
-    src: url(../font/NotoSansKR-Light-subset.woff) format('woff'),
-    url(../font/NotoSansKR-Light-subset.otf) format('openype'),
-    url(../font/NotoSansKR-Light-subset.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'NotoSans';
-    font-style: normal;
-    font-weight: 500;
-    src: url(../font/NotoSansKR-DemiLight-subset.eot);
-    src: url(../font/NotoSansKR-DemiLight-subset.woff) format('woff'),
-    url(../font/NotoSansKR-DemiLight-subset.otf) format('openype'),
-    url(../font/NotoSansKR-DemiLight-subset.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'NotoSans';
-    font-style: normal;
-    font-weight: 700;
-    src: url(../font/NotoSansKR-Medium-subset.eot);
-    src: url(../font/NotoSansKR-Medium-subset.woff) format('woff'),
-    url(../font/NotoSansKR-Medium-subset.otf) format('openype'),
-    url(../font/NotoSansKR-Medium-subset.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'NotoSans';
-    font-style: normal;
-    font-weight: 900;
-    src: url(../font/NotoSansKR-Bold-subset.eot);
-    src: url(../font/NotoSansKR-Bold-subset.woff) format('woff'),
-    url(../font/NotoSansKR-Bold-subset.otf) format('openype'),
-    url(../font/NotoSansKR-Bold-subset.ttf) format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
 
 @font-face {
  font-family: 'Montserrat';

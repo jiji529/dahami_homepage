@@ -3,12 +3,12 @@
 @import url("font.css");
 
 
-*{margin:0; padding:0; font-family: "nbg","NotoSans", sans-serif; }
+*{margin:0; padding:0; font-family: "Noto Sans KR", "nbg", sans-serif; }
 body,html{height:100%; text-align:center;}
 body{background:#f5f5f5;}
 ul,ol,dl{list-style:none;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
-body,h1,h2,h3,h4,input,button{font-family:"nbg","NotoSans",Helvetica,AppleSDGothicNeo, Dotum,'돋움',sans-serif;}
+body,h1,h2,h3,h4,input,button{font-family:"Noto Sans KR", "nbg",Helvetica,AppleSDGothicNeo, Dotum,'돋움',sans-serif;}
 a{text-decoration: none;}
 .color{ color:#2d91ff!important;}
 .block {display:block;}
@@ -19,7 +19,7 @@ a{text-decoration: none;}
 #gnbcruit {width:100%;height:90px;position:absolute;left:0;top:0;z-index:100; background-color:#fff;}
 #gnbcruit h1  { width:270px; height:90px;position:absolute;left:0;top:0;overflow:hidden;z-index:105; background:url(../images/logo_recruit.png) center 24px no-repeat; text-indent:-9999px;}
 #gnbcruit h1 a{display:block; width:270px; height:90px;}
-#gnb {width:100%;height:90px;position:absolute;left:0;top:0;z-index:100; background-color:#fff;}
+#gnb {width:100%;height:90px;position:absolute;left:0;top:0;z-index:100; background-color:#fff; min-width: 1200px;}
 #gnb h1  { width:160px; height:90px;position:absolute;left:0;top:0;overflow:hidden;z-index:105; background:url(../images/logo.png) center 24px no-repeat; text-indent:-9999px;}
 #gnb h1 a{display:block; width:160px; height:90px;}
 #gnb .gnb_menu{width:603px;overflow:hidden;position:absolute;left:50%;top:0;margin-left:-300px;z-index:101;}
@@ -40,6 +40,8 @@ a{text-decoration: none;}
 #gnb .gnb_menu li.menu dd .navi_sub_ul li a:hover {color:#2d91ff;}
 
 #gnb .navi_layer {width:100%;height:0;position:absolute;left:0;top:90px;overflow:hidden;background:#f9f9f9;border-bottom:1px solid #e3e3e3;border-top:1px solid #e3e3e3; display:block;}
+#gnb .scrapmaster { width: 158px; height: 29px; position:absolute; background: url('../images/scrapmaster.png') 0 0 no-repeat ; top:30px; right:140px; z-index: 104; text-indent: -9999px;  } 
+
 #gnb .callcenter { width: 96px; height: 28px;  border: 1px #d7d7d7 solid; border-radius: 20px; position:absolute; background: url('../images/ico_call.png') no-repeat 12px 7px #fff; top:30px; right:20px; z-index: 104; font-size:14px;line-height:29px; } 
 #gnb .callcenter a{ color:#999; display:block;  padding-left:22px; width:70px;} 
 
