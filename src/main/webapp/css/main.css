@@ -71,7 +71,7 @@
 .slide2{background: url(../images/main2.png) 0 0 no-repeat; background-size: cover;}
 .slide3{background: url(../images/main3.png) 0 0 no-repeat; background-size: cover;}
 
-.visual .txt_box{width: 1200px; height: 300px; margin: 0 auto; position: absolute; bottom: 100px;}
+.visual .txt_box{width: 1200px; height: 300px; position: absolute; bottom: 100px; left: 50%; margin-left: -600px;}
 .visual .txt_box *{color: #fff; text-align: left;text-shadow: 0 0 5px rgba(0,0,0,0.7);}
 .visual .txt_box h1{line-height: 1.2;}
 .visual .txt_box > p{line-height: 1.5; font-weight: 500; margin-top: 25px;}

@@ -122,7 +122,7 @@
                 <div class="ov_left">
                     <p class="txt7">OVERVIEW</p>
                     <p class="txt2">디지털 미디어 콘텐츠<br>서비스 HUB</p>
-                    <a href="#" class="ov_btn">자세히 보기</a>
+                    <a href="<%=request.getContextPath()%>/company/company.html" class="ov_btn">자세히 보기</a>
                 </div>
                 <div class="ov_right">
                     <p class="txt4">감성이 결합된 스마트 기술을 통한 인간 중심의 서비스. <br>다하미가 그리는 디지털 미디어 서비스의 미래입니다.

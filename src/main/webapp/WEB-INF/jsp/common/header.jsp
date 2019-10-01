@@ -55,5 +55,5 @@
             </li>
         </ul>
         <div class="navi_layer" style="height: 260px;"> </div>
-        <div class="scrapmaster"><a herf="http://www.scrapmaster.co.kr" target="_blank">스크랩마스터 바로가기</a></div>
+        <a href="http://www.scrapmaster.co.kr" target="_blank"><div class="scrapmaster"></div></a>
         <div class="callcenter"><a href="/community/community.html?loc=calls" target="_parent">고객센터</a></div>

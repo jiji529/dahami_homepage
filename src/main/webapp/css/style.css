@@ -52,7 +52,7 @@
 #intros .intro_new3{float:left; width: 100%; height: 520px; background: url(../images/company/company_new3.png) center no-repeat; background-size: cover; padding: 180px 0; }
 #intros .intro_new4{float:left; width: 100%; height: 160px; background: url(../images/company/company_new4.png) center no-repeat; background-size: cover;padding: 180px 0; }
 
-#intros section .inner{width: 1200px; margin: 0 auto; float: none; padding: initial;}
+#intros section .inner{width: 1200px; margin: 0 auto; float: none; padding: 0;}
 
 #intros .intro_new1 h1{width: 100%; font-size: 50px; color: #093887; letter-spacing: -1px; line-height: 1.2; float: left; margin-bottom: 40px;}
 #intros .intro_new1 p{width: 100%; font-size: 22px; color: #333; line-height: 1.5; float: left; font-weight: 400;}
@@ -71,6 +71,15 @@ background: #55ffaa;
     -webkit-background-clip: text;
             background-clip: text;
         color: transparent;}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .gradation {
+        color: #2d91ff;
+        background: transparent;
+    }
+}
 
 #intros .intro_new3 .txt_box {float: left; width: 100%; margin: 120px 0}
 #intros .intro_new3 .txt_box > div{float: left; width: 299px; height: 140px; padding: 20px 0; border-left:1px rgba(0,0,0,0.1) solid;}
