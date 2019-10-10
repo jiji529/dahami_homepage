@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>다하미커뮤니케이션즈</title>
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
@@ -80,10 +81,10 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
                         <div class="txt_box">
-                            <h1>
+                            <div>
                                 <p class="txt2">Make your business</p>
                                 <p class="txt1">SMARTER</p>
-                            </h1>
+                            </div>
                             <p class="txt5">다하미와 함께 여러분의 비즈니스에 날개를 달아보세요.<br>
                                 AI 기술을 기반으로 대량의 미디어 데이터를 스마트하게 활용하실 수 있도록 도와드립니다.
                             </p>
@@ -91,10 +92,10 @@
                     </div>
                     <div class="swiper-slide slide2">
                         <div class="txt_box">
-                            <h1>
+                            <div>
                                 <p class="txt2">We grow with</p>
                                 <p class="txt1">Digital Contents Industry</p>
-                            </h1>
+                            </div>
                             <p class="txt5">다하미는 신문, 방송뉴스, 온라인뉴스, 보도사진, SNS 및 커뮤니티 등 다양한 미디어 콘텐츠를 통합 서비스하고 있습니다.<br>
                                 디지털 콘텐츠 시장의 빠른 변화에 발맞추기 위해 지속적으로 제휴를 확대하고 있습니다.<br>이를 통해 여러 미디어 회사와 함께 성장할 기회를 만들어내고 있습니다.
                             </p>
@@ -102,10 +103,10 @@
                     </div>
                     <div class="swiper-slide slide3">
                         <div class="txt_box">
-                            <h1>
+                            <div>
                                 <p class="txt2">We maintain</p>
                                 <p class="txt1">High Availability</p>
-                            </h1>
+                            </div>
                             <p class="txt5">다하미는 20년 이상의 운영 노하우로 정부, 지자체 및 공공기관을 비롯해 <br>국내 유수한 1,000여개 기업에 안정적으로 서비스를 제공하고 있습니다.<br>
                                 또한 대기업 수준의 업계 최고를 자랑하는 인프라를 구축하여 높은 품질을 보장하고 있습니다.
 

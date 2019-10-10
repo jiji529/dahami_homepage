@@ -73,7 +73,7 @@
 
 .visual .txt_box{width: 1200px; height: 300px; position: absolute; bottom: 100px; left: 50%; margin-left: -600px;}
 .visual .txt_box *{color: #fff; text-align: left;text-shadow: 0 0 5px rgba(0,0,0,0.7);}
-.visual .txt_box h1{line-height: 1.2;}
+.visual .txt_box div{line-height: 1.2; font-weight: bold;}
 .visual .txt_box > p{line-height: 1.5; font-weight: 500; margin-top: 25px;}
 
 .overview{width: 100%; float: left; padding: 140px 0;}

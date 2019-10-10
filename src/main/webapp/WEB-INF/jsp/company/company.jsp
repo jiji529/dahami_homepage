@@ -135,9 +135,9 @@
 </head>
 
 <body onresize="confLayout();" onload="confLayout();" style="">
-    <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 1331px; left: 228px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 600px; width: 2000px;"><img class="parallax-slider" src="<%=request.getContextPath()%>/images/company/map.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 800px; width: 2000px; max-width: none; top: -599.8px;"></div>
+    <!--<div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 1331px; left: 228px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 600px; width: 2000px;"><img class="parallax-slider" src="<%=request.getContextPath()%>/images/company/map.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 800px; width: 2000px; max-width: none; top: -599.8px;"></div>
     <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 1186px; left: 228px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 500px; width: 2000px;"><img class="parallax-slider" src="<%=request.getContextPath()%>/images/company/ceo.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1390px; width: 2000px; max-width: none; top: -1059.8px;"></div>
-    <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 1330px; left: 228px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 500px; width: 2000px;"><img class="parallax-slider" src="<%=request.getContextPath()%>/images/company/company_img.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1170px; width: 2000px; max-width: none; top: -1065px;"></div>
+    <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 1330px; left: 228px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 500px; width: 2000px;"><img class="parallax-slider" src="<%=request.getContextPath()%>/images/company/company_img.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1170px; width: 2000px; max-width: none; top: -1065px;"></div>-->
     <div id="wrap">
         <div id="gnb">
            <jsp:include page="../common/header.jsp"></jsp:include>
@@ -179,25 +179,25 @@
                         <h1>현황</h1>
                         <p>국내 대다수 언론사와 정부부처 및 지방자치단체, 공기업/공공기관은 물론 유수의 대기업 및 중견기업 등 1,000여 고객사와 함께하고 있습니다.<br>
                             이제 다하미커뮤니케이션즈의 고객은 뉴스를 모니터링하는 홍보부서를 넘어<br>디지털미디어 콘텐츠를 활용하고자 하는 다양한 분야의 고객 층으로 확대되고 있습니다.</p>
-                            <div class="txt_box">
-                <div data-aos="fade-up" data-aos-delay="0" class="aos-init aos-animate">
-                    <p class="box_tit">설립일</p>
-                    <p class="box_cont">1998년 5월</p>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
-                    <p class="box_tit">본사</p>
-                    <p class="box_cont">서울시 중구<br>마른내로 140</p>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">
+                        <div class="txt_box">
+                            <div data-aos="fade-up" data-aos-delay="0" class="aos-init aos-animate">
+                                <p class="box_tit">설립일</p>
+                                <p class="box_cont">1998년 5월</p>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                                <p class="box_tit">본사</p>
+                                <p class="box_cont">서울시 중구<br>마른내로 140</p>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">
 
-                    <p class="box_tit">임직원 수</p>
-                    <p class="box_cont">52명<span>(2017년 기준)</span></p>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
-                    <p class="box_tit">매출액</p>
-                    <p class="box_cont">184억<span>(2018년 기준)</span></p>
-                </div>
-            </div>
+                                <p class="box_tit">임직원 수</p>
+                                <p class="box_cont">92명<span>2019년 09월 기준<br>자회사 포함</span></p>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
+                                <p class="box_tit">매출액</p>
+                                <p class="box_cont">184억<span>2018년 기준</span></p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="intro_new4">
@@ -209,7 +209,7 @@
                 </section>
 
                 <div class="intro_box1">
-                    <p class="video"> <iframe src="https://www.youtube.com/embed/vRsUcoi6PJ8?rel=0&amp;loop=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p class="video"> <iframe src="https://www.youtube.com/embed/vRsUcoi6PJ8?rel=0&amp;loop=1" allow="autoplay; encrypted-media" allowfullscreen style="border: 0;"></iframe>
                     </p>
                     <!--   <div class="box_line"></div>
                      <h5>Our Company</h5>
@@ -311,6 +311,10 @@
                                 <li>
                                     <div class="year">2019</div>
                                     <div class="cont">(주)한화시스템과 디지털미디어<br>콘텐츠분야 AI사업협력 MOU체결</div>
+                                </li>
+                                <li>
+                                    <div class="year">2019</div>
+                                    <div class="cont">3년연속 청년친화강소기업 선정</div>
                                 </li>
                                 <li>
                                     <div class="year">2018</div>
