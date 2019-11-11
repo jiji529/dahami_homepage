@@ -9,7 +9,7 @@
 <title>다하미커뮤니케이션즈</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js"></script>
 <jsp:include page="../common/google_analytics.jsp"></jsp:include>
 <style type="text/css">

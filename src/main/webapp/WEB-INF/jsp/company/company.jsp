@@ -11,7 +11,7 @@
     <title>다하미커뮤니케이션즈</title>
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb1.js"></script>
@@ -37,7 +37,6 @@
             left: 0;
         }
     </style>
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('.gnb_menu .menu:eq(0) .gnb_dl dt').addClass('on');

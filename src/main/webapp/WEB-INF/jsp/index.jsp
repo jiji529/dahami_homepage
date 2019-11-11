@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/gnb.js"></script>
