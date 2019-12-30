@@ -5,6 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>공지사항</title>
+<style>
+*{margin:0; padding;float:left;}
+input{margin:5px;}
+div{float:left; width:100%; height:22px; background:#3A3E50; padding:5px 0; }
+label{ font-size:14px; line-height:18px; cursor:pointer; color:#fff;}
+</style>
 <script type="text/javascript">
 	function setCookie(name, value, expiredays) {
 	var today = new Date();
@@ -22,9 +28,12 @@
 </head>
 <body>
 	<form>
-		<img src="../images/homepage_error.png" />
-		<input type="checkbox" name="todayPop" onClick="closePop()">
-		오늘 하루 그만보기
+		<img src="../images/popup_20191230.jpg" />
+		<div>
+			<label for="todayPop">
+				<input type="checkbox" name="todayPop" onClick="closePop()">오늘 하루 그만보기
+			</label>
+		</div>
 	</form>
 
 </body>
