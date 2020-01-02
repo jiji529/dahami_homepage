@@ -56,7 +56,7 @@
 					<dd>
 						<div class="box_line"></div>
 					</dd>
-					<dd><a href="/company/company.html?loc=intro">다하미소개</a></dd>
+					<dd><a href="/company/company.html?loc=intros">다하미소개</a></dd>
 					<dd><a href="/company/company.html?loc=history">연혁</a></dd>
 					<dd><a href="/company/company.html?loc=map">오시는 길</a></dd>
 				</dl>

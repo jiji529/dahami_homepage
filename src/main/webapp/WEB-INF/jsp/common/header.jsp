@@ -6,7 +6,7 @@
                     <dt><a href="/company/company.html">회사소개</a></dt>
                     <dd class="">
                         <ul class="navi_sub_ul">
-                            <li><a href="/company/company.html?loc=intro" target="_parent">다하미 소개</a></li>
+                            <li><a href="/company/company.html?loc=intros" target="_parent">다하미 소개</a></li>
                             <li><a href="/company/company.html?loc=history" target="_parent">연혁</a></li>
                             <li><a href="/company/company.html?loc=map" target="_parent">오시는 길</a></li>
                         </ul>

@@ -66,7 +66,7 @@
             if (loc != "") {
                 loc = loc.replace("?loc=", "");
 
-                if (loc == "intro") {
+                if (loc == "intros") {
                     $(".sub_navi_li > li").removeClass();
                     $(".sub_navi_li > li:eq(0)").addClass("on");
                     $('html, body').animate({
@@ -88,7 +88,7 @@
                     $(".sub_navi_li > li").removeClass();
                     $(".sub_navi_li > li:eq(1)").addClass("on");
                     $('html, body').animate({
-                        scrollTop: $("intro").offset().top
+                        scrollTop: $("#intros").offset().top
                     }, 1000);
                 }
             } else {
