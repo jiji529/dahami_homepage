@@ -18,11 +18,6 @@
     <jsp:include page="../common/google_analytics.jsp"></jsp:include>
     <script type="text/javascript" src="<%=request.getContextPath()%>/js/parallax.js"></script>
     <style type="text/css">
-        /*.parallax-window {
-            min-height: 400px;
-            background: transparent;
-        } DELETED */
-
         div.sub_navi {
             height: 50px;
             position: absolute;
@@ -70,7 +65,7 @@
                     $(".sub_navi_li > li").removeClass();
                     $(".sub_navi_li > li:eq(0)").addClass("on");
                     $('html, body').animate({
-                        scrollTop: $(".intro_box1 .inner").offset().top
+                        scrollTop: $(".intro_box1").offset().top
                     }, 1000);
                 } else if (loc == "history") {
                     $(".sub_navi_li > li").removeClass();
