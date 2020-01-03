@@ -18,10 +18,10 @@
     <jsp:include page="../common/google_analytics.jsp"></jsp:include>
     <script type="text/javascript" src="<%=request.getContextPath()%>/js/parallax.js"></script>
     <style type="text/css">
-        .parallax-window {
+        /*.parallax-window {
             min-height: 400px;
             background: transparent;
-        }
+        } DELETED */
 
         div.sub_navi {
             height: 50px;
@@ -100,7 +100,7 @@
             $('.sub_navi_li > li').on('click', function(e) {
                 var aTag = $('a', this).attr('href');
 
-                if (aTag == "#intro") {
+                if (aTag == "#intros") {
                     $(".sub_navi_li > li").removeClass();
                     $(".sub_navi_li > li:eq(0)").addClass("on");
                     $('html, body').animate({
@@ -192,7 +192,7 @@
                             <div data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">
 
                                 <p class="box_tit">임직원 수</p>
-                                <p class="box_cont">92명<span>2019년 09월 기준<br>자회사 포함</span></p>
+                                <p class="box_cont">97명<span>2020년 1월 기준<br>자회사 포함</span></p>
                             </div>
                             <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
                                 <p class="box_tit">매출액</p>
