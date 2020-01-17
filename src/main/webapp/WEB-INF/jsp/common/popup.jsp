@@ -6,10 +6,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>공지사항</title>
 <style>
-*{margin:0; padding;float:left;}
-input{margin:5px;}
-div{float:left; width:100%; height:22px; background:#3A3E50; padding:5px 0; }
-label{ font-size:14px; line-height:18px; cursor:pointer; color:#fff;}
+*{margin:0; padding:0;}
+html,body,form{height:100%;}
+label{font-size:14px; line-height:18px; cursor:pointer; color:#fff;}
+input{margin:5px;position:relative;top:1px;}
+div#body{height:calc(100% - 33px);}
+div#body img{width:100%;height:100%;}
+div#foot{background:#3A3E50;padding:5px 0;}
 </style>
 <script type="text/javascript">
 	function setCookie(name, value, expiredays) {
@@ -28,13 +31,14 @@ label{ font-size:14px; line-height:18px; cursor:pointer; color:#fff;}
 </head>
 <body>
 	<form>
-		<img src="../images/popup_20191230.jpg" />
-		<div>
+		<div id="body">
+			<img src="../images/popup_20200120.jpg" />
+		</div>
+		<div id="foot">
 			<label for="todayPop">
 				<input type="checkbox" name="todayPop" onClick="closePop()">오늘 하루 그만보기
 			</label>
 		</div>
 	</form>
-
 </body>
 </html>

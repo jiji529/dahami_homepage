@@ -54,22 +54,15 @@
 
         function popup(){ // 오늘 하루동안 그만 보기 팝업
             var url = "/common/popup.html";
-            window.open(url, "새해", "width=370, height=403, status=no, scrollbars=no, toolbar=no, menubar=no");
+            window.open(url, "새해", "width=370, height=454, status=no, scrollbars=no, toolbar=no, menubar=no");
         }
 
         $(document).ready(function() {
             var today = new Date();
-            var holiday = new Date(2020, 1, 3); // 2019년 2월 6일까지 공지발생
-
-            //console.log(getCookie('popup') != 'start' && (today <= holiday));
-
-            // 공지사항 팝업 (필요시 주석 해제)
-
-            if(getCookie('popup') != 'start' && (today <= holiday)) {
-            	console.log('hit!');
-                popup();
-            }
-            
+            var startDay = new Date(2020, 0, 20);
+            var endDay = new Date(2020, 0, 29);
+            var visible = (getCookie('popup') != 'start') && (today >= startDay) && (today < endDay);
+            if(visible) popup();
         });
     </script>
 </head>
