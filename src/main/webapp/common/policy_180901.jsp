@@ -434,7 +434,8 @@ a.otherPrivacy {
 	</section>
 	<section class="policy_cont" id="section14">
 		<h4>개인정보처리방침 변경사항</h4>
-		<p><a class="otherPrivacy" href="policy.jsp">이후 개인정보처리방침(2019. 8. 13. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy.jsp">이후 개인정보처리방침(2020. 3. 19. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_190813.jsp">이후 개인정보처리방침(2019. 8. 13. ~) 보기</a></p>
 	</section>
 </section>
 </body>
