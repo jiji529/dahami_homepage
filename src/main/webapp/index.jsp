@@ -15,7 +15,7 @@
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/gnb.js"></script>
 </head>
-<body onResize="confLayout();" onLoad="confLayout();">
+<body onResize="confLayout();" onLoad="confLayout();  ">
 <div id="wrap" class="main">
     <div id="gnb">
         <h1><a href="/index.html">logo</a></h1>
