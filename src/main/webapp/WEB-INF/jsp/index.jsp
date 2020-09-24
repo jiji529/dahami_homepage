@@ -59,8 +59,8 @@
 
         $(document).ready(function() {
             var today = new Date();
-            var startDay = new Date(2020, 0, 20);
-            var endDay = new Date(2020, 0, 29);
+            var startDay = new Date(2020, 8, 24);
+            var endDay = new Date(2020, 8, 29);
             var visible = (getCookie('popup') != 'start') && (today >= startDay) && (today < endDay);
             if(visible) popup();
         });

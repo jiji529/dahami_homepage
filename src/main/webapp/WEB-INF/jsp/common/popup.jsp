@@ -32,7 +32,7 @@ div#foot{background:#3A3E50;padding:5px 0;}
 <body>
 	<form>
 		<div id="body">
-			<img src="../images/popup_20200120.jpg" />
+			<img src="../images/popup_20200928.png" />
 		</div>
 		<div id="foot">
 			<label for="todayPop">
