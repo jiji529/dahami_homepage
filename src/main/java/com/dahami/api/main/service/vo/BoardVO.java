@@ -16,6 +16,7 @@ public class BoardVO extends PaginationInfo implements Serializable {
 	private String Body;
 	private String State;
 	private String File1;
+	private String File2;
 	private String Regdate;
 	
 	private String seq;
@@ -112,6 +113,12 @@ public class BoardVO extends PaginationInfo implements Serializable {
 	}
 	public void setFile1(String file1) {
 		File1 = file1;
+	}
+	public String getFile2() {
+		return File2;
+	}
+	public void setFile2(String file2) {
+		File2 = file2;
 	}
 	public String getRegdate() {
 		return Regdate;

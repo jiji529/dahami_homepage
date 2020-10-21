@@ -378,7 +378,8 @@ public class MainController {
             obj.put( "title" , boardCdList.get(i).getTitle());    		// obj에 객체의 데이터를 꺼내 차례로 담는다
             obj.put( "body" , boardCdList.get(i).getBody().replaceAll("\r", "<br/>"));    		// obj에 객체의 데이터를 꺼내 차례로 담는다
             obj.put( "state" , boardCdList.get(i).getState());    		// obj에 객체의 데이터를 꺼내 차례로 담는다
-            obj.put( "file" , boardCdList.get(i).getFile1());    		// obj에 객체의 데이터를 꺼내 차례로 담는다
+            obj.put( "file1" , boardCdList.get(i).getFile1());    		// obj에 객체의 데이터를 꺼내 차례로 담는다
+            obj.put( "file2" , boardCdList.get(i).getFile2());    		// obj에 객체의 데이터를 꺼내 차례로 담는다
             obj.put( "regdate" , convertDate(boardCdList.get(i).getRegdate()));    	// obj에 객체의 데이터를 꺼내 차례로 담는다
             obj.put( "totPage" , DivideCnt);    	// obj에 객체의 데이터를 꺼내 차례로 담는다
             

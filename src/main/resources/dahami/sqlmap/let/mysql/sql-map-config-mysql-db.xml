@@ -12,6 +12,7 @@
 		<result property="Body" 		column="f_body" />
 		<result property="State" 		column="f_state" />
 		<result property="File1" 		column="f_file1" />
+		<result property="File2" 		column="f_file2" />
 		<result property="Regdate"		column="f_regdate" />
 	</resultMap>
 	
@@ -31,6 +32,7 @@
 			f_body,
 			f_state,
 			f_file1,
+			f_file2,
 			f_regdate
 		FROM
 			dahami_board.tbl_news
