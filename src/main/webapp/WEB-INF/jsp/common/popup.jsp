@@ -32,11 +32,11 @@ div#foot{background:#3A3E50;padding:5px 0;}
 <body>
 	<form>
 		<div id="body">
-			<img src="../images/popup_20200928.png" />
+			<img src="../images/popup.img" />
 		</div>
 		<div id="foot">
-			<label for="todayPop">
-				<input type="checkbox" name="todayPop" onClick="closePop()">오늘 하루 그만보기
+			<label for="todayPop" onClick="closePop()">
+				<input type="checkbox" name="todayPop">오늘 하루 그만보기
 			</label>
 		</div>
 	</form>

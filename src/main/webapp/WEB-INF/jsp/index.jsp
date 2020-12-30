@@ -3,6 +3,7 @@
 <html lang="ko">
 
 <head>
+    <link rel="SHORTCUT ICON" href="images/dahami_favicon.ico">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,51 +19,39 @@
     <script type="text/javascript" src="js/gnb.js"></script>
     <jsp:include page="common/google_analytics.jsp"></jsp:include>
     <script type="text/javascript">
-
-        /********************** 추석 **************************/
-
-        var winWidth = 382;
-        var winHeight = 222; 
-        var winURL = "/images/popup_20190909.jpg";
-        var winName = "popup";
-        var winPosLeft = (screen.width - winWidth) / 2;
-        var winPosTop = (screen.height - winHeight) / 2;
-        var winOpt = "width="+winWidth+",height="+winHeight+",top="+winPosTop+",left="+winPosLeft;
-        //window.open(winURL, winName, winOpt + "");
-
-        function getCookie(name){
-            var wcname = name + '=';
-            var wcstart, wcend, end;
-            var i = 0;
-
-            while(i <= document.cookie.length) {
+        function getCookie(name) {
+            var wcname = name + '=', wcstart, wcend, end, i = 0;
+            while (i <= document.cookie.length) {
                 wcstart = i;
                 wcend = (i + wcname.length);
-                if(document.cookie.substring(wcstart, wcend) == wcname) {
+                if (document.cookie.substring(wcstart, wcend) == wcname) {
                     if((end = document.cookie.indexOf(';', wcend)) == -1)
                     end = document.cookie.length;
                     return document.cookie.substring(wcend, end);
                 }
-
                 i = document.cookie.indexOf('', i) + 1;
-
-                if(i == 0)
-                    break;
+                if (i == 0) break;
             }
             return '';
         }
 
-        function popup(){ // 오늘 하루동안 그만 보기 팝업
-            var url = "/common/popup.html";
-            window.open(url, "새해", "width=370, height=454, status=no, scrollbars=no, toolbar=no, menubar=no");
+        function popup(startDate, endDate, imgWidth, imgHeight) { // 오늘 하루동안 그만 보기 팝업
+            var url = '/common/popup.html';
+            var arg = 'width=' + imgWidth + ', height=' + (imgHeight+34) + ', status=no, scrollbars=no, toolbar=no, menubar=no';
+            var today = new Date();
+            var startDay = new Date(startDate.replace(/-/g, "/") + ' 00:00:00');
+            var endDay = new Date(endDate.replace(/-/g, "/") + ' 23:59:59');
+            if ((getCookie('popup') != 'start') && (today >= startDay) && (today <= endDay)) {
+                window.open(url, '', arg);
+            }
         }
 
         $(document).ready(function() {
-            var today = new Date();
-            var startDay = new Date(2020, 8, 24);
-            var endDay = new Date(2020, 8, 29);
-            var visible = (getCookie('popup') != 'start') && (today >= startDay) && (today < endDay);
-            if(visible) popup();
+            popup('2020-12-30', // 'YYYY-MM-DD' : startDate
+                  '2021-01-05', // 'YYYY-MM-DD': endDate
+                  370, // n : imgWidth
+                  370 // n : imgHeight
+            );
         });
     </script>
 </head>
