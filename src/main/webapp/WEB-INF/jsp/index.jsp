@@ -47,10 +47,10 @@
         }
 
         $(document).ready(function() {
-            popup('2020-12-30', // 'YYYY-MM-DD' : startDate
-                  '2021-01-05', // 'YYYY-MM-DD': endDate
-                  370, // n : imgWidth
-                  370 // n : imgHeight
+            popup('2021-01-12', // 'YYYY-MM-DD' : startDate
+                  '2021-01-31', // 'YYYY-MM-DD': endDate
+                  400, // n : imgWidth
+                  660 // n : imgHeight
             );
         });
     </script>
