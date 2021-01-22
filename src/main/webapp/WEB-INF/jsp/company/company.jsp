@@ -5,18 +5,18 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
-    <link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
+    <link rel="SHORTCUT ICON" href="../images/dahami_favicon.ico">
     <meta http-equiv="Pragma" content="no-cache">
     <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
     <title>다하미커뮤니케이션즈</title>
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb1.js"></script>
+    <script src="../js/gnb1.js"></script>
     <jsp:include page="../common/google_analytics.jsp"></jsp:include>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/js/parallax.js"></script>
+    <script src="../js/parallax.js"></script>
     <style type="text/css">
         div.sub_navi {
             height: 50px;
@@ -32,7 +32,7 @@
             left: 0;
         }
     </style>
-    <script type="text/javascript">
+    <script>
         $(document).ready(function() {
             $('.gnb_menu .menu:eq(0) .gnb_dl dt').addClass('on');
 
@@ -99,7 +99,7 @@
                     $(".sub_navi_li > li").removeClass();
                     $(".sub_navi_li > li:eq(0)").addClass("on");
                     $('html, body').animate({
-                        scrollTop: $(".intro_box1 .inner").offset().top
+                        scrollTop: $(".intro_box1").offset().top
                     }, 1000);
                 } else if (aTag == "#history") {
                     $(".sub_navi_li > li").removeClass();
@@ -115,7 +115,7 @@
                     }, 1500);
                 } else {
                     $('html, body').animate({
-                        scrollTop: $("#intro").offset().top
+                        scrollTop: $("#intros").offset().top
                     }, 1000);
                 }
             });
@@ -145,7 +145,7 @@
             </div>
             <div class="sub_navi">
                 <ul class="sub_navi_li">
-                    <li class="on"><a href="#intro">다하미소개</a></li>
+                    <li class="on"><a href="#intros">다하미소개</a></li>
                     <li class=""><a href="#history">연혁</a></li>
                     <li class=""><a href="#map">오시는 길</a></li>
                 </ul>
@@ -187,11 +187,11 @@
                             <div data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">
 
                                 <p class="box_tit">임직원 수</p>
-                                <p class="box_cont">97명<span>2020년 1월 기준<br>자회사 포함</span></p>
+                                <p class="box_cont">103명<span>2021년 1월 기준<br>자회사 포함</span></p>
                             </div>
                             <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
                                 <p class="box_tit">매출액</p>
-                                <p class="box_cont">184억<span>2018년 기준</span></p>
+                                <p class="box_cont">191억<span>2019년 기준</span></p>
                             </div>
                         </div>
                     </div>
