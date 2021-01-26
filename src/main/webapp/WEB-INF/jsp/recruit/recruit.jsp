@@ -4,13 +4,13 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta charset="UTF-8">
-<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
+<link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
 <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
 <title>다하미커뮤니케이션즈</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js"></script>
+<script src="<%=request.getContextPath()%>/js/gnb.js"></script>
 <jsp:include page="../common/google_analytics.jsp"></jsp:include>
 <style type="text/css">
 	div.sub_navi { 
@@ -26,7 +26,7 @@
 	 left: 0; 
 	}
 </style>
-<script type="text/javascript">
+<script>
 	$(document).ready(function (){
 		
 		$(window).bind('scroll', function() {
@@ -268,7 +268,7 @@
                     </ul>
                 </div>
                 <!--
-                <div class="btn_employ"><a href="/job/jobLst.html" target="_blank">지원하기</a></div>
+                <div class="btn_employ"><a href="<%=request.getContextPath()%>/job/jobLst.html" target="_blank">지원하기</a></div>
                  -->
                  
                  <div class="btn_employ"><a href="#employ">지원하기</a></div>
@@ -316,8 +316,8 @@
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img1.png"></div>
-                        <div class="wel_tit">생일, 결혼기념일 지원</div>
-                        <div class="wel_txt">매월 생일자에게 생일파티 및 선물을 지원합니다.<br>결혼한 임직원에게는 결혼기념일에  선물을 지원합니다.</div>
+                        <div class="wel_tit">생일 지원</div>
+                        <div class="wel_txt">매월 생일자에게 생일파티 및 선물을 지원합니다.</div>
                     </li>                    
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img6.png"></div>

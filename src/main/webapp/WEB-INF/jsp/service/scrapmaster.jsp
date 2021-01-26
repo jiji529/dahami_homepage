@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta charset="UTF-8">
-<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
+<link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
 <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
 <title>다하미커뮤니케이션즈</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
@@ -12,17 +12,16 @@
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/jquery.bxslider.css">
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/jquery.bxslider.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js"></script>
+<script src="<%=request.getContextPath()%>/js/gnb.js"></script>
 <jsp:include page="../common/google_analytics.jsp"></jsp:include>
-
-<script type="text/javascript">
+<script>
 	$(document).ready(function(){
-	 slider = $('.bxslider').bxSlider({
-		 pagerCustom: '#bx-pager',
-		 controls: false,
-		 auto: true
-	 });
-	 
+		$('.gnb_menu .menu:eq(1) .gnb_dl dt').addClass('on');
+		slider = $('.bxslider').bxSlider({
+			pagerCustom: '#bx-pager',
+			controls: false,
+			auto: true
+		});
 	});
 </script>
 </head>
@@ -38,13 +37,13 @@
         </div>
         <div class="sub_navi">
             <ul class="sub_navi_li sub_sev_li">
-                <li class="on"><a href="/service/scrapmaster.html">스크랩마스터</a></li>
-                <li><a href="/service/clipping.html">클리핑온</a></li>
-                <li><a href="/service/tpaper.html">티페이퍼</a></li>
-                <li><a href="/service/newsbank.html">뉴스뱅크</a></li>
-                <li><a href="/service/enie.html">e-NIE</a></li>
-                <li><a href="/service/newsplaza.html">뉴스플라자</a></li>
-                <li><a href="/service/webapp.html">웹&amp;앱 서비스</a></li>
+                <li class="on"><a href="#">스크랩마스터</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/clipping.html">클리핑온</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/tpaper.html">티페이퍼</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/newsbank.html">뉴스뱅크</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/enie.html">e-NIE</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/newsplaza.html">뉴스플라자</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/webapp.html">웹&amp;앱 서비스</a></li>
             </ul>
         </div>
                 <div id="sub_cont">

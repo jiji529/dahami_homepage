@@ -11,16 +11,16 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta charset="UTF-8">
-<link rel="SHORTCUT ICON" href="http://dahami.com/dahami_favicon.ico">
+<link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
 <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
 <title>다하미커뮤니케이션즈</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js"></script>
+<script src="<%=request.getContextPath()%>/js/gnb.js"></script>
 <jsp:include page="../common/google_analytics.jsp"></jsp:include>
-<script type="text/javascript" src="<%=request.getContextPath()%>/js/jquery.twbsPagination.js"></script>
-<style type="text/css">
+<script src="<%=request.getContextPath()%>/js/jquery.twbsPagination.js"></script>
+<style>
 	div.sub_navi { 
 		 height: 50px; 
 		 position: absolute; 
@@ -34,7 +34,7 @@
 	 left: 0; 
 	}
 </style>
-<script type="text/javascript">
+<script>
 $(document).ready(function (){
 	
 	$(window).bind('scroll', function() {
@@ -501,10 +501,10 @@ function board_jsonlst(json){
 			if(mainImgList[key].file1){
 				// 관리자 페이지와 첨부파일 자동 연동되도록 경로 변경 -- 2019.03.06. hoyadev
 				// "http://dahami.com/file/"  -->  "http://board.scrapmaster.co.kr/files/"으로 변경   
-				html +=  "<img src='http://board.scrapmaster.co.kr/files/"+mainImgList[key].file1+"' width='900px' />";
+				html +=  "<img src='http://board.scrapmaster.co.kr/files/"+mainImgList[key].file1+"' />";
 			}
 			if(mainImgList[key].file2){
-				html +=  "<img src='http://board.scrapmaster.co.kr/files/"+mainImgList[key].file2+"' width='900px' />";
+				html +=  "<img src='http://board.scrapmaster.co.kr/files/"+mainImgList[key].file2+"' />";
 			}
 			html +=  "</dd></dt>";
 		});
@@ -666,32 +666,32 @@ function resetBoard1(){
 
 <div id="wrap">
 	<div id="gnb">
-        <jsp:include page="../common/header.jsp"></jsp:include>
-    </div>
-    <div class="contents">
-        <div class="sub_top sub_img4">
-            <h2>커뮤니티</h2>
-            <p>다하미커뮤니케이션즈의 새로운 소식을 확인하세요.</p>
-        </div>
-        <div class="sub_navi">
-            <ul class="sub_navi_li">
-                <li class="on"><a href="#new">새소식</a></li>
-                <li><a href="#faq">자주 묻는 질문</a></li>
-                <li><a href="#call">문의하기</a></li>
-            </ul>
-        </div>
-        <div id="new">
-            <div class="new">
-                <div class="inner">
-                    <h3>새소식</h3>
-                    <p>다하미의 다양한 소식 및 공지사항을 알려드립니다.</p>
-               </div>
-               <div class="search">
-                <input type="text" name="searchInput" id="searchInput" value="">
-                <a style="cursor: pointer" id="searchTxt">검색</a>
+		<jsp:include page="../common/header.jsp"></jsp:include>
+	</div>
+	<div class="contents">
+		<div class="sub_top sub_img4">
+			<h2>커뮤니티</h2>
+			<p>다하미커뮤니케이션즈의 새로운 소식을 확인하세요.</p>
+		</div>
+		<div class="sub_navi">
+			<ul class="sub_navi_li">
+				<li class="on"><a href="#new">새소식</a></li>
+				<li><a href="#faq">자주 묻는 질문</a></li>
+				<li><a href="#call">문의하기</a></li>
+			</ul>
+		</div>
+		<div id="new">
+			<div class="new">
+				<div class="inner">
+					<h3>새소식</h3>
+					<p>다하미의 다양한 소식 및 공지사항을 알려드립니다.</p>
 				</div>
-               <dl id="boardlst">
-               		<c:forEach var="result" items="${boardCdList}" varStatus="status">
+				<div class="search">
+					<input type="text" name="searchInput" id="searchInput" value="">
+					<a style="cursor: pointer" id="searchTxt">검색</a>
+				</div>
+				<dl id="boardlst">
+					<c:forEach var="result" items="${boardCdList}" varStatus="status">
 						<dt id="dt${status.count}" style="cursor: pointer;">
 						<a onclick="evt(${status.count})"><span class="new_tit">${boardCdList[status.count-1].title}</span>
 						<span class="new_date">${boardCdList[status.count-1].regdate}</span>
@@ -699,78 +699,74 @@ function resetBoard1(){
 						<dd id="${status.count}" style='display: none;'>
 						<p class="new_contit">${boardCdList[status.count-1].title}<br/>
 						<p>${boardCdList[status.count-1].body}</p>
-						</p>
 						<c:if test="${boardCdList[status.count-1].file1 ne ''}">
-							<img src="http://board.scrapmaster.co.kr/files/${boardCdList[status.count-1].file1}" width='900px' />
+							<img src="http://board.scrapmaster.co.kr/files/${boardCdList[status.count-1].file1}" />
 						</c:if>
 						<c:if test="${boardCdList[status.count-1].file2 ne ''}">
-							<img src="http://board.scrapmaster.co.kr/files/${boardCdList[status.count-1].file2}" width='900px' />
+							<img src="http://board.scrapmaster.co.kr/files/${boardCdList[status.count-1].file2}" />
 						</c:if>
 						</dd>
 					</c:forEach>
-               </dl>
-               <div class="paging">
-                   <ul id="pagination-demo" class="pagination-sm"></ul>
-               </div>
-                
-            </div>
-        </div>
-        <div id="faq">
-            <div class="faq">
-                <div class="inner">
-                    <h3>자주 묻는 질문</h3>
-                    <p>다하미커뮤니케이션즈의서비스에 대해 자주 묻는 질문들 입니다. <br />
-                        궁금하신 사항을 선택 해 주세요.</p>
-                </div>
-                <div class="search">
-                	<input type="text" name="searchInput1" id="searchInput1" value="">
-                    <a style="cursor: pointer" id="searchTxt1">검색</a> </div>
-                <dl id="faqlst">
-                    <c:forEach var="result" items="${faqList}" varStatus="status">
-						<dt id="faq_dt${status.count}" style="cursor: pointer;" onClick="evt1(${status.count})">
-							<span class="faq_date">${faqList[status.count-1].gubun}</span>
-							<span class="faq_tit">${faqList[status.count-1].quest}</span>
-							<span class="faq_ico"></span>
-						</dt>
-						<dd id="faq_dd${status.count}" style="display: none;">
-						<p class="faq_contit">
-							${faqList[status.count-1].quest}<br/>
-							<p>${faqList[status.count-1].answer}</p>
-						</p>
-						</dd>
-					</c:forEach>
-                </dl>
-            </div>
-        </div>
-        <div id="call">
-            <div class="call">
-                <div class="inner">
-                    <h3>문의하기</h3>
-                    <p>제휴 또는 서비스 상담을 원하시면 아래 전화 또는 메일로 연락 주세요.<br>
-기타 사항은 질문하기를 이용해 주시면 신속히 안내해드리겠습니다.</p>
-                </div>
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup>
-                    <tr>
-                        <th scope="col">문의사항</th>
-                        <th scope="col">연락처</th>
-                        <th scope="col">메일</th>
-                    </tr>
-                    <tr>
-                        <td>매체 제휴</td>
-                        <td>02-593-4174 (내선번호 218)</td>
-                        <td><a href="mailto:seoski@dahami.com">seoski@dahami.com</a></td>
-                    </tr>
-                    <tr>
-                        <td>서비스 상담</td>
-                        <td>02-593-4174 (내선번호 220, 230)</td>
-                        <td><a href="mailto:junggyu123@dahami.com">junggyu123@dahami.com</a><br/><a href="mailto:khim83@dahami.com">khim83@dahami.com</a></td>
-                    </tr>
-                </table>
-                <div class="call_box"> <h3>개인정보 수집 및 이용동의</h3>
-                    <div class="agree_box"> <strong>[개인정보 수집 등에 대한 동의]</strong><br>
-                        <br>
-                        <strong>1. 개인정보 수집 항목 및 목적</strong><br>
+				</dl>
+				<div class="paging">
+					<ul id="pagination-demo" class="pagination-sm"></ul>
+				</div>
+			</div>
+		</div>
+		<div id="faq">
+			<div class="faq">
+				<div class="inner">
+					<h3>자주 묻는 질문</h3>
+					<p>다하미커뮤니케이션즈의서비스에 대해 자주 묻는 질문들 입니다. <br />궁금하신 사항을 선택 해 주세요.</p>
+				</div>
+				<div class="search">
+					<input type="text" name="searchInput1" id="searchInput1" value="">
+					<a style="cursor: pointer" id="searchTxt1">검색</a> </div>
+					<dl id="faqlst">
+						<c:forEach var="result" items="${faqList}" varStatus="status">
+							<dt id="faq_dt${status.count}" style="cursor: pointer;" onClick="evt1(${status.count})">
+								<span class="faq_date">${faqList[status.count-1].gubun}</span>
+								<span class="faq_tit">${faqList[status.count-1].quest}</span>
+								<span class="faq_ico"></span>
+							</dt>
+							<dd id="faq_dd${status.count}" style="display: none;">
+								<p class="faq_contit">
+									${faqList[status.count-1].quest}<br/>
+									<p>${faqList[status.count-1].answer}</p>
+								</p>
+							</dd>
+						</c:forEach>
+					</dl>
+				</div>
+			</div>
+			<div id="call">
+				<div class="call">
+					<div class="inner">
+						<h3>문의하기</h3>
+						<p>제휴 또는 서비스 상담을 원하시면 아래 전화 또는 메일로 연락 주세요.<br>기타 사항은 질문하기를 이용해 주시면 신속히 안내해드리겠습니다.</p>
+						</div>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup>
+								<tr>
+									<th scope="col">문의사항</th>
+									<th scope="col">연락처</th>
+									<th scope="col">메일</th>
+								</tr>
+								<tr>
+									<td>매체 제휴</td>
+									<td>02-593-4174 (내선번호 218)</td>
+									<td><a href="mailto:seoski@dahami.com">seoski@dahami.com</a></td>
+								</tr>
+								<tr>
+									<td>서비스 상담</td>
+									<td>02-593-4174 (내선번호 220, 230)</td>
+									<td><a href="mailto:junggyu123@dahami.com">junggyu123@dahami.com</a><br/><a href="mailto:khim83@dahami.com">khim83@dahami.com</a></td>
+								</tr>
+							</table>
+							<div class="call_box"> <h3>개인정보 수집 및 이용동의</h3>
+								<div class="agree_box"> <strong>[개인정보 수집 등에 대한 동의]</strong><br>
+									<br>
+									<strong>1. 개인정보 수집 항목 및 목적</strong><br>
                         다하미커뮤니케이션즈는 홈페이지 문의하기에서 질문하기를 통해 질문하신 내용에 대해 관리자가 문의자와 원활히 의사소통 하기 위한 목적으로 아래와 같은 항목을 수집합니다.<br>
 : 성명, 연락처, 이메일 주소<br>
                         <br>

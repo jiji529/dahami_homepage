@@ -5,19 +5,19 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
-    <link rel="SHORTCUT ICON" href="../images/dahami_favicon.ico">
+    <link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
     <meta http-equiv="Pragma" content="no-cache">
     <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
     <title>다하미커뮤니케이션즈</title>
-    <link rel="stylesheet" href="../css/basic.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../js/gnb1.js"></script>
+    <script src="<%=request.getContextPath()%>/js/gnb1.js"></script>
     <jsp:include page="../common/google_analytics.jsp"></jsp:include>
-    <script src="../js/parallax.js"></script>
-    <style type="text/css">
+    <script src="<%=request.getContextPath()%>/js/parallax.js"></script>
+    <style>
         div.sub_navi {
             height: 50px;
             position: absolute;
@@ -131,9 +131,6 @@
 </head>
 
 <body onresize="confLayout();" onload="confLayout();" style="">
-    <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 1331px; left: 228px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 600px; width: 2000px;"><img class="parallax-slider" src="<%=request.getContextPath()%>/images/company/map.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 800px; width: 2000px; max-width: none; top: -599.8px;"></div>
-    <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 1186px; left: 228px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 500px; width: 2000px;"><img class="parallax-slider" src="<%=request.getContextPath()%>/images/company/ceo.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1390px; width: 2000px; max-width: none; top: -1059.8px;"></div>
-    <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 1330px; left: 228px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 500px; width: 2000px;"><img class="parallax-slider" src="<%=request.getContextPath()%>/images/company/company_img.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1170px; width: 2000px; max-width: none; top: -1065px;"></div>
     <div id="wrap">
         <div id="gnb">
            <jsp:include page="../common/header.jsp"></jsp:include>
@@ -235,9 +232,24 @@
                             <div class="history_tit">
                                 <h4>도입기</h4>
                                 <div class="box_line line3"></div>
-                                <p>1998 ~ 2003</p>
+                                <p>1998 ~ 2007</p>
                             </div>
-                            <ul>
+                            <ul> <li>
+                                    <div class="year">2007</div>
+                                    <div class="cont">중소기업청 INNO-BIZ 선정</div>
+                                </li>
+                                <li>
+                                    <div class="year">2007</div>
+                                    <div class="cont">T-Paper 시스템 개발</div>
+                                </li>
+                                <li>
+                                    <div class="year">2005</div>
+                                    <div class="cont">신문활용교육(NIE) 서비스 시작</div>
+                                </li>
+                                <li>
+                                    <div class="year">2004</div>
+                                    <div class="cont">스크랩마스터 런칭</div>
+                                </li>
                                 <li>
                                     <div class="year">2003</div>
                                     <div class="cont">스크랩마스터 개발</div>
@@ -264,59 +276,9 @@
                             <div class="history_tit">
                                 <h4>성장기</h4>
                                 <div class="box_line line2"></div>
-                                <p>2004 ~ 2011</p>
+                                <p>2008 ~ 2017</p>
                             </div>
-                            <ul>
-                                <li>
-                                    <div class="year">2011</div>
-                                    <div class="cont">모바일 스크랩마스터 출시</div>
-                                </li>
-                                <li>
-                                    <div class="year">2009</div>
-                                    <div class="cont">터치형 T-Paper 런칭</div>
-                                </li>
-                                <li>
-                                    <div class="year">2008</div>
-                                    <div class="cont">스크랩마스터 프리미엄 개발</div>
-                                </li>
-                                <li>
-                                    <div class="year">2007</div>
-                                    <div class="cont">중소기업청 INNO-BIZ 선정</div>
-                                </li>
-                                <li>
-                                    <div class="year">2007</div>
-                                    <div class="cont">T-Paper 시스템 개발</div>
-                                </li>
-                                <li>
-                                    <div class="year">2005</div>
-                                    <div class="cont">신문활용교육(NIE) 서비스 시작</div>
-                                </li>
-                                <li>
-                                    <div class="year">2004</div>
-                                    <div class="cont">스크랩마스터 런칭</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="history_box">
-                            <div class="history_tit">
-                                <h4>혁신기</h4>
-                                <div class="box_line line1"></div>
-                                <p>2012 ~ 현재</p>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="year">2019</div>
-                                    <div class="cont">(주)한화시스템과 디지털미디어<br>콘텐츠분야 AI사업협력 MOU체결</div>
-                                </li>
-                                <li>
-                                    <div class="year">2019</div>
-                                    <div class="cont">3년연속 청년친화강소기업 선정</div>
-                                </li>
-                                <li>
-                                    <div class="year">2018</div>
-                                    <div class="cont">카이스트 양방향 T-PAPER 런칭</div>
-                                </li>
-                                <li>
+                            <ul> <li>
                                     <div class="year">2017</div>
                                     <div class="cont">클리핑온 플러스 서비스 확대</div>
                                 </li>
@@ -347,6 +309,55 @@
                                 <li>
                                     <div class="year">2012</div>
                                     <div class="cont">T-Paper GS인증 획득</div>
+                                </li>
+                                <li>
+                                    <div class="year">2011</div>
+                                    <div class="cont">모바일 스크랩마스터 출시</div>
+                                </li>
+                                <li>
+                                    <div class="year">2009</div>
+                                    <div class="cont">터치형 T-Paper 런칭</div>
+                                </li>
+                                <li>
+                                    <div class="year">2008</div>
+                                    <div class="cont">스크랩마스터 프리미엄 개발</div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <div class="history_box">
+                            <div class="history_tit">
+                                <h4>혁신기</h4>
+                                <div class="box_line line1"></div>
+                                <p>2018 ~ 현재</p>
+                            </div>
+                           <ul>
+                                <li>
+                                    <div class="year">2021</div>
+                                    <div class="cont">6년연속 청년친화강소기업 선정</div>
+                                </li> <li>
+                                    <div class="year">2020</div>
+                                    <div class="cont">T-Paper v5.0 GS인증 획득</div>
+                                </li>
+                                <li>
+                                    <div class="year">2020</div>
+                                    <div class="cont">액션파워와 인공지능 분야 MOU 체결</div>
+                                </li>
+                                <li>
+                                    <div class="year">2020</div>
+                                    <div class="cont">데이터바우처 지원사업 판매기업 선정</div>
+                                </li>
+                                <li>
+                                    <div class="year">2020</div>
+                                    <div class="cont">국민대학교 차세대 정보컴퓨팅 기술개발 사업 MOU체결</div>
+                                </li>
+                                <li>
+                                    <div class="year">2019</div>
+                                    <div class="cont">(주)한화시스템과 디지털미디어<br>콘텐츠분야 AI사업협력 MOU체결</div>
+                                </li>
+                                <li>
+                                    <div class="year">2018</div>
+                                    <div class="cont">카이스트 양방향 T-PAPER 런칭</div>
                                 </li>
                             </ul>
                         </div>
