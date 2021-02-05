@@ -22,9 +22,10 @@ div#foot{background:#3A3E50;padding:5px 0;}
 	    document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today.toGMTString() + ';'
 	}
 	
-	function closePop() {        
-		if(document.forms[0].todayPop.checked)                
-		setCookie('popup', 'start', 1);
+	function closePop() {
+		if (document.getElementById('todayPop').checked) {
+			setCookie('popup', 'start', 1);
+		}
 		self.close();
 	}
 </script>
@@ -34,10 +35,9 @@ div#foot{background:#3A3E50;padding:5px 0;}
 		<div id="body">
 			<img src="../images/popup.img" />
 		</div>
-		<div id="foot">
-			<label for="todayPop" onClick="closePop()">
-				<input type="checkbox" name="todayPop">오늘 하루 그만보기
-			</label>
+		<div id="foot" onClick="closePop()">
+			<input type="checkbox" id="todayPop">
+			<label for="todayPop">오늘 하루 그만보기</label>
 		</div>
 	</form>
 </body>
