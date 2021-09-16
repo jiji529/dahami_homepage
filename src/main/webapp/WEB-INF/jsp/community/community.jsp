@@ -13,53 +13,50 @@
 <meta charset="UTF-8">
 <link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
 <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta property="og:title" content="다하미커뮤니케이션즈">
 <meta property="og:description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트">
 <title>다하미커뮤니케이션즈</title>
 <link rel="canonical" href="https://www.dahami.com/">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style_mo.css">
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/gnb.js"></script>
 <jsp:include page="../common/google_analytics.jsp"></jsp:include>
 <script src="<%=request.getContextPath()%>/js/jquery.twbsPagination.js"></script>
 <style>
-	div.sub_navi { 
-		 height: 50px; 
-		 position: absolute; 
-		 left: 0; 
-		 top: 270px; 
-		 width: 100%; 
-	} 
-	div.fixed { 
-	 position: fixed; 
-	 top: 0; 
-	 left: 0; 
+	div.fixed {
+	 position: fixed;
+	 top: 0;
+	 left: 0;
 	}
 </style>
 <script>
+var init = new Date();
+
 $(document).ready(function (){
-	
+
 	$(window).bind('scroll', function() {
-		 if ($(window).scrollTop() > 250) { 
+		 if ($(window).scrollTop() > 250) {
 			 $('.sub_navi').addClass('fixed');
-		 }else { 
+		 }else {
 			 $('.sub_navi').removeClass('fixed');
 		 }
 		 if ($(window).scrollTop() > 490 && $(window).scrollTop() < 1000) {
 			 $(".sub_navi_li > li").removeClass();
 			 $(".sub_navi_li > li:eq(0)").addClass("on");
-		 }else if($(window).scrollTop() > 1000 && $(window).scrollTop() < 1500) { 
+		 }else if($(window).scrollTop() > 1000 && $(window).scrollTop() < 1500) {
 			 $(".sub_navi_li > li").removeClass();
 			 $(".sub_navi_li > li:eq(1)").addClass("on");
-		 }else if($(window).scrollTop() > 1500 && $(window).scrollTop() < 2000) { 
+		 }else if($(window).scrollTop() > 1500 && $(window).scrollTop() < 2000) {
 			 $(".sub_navi_li > li").removeClass();
 			 $(".sub_navi_li > li:eq(2)").addClass("on");
 		 }
 	});
-	
+
 	var loc = $(location).attr('search');
-	
+
 	if(loc != ""){
 		loc = loc.replace("?loc=","");
 		if(loc == "new"){
@@ -94,11 +91,11 @@ $(document).ready(function (){
 		    }, 1000);
 	   	}
 	}else{
-		$('html, body').animate({
-	        scrollTop: $("#gnb").offset().top
-	    }, 1000);
+		// $('html, body').animate({
+	  //       scrollTop: $("#gnb").offset().top
+	  //   }, 1000);
 	}
-	
+
 	// 새소식 클릭시
 	$(".sub_navi_li > li:eq(0)").on('click', function(e) {
 		$(".sub_navi_li > li").removeClass();
@@ -107,7 +104,7 @@ $(document).ready(function (){
 	        scrollTop: $("#new .inner").offset().top
 	    }, 1500);
 	});
-	
+
 	//자주묻는 질문 클릭시
 	$(".sub_navi_li > li:eq(1)").on('click', function(e) {
 		$(".sub_navi_li > li").removeClass();
@@ -116,7 +113,7 @@ $(document).ready(function (){
 	        scrollTop: $("#faq .inner").offset().top
 	    }, 1500);
 	});
-	
+
 	//문의하기 클릭시
 	$(".sub_navi_li > li:eq(2)").on('click', function(e) {
 		$(".sub_navi_li > li").removeClass();
@@ -125,9 +122,9 @@ $(document).ready(function (){
 	        scrollTop: $("#call .inner").offset().top
 	    }, 1500);
 	});
-	
+
 	$('.gnb_menu .menu:eq(3) .gnb_dl dt').addClass('on');
-	
+
 	//숫자만 입력 가능하게
 	$(".num").keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
@@ -148,7 +145,7 @@ $(document).ready(function (){
             e.preventDefault();
         }
     });
-	
+
 	// 이메일 보내기
 	$(".call_send").on('click', function(e) {
 		var name = "";
@@ -159,17 +156,17 @@ $(document).ready(function (){
 		var tempPhone = "";
 		var tempEmail = "";
 		var chkflag = false;
-		
+
 		name = $('#commuName').val();
 		phone = $('#firNum').val()+"-"+$('#midNum').val()+"-"+$('#lastNum').val();
 		email = $('#firEmail').val()+"@"+$('#lastEmail').val();
 		title = $('#commuTitle').val();
 		contents = $('#commuContents').val();
-		
+
 		tempPhone = $('#firNum').val()+$('#midNum').val()+$('#lastNum').val();
 		tempEmail = $('#firEmail').val()+$('#lastEmail').val();
 		chkflag = $('#chk').prop('checked');
-		
+
 		if(chkflag  == false){
 			alert("개인정보 수집에 동의 하여 주십시오");
 			$('#chk').focus();
@@ -210,13 +207,13 @@ $(document).ready(function (){
 			});
 		}
 	});
-	
-	
+
+
 	$("#searchTxt").on('click', function(e) {
 		var pages = 1;
 		var keyword = $("#searchInput").val();
 		$("#startgo").val("1");
-		
+
 		$.ajax({
 			url : "../community/boardLst.html",
 			cache : false,
@@ -229,13 +226,13 @@ $(document).ready(function (){
 			success: board_jsonlst
 		});
 	});
-	
+
 	$('#searchInput').on('keypress', function(e) {
 		if (e.which == 13) {/* 13 == enter key@ascii */
 			var pages = 1;
 			var keyword = $("#searchInput").val();
 			$("#startgo").val("1");
-			
+
 			$.ajax({
 				url : "../community/boardLst.html",
 				cache : false,
@@ -249,12 +246,12 @@ $(document).ready(function (){
 			});
 		}
 	});
-	
+
 	$("#searchTxt1").on('click', function(e) {
 		var pages = 1;
 		var keyword = $("#searchInput1").val();
 		$("#startgo1").val("1");
-		
+
 		$.ajax({
 			url : "../community/qnaLst.html",
 			cache : false,
@@ -267,13 +264,13 @@ $(document).ready(function (){
 			success: qna_jsonlst
 		});
 	});
-	
+
 	$('#searchInput1').on('keypress', function(e) {
 		if (e.which == 13) {/* 13 == enter key@ascii */
 			var pages = 1;
 			var keyword = $("#searchInput1").val();
 			$("#startgo1").val("1");
-			
+
 			$.ajax({
 				url : "../community/qnaLst.html",
 				cache : false,
@@ -287,7 +284,7 @@ $(document).ready(function (){
 			});
 		}
 	});
-	
+
 	//페이징
 	$('#pagination-demo').twbsPagination({
 	    totalPages: 15,
@@ -297,14 +294,14 @@ $(document).ready(function (){
 	        //pagingw(page);
 	    }
 	});
-	
+
 	$(document).on("click",".page",function() {
 		var pages = $(this).text();
 		var keyword = $("#searchInput").val();
-		
+
 		$("#startgo").val("");
 		$("#totcnt").val($(this).text());
-		
+
 		$.ajax({
 			url : "../community/boardLst.html",
 			cache : false,
@@ -317,14 +314,14 @@ $(document).ready(function (){
 			success: board_jsonlst
 		});
 	});
-	
+
 	$(document).on("click",".last",function() {
 		var pages = $("#lastvalue").val();
 		var keyword = $("#searchInput").val();
-		
+
 		$("#startgo").val("");
 		$("#totcnt").val($("#lastvalue").val());
-		
+
 		$.ajax({
 			url : "../community/boardLst.html",
 			cache : false,
@@ -337,14 +334,14 @@ $(document).ready(function (){
 			success: board_jsonlst
 		});
 	});
-	
+
 	$(document).on("click",".first",function() {
 		var pages = "1";
 		var keyword = $("#searchInput").val();
-		
+
 		$("#startgo").val("");
 		$("#totcnt").val("1");
-		
+
 		$.ajax({
 			url : "../community/boardLst.html",
 			cache : false,
@@ -357,12 +354,12 @@ $(document).ready(function (){
 			success: board_jsonlst
 		});
 	});
-	
+
 	$(document).on("click",".prev",function() {
 		var pages = $("#pagination-demo .page.active").text();
 		var keyword = $("#searchInput").val();
 		$("#totcnt").val(pages);
-		
+
 		$.ajax({
 			url : "../community/boardLst.html",
 			cache : false,
@@ -374,14 +371,14 @@ $(document).ready(function (){
 	        },
 			success: board_jsonlst
 		});
-		
+
 	});
-	
+
 	$(document).on("click",".next",function() {
 		var pages = $("#pagination-demo .page.active").text();
 		var keyword = $("#searchInput").val();
 		$("#totcnt").val(pages);
-		
+
 		$.ajax({
 			url : "../community/boardLst.html",
 			cache : false,
@@ -393,7 +390,7 @@ $(document).ready(function (){
 	        },
 			success: board_jsonlst
 		});
-		
+
 	});
 });
 
@@ -401,7 +398,7 @@ $(document).ready(function (){
 // success성공시 성공 여부 확인 창
 function response_jsonlst(){
 	alert("관리자에게 문의사항이 전달 되었습니다.");
-	
+
 	$('#commuName').val("");
 	$('#firNum').val("");
 	$('#midNum').val("");
@@ -410,19 +407,19 @@ function response_jsonlst(){
 	$('#lastEmail').val("");
 	$('#commuTitle').val("");
 	$('#commuContents').val("");
-	
+
 	tempPhone = $('#firNum').val()+$('#midNum').val()+$('#lastNum').val();
 	tempEmail = $('#firEmail').val()+$('#lastEmail').val();
-	
+
 }
 
 
 // 새소식 클릭시 반응
 function evt(newwin){
 	var objid=document.getElementById(newwin);
-	
+
 	//class='on'
-	
+
 	if(objid.style.display=="block")
 	{
 	  objid.style.display="none";
@@ -439,9 +436,9 @@ function evt(newwin){
 //새소식 클릭시 반응
 function evt1(newwin){
 	var objid=document.getElementById("faq_dd"+newwin);
-	
+
 	//class='on'
-	
+
 	if(objid.style.display=="block")
 	{
 	  objid.style.display="none";
@@ -459,7 +456,7 @@ function evt1(newwin){
 function pagingw(page){
 	var pages = page;
 	var keyword = $("#searchInput").val();
-	
+
 	$.ajax({
 		url : "../community/boardLst.html",
 		cache : false,
@@ -476,22 +473,22 @@ function pagingw(page){
 
 //success성공시 관련 리스트 출력
 function board_jsonlst(json){
-	
+
 	var mainImgList = json;
 	$('#boardlst').empty();
 	var html = "";
 	var totpage;
-		
+
 	if(mainImgList.length == 0){
-		
+
 		html +=  "<dt style='cursor: pointer;' align='center'>";
 		html +=  "<span align='center'>결과내 검색 결과가 없습니다.</span>";
 		html +=  "</dt>";
 		html +=  "<p><br/><p></p></p>";
 		html +=  "</dt>";
-		
+
 	}else{
-		
+
 		$.each(mainImgList, function(key){
 			var curNum = key+1;
 			html +=  "<dt id='dt"+key+"' style='cursor: pointer;'>";
@@ -503,7 +500,7 @@ function board_jsonlst(json){
 			html +=  "<p class='new_contit'>"+mainImgList[key].title+"<br/><p>"+mainImgList[key].body+"</p></p>";
 			if(mainImgList[key].file1){
 				// 관리자 페이지와 첨부파일 자동 연동되도록 경로 변경 -- 2019.03.06. hoyadev
-				// "http://dahami.com/file/"  -->  "http://board.scrapmaster.co.kr/files/"으로 변경   
+				// "http://dahami.com/file/"  -->  "http://board.scrapmaster.co.kr/files/"으로 변경
 				html +=  "<img src='http://board.scrapmaster.co.kr/files/"+mainImgList[key].file1+"' />";
 			}
 			if(mainImgList[key].file2){
@@ -512,71 +509,65 @@ function board_jsonlst(json){
 			html +=  "</dd></dt>";
 		});
 	}
-	
+
 	$('#boardlst').append(html);
-	
+
 	if(mainImgList.length > 0){
 		totpage = mainImgList[0].totPage;
 	}
-	
-	//페이징
-	pagings(totpage);
-}
 
-//success성공시 관련 리스트 출력
-function qna_jsonlst(json){
-	
-	var faqList = json;
-	$('#faqlst').empty();
-	var html = "";
-	var totpage;
-		
-	if(faqList.length == 0){
-		html +=  "<dt style='cursor: pointer;' align='center'>";
-		html +=  "<span align='center'>결과내 검색 결과가 없습니다.</span>";
-		html +=  "</dt>";
-		html +=  "<p><br/><p></p></p>";
-		html +=  "</dt>";
-		
-	}else{
-		$.each(faqList, function(key){
-			var curNum = key+1;
-			html +=  "<dt id='faq_dt"+key+"' style='cursor: pointer;'>";
-			html +=  "<a onclick='evt1("+key+")'>";
-			html +=  "<span class='faq_date'>"+faqList[key].gubun+"</span>";
-			html +=  "<span class='faq_tit'>"+faqList[key].quest+"</span>";
-			html +=  "<span class='faq_ico'></span></a></dt>";
-			html +=  "<dd id='faq_dd"+key+"' style='display: none;'>";
-			html +=  "<p class='faq_contit'>"+faqList[key].quest+"<br/><p>"+faqList[key].answer+"</p></p>";
-			html +=  "</dd></dt>";
-		});
-	}
-	
-	$('#faqlst').append(html);
-	
-	if(faqList.length > 0){
-		totpage = faqList[0].totPage;
-	}
-	
 	//페이징
-	pagings1(totpage);
+	pagings(totpage, paginationMax);
 }
-
+/*
 function newInfo(){
 	$(".sub_navi_li > li").removeClass();
 	$(".sub_navi_li > li:eq(0)").addClass("on");
 	$('html, body').animate({
 		scrollTop: $("#new .inner").offset().top
 	}, 1 );
-}
+}*/
 
-function pagings(tot){
-	
+var windowInnerWidth = -1;
+var paginationMax = -1;
+var rtime;
+var timeout = false;
+var delta = 200;
+$(window).resize(function() {
+	rtime = new Date();
+	if (timeout === false) {
+		timeout = true;
+		setTimeout(resizeend, delta);
+	}
+});
+function resizeend() {
+	if (new Date() - rtime < delta) {
+		setTimeout(resizeend, delta);
+	} else {
+		timeout = false;
+		var curPaginationMax = (window.innerWidth > 767) ? 10 : 5;
+		if (curPaginationMax != paginationMax) {
+			pagings(Number($("#lastvalue").val()), curPaginationMax);
+		}
+		setPaginationMax();
+	}
+}
+function setPaginationMax() {
+	windowInnerWidth = window.innerWidth;
+	paginationMax = (window.innerWidth > 767) ? 10 : 5;
+}
+$(document).ready(function() {
+	setPaginationMax();
+	pagings(Number($("#lastvalue").val()), paginationMax);
+});
+
+function pagings(tot, max){
+	if (max === undefined) max = 10;
 	var firval = 1;
 	var realtot = 1;
 	var startpage = $("#startgo").val();
 	$("#lastvalue").val(tot);
-	
+
 	if($("#totcnt").val() != ""){
 		if(startpage == "1"){
 			firval = parseInt(startpage);
@@ -587,84 +578,38 @@ function pagings(tot){
 	if(tot == "0"){
 		tot = 1;
 	}
-	
-	
+
 	realtot = parseInt(tot);
-		
-	
+
 	$('.paging').empty();
 	$('.paging').html('<ul id="pagination-demo" class="pagination-sm"></ul>');
-	
+
 	$('#pagination-demo').twbsPagination({
 		startPage: firval,
-	    totalPages: realtot,
-	    visiblePages: 10,
-	    onPageClick: function (event, page) {
-	    	$('#page-content').text('Page ' + page);
-        }
-	});
-	
-	resetBoard();
-}
-
-function pagings1(tot){
-	
-	var firval = 1;
-	var realtot = 1;
-	var startpage = $("#startgo1").val();
-	$("#lastvalue1").val(tot);
-	
-	if($("#totcnt1").val() != ""){
-		if(startpage == "1"){
-			firval = parseInt(startpage);
-		}else{
-			firval = parseInt($("#totcnt1").val());
+		totalPages: realtot,
+		visiblePages: max,
+		onPageClick: function (event, page) {
+			$('#page-content').text('Page ' + page);
 		}
-	}
-	if(tot == "0"){
-		tot = 1;
-	}
-	
-	
-	realtot = parseInt(tot);
-		
-	
-	$('.paging1').empty();
-	$('.paging1').html('<ul id="pagination1-demo" class="pagination1-sm"></ul>');
-	
-	$('#pagination1-demo').twbsPagination({
-		startPage: firval,
-	    totalPages: realtot,
-	    visiblePages: 10,
-	    onPageClick: function (event, page) {
-	    	$('#page-content1').text('Page ' + page);
-        }
 	});
-	
-	resetBoard1();
+
+	resetBoard();
 }
 
 function resetBoard(){
 	$(".sub_navi_li > li").removeClass();
 	$(".sub_navi_li > li:eq(0)").addClass("on");
-	$('html, body').animate({
-        scrollTop: $("#new .inner").offset().top
-    }, 10);
+	if (new Date() - init > 3000) {
+		$('html, body').animate({
+			scrollTop: $("#new .inner").offset().top
+		}, 10);
+	}
 }
-
-function resetBoard1(){
-	$(".sub_navi_li > li").removeClass();
-	$(".sub_navi_li > li:eq(1)").addClass("on");
-	$('html, body').animate({
-        scrollTop: $("#faq .inner").offset().top
-    }, 10);
-}
-
 </script>
 </head>
 <body onResize="confLayout();" onLoad="confLayout();">
 <input type="hidden" id="totcnt" value="${totcnt}" />
-<input type="hidden" id="startgo" value="" />
+<input type="hidden" id="startgo" value="1" />
 <input type="hidden" id="lastvalue" value="${totcnt}" />
 
 <div id="wrap">

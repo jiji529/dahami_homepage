@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
 <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta property="og:title" content="다하미커뮤니케이션즈">
 <meta property="og:description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트">
 <title>다하미커뮤니케이션즈</title>
@@ -13,6 +14,7 @@
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/jquery.bxslider.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style_mo.css">
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/jquery.bxslider.js"></script>
 <script src="<%=request.getContextPath()%>/js/gnb.js"></script>
@@ -94,7 +96,7 @@
                         </div>
                         <div class="sub_box sm2">
                                 <div class="text_box tbl">
-                                        <h3>스크랩마스터 모바일</h3>
+                                        <h3>스크랩마스터 모바일 +</h3>
                                         <p>언제 어디서든 모바일 단말기를 통해 <br>
                                         기사를 확인할 수 있습니다. <br>
                                         자동검색, 지면검색과 스크랩 등 <br>기사의 공유가 편리한 모바일 앱입니다</p>

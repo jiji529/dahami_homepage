@@ -9,19 +9,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Pragma" content="no-cache">
     <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta property="og:title" content="다하미커뮤니케이션즈">
     <meta property="og:description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트">
     <title>다하미커뮤니케이션즈</title>
     <link rel="canonical" href="https://www.dahami.com/">
-    <link rel="stylesheet" href="css/basic.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/main.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style_mo.css">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="js/gnb.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js"></script>
     <jsp:include page="common/google_analytics.jsp"></jsp:include>
-    <script type="text/javascript">
+    <script>
         function getCookie(name) {
             var wcname = name + '=', wcstart, wcend, end, i = 0;
             while (i <= document.cookie.length) {
@@ -205,7 +207,7 @@
         </div>
     </div>
 
-    <script src="js/swiper.min.js"></script>
+    <script src="<%=request.getContextPath()%>/js/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             spaceBetween: 30,

@@ -6,57 +6,52 @@
 <meta charset="UTF-8">
 <link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
 <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta property="og:title" content="다하미커뮤니케이션즈">
 <meta property="og:description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트">
 <title>다하미커뮤니케이션즈</title>
 <link rel="canonical" href="https://www.dahami.com/">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style_mo.css">
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/gnb.js"></script>
 <jsp:include page="../common/google_analytics.jsp"></jsp:include>
 <style type="text/css">
-	div.sub_navi { 
-		 height: 50px; 
-		 position: absolute; 
-		 left: 0; 
-		 top: 270px; 
-		 width: 100%; 
-	} 
-	div.fixed { 
-	 position: fixed; 
-	 top: 0; 
-	 left: 0; 
+	div.fixed {
+	 position: fixed;
+	 top: 0;
+	 left: 0;
 	}
 </style>
 <script>
 	$(document).ready(function (){
-		
+
 		$(window).bind('scroll', function() {
-			 if ($(window).scrollTop() > 250) { 
+			 if ($(window).scrollTop() > 250) {
 				 $('.sub_navi').addClass('fixed');
-			 }else { 
+			 }else {
 				 $('.sub_navi').removeClass('fixed');
 			 }
-			 
+
 			 if ($(window).scrollTop() > 490 && $(window).scrollTop() < 890) {
 				 $(".sub_navi_li > li").removeClass();
 				 $(".sub_navi_li > li:eq(0)").addClass("on");
-			 }else if($(window).scrollTop() > 890 && $(window).scrollTop() < 1390) { 
+			 }else if($(window).scrollTop() > 890 && $(window).scrollTop() < 1390) {
 				 $(".sub_navi_li > li").removeClass();
 				 $(".sub_navi_li > li:eq(1)").addClass("on");
-			 }else if($(window).scrollTop() > 1390 && $(window).scrollTop() < 1990) { 
+			 }else if($(window).scrollTop() > 1390 && $(window).scrollTop() < 1990) {
 				 $(".sub_navi_li > li").removeClass();
 				 $(".sub_navi_li > li:eq(2)").addClass("on");
 			 }
-			 
+
 		});
-		
+
 		var loc = $(location).attr('search');
-		
+
 		if(loc != ""){
 			loc = loc.replace("?loc=","");
-			
+
 			if(loc == "talent"){
 				$(".sub_navi_li > li").removeClass();
 				$(".sub_navi_li > li:eq(0)").addClass("on");
@@ -85,25 +80,25 @@
 		}else{
 			$('html, body').animate({}, 1000);
 		}
-		
+
 		$('.tab > ul > li:eq(0)').on('click', function(e) {
 			$(".tab > ul > li").removeClass();
 			$(".tab > ul > li:eq(0)").addClass("on");
 			$(".tab_area1").css('display','block');
 			$(".tab_area2").css('display','none');
 		});
-		
+
 		$('.tab > ul > li:eq(1)').on('click', function(e) {
 			$(".tab > ul > li").removeClass();
 			$(".tab > ul > li:eq(1)").addClass("on");
 			$(".tab_area2").css('display','block');
 			$(".tab_area1").css('display','none');
 		});
-		
-		
+
+
 		$('.sub_navi_li > li').on('click', function(e) {
 			var aTag = $('a', this).attr('href');
-			
+
 			if(aTag == "#talent"){
 				$(".sub_navi_li > li").removeClass();
 				$(".sub_navi_li > li:eq(0)").addClass("on");
@@ -128,16 +123,16 @@
 			    }, 1000);
 	    	}
 		});
-		
+
 		$('.gnb_menu .menu:eq(2) .gnb_dl dt').addClass('on');
-		
+
 		$('.btn_employ').on('click', function(e) {
-			alert("현재 진행중인 채용 공고가 없습니다.");		
+			alert("현재 진행중인 채용 공고가 없습니다.");
 		});
 	});
-	
-	
-	
+
+
+
 </script>
 </head>
 <body onResize="confLayout();" onLoad="confLayout();">
@@ -273,7 +268,7 @@
                 <!--
                 <div class="btn_employ"><a href="<%=request.getContextPath()%>/job/jobLst.html" target="_blank">지원하기</a></div>
                  -->
-                 
+
                  <div class="btn_employ"><a href="#employ">지원하기</a></div>
             </div>
         </div>
@@ -296,7 +291,7 @@
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img5.png"></div>
                         <div class="wel_tit">우수사원 포상</div>
                         <div class="wel_txt">모범적이고 뛰어난 업무역량을 보여준 직원에 대해서 공로상 및 모범사원 포상 제도를 운영하고 있습니다.</div>
-                    </li>               
+                    </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img2.png"></div>
                         <div class="wel_tit">자녀 학자금, 자녀 육아수당 지원</div>
@@ -321,7 +316,7 @@
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img1.png"></div>
                         <div class="wel_tit">생일 지원</div>
                         <div class="wel_txt">매월 생일자에게 생일파티 및 선물을 지원합니다.</div>
-                    </li>                    
+                    </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img6.png"></div>
                         <div class="wel_tit"> 기념일 선물 지급</div>
@@ -335,5 +330,12 @@
         <jsp:include page="../common/footer.jsp"></jsp:include>
     </div>
 </div>
+<script>
+    $(window).resize(function() {
+        if ($(window).width() < 1200) {
+            $(".wel1 > img").attr("src", "<%=request.getContextPath()%>/images/recruit/wel_img0m.png");
+        }
+    });
+</script>
 </body>
 </html>

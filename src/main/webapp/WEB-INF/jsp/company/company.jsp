@@ -6,29 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
+	<meta name="format-detection" content="telephone=no"><!-- ios 전화번호 -->
     <meta http-equiv="Pragma" content="no-cache">
     <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta property="og:title" content="다하미커뮤니케이션즈">
     <meta property="og:description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트">
     <title>다하미커뮤니케이션즈</title>
     <link rel="canonical" href="https://www.dahami.com/">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style_mo.css">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="<%=request.getContextPath()%>/js/gnb1.js"></script>
+    <script src="<%=request.getContextPath()%>/js/gnb.js"></script>
     <jsp:include page="../common/google_analytics.jsp"></jsp:include>
     <script src="<%=request.getContextPath()%>/js/parallax.js"></script>
     <style>
-        div.sub_navi {
-            height: 50px;
-            position: absolute;
-            left: 0;
-            top: 270px;
-            width: 100%;
-        }
-
         div.fixed {
             position: fixed;
             top: 0;
@@ -133,7 +128,7 @@
     <link rel="dns-prefetch" href="//www.news-plaza.co.kr">
 </head>
 
-<body onresize="confLayout();" onload="confLayout();" style="">
+<body>
     <div id="wrap">
         <div id="gnb">
            <jsp:include page="../common/header.jsp"></jsp:include>
@@ -191,7 +186,7 @@
                             </div>
                             <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
                                 <p class="box_tit">매출액</p>
-                                <p class="box_cont">191억<span>2019년 기준</span></p>
+                                <p class="box_cont">206억<span>2020년 기준</span></p>
                             </div>
                         </div>
                     </div>
@@ -385,6 +380,13 @@
 
     <script>
         AOS.init();
+    </script>
+    <script>
+        $(window).resize(function() {
+            if ($(window).width() < 1200) {
+                $(".intro_box4").attr("data-image-src", "<%=request.getContextPath()%>/images/company/ceom.png"); // company.jsp 전용
+            }
+        });
     </script>
 </body>
 

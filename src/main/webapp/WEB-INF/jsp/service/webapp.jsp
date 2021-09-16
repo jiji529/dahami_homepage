@@ -6,12 +6,14 @@
 <meta charset="UTF-8">
 <link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
 <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta property="og:title" content="다하미커뮤니케이션즈">
 <meta property="og:description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트">
 <title>다하미커뮤니케이션즈</title>
 <link rel="canonical" href="https://www.dahami.com/">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/css/style_mo.css">
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/gnb.js"></script>
 <jsp:include page="../common/google_analytics.jsp"></jsp:include>
@@ -33,12 +35,12 @@
         </div>
         <div class="sub_navi">
             <ul class="sub_navi_li sub_sev_li">
-                <li><a href="<%=request.getContextPath()%>/scrapmaster.html">스크랩마스터</a></li>
-                <li><a href="<%=request.getContextPath()%>/clipping.html">클리핑온</a></li>
-                <li><a href="<%=request.getContextPath()%>/tpaper.html">티페이퍼</a></li>
-                <li><a href="<%=request.getContextPath()%>/newsbank.html">뉴스뱅크</a></li>
-                <li><a href="<%=request.getContextPath()%>/enie.html">e-NIE</a></li>
-                <li><a href="<%=request.getContextPath()%>/newsplaza.html">뉴스플라자</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/scrapmaster.html">스크랩마스터</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/clipping.html">클리핑온</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/tpaper.html">티페이퍼</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/newsbank.html">뉴스뱅크</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/enie.html">e-NIE</a></li>
+                <li><a href="<%=request.getContextPath()%>/service/newsplaza.html">뉴스플라자</a></li>
                 <li class="on"><a href="#">웹&amp;앱 서비스</a></li>
             </ul>
         </div>
@@ -86,5 +88,29 @@
         <jsp:include page="../common/footer.jsp"></jsp:include>
     </div>
 </div>
+<script>
+    $(window).resize(function() {
+        if ($(window).width() < 1200) {
+            $(function() {
+                $('.m-open').click(function() {
+                    $('.m-open').css('display', 'none');
+                    $('.m-close').css('display', 'block');
+                    $('.gnb_menu, .scrapmaster, .callcenter').css('display', 'block');
+                });
+                $('.m-close').click(function() {
+                    $('.m-close').css('display', 'none');
+                    $('.m-open').css('display', 'block');
+                    $('.gnb_menu, .scrapmaster, .callcenter').css('display', 'none');
+                });
+            });
+            $(document).ready(function() {
+                $('.m-close').trigger('click');
+            });
+        }
+        if ($(window).width() > 1201) {
+            $('.gnb_menu, .scrapmaster, .callcenter').css('display', 'block');
+        }
+    }).resize();
+</script>
 </body>
 </html>

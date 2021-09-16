@@ -34,7 +34,7 @@
 				<p>닫기</p>
 			</div>
 			<div class="pop_cont">
-				<iframe style="width:100%;" src="/common/policy.jsp" id="iframePrivacy"></iframe>
+				<iframe style="width:100%;" src="<%=request.getContextPath()%>/common/policy.jsp" id="iframePrivacy"></iframe>
 			</div>
 			<div class="pop_ok">
 				<p>확인</p>
@@ -98,7 +98,7 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
+<script>
 	$('.foot_menu > li:eq(0)').on('click', function(e) {
 		$("#pop1").css('display','block');
 	});
@@ -128,7 +128,7 @@
 	});
 
 	function showOtherPrivacy(arg) {
-		var file = '/common/policy';
+		var file = '<%=request.getContextPath()%>/common/policy';
 		if (arg) file += '_' + arg;
 		file += '.jsp';
 		$('#iframePrivacy').attr('src', file);

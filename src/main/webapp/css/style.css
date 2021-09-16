@@ -175,7 +175,7 @@ background: #55ffaa;
 
 .call .call_box{width:858px; border:1px #ddd solid; background:#fff; float:left; margin-top:50px; padding:40px 70px; margin-bottom:100px;}
 .call .call_box h3{ width:100%; float:left; text-align:left; font-weight:500; font-size:18px;}
-.call .call_box dl {float:left; width:100%; margin:10px 0 10px;}
+.call .call_box dl {float:left; width:100%; margin:10px 0 10px; border-bottom:1px #ddd solid;}
 .call .call_box dt {float:left; width:118px; border-bottom:1px #ddd solid; padding:10px; height:45px; line-height:45px; font-size:14px; text-align:left}
 .call .call_box dd{float:left; width:700px; border-bottom:1px #ddd solid; padding:10px; height:45px; }
 .call .call_box dd input { float:left; height:42px; border:1px #e4e4e4 solid; color:#666; padding:0 15px;}
@@ -183,11 +183,11 @@ background: #55ffaa;
 .call .call_box dd input.num{width:50px;}
 .call .call_box dd input.mail{width:200px;}
 .call .call_box dd span   { margin:0 5px; float:left; color:#666; line-height:45px;}
-.call .call_box dd textarea {width:670px; float:left; height:78px;border:1px #efefef solid; color:#666; padding:15px; }
-.call .call_box .main_cont{height:110px;}
+.call .call_box dd textarea {width:670px; float:left; height:78px;border:1px #efefef solid; color:#666; padding:15px; resize: vertical; }
+ 
+.call .call_box .main_cont{min-height:110px; height: auto; border-bottom: 0;}
 .call .call_box .call_send{width:100%; float:left; text-align:center; margin:10px 0 20px;}
 .call .call_box .call_send p{display:inline-block; background:#2d91ff; color:#fff; font-size:15px; font-weight:500; border:none; width:140px; height:40px; line-height:40px; cursor:pointer;}
-
 
 /* 인재경영 */
 #talent {width:100%; float:left; background:#fff; padding-top:50px;}
