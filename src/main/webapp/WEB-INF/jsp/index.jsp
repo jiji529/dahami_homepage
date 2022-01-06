@@ -3,17 +3,8 @@
 <html lang="ko">
 
 <head>
-    <link rel="SHORTCUT ICON" href="images/dahami_favicon.ico">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta property="og:title" content="다하미커뮤니케이션즈">
-    <meta property="og:description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트">
-    <title>다하미커뮤니케이션즈</title>
-    <link rel="canonical" href="https://www.dahami.com/">
+    <jsp:include page="common/head_meta.jsp"/>
+    
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/main.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
@@ -42,7 +33,7 @@
 
         function popup(startDate, endDate, imgWidth, imgHeight) { // 오늘 하루동안 그만 보기 팝업
             var url = '/common/popup.html';
-            var arg = 'width=' + imgWidth + ', height=' + (imgHeight+34) + ', status=no, scrollbars=no, toolbar=no, menubar=no';
+            var arg = 'width=' + imgWidth + 'px, height=' + (imgHeight+34) + 'px, status=no, scrollbars=no, toolbar=no, menubar=no';
             var today = new Date();
             var startDay = new Date(startDate.replace(/-/g, "/") + ' 00:00:00');
             var endDay = new Date(endDate.replace(/-/g, "/") + ' 23:59:59');
@@ -52,10 +43,10 @@
         }
 
         $(document).ready(function() {
-            popup('2021-02-05', // 'YYYY-MM-DD' : startDate
-                  '2021-02-14', // 'YYYY-MM-DD': endDate
-                  370, // n : imgWidth
-                  370 // n : imgHeight
+            popup('2021-12-29', // 'YYYY-MM-DD' : startDate
+                  '2022-01-07', // 'YYYY-MM-DD': endDate
+                  400, // n : imgWidth
+                  400 // n : imgHeight
             );
         });
     </script>

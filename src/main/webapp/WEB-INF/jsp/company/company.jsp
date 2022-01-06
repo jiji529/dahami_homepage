@@ -3,17 +3,12 @@
 <html lang="ko">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="UTF-8">
-    <link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
 	<meta name="format-detection" content="telephone=no"><!-- ios 전화번호 -->
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta name="description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta property="og:title" content="다하미커뮤니케이션즈">
-    <meta property="og:description" content="뉴스저작권, 신문스크랩, 뉴스스크랩, 뉴스모니터링, 티페이퍼, 홍보관리, 방송뉴스, 미디어리포트">
-    <title>다하미커뮤니케이션즈</title>
+	
+    <jsp:include page="../common/head_meta.jsp"/>
+    
     <link rel="canonical" href="https://www.dahami.com/">
+    <link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style_mo.css">
