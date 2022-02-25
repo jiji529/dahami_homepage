@@ -43,8 +43,8 @@
         }
 
         $(document).ready(function() {
-            popup('2021-12-29', // 'YYYY-MM-DD' : startDate
-                  '2022-01-07', // 'YYYY-MM-DD': endDate
+        	popup('2022-01-27', // 'YYYY-MM-DD' : startDate
+                  '2022-02-03', // 'YYYY-MM-DD': endDate
                   400, // n : imgWidth
                   400 // n : imgHeight
             );
@@ -121,16 +121,16 @@
                 </div>
                 <div data-aos="fade-up" data-aos-delay="400">
 
-                    <p class="box_tit">21<span>years</span></p>
+                    <p class="box_tit">24<span>years</span></p>
                     <p class="box_cont">디지털 미디어 분야<br>연구개발</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="800">
 
-                    <p class="box_tit">1.3<span>천</span></p>
+                    <p class="box_tit">1.7<span>천</span></p>
                     <p class="box_cont">매체 및 고객 <br>파트너</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="1200">
-                    <p class="box_tit">3.3<span>억</span></p>
+                    <p class="box_tit">4.9<span>억</span></p>
                     <p class="box_cont">콘텐츠 보유</p>
                 </div>
             </div>

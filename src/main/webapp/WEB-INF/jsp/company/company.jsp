@@ -177,7 +177,7 @@
                             <div data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">
 
                                 <p class="box_tit">임직원 수</p>
-                                <p class="box_cont">103명<span>2021년 1월 기준<br>자회사 포함</span></p>
+                                <p class="box_cont">98명<span>2022년 1월 기준<br>자회사 포함</span></p>
                             </div>
                             <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
                                 <p class="box_tit">매출액</p>
@@ -325,6 +325,10 @@
                                 <p>2018 ~ 현재</p>
                             </div>
                            <ul>
+                           		<li>
+								 	<div class="year">2022</div>
+								 	<div class="cont">7년연속 청년친화강소기업 선정</div>
+								</li>
                                 <li>
                                     <div class="year">2021</div>
                                     <div class="cont">6년연속 청년친화강소기업 선정</div>
@@ -351,7 +355,7 @@
                                 <li>
                                     <div class="year">2018</div>
                                     <div class="cont">카이스트 양방향 T-PAPER 런칭</div>
-                                </li>
+                                </li>                                                               
                             </ul>
                         </div>
                     </div>
