@@ -18,5 +18,5 @@
     <meta name="twitter:title" content="다하미커뮤니케이션즈" />
     <meta name="twitter:description" content="모든 뉴스를 내 손안에, 뉴스스크랩의 선두주자 다하미커뮤니케이션즈 | 뉴스저작권 신문스크랩 뉴스모니터링 티페이퍼 홍보관리 방송뉴스 미디어리포트" />
     
-    <meta name="naver-site-verification" content="18a9b314f9fb1b9cdcb1908c890642fd2e48e6e1" />
+    <meta name="naver-site-verification" content="89e659d5cefc79fb82c6b972780928bd1eb4109f" />
     <meta name="google-site-verification" content="-4UuMBM7cFV7Hs9xMd19RdIrT3oh_bCDpmj49pgStB4" />
