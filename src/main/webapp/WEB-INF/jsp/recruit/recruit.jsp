@@ -285,8 +285,8 @@
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img5.png"></div>
-                        <div class="wel_tit">우수사원 포상</div>
-                        <div class="wel_txt">모범적이고 뛰어난 업무역량을 보여준 직원에 대해서 공로상 및 모범사원 포상 제도를 운영하고 있습니다.</div>
+                        <div class="wel_tit">청년내일채움공제 지원</div>
+                        <div class="wel_txt">장기근속 유도와 자산형성을 위한 공제 가입을 지원합니다.</div>
                     </li>
                     <li>
                         <div class="wel_img"><img src="<%=request.getContextPath()%>/images/recruit/wel_img2.png"></div>
