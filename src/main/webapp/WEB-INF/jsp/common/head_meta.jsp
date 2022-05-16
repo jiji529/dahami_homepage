@@ -20,3 +20,5 @@
     
     <meta name="naver-site-verification" content="89e659d5cefc79fb82c6b972780928bd1eb4109f" />
     <meta name="google-site-verification" content="-4UuMBM7cFV7Hs9xMd19RdIrT3oh_bCDpmj49pgStB4" />
+    
+    <link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">    
