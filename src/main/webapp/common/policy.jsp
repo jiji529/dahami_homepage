@@ -145,6 +145,12 @@ a.otherPrivacy {
 	padding:20px;
 	color:#666;
 }
+.policy_wrap h1 {
+font-size: 22px;
+}
+.policy_wrap section h4 {
+    font-size: 15px;
+}
 </style>
 </head>
 <body>
