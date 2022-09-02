@@ -43,8 +43,8 @@
         }
 
         $(document).ready(function() {
-        	popup('2022-01-27', // 'YYYY-MM-DD' : startDate
-                  '2022-02-03', // 'YYYY-MM-DD': endDate
+        	popup('2022-09-05', // 'YYYY-MM-DD' : startDate
+                  '2022-09-12', // 'YYYY-MM-DD': endDate
                   400, // n : imgWidth
                   400 // n : imgHeight
             );
