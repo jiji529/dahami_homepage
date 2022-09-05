@@ -1,4 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<c:set var="URL" value="${requestScope['javax.servlet.forward.servlet_path']}" />
 
 	<meta charset="utf-8">
     <title>다하미커뮤니케이션즈</title>
@@ -20,5 +23,14 @@
     
     <meta name="naver-site-verification" content="89e659d5cefc79fb82c6b972780928bd1eb4109f" />
     <meta name="google-site-verification" content="-4UuMBM7cFV7Hs9xMd19RdIrT3oh_bCDpmj49pgStB4" />
-    
+	<c:choose>
+		<c:when test='${URL=="/index.html"}'></c:when>
+		<c:when test='${URL=="/company/company.html"}'></c:when>
+		<c:when test='${URL=="/service/scrapmaster.html"}'></c:when>
+		<c:when test='${URL=="/recruit/recruit.html"}'></c:when>
+		<c:when test='${URL=="/community/community.html"}'></c:when>
+		<c:otherwise>
+			<meta name="robots" content="noindex">
+		</c:otherwise>
+	</c:choose>
     <link rel="SHORTCUT ICON" href="<%=request.getContextPath()%>/images/dahami_favicon.ico">    
