@@ -21,7 +21,7 @@
 - git.dahami.com:4000 업로드 완료
 - 내려받기 테스트 진행 > 정상동작 확인
 
-# 테스트링크 전달
+# [테스트링크 전달]
 - http://dev.daejeon.dahami.com:8080/DahamiHomepage/index.html
 
 # [사내테스트 및 실서버 적용일정]
