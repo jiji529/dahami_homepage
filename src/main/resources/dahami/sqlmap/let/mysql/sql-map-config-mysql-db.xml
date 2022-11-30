@@ -23,6 +23,18 @@
 		<result property="answer" 		column="answer" />
 	</resultMap>
 	
+	<resultMap id="LogoLstMap" class="com.dahami.api.main.service.vo.LogoVO">
+		<result property="mediaName"      column="media_name" />
+		<result property="mediaCode"      column="media_code" />
+		<result property="kindName"       column="kind_name" />
+		<result property="kindSerial"     column="kind_serial" />
+		<result property="mediaDelegated"   column="media_delegated" />
+		<result property="mediaTrusted"   column="media_trusted" />
+		<result property="mediaUntrusted" column="media_untrusted" />
+		<result property="mediaOnline"    column="media_online" />
+		<result property="fileName"       column="file_name" />
+	</resultMap>
+	
 	<select id="NoticeLst" parameterClass="boardVO" resultMap="NoticeLstMap">
 		SELECT
 			f_uid,
@@ -87,4 +99,23 @@
 		</isNotEmpty>
 		ORDER BY seq desc
 	</select>	
+	
+	<select id="LogoLst" resultMap="LogoLstMap">
+		SELECT
+			media_name,
+			media_code,
+			kind_name,
+			kind_serial,
+			media_delegated,
+			media_trusted,
+			media_untrusted,
+			media_online,
+			file_name
+		FROM
+			new_scrapmaster.logo
+		WHERE
+			display = 'Y'
+		ORDER BY
+			kind_serial, media_name
+	</select>
 </sqlMap>

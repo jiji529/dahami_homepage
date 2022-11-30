@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import com.dahami.api.main.service.vo.BizVO;
 import com.dahami.api.main.service.vo.BoardVO;
+import com.dahami.api.main.service.vo.LogoVO;
 import com.ibatis.sqlmap.client.SqlMapClient;
 import com.ibatis.sqlmap.engine.builder.xml.SqlMapParser;
 
@@ -38,5 +39,10 @@ public class MyDAO extends EgovAbstractDAO {
 	
 	public int selectFaqCnt(BoardVO boardVO) {
 		return (Integer)selectByPk("FaqCnt", boardVO);
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<LogoVO> selectLogoLst() {
+		return (List<LogoVO>)list("LogoLst", null);
 	}
 }

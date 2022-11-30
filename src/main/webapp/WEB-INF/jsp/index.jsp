@@ -1,225 +1,398 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"
-%><!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
-    <jsp:include page="common/head_meta.jsp"/>
-    
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/basic.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/main.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style_mo.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js"></script>
-    <jsp:include page="common/google_analytics.jsp"></jsp:include>
-    <script>
-        function getCookie(name) {
-            var wcname = name + '=', wcstart, wcend, end, i = 0;
-            while (i <= document.cookie.length) {
-                wcstart = i;
-                wcend = (i + wcname.length);
-                if (document.cookie.substring(wcstart, wcend) == wcname) {
-                    if((end = document.cookie.indexOf(';', wcend)) == -1)
-                    end = document.cookie.length;
-                    return document.cookie.substring(wcend, end);
-                }
-                i = document.cookie.indexOf('', i) + 1;
-                if (i == 0) break;
-            }
-            return '';
-        }
-
-        function popup(startDate, endDate, imgWidth, imgHeight) { // 오늘 하루동안 그만 보기 팝업
-            var url = '/common/popup.html';
-            var arg = 'width=' + imgWidth + 'px, height=' + (imgHeight+34) + 'px, status=no, scrollbars=no, toolbar=no, menubar=no';
-            var today = new Date();
-            var startDay = new Date(startDate.replace(/-/g, "/") + ' 00:00:00');
-            var endDay = new Date(endDate.replace(/-/g, "/") + ' 23:59:59');
-            if ((getCookie('popup') != 'start') && (today >= startDay) && (today <= endDay)) {
-                window.open(url, '', arg);
-            }
-        }
-
-        $(document).ready(function() {
-        	popup('2022-09-05', // 'YYYY-MM-DD' : startDate
-                  '2022-09-12', // 'YYYY-MM-DD': endDate
-                  400, // n : imgWidth
-                  400 // n : imgHeight
-            );
-        });
-    </script>
+	<jsp:include page="common/head_meta.jsp"/>
 </head>
 
 <body>
-    <div id="wrap" class="main">
-        <div id="gnb">
-            <jsp:include page="common/header.jsp"></jsp:include>
+	<jsp:include page="common/header.jsp"/>
+
+    <section class="main_vis">
+        <video id="video" muted="" loop="" playsinline="" autoplay="" video-playable-inline="" poster="">
+            <source type="video/mp4" src="<%=request.getContextPath()%>/images/main.mp4">
+        </video>
+        <div class="inner">
+            <div class="main_v_tit1">미디어를 가장 잘 아는<br>위기관리 파트너</div>
+            <div class="main_v_tit2 reveal">조직의 홍보, 마케팅, 전략결정 등에 필요한<br>차별화된 미디어 정보 솔루션을 개발, 제공하고 있습니다.</div>
+            <div class="main_v_tit3 reveal">최고의 미디어 정보 전문가들이<br>고객 맞춤형으로 직접 정보와 지식을 제공합니다.</div>
+            <div class="main_v_tit4 reveal">사업은 협력과 상생을 추구하며,<br>서비스는 사람과 사회를 생각합니다.</div>
         </div>
-        <section class="visual">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">
-                        <div class="txt_box">
-                            <div>
-                                <p class="txt2">Make your business</p>
-                                <p class="txt1">SMARTER</p>
-                            </div>
-                            <p class="txt5">다하미와 함께 여러분의 비즈니스에 날개를 달아보세요.<br>
-                                AI 기술을 기반으로 대량의 미디어 데이터를 스마트하게 활용하실 수 있도록 도와드립니다.
-                            </p>
-                        </div>
+        <span class="ico_scroll"></span>
+    </section>
+    <section class="main1">
+        <div class="inner">
+            <h2 class="main_tit ">약속</h2>
+            <p class="main_txt ">미디어를 가장 잘 아는 위기관리 파트너가 되겠습니다</p>
+            <div class="grid3">
+                <div class="li1 reveal">
+                    <div class="li1_imgbox"></div>
+                    <div class="li1_tit">미디어 서비스 허브</div>
+                    <div class="li1_txt">미디어 콘텐츠와 기술에 기반한 서비스의 허브(HUB)로!</div>
+                </div>
+                <div class="li1 reveal">
+                    <div class="li1_imgbox"></div>
+                    <div class="li1_tit">전문가 역량</div>
+                    <div class="li1_txt">미디어 전문가들이 최상의 고객 경험을 제공</div>
+                </div>
+                <div class="li1 reveal">
+                    <div class="li1_imgbox"></div>
+                    <div class="li1_tit">사회적 가치</div>
+                    <div class="li1_txt">사회적 가치를 창출하는 회사</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main2">
+        <div class="inner reveal">
+            <h2 class="main_tit ">위기관리 솔루션</h2>
+            <p class="main_txt">위기관리를 위한 전용 솔루션은 신문, 방송, 온라인 뉴스, SNS 등 <br>복잡한 미디어 환경에서 통찰을 제공하는
+                최적의 제품과 서비스를 제공합니다.</p>
+            <div class="grid2 reveal">
+                <div class="li2">
+                	<a href="<%=request.getContextPath()%>/execution/product_sub/scrapmaster.html">
+                    <div class="li2_tit">스크랩마스터</div>
+                    <div class="li2_txt">세계 최초의 신문 스크랩 프로그램인 스크랩마스터는 <br>
+                        홍보, 전략, 마케팅, 지원 등 각 분야 전문가들이 <br>
+                        검증하고 신뢰하는 최고의 미디어 솔루션입니다.</div>
+                    </a>
+                </div>
+                <div class="grid2r">
+                    <div class="li2">
+                    <a href="<%=request.getContextPath()%>/execution/product_sub/clippingon.html">
+                        <div class="li2_tit">클리핑온</div>
+                        <div class="li2_txt">방송사의 영상 뉴스는 시청자들에게 직접적인 인상을 남겨 파급력이 매우 큽니다.
+                            클리핑온은 주요 뉴스 시간에 실시간 알림으로 효율적인 위기 대응을 지원합니다.</div>
+                    </a>
+                    </div>                    
+                    <div class="li2">
+                    <a href="<%=request.getContextPath()%>/execution/product_sub/newsplaza.html">
+                        <div class="li2_tit">뉴스플라자</div>
+                        <div class="li2_txt">국내 주요 언론사의 온라인 뉴스를 일괄 제공하고 있습니다. <br>
+                            뉴스 모니터링 등 내부 업무뿐 아니라 홍보 목적의 대외 배포에 적합한 상품입니다.</div>
+                    </a>
                     </div>
-                    <div class="swiper-slide slide2">
-                        <div class="txt_box">
-                            <div>
-                                <p class="txt2">We grow with</p>
-                                <p class="txt1">Digital Contents Industry</p>
-                            </div>
-                            <p class="txt5">다하미는 신문, 방송뉴스, 온라인뉴스, 보도사진, SNS 및 커뮤니티 등 다양한 미디어 콘텐츠를 통합 서비스하고 있습니다.<br>
-                                디지털 콘텐츠 시장의 빠른 변화에 발맞추기 위해 지속적으로 제휴를 확대하고 있습니다.<br>이를 통해 여러 미디어 회사와 함께 성장할 기회를 만들어내고 있습니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide3">
-                        <div class="txt_box">
-                            <div>
-                                <p class="txt2">We maintain</p>
-                                <p class="txt1">High Availability</p>
-                            </div>
-                            <p class="txt5">다하미는 20년 이상의 운영 노하우로 정부, 지자체 및 공공기관을 비롯해 <br>국내 유수한 1,000여개 기업에 안정적으로 서비스를 제공하고 있습니다.<br>
-                                또한 대기업 수준의 업계 최고를 자랑하는 인프라를 구축하여 높은 품질을 보장하고 있습니다.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-        <section class="overview">
-            <div class="txt_box">
-                <div class="ov_left">
-                    <p class="txt7">OVERVIEW</p>
-                    <p class="txt2">디지털 미디어 콘텐츠<br>서비스 HUB</p>
-                    <a href="<%=request.getContextPath()%>/company/company.html" class="ov_btn">자세히 보기</a>
-                </div>
-                <div class="ov_right">
-                    <p class="txt4">감성이 결합된 스마트 기술을 통한 인간 중심의 서비스. <br>다하미가 그리는 디지털 미디어 서비스의 미래입니다.
-                    </p>
-                    <p class="txt6">빅데이터와 인공지능 기술을 활용하여 더 나은 업무 환경과 미디어 라이프를 제공하고자 합니다.</p>
                 </div>
             </div>
-        </section>
-        <section class="sum">
-            <div class="txt_box">
-                <div data-aos="fade-up" data-aos-delay="0">
-                    <p class="box_tit">1<span>st</span></p>
-                    <p class="box_cont">언론 모니터링<br>업계 1위</p>
+        </div>
+    </section>
+    <section class="main3 animated">
+        <div class="inner reveal">
+            <h2 class="main_tit animated">미디어 문화 사업</h2>
+            <p class="main_txt animated">디지털 시대에 더 중요한 읽기문화의 보급, 신문활용교육 등 미디어를 활용한 문화 사업을 수행하고 있습니다.<br>
+                우리는 미디어가 사회나 문화 발전에 기여할 수 있는 사업을 발굴해 운영하고 있습니다.</p>
+            <div class="grid2">
+                <div class="li2">
+                	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">
+                    <div class="li2_tit">티페이퍼</div>
+                    <div class="li2_txt">디지털 화면에서 자연스레 종이를 넘기는 듯한 경험을 공간에서 제공하세요. 미학을 고려한 디자인과 설치까지 지원해드립니다.</div>
+                    </a>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="400">
-
-                    <p class="box_tit">24<span>years</span></p>
-                    <p class="box_cont">디지털 미디어 분야<br>연구개발</p>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="800">
-
-                    <p class="box_tit">1.7<span>천</span></p>
-                    <p class="box_cont">매체 및 고객 <br>파트너</p>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="1200">
-                    <p class="box_tit">4.9<span>억</span></p>
-                    <p class="box_cont">콘텐츠 보유</p>
-                </div>
-            </div>
-        </section>
-        <section class="rnd">
-            <div class="txt_box">
-                <div data-aos="fade-up" data-aos-delay="0">
-                    <p class="txt2">R&amp;D CENTER</p>
-                    <p class="txt5">다하미커뮤니케이션즈 기술개발연구소는<br>
-                        지속적인 연구개발을 통해 서비스를 향상시키고자 노력하고 있습니다.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="service">
-            <div class="txt_box">
-                <p class="txt7">SOLUTIONS</p>
-                <p class="txt3">다하미커뮤니케이션즈의 서비스를 소개합니다.</p>
-                <ul>
-                    <li data-aos="fade-up" data-aos-delay="0" class="sv_li1"><a href="/service/scrapmaster.html" target="_parent">
-                            <div class="sv_img"></div>
-                            <p class="txt6">세계 최초 뉴스 통합 모니터링 솔루션</p>
-                            <p class="txt4">스크랩마스터</p>
+                <div class="grid2r">
+                    <div class="li2">
+                    	<a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank.html">
+                        <div class="li2_tit">뉴스뱅크</div>
+                        <div class="li2_txt">대한민국 역사의 현장을 생생하게 담은 보도사진 박물관입니다. 대한민국 격동의 근대사에서 현대사에 이르기까지 수 백만 건 이상의 보도사진을 제공합니다.</div>
                         </a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="400" class="sv_li2"><a href="/service/clipping.html" target="_parent">
-                        <div class="sv_img"></div>
-                        <p class="txt6">국내 유일 방송 통합 모니터링 솔루션</p>
-                        <p class="txt4">클리핑온</p></a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="800" class="sv_li3"><a href="/service/tpaper.html" target="_parent">
-                        <div class="sv_img"></div>
-                        <p class="txt6">터치형 디지털신문 디스플레이 솔루션</p>
-                        <p class="txt4">티페이퍼</p></a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="1200" class="sv_li4"><a href="/service/newsbank.html" target="_parent">
-                        <div class="sv_img"></div>
-                        <p class="txt6">25개 매체 보도사진 통합 라이브러리</p>
-                        <p class="txt4">뉴스뱅크</p></a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="banner">
-            <div class="txt_box">
-                <div class="main_bn1">
-                    <p>대표전화</p>
-                    <div class="bn1_rt">
-                        <p class="txt4">02-593-4174</p>
-                        <p class="txt7">평일 : 09:00 ~ 17:00 / 토,일요일 휴무</p>
+                    </div>
+                    <div class="li2">
+                    	<a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">
+                        <div class="li2_tit">e-NIE</div>
+                        <div class="li2_txt">신문 기사와 구성은 학습자 특히 청소년의 인지학습능력을 키우고 가치관 및 인성을 발달시키는 데 큰 도움이 됩니다.</div>
+                        </a>
                     </div>
                 </div>
-                <div class="main_bn2">
-                    <p><span></span><a style="color:#000" href="/community/community.html?loc=call">문의하기</a></p>
-                </div>
-
-                <div class="main_bn3">
-                    <p><span></span><a style="color:#000" href="/community/community.html?loc=faq">자주 묻는 질문</a></p>
-                </div>
-
             </div>
-        </section>
-        <div id="bottom">
-            <jsp:include page="common/footer.jsp"></jsp:include>
         </div>
-    </div>
+    </section>
+    <section class="main4">
+        <div class="inner reveal">
+            <div class="grid1-3">
+                <h2 class="main_tit">회사소식</h2>
+                <div class="m_news">
+                    <ul>
+                    	<c:forEach var="result" items="${boardCdList}" varStatus="status">
+							<li id="dt${status.count}" style="cursor: pointer;" onclick="evt(${status.count})">
+		                        <span class="date">${boardCdList[status.count-1].regdate}</span>
+		                        <span class="tit">${boardCdList[status.count-1].title}</span>
+		                    </li>																				
+							<li class="faq_dd" id="dd${status.count}" style='display: none;'>
+								<p class="faq_contit">${boardCdList[status.count-1].title}</p>
+								<p>${boardCdList[status.count-1].body}</p>
+								<c:if test="${boardCdList[status.count-1].file1 ne ''}">
+									<img src="http://board.scrapmaster.co.kr/files/${boardCdList[status.count-1].file1}" style="width:70%;"/>
+								</c:if>
+								<c:if test="${boardCdList[status.count-1].file2 ne ''}">
+									<img src="http://board.scrapmaster.co.kr/files/${boardCdList[status.count-1].file2}" style="width:70%;"/>																	
+								</c:if>
+							</li>
+						</c:forEach>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main5">
+        <div class="inner reveal">
+            <h2 class="main_tit">파트너쉽</h2>
+            <p class="main_txt">600여개 신문과 언론재단이 다하미와 함께합니다.</p>
+              <div class="m_partner">
+                <div class="scroll">
+                    <div class="scroll-wrap">
+                        <div class="logo">
+                        <li>경향신문</li>
+                        <li>국민일보</li>
+                        <li>동아일보</li>
+                        <li>서울신문</li>
+                        <li>세계일보</li>
+                        <li>조선일보</li>
+                        <li>중앙일보</li>
+                        <li>한겨레</li>
+                        <li>한국일보</li>
+                        <li>e대한경제</li>
+                        <li>디지털타임즈</li>
+                        <li>매일경제</li>
+                        <li>머니투데이</li>
+                        <li>브릿지경제</li>
+                        <li>서울경제</li>
+                        <li>아주경제</li>
+                        <li>이데일리</li>
+                        <li>이투데이</li>
+                        <li>전자신문</li>
+                        <li>파이낸셜뉴스</li>
+                        <li>한국경제</li>
+                        </div>
+                    </div>
+                    <div class="scroll-wrap">
+                        <div class="logo">
+                        <li>경향신문</li>
+                        <li>국민일보</li>
+                        <li>동아일보</li>
+                        <li>서울신문</li>
+                        <li>세계일보</li>
+                        <li>조선일보</li>
+                        <li>중앙일보</li>
+                        <li>한겨레</li>
+                        <li>한국일보</li>
+                        <li>e대한경제</li>
+                        <li>디지털타임즈</li>
+                        <li>매일경제</li>
+                        <li>머니투데이</li>
+                        <li>브릿지경제</li>
+                        <li>서울경제</li>
+                        <li>아주경제</li>
+                        <li>이데일리</li>
+                        <li>이투데이</li>
+                        <li>전자신문</li>
+                        <li>파이낸셜뉴스</li>
+                        <li>한국경제</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll reverse">
+                    <div class="scroll-wrap">
+                        <ul class="logo">
+                        <li>KBS</li>
+                        <li>MBC</li>
+                        <li>SBS</li>
+                        <li>YTN</li>
+                        <li>연합뉴스TV</li>
+                        <li>JTBC</li>
+                        <li>MBN</li>
+                        <li>TV조선</li>
+                        <li>채널A</li>
+                        <li>한국경제TV</li>
+                        <li>OBS</li>
+                        <li>뉴스1</li>
+                        <li>뉴시스</li>
+                        <li>연합뉴스</li>
+                        <li>뉴스와이어</li>
+                        <li>아시아뉴스통신</li>
+                        </ul>
+                    </div>
+                    <div class="scroll-wrap">
+                        <ul class="logo">
+                        <li>KBS</li>
+                        <li>MBC</li>
+                        <li>SBS</li>
+                        <li>YTN</li>
+                        <li>연합뉴스TV</li>
+                        <li>JTBC</li>
+                        <li>MBN</li>
+                        <li>TV조선</li>
+                        <li>채널A</li>
+                        <li>한국경제TV</li>
+                        <li>OBS</li>
+                        <li>뉴스1</li>
+                        <li>뉴시스</li>
+                        <li>연합뉴스</li>
+                        <li>뉴스와이어</li>
+                        <li>아시아뉴스통신</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main6">
+        <div class="inner reveal">
+            <h2 class="main_tit">미뜰리에</h2>
+            <p class="main_txt">미뜰리에는 미디어를 만드는 공방(Atelier)이라는 뜻입니다.</p>
+            <div class="m_card">
+            </div>
+        </div> 
+    </section>
 
-    <script src="<%=request.getContextPath()%>/js/swiper.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
-    <script>
-        AOS.init();
-    </script>
+    <section class="main7">
+        <div class="inner reveal">
+
+            <h2 class="main_tit">다하미와 함께할 도전하는 인재를 찾습니다.</h2>
+            <div class="btn_area"><a class="btn" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=SGVIZUprUTdZRU92OHBMSksrMWF2dz09" target="_blank">채용 중인 공고 보기</a></div>
+        </div>
+    </section>
+    
+    <jsp:include page="common/footer.jsp"/>
+
 </body>
 
+    <script>
+        document.getElementsByTagName('video')[0].playbackRate = 0.9;
+    </script>
+
+    <script>
+        var container = document.querySelector('.gnb');
+        container.addEventListener('mouseenter', function() {
+            this.classList.add('on');
+        })
+        container.addEventListener('mouseleave', function() {
+            this.classList.remove('on');
+        })
+        
+        // 새소식 클릭시 반응
+		function evt(newwin){
+			var objid=document.getElementById("dd"+newwin);
+		
+			//class='on'
+		
+			if(objid.style.display=="block")
+			{
+			  objid.style.display="none";
+			  $("#dt"+newwin).removeClass();
+			}
+			else{
+			  $("#dd"+newwin).css('display','none');
+			  $("#dt"+newwin).removeClass();
+			  objid.style.display="block";
+			  $("#dt"+newwin).addClass("on");
+			}
+		}
+
+        window.addEventListener('scroll', function() {
+            var body = document.body,html = document.documentElement;
+
+            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+            var eHeight = window.scrollY / height;
+            var endHeight = document.querySelector('.main1').scrollHeight / height;
+            var isMobile = /Mobi/i.test(window.navigator.userAgent); // "Mobi" 가 User agent에 포함되어 있으면 모바일
+
+            var between = 0;
+            if(isMobile==false) {
+                between = endHeight / 4;        
+            } else {
+                between = endHeight / 8;        
+            }          
+
+            var first = 0 + between;
+            var second = first + between;
+            var third = second + between;
+            var forth = third + between;
+
+            if (eHeight >= 0 && eHeight < first) {
+                $('.main_v_tit1').css('display','block');
+                $('.main_v_tit2').removeClass('active');
+                $('.main_v_tit3').removeClass('active');
+                $('.main_v_tit4').removeClass('active');
+            } else if (eHeight >= first && eHeight < second) {
+                $('.main_v_tit1').css('display','none');
+                $('.main_v_tit2').addClass('active');
+                $('.main_v_tit3').removeClass('active');
+                $('.main_v_tit4').removeClass('active');
+            } else if (eHeight >= second && eHeight < third) {
+            	$('.main_v_tit1').css('display','none');
+                $('.main_v_tit2').addClass('active');
+                $('.main_v_tit3').addClass('active');
+                $('.main_v_tit4').removeClass('active');
+            } else if (eHeight >= third) {
+            	$('.main_v_tit1').css('display','none');
+                $('.main_v_tit2').addClass('active');
+                $('.main_v_tit3').addClass('active');
+                $('.main_v_tit4').addClass('active');
+            }
+        });	      
+	      
+	      function getCookie(name) {
+	            var wcname = name + '=', wcstart, wcend, end, i = 0;
+	            while (i <= document.cookie.length) {
+	                wcstart = i;
+	                wcend = (i + wcname.length);
+	                if (document.cookie.substring(wcstart, wcend) == wcname) {
+	                    if((end = document.cookie.indexOf(';', wcend)) == -1)
+	                    end = document.cookie.length;
+	                    return document.cookie.substring(wcend, end);
+	                }
+	                i = document.cookie.indexOf('', i) + 1;
+	                if (i == 0) break;
+	            }
+	            return '';
+	        }
+	      
+	      function popup(startDate, endDate, imgWidth, imgHeight) { // 오늘 하루동안 그만 보기 팝업
+	            var url = '<%=request.getContextPath()%>/common/popup.html';
+	            var arg = 'width=' + imgWidth + 'px, height=' + (imgHeight+34) + 'px, status=no, scrollbars=no, toolbar=no, menubar=no';
+	            var today = new Date();
+	            var startDay = new Date(startDate.replace(/-/g, "/") + ' 00:00:00');
+	            var endDay = new Date(endDate.replace(/-/g, "/") + ' 23:59:59');
+	            if ((getCookie('popup') != 'start') && (today >= startDay) && (today <= endDay)) {
+	                window.open(url, '', arg);
+	            }
+	        }
+        
+        $(document).ready(function() {
+        	popup('2022-11-24', // 'YYYY-MM-DD' : startDate
+	                  '2022-12-30', // 'YYYY-MM-DD': endDate
+	                  400, // n : imgWidth
+	                  400 // n : imgHeight
+	            );
+        	
+        	$.ajax({
+	        	type : "GET",          
+			    url : "<%=request.getContextPath()%>/loadInstaData.html",      
+			    data: "",
+			    dataType : "json",
+			    contentType : 'application/json; charset=utf-8',
+				cache : false,
+			    success : RenderInsta,
+			    error : RenderInsta
+        	});
+        	
+        	function RenderInsta(json) {
+        		var html = '';
+				html += '<ul>';
+        		for(var i=0; i<6; i++) {
+					html += '<li><a href='+json[0].data[i].permalink+' target="_blank"><img src='+json[0].data[i].media_url+'></a></li>';						
+        		}
+				html += '</ul>';					
+		        $('.m_card').html(html);
+        	}        	      	
+        })
+    </script>
+    
 </html>

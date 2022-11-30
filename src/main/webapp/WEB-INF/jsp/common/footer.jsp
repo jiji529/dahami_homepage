@@ -1,136 +1,89 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+    <footer>
+        <div class="inner">
+            <div class="f_top">
+                <div class="f_logo">
+                    <span class="f_logo_img">dahami</span>
+                    <span class="f_logo_slogan">모든 뉴스를 내 손안에, 다하미커뮤니케이션즈</span>
+                </div>
+                <div class="f_gnb">
+                    <dl>
+                        <dt><a href="<%=request.getContextPath()%>/promise/promise.html">약속</a></dt>
+                        <dd><a href="<%=request.getContextPath()%>/promise/promise.html#sec1">미디어 허브</a></dd>
+                        <dd><a href="<%=request.getContextPath()%>/promise/promise.html#sec2">전문가 역량</a></dd>
+                        <dd><a href="<%=request.getContextPath()%>/promise/promise.html#sec3">사회적 가치</a></dd>
 
-<div id="footer">
-	<div class="foot_lt">COPYRIGHT DAHAMI COMMUNICATIONS ALL RIGHTS RESERVED.
-		<!--© 2016. ㈜다하미커뮤니케이션즈 all rights reserved.-->
-	</div>
-	<div class="foot_rt">
-		<ul class="foot_menu">
-			<li class="color">개인정보처리방침</li>
-			<li>사이트맵</li>
-		</ul>
-		<div id="family_site">
-			<div id="select-title">주요 서비스 바로가기</div>
-			<div id="select-layer" style="display: none;">
-				<ul class="site-list">
-					<li><a href="http://scrapmaster.co.kr/" target="_blank">스크랩마스터</a></li>
-					<li><a href="http://clippingon.co.kr/" target="_blank">클리핑온</a></li>
-					<li><a href="http://www.t-paper.co.kr/" target="_blank">티페이퍼</a></li>
-					<li><a href="http://forme.or.kr/" target="_blank">e-NIE</a></li>
-					<li><a href="http://www.newsbank.co.kr/" target="_blank">뉴스뱅크</a></li>
-					<li><a href="http://www.news-plaza.co.kr" target="_blank">뉴스플라자</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="top"><a href="#">Top</a></div>
-<div id="pop1" style="display:none;">
-	<div class="pop_bg"></div>
-	<div class="pop_layer pop_1">
-		<h1>개인정보처리방침</h1>
-		<div class="pop_wrap">
-			<div class="pop_close">
-				<p>닫기</p>
-			</div>
-			<div class="pop_cont">
-				<iframe style="width:100%;" src="<%=request.getContextPath()%>/common/policy.jsp" id="iframePrivacy"></iframe>
-			</div>
-			<div class="pop_ok">
-				<p>확인</p>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="pop2" style="display:none;">
-	<div class="pop_bg"></div>
-	<div class="pop_layer pop_1">
-		<h1>사이트맵</h1>
-		<div class="pop_wrap">
-			<div class="pop_close">
-				<p>닫기</p>
-			</div>
-			<div class="pop_cont">
-				<dl class="sitemap">
-					<dt>회사소개</dt>
-					<dd>
-						<div class="box_line"></div>
-					</dd>
-					<dd><a href="/company/company.html?loc=intros">다하미소개</a></dd>
-					<dd><a href="/company/company.html?loc=history">연혁</a></dd>
-					<dd><a href="/company/company.html?loc=map">오시는 길</a></dd>
-				</dl>
-				<dl class="sitemap">
-					<dt>서비스소개</dt>
-					<dd>
-						<div class="box_line"></div>
-					</dd>
-					<dd><a href="/service/scrapmaster.html">스크랩마스터</a></dd>
-					<dd><a href="/service/clipping.html">클리핑온</a></dd>
-					<dd><a href="/service/tpaper.html">티페이퍼</a></dd>
-					<dd><a href="/service/newsbank.html">뉴스뱅크</a></dd>
-					<dd><a href="/service/enie.html">e-NIE</a></dd>
-					<dd><a href="/service/newsplaza.html">뉴스플라자</a></dd>
-					<dd><a href="/service/webapp.html">웹&amp;앱 서비스</a></dd>
-				</dl>
-				<dl class="sitemap">
-					<dt>인재경영</dt>
-					<dd>
-						<div class="box_line"></div>
-					</dd>
-					<dd><a href="/recruit/recruit.html?loc=talent">인재상</a></dd>
-					<dd><a href="/recruit/recruit.html?loc=employ">채용전형</a></dd>
-					<dd><a href="/recruit/recruit.html?loc=welfare">복리후생</a></dd>
-				</dl>
-				<dl class="sitemap">
-					<dt>커뮤니티</dt>
-					<dd>
-						<div class="box_line"></div>
-					</dd>
-					<dd><a href="/community/community.html?loc=new">새소식</a></dd>
-					<dd><a href="/community/community.html?loc=faq">자주 묻는 질문</a></dd>
-					<dd><a href="/community/community.html?loc=call">문의하기</a></dd>
-				</dl>
-			</div>
-			<div class="pop_ok">
-				<p>확인</p>
-			</div>
-		</div>
-	</div>
-</div>
-<script>
-	$('.foot_menu > li:eq(0)').on('click', function(e) {
-		$("#pop1").css('display','block');
-	});
-	
-	$('.foot_menu > li:eq(1)').on('click', function(e) {
-		$("#pop2").css('display','block');
-	});
-	
-	$('.pop_close').on('click', function(e) {
-		$("#pop1").css('display','none');
-		$("#pop2").css('display','none');
-	});
-	
-	$('.pop_ok p').on('click', function(e) {
-		$("#pop1").css('display','none');
-		$("#pop2").css('display','none');
-	});
-	
-	$('#family_site').on('click', function(e) {
-		if($(this).attr('data-click-state') == 1) {
-			$(this).attr('data-click-state', 0);
-			$("#select-layer").css('display','none');
-		} else {
-			$(this).attr('data-click-state', 1);
-			$("#select-layer").css('display','block');
-		}
-	});
+                    </dl>
+                    <dl>
+                        <dt><a href="<%=request.getContextPath()%>/execution/product.html">실행</a></dt>
+                        <dd><a href="<%=request.getContextPath()%>/execution/product.html">위기관리 솔루션</a></dd>
+                        <dd><a href="<%=request.getContextPath()%>/execution/culture.html">미디어 문화 사업</a></dd>
+                        <dd><a href="<%=request.getContextPath()%>/execution/partner.html">파트너쉽</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="<%=request.getContextPath()%>/tech/tech.html">기술</a></dt>
+                        <dd><a href="<%=request.getContextPath()%>/tech/tech.html#daia">dAIa</a></dd>
 
-	function showOtherPrivacy(arg) {
-		var file = '<%=request.getContextPath()%>/common/policy';
-		if (arg) file += '_' + arg;
-		file += '.jsp';
-		$('#iframePrivacy').attr('src', file);
-	}
-</script>
+                    </dl>
+                    <dl>
+                        <dt><a href="<%=request.getContextPath()%>/news/news.html">뉴스</a></dt>
+                        <dd><a href="<%=request.getContextPath()%>/news/news.html">회사소식</a></dd>
+                        <dd><a href="<%=request.getContextPath()%>/news/insta.html">미뜰리에</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="<%=request.getContextPath()%>/company/company.html">회사</a></dt>
+                        <dd><a href="<%=request.getContextPath()%>/company/company.html">회사소개</a></dd>
+                        <dd><a href="<%=request.getContextPath()%>/company/recruit.html">채용</a></dd>
+                        <dd><a href="<%=request.getContextPath()%>/company/faq.html">자주 묻는 질문</a></dd>
+                        <dd><a href="<%=request.getContextPath()%>/company/qna.html">문의하기</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="f_bottom">
+                <div class="f_copy">Copyright ⓒ DAHAMI Corp. All Rights Reserved.</div>
+                <div class="f_link">
+                	<a href="javascript:void(0)">개인정보처리방침</a>
+                	<a href="<%=request.getContextPath()%>/company/qna.html">제휴·서비스 문의</a>
+                </div>
+            </div>
+            <div class="f_family">
+                <div class="f_tit">Family sites</div>
+                <div class="f_li"><a href="http://www.scrapmaster.co.kr" target="_blank">스크랩마스터</a></div>
+                <div class="f_li"><a href="http://www.clippingon.co.kr" target="_blank">클리핑온</a></div>
+                <div class="f_li"><a href="http://www.t-paper.co.kr" target="_blank">티페이퍼</a></div>
+                <div class="f_li"><a href="http://www.newsbank.co.kr" target="_blank">뉴스뱅크</a></div>
+                <div class="f_li"><a href="http://news-plaza.com/" target="_blank">뉴스플라자</a></div>
+            </div>
+            <div id="pop1" style="display:none;">
+				<div class="pop_bg"></div>
+				<div class="pop_layer pop_1">
+					<h1 style="text-align:center;">개인정보처리방침</h1>
+					<div class="pop_wrap">
+						<div class="pop_close">
+							<p>닫기</p>
+						</div>
+						<div class="pop_cont">
+							<iframe style="width:100%;" src="<%=request.getContextPath()%>/common/policy.jsp" id="iframePrivacy"></iframe>
+						</div>
+						<div class="pop_ok">
+							<p style="text-align:center;">확인</p>
+						</div>
+					</div>
+				</div>
+			</div>        
+        </div>
+    </footer>
+    
+    <script>
+	    $('.f_link > a:eq(0)').on('click', function(e) {
+			$("#pop1").css('display','block');
+		});
+	    
+	    $('.pop_close').on('click', function(e) {
+			$("#pop1").css('display','none');
+		});
+		
+		$('.pop_ok p').on('click', function(e) {
+			$("#pop1").css('display','none');
+		});
+    </script>

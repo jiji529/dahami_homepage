@@ -1,66 +1,37 @@
-$(document).ready(function() {
-//  $(".contents").css('height', $(window).height() ); // ON TEST
-  $('.m-open').click(function() {
-    $('.m-open').css('display', 'none');
-    $('.m-close').css('display', 'block');
-    $('.gnb_menu, .scrapmaster, .callcenter').css('display', 'block');
-  });
-  $('.m-close').click(function() {
-    $('.m-close').css('display', 'none');
-    $('.m-open').css('display', 'block');
-    $('.gnb_menu, .scrapmaster, .callcenter').css('display', 'none');
-  });
-  $('.m-close').trigger('click');
-  $(window).trigger('resize');
-});
+//스크롤 효과
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
 
-function confLayout() { // ON TEST
-//  var height = Math.min(document.documentElement.offsetHeight, document.body.offsetHeight);
-//  $(".contents").css('height', height -146 );
-}
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
 
-var windowInnerHeightGnb = -1;
-var windowInnerWidthGnb = -1;
-var rtimeGnb;
-var timeoutGnb = false;
-var deltaGnb = 200;
-$(window).resize(function() {
-  if ($(window).width() > 1201) {
-    $('.gnb_menu, .scrapmaster, .callcenter').css('display', 'block');
-  }
-
-  rtimeGnb = new Date();
-  if (timeoutGnb === false) {
-    timeoutGnb = true;
-    setTimeout(resizeEndGnb, deltaGnb);
-  }
-});
-function resizeEndGnb() {
-  if (new Date() - rtimeGnb < deltaGnb) {
-    setTimeout(resizeEndGnb, deltaGnb);
-  } else {
-    timeoutGnb = false;
-    if (window.innerWidth > 1180) {
-      $('.gnb_menu').on('mouseover', function() {
-        $(".navi_layer, .navi_sub_ul").slideDown(200);
-      });
-      $('.navi_layer').on('mouseout', function() {
-        $(".navi_layer, .navi_sub_ul").slideUp(200);
-      });
-      $('.navi_layer').trigger('mouseout');
-    } else {
-      $('.gnb_menu').off('mouseover');
-      $('.navi_sub_ul').attr('style', '');
-      if ($('.m-open').is(':visible')) {
-        $('.m-close').trigger('click');
-      } else {
-        if ((window.innerHeight !== windowInnerHeightGnb) && (window.innerWidth === windowInnerWidthGnb)) {
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
         } else {
-          $('.m-close').trigger('click');
+            reveals[i].classList.remove("active");
         }
-      }
     }
-    windowInnerHeightGnb = window.innerHeight;
-    windowInnerWidthGnb = window.innerWidth;
-  }
 }
+window.addEventListener("scroll", reveal);
+
+
+//gnb 메뉴 모바일
+function gnb() {
+    var element = document.getElementById("gnb_mo");
+    element.classList.add("on");
+
+    var body = document.body;
+    body.classList.add("scroll_hidden");
+}
+
+
+function gnbclose() {
+    var element = document.getElementById("gnb_mo");
+    element.classList.remove("on");
+
+    var body = document.body;
+    body.classList.remove("scroll_hidden");
+}
+

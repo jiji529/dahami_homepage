@@ -1,63 +1,94 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-            <h1><a href="<%=request.getContextPath()%>/index.html">logo</a></h1>
-            <ul class="gnb_menu">
-                <li class="menu">
-                    <dl class="gnb_dl">
-                        <dt><a href="<%=request.getContextPath()%>/company/company.html">회사소개</a></dt>
-                        <dd class="">
-                            <ul class="navi_sub_ul">
-                                <li><a href="<%=request.getContextPath()%>/company/company.html?loc=intros" target="_parent">다하미 소개</a></li>
-                                <li><a href="<%=request.getContextPath()%>/company/company.html?loc=history" target="_parent">연혁</a></li>
-                                <li><a href="<%=request.getContextPath()%>/company/company.html?loc=map" target="_parent">오시는 길</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </li>
-                <li class="menu">
-                    <dl class="gnb_dl">
-                        <dt><a href="<%=request.getContextPath()%>/service/scrapmaster.html">서비스소개</a></dt>
-                        <dd class="">
-                            <ul class="navi_sub_ul">
-                                <li><a href="<%=request.getContextPath()%>/service/scrapmaster.html" target="_parent">스크랩마스터</a></li>
-                                <li><a href="<%=request.getContextPath()%>/service/clipping.html" target="_parent">클리핑온</a></li>
-                                <li><a href="<%=request.getContextPath()%>/service/tpaper.html" target="_parent">티페이퍼</a></li>
-                                <li><a href="<%=request.getContextPath()%>/service/newsbank.html" target="_parent">뉴스뱅크</a></li>
-                                <li><a href="<%=request.getContextPath()%>/service/enie.html" target="_parent">e-NIE</a></li>
-                                <li><a href="<%=request.getContextPath()%>/service/newsplaza.html" target="_parent">뉴스플라자</a></li>
-                                <li><a href="<%=request.getContextPath()%>/service/webapp.html" target="_parent">웹&amp;앱 서비스</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </li>
-                <li class="menu">
-                    <dl class="gnb_dl">
-                        <dt><a href="<%=request.getContextPath()%>/recruit/recruit.html">인재경영</a></dt>
-                        <dd class="">
-                            <ul class="navi_sub_ul">
-                                <li><a href="<%=request.getContextPath()%>/recruit/recruit.html?loc=talent" target="_parent">인재상</a></li>
-                                <li><a href="<%=request.getContextPath()%>/recruit/recruit.html?loc=employ" target="_parent">채용전형</a></li>
-                                <li><a href="<%=request.getContextPath()%>/recruit/recruit.html?loc=welfare" target="_parent">복리후생</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </li>
-                <li class="menu">
-                    <dl class="gnb_dl">
-                        <dt><a href="<%=request.getContextPath()%>/community/community.html">커뮤니티</a></dt>
-                        <dd class="">
-                            <ul class="navi_sub_ul">
-                                <li><a href="<%=request.getContextPath()%>/community/community.html?loc=new" target="_parent">새소식</a></li>
-                                <li><a href="<%=request.getContextPath()%>/community/community.html?loc=faq" target="_parent">자주 묻는 질문</a></li>
-                                <li><a href="<%=request.getContextPath()%>/community/community.html?loc=call" target="_parent">문의하기</a></li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </li>
-            </ul>
-            <div class="navi_layer" style="height: 260px; display: none;"> </div>
-            <div class="scrapmaster"><a href="http://www.scrapmaster.co.kr" target="_blank">스크랩마스터 바로가기</a></div>
-            <div class="callcenter"><a href="<%=request.getContextPath()%>/community/community.html?loc=calls" target="_parent">고객센터</a></div>
-            <div class="m-btn-menu">
-                <button class="m-open" style="">메뉴열기</button>
-                <button class="m-close" style="">메뉴닫기</button>
+    <header>
+        <h1 class="logo"><a href="<%=request.getContextPath()%>/index.html">dahami</a></h1>
+        <nav class="gnb">
+            <div class="gnbbg"></div>
+            <div class="menu"><a href="<%=request.getContextPath()%>/promise/promise.html">약속</a>
+                <div class="gnb_2depth">
+                    <a href="<%=request.getContextPath()%>/promise/promise.html">약속</a>
+                </div>
             </div>
+            <div class="menu"><a href="<%=request.getContextPath()%>/execution/product.html">실행</a>
+                <div class="gnb_2depth">
+                    <a href="<%=request.getContextPath()%>/execution/product.html">위기관리 솔루션</a>
+                    <a href="<%=request.getContextPath()%>/execution/culture.html">미디어 문화 사업</a>
+                    <a href="<%=request.getContextPath()%>/execution/partner.html">파트너쉽</a>
+                </div>
+            </div>
+            <div class="menu"><a href="<%=request.getContextPath()%>/tech/tech.html">기술</a>
+                <div class="gnb_2depth">
+                    <a href="<%=request.getContextPath()%>/tech/tech.html">기술</a>
+                </div>
+            </div>
+            <div class="menu"><a href="<%=request.getContextPath()%>/news/news.html">뉴스</a>
+                <div class="gnb_2depth">
+                    <a href="<%=request.getContextPath()%>/news/news.html">회사소식</a>
+                    <a href="<%=request.getContextPath()%>/news/insta.html">미뜰리에</a>
+                </div>
+            </div>
+            <div class="menu"><a href="<%=request.getContextPath()%>/company/company.html">회사</a>
+                <div class="gnb_2depth">
+                    <a href="<%=request.getContextPath()%>/company/company.html">회사소개</a>
+                    <a href="<%=request.getContextPath()%>/company/recruit.html">채용</a>
+                    <a href="<%=request.getContextPath()%>/company/faq.html">자주 묻는 질문</a>
+                    <a href="<%=request.getContextPath()%>/company/qna.html">문의하기</a>
+                </div>
+            </div>
+        </nav>
+        <div class="util">
+            <a href="https://www.scrapmaster.co.kr" target="_blank">스크랩마스터</a>
+            <a href="<%=request.getContextPath()%>/company/qna.html" target="_blank">문의하기</a>
+        </div>
+
+        <div class="gnb_btn" onclick="gnb()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="gnb_mo" id="gnb_mo">
+            <div class="gnb_close" onclick="gnbclose()">
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="gnb_mo_nav">
+                <div class=""><a href="<%=request.getContextPath()%>/promise/promise.html">약속</a>
+                    <div class="gnb_2depth">
+                        <a href="<%=request.getContextPath()%>/promise/promise.html">약속</a>
+                    </div>
+                </div>
+                <div class=""><a href="<%=request.getContextPath()%>/execution/product.html">실행</a>
+                    <div class="gnb_2depth">
+                        <a href="<%=request.getContextPath()%>/execution/product.html">위기관리 솔루션</a>
+                        <a href="<%=request.getContextPath()%>/execution/culture.html">미디어 문화 사업</a>
+                        <a href="<%=request.getContextPath()%>/execution/partner.html">파트너쉽</a>
+                    </div>
+                </div>
+                <div class=""><a href="<%=request.getContextPath()%>/tech/tech.html">기술</a>
+                    <div class="gnb_2depth">
+                        <a href="<%=request.getContextPath()%>/tech/tech.html">기술</a>
+                    </div>
+                </div>
+                <div class=""><a href="<%=request.getContextPath()%>/news/news.html">뉴스</a>
+                    <div class="gnb_2depth">
+                        <a href="<%=request.getContextPath()%>/news/news.html">회사소식</a>
+                        <a href="<%=request.getContextPath()%>/news/insta.html">미뜰리에</a>
+                    </div>
+                </div>
+                <div class=""><a href="<%=request.getContextPath()%>/company/company.html">회사</a>
+                    <div class="gnb_2depth">
+                        <a href="<%=request.getContextPath()%>/company/company.html">회사소개</a>
+                        <a href="<%=request.getContextPath()%>/company/recruit.html">채용</a>
+                        <a href="<%=request.getContextPath()%>/company/faq.html">자주 묻는 질문</a>
+                        <a href="<%=request.getContextPath()%>/company/qna.html">문의하기</a>
+                    </div>
+                </div>
+            </nav>
+
+        <div class="util">
+            <a href="https://www.scrapmaster.co.kr" target="_blank">스크랩마스터</a>
+            <a href="<%=request.getContextPath()%>/company/qna.html" target="_blank">문의하기</a>
+        </div>
+
+        </div>
+    </header>

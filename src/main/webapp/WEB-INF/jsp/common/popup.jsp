@@ -62,7 +62,7 @@ div#foot{background:#3A3E50;padding:5px 0;}
 <body style="overflow:hidden;">
 	<form>
 		<div id="body">
-			<img src="../images/popup.img" />
+			<img src="<%=request.getContextPath()%>/images/popup.img" />
 		</div>
 		<div id="foot" onClick="closePop()">
 			<input type="checkbox" id="todayPop">

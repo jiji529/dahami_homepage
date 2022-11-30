@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.dahami.api.main.service.vo.BoardVO;
+import com.dahami.api.main.service.vo.LogoVO;
 
 public interface MainService {
 	
@@ -12,4 +13,7 @@ public interface MainService {
 	
 	int SelectNotCnt(BoardVO boardVO) throws Exception;
 	int FaqCnt(BoardVO boardVO) throws Exception;
+	
+	Map<String, String> SelectKindList() throws Exception;
+	List<LogoVO> SelectLogoLst() throws Exception;
 }
