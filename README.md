@@ -44,6 +44,7 @@
 - Globals.insta.userId / Globals.insta.accessToken 존재하므로, 새로 발급받은 토큰으로 교체해주면 됨
 - 토큰 교체 및 인스타 앱 관리는 아래에서 진행하면 됨
 - https://developers.facebook.com/apps/?show_reminder=true
+- 갱신은 다음 사이트를 참고하면 됨 => https://developers.facebook.com/docs/instagram-basic-display-api/reference/refresh_access_token?locale=ko_KR
 
 - 인스타API 연동관련 참고사이트) https://tonhnegod.tistory.com/245#google_vignette
 
