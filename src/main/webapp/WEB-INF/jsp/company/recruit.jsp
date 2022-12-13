@@ -23,8 +23,8 @@
     </section>
     <section class="sub_recruit1">
         <div class="inner">
-            <h2 class="sub_tit">인재상</h2>
-            <p class="sub_txt">다하미커뮤니케이션즈는 창의적이고 도전적이며 항상 변화를 추구하는 인재와 함께 성장해갑니다.</p>
+            <h2 class="sub_tit">가치 있는 도전과 모험</h2>
+            <p class="sub_txt">함께 세상을 바꿔나갈 여러분을 기다립니다.</p>
             <div class="grid3">
                 <div class="rcrt1">
                     <h4 class="rcrt1_tit">창의적인 인재</h4>

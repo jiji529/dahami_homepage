@@ -19,8 +19,8 @@
                 <div class="tab_menu"><a href="<%=request.getContextPath()%>/execution/partner.html">파트너쉽</a></div>
             </div>
             <div class="subtit_tit row">
-                <h3 class="col4">위기관리의 든든한 엔진</h3>
-                <p class="subtit_txt col7">위기관리를 위한 전용 솔루션은 신문, 방송, 온라인 뉴스, SNS 등 복잡한 미디어 환경에서 통찰을 제공하는<br>
+                <h3 class="col4">위기관리의 든든한 도구</h3>
+                <p class="subtit_txt col7">미디어 위기관리를 위한 전용 솔루션은 신문, 방송, 온라인 뉴스, SNS 등 복잡한 미디어 환경에서<br>
                     최적의 제품과 서비스를 제공합니다.<br>
                     경제적인 예산으로 업무를 효율적으로 수행하는 데 도움을 줍니다. </p>
             </div>
@@ -72,10 +72,9 @@
                 <li><a href="<%=request.getContextPath()%>/execution/product_sub/expert.html">
                         <div class="prod_num">04</div>
                         <div class="prod_cont">
-                            <div class="prod_tit">위기관리 전문가 서비스</div>
+                            <div class="prod_tit">전문가 서비스</div>
                             <div class="prod_subtit">전문가의 맞춤형 상담과 서비스</div>
-                            <div class="prod_txt">경험이 풍부한 미디어 위기관리 전문가가 고객과 상담 후 가장 적합한 서비스를 제안합니다.
-                                고품질의 신뢰도 높은 미디어 인사이트를 만나보세요.</div>
+                            <div class="prod_txt">경험이 풍부한 미디어 위기관리 전문가가 고객과 상담 후 가장 적합한 서비스를 제안합니다.</div>
                             <div class="more">자세히 보기</div>
                         </div>
                         <div class="prod_thumb"><span></span></div>

@@ -23,7 +23,7 @@
             <div class="menu"><a href="<%=request.getContextPath()%>/news/news.html">뉴스</a>
                 <div class="gnb_2depth">
                     <a href="<%=request.getContextPath()%>/news/news.html">회사소식</a>
-                    <a href="<%=request.getContextPath()%>/news/insta.html">미뜰리에</a>
+                    <a href="<%=request.getContextPath()%>/news/insta.html">왓썹뉴스</a>
                 </div>
             </div>
             <div class="menu"><a href="<%=request.getContextPath()%>/company/company.html">회사</a>
@@ -72,7 +72,7 @@
                 <div class=""><a href="<%=request.getContextPath()%>/news/news.html">뉴스</a>
                     <div class="gnb_2depth">
                         <a href="<%=request.getContextPath()%>/news/news.html">회사소식</a>
-                        <a href="<%=request.getContextPath()%>/news/insta.html">미뜰리에</a>
+                        <a href="<%=request.getContextPath()%>/news/insta.html">왓썹뉴스</a>
                     </div>
                 </div>
                 <div class=""><a href="<%=request.getContextPath()%>/company/company.html">회사</a>

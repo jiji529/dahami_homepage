@@ -21,17 +21,18 @@
             <source type="video/mp4" src="<%=request.getContextPath()%>/images/main.mp4">
         </video>
         <div class="inner">
-            <div class="main_v_tit1">미디어를 가장 잘 아는<br>위기관리 파트너</div>
-            <div class="main_v_tit2 reveal">조직의 홍보, 마케팅, 전략결정 등에 필요한<br>차별화된 미디어 정보 솔루션을 개발, 제공하고 있습니다.</div>
-            <div class="main_v_tit3 reveal">최고의 미디어 정보 전문가들이<br>고객 맞춤형으로 직접 정보와 지식을 제공합니다.</div>
-            <div class="main_v_tit4 reveal">사업은 협력과 상생을 추구하며,<br>서비스는 사람과 사회를 생각합니다.</div>
+            <div class="main_v_tit1">뉴스를 가장 잘 이해하는<br>위기관리 파트너</div>
+            <div class="main_v_tit2 reveal">조직의 홍보, 마케팅, 전략 결정 등에 활용할 수 있도록<br>
+                수많은 뉴스 콘텐츠를 공급하고<br>
+                언론 위기에 선제 대응할 수 있도록 도와드립니다.</div>
+            <div class="main_v_tit3 reveal">지속적인 IT혁신을 통해 <br>비즈니스 경쟁력을 강화하고 <br>업계를 선도하고 있습니다.</div>            
         </div>
         <span class="ico_scroll"></span>
     </section>
     <section class="main1">
         <div class="inner">
             <h2 class="main_tit ">약속</h2>
-            <p class="main_txt ">미디어를 가장 잘 아는 위기관리 파트너가 되겠습니다</p>
+            <p class="main_txt ">뉴스를 가장 잘 이해하는 위기관리 파트너가 되겠습니다</p>
             <div class="grid3">
                 <div class="li1 reveal">
                     <div class="li1_imgbox"></div>
@@ -45,8 +46,8 @@
                 </div>
                 <div class="li1 reveal">
                     <div class="li1_imgbox"></div>
-                    <div class="li1_tit">사회적 가치</div>
-                    <div class="li1_txt">사회적 가치를 창출하는 회사</div>
+                    <div class="li1_tit">고객 가치</div>
+                    <div class="li1_txt">고객 가치를 생각하는 회사</div>
                 </div>
             </div>
         </div>
@@ -60,9 +61,8 @@
                 <div class="li2">
                 	<a href="<%=request.getContextPath()%>/execution/product_sub/scrapmaster.html">
                     <div class="li2_tit">스크랩마스터</div>
-                    <div class="li2_txt">세계 최초의 신문 스크랩 프로그램인 스크랩마스터는 <br>
-                        홍보, 전략, 마케팅, 지원 등 각 분야 전문가들이 <br>
-                        검증하고 신뢰하는 최고의 미디어 솔루션입니다.</div>
+                    <div class="li2_txt">세계 최초의 신문 스크랩 프로그램인 스크랩마스터는<br>
+                            각 분야 전문가들이 검증하고 신뢰하는 최고의 미디어 솔루션입니다.</div>
                     </a>
                 </div>
                 <div class="grid2r">
@@ -93,7 +93,8 @@
                 <div class="li2">
                 	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">
                     <div class="li2_tit">티페이퍼</div>
-                    <div class="li2_txt">디지털 화면에서 자연스레 종이를 넘기는 듯한 경험을 공간에서 제공하세요. 미학을 고려한 디자인과 설치까지 지원해드립니다.</div>
+                    <div class="li2_txt">키오스크의 큰 화면으로 고화질의 신문/잡지를 볼 수 있습니다.<br>
+직관적인 UI로 사용자들이 편하게 콘텐츠를 감상할 수 있습니다.</div>
                     </a>
                 </div>
                 <div class="grid2r">
@@ -244,8 +245,8 @@
     </section>
     <section class="main6">
         <div class="inner reveal">
-            <h2 class="main_tit">미뜰리에</h2>
-            <p class="main_txt">미뜰리에는 미디어를 만드는 공방(Atelier)이라는 뜻입니다.</p>
+            <h2 class="main_tit">왓썹뉴스</h2>
+            <p class="main_txt">내일을 읽는 뉴스를 소개합니다.</p>
             <div class="m_card">
             </div>
         </div> 
@@ -264,7 +265,7 @@
 </body>
 
     <script>
-        document.getElementsByTagName('video')[0].playbackRate = 0.9;
+        document.getElementsByTagName('video')[0].playbackRate = 0.4;
     </script>
 
     <script>
@@ -319,22 +320,18 @@
                 $('.main_v_tit1').css('display','block');
                 $('.main_v_tit2').removeClass('active');
                 $('.main_v_tit3').removeClass('active');
-                $('.main_v_tit4').removeClass('active');
             } else if (eHeight >= first && eHeight < second) {
                 $('.main_v_tit1').css('display','none');
                 $('.main_v_tit2').addClass('active');
                 $('.main_v_tit3').removeClass('active');
-                $('.main_v_tit4').removeClass('active');
             } else if (eHeight >= second && eHeight < third) {
             	$('.main_v_tit1').css('display','none');
                 $('.main_v_tit2').addClass('active');
                 $('.main_v_tit3').addClass('active');
-                $('.main_v_tit4').removeClass('active');
             } else if (eHeight >= third) {
             	$('.main_v_tit1').css('display','none');
                 $('.main_v_tit2').addClass('active');
                 $('.main_v_tit3').addClass('active');
-                $('.main_v_tit4').addClass('active');
             }
         });	      
 	      
@@ -367,7 +364,7 @@
         
         $(document).ready(function() {
         	popup('2022-11-24', // 'YYYY-MM-DD' : startDate
-	                  '2022-12-30', // 'YYYY-MM-DD': endDate
+	                  '2022-11-29', // 'YYYY-MM-DD': endDate
 	                  400, // n : imgWidth
 	                  400 // n : imgHeight
 	            );

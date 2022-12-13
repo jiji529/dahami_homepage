@@ -35,8 +35,7 @@
     <section class="sub_company1">
         <div class="inner">
             <div class="sub_tit">비전</div>
-            <h2 class="reveal">미디어 콘텐츠 서비스를 리드하는 <br>
-                최고의 기업을 추구합니다.</h2>
+            <h2 class="reveal">미디어 콘텐츠 유통, <br>정보화, 지식화 역량을 보유한 <br>탑티어 기업을 추구합니다.</h2>
         </div>
     </section>
 
@@ -122,10 +121,10 @@
                     <ul id="hst1">
                         <li><span class="hst_num">2022</span><span class="hst_desc">7년연속 청년친화강소기업 선정</span></li>
                         <li><span class="hst_num">2020</span><span class="hst_desc">T-Paper v5.0 GS인증 획득</span></li>
-                        <li><span class="hst_num">2020</span><span class="hst_desc">액션파워와 인공지능 분야 MOU 체결</span></li>
+                        <li><span class="hst_num">2020</span><span class="hst_desc">(주)액션파워와 인공지능 분야 MOU 체결</span></li>
                         <li><span class="hst_num">2020</span><span class="hst_desc">데이터바우처 지원사업 판매기업 선정</span></li>
                         <li><span class="hst_num">2020</span><span class="hst_desc">국민대학교 차세대 정보컴퓨팅 기술개발 사업 MOU체결</span></li>
-                        <li><span class="hst_num">2019</span><span class="hst_desc">(주)한화시스템과 디지털미디어 콘텐츠분야 AI사업협력 MOU체결</span></li>
+                        <li><span class="hst_num">2019</span><span class="hst_desc">한화시스템 주식회사와 디지털미디어 콘텐츠분야 AI사업협력 MOU체결</span></li>
                         <li><span class="hst_num">2018</span><span class="hst_desc">카이스트 양방향 T-PAPER 런칭</span></li>
                     </ul>
                     <ul id="hst2">
