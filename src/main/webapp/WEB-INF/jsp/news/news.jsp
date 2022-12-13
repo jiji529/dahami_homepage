@@ -21,7 +21,7 @@
             <h2>뉴스</h2>
             <div class="tab">
                 <div class="tab_menu on"><a href="<%=request.getContextPath()%>/news/news.html">회사소식</a></div>
-                <div class="tab_menu"><a href="<%=request.getContextPath()%>/news/insta.html">미뜰리에</a></div>
+                <div class="tab_menu"><a href="<%=request.getContextPath()%>/news/insta.html">왓썹뉴스</a></div>
             </div>
         </div>
     </section>

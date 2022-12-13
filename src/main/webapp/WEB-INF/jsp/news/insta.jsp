@@ -15,7 +15,7 @@
             <h2>뉴스</h2>
             <div class="tab">
                 <div class="tab_menu"><a href="<%=request.getContextPath()%>/news/news.html">회사소식</a></div>
-                <div class="tab_menu on"><a href="<%=request.getContextPath()%>/news/insta.html">미뜰리에</a></div>
+                <div class="tab_menu on"><a href="<%=request.getContextPath()%>/news/insta.html">왓썹뉴스</a></div>
             </div>
         </div>
     </section>
@@ -24,9 +24,9 @@
     <section class="sub_news">
         <div class="inner">
             <div class="sub_tit">
-                <h3>미뜰리에</h3>
+                <h3>왓썹뉴스</h3>
             </div>
-            <p class="sub_txt">미뜰리에는 미디어를 만드는 공방(Atelier)이라는 뜻입니다.</p>
+            <p class="sub_txt">내일을 읽는 뉴스를 소개합니다.</p>
             <div class="m_card">
                 <div class="m_card_sub">                
                 </div>
