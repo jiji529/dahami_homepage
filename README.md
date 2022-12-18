@@ -39,6 +39,7 @@
 - access_token: IGQVJYZAXh0VzcydG5mLUVhRGJiZA2E4alNJUE91UTRGUWFOci13YnczMHBhRjJIczJBMFNoaWozbWVoODFzYmFueEdjRWJvNWRpa3dJdE02aU14MUlfUFNSV2NfdmNYREljVzdyQTBn,
 - token_type: bearer,
 - expires_in: 5184000
+- API 사용예시 : https://graph.instagram.com/17841452306963734/media?fields=id,media_type,media_url,permalink,thumbnail_url,username,caption&access_token=IGQVJYZAXh0VzcydG5mLUVhRGJiZA2E4alNJUE91UTRGUWFOci13YnczMHBhRjJIczJBMFNoaWozbWVoODFzYmFueEdjRWJvNWRpa3dJdE02aU14MUlfUFNSV2NfdmNYREljVzdyQTBn&limit=100
 
 - classpath:/dahami/props/globals.properties 내부
 - Globals.insta.userId / Globals.insta.accessToken 존재하므로, 새로 발급받은 토큰으로 교체해주면 됨
