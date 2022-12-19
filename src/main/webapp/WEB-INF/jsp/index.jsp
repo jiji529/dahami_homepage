@@ -265,7 +265,7 @@
 </body>
 
     <script>
-        document.getElementsByTagName('video')[0].playbackRate = 0.4;
+        /* document.getElementsByTagName('video')[0].playbackRate = 0.4; */
     </script>
 
     <script>
