@@ -50,7 +50,7 @@
             <div class="prod_box">
                 <div class="prod_img"><img src="<%=request.getContextPath()%>/images/scrapmaster1-4.png"></div>
                 <div class="prod_box_txt">
-                    <p>매일 240종 이상의
+                    <p>매일 380종 이상의
                         신문 콘텐츠 제공</p>
                 </div>
             </div>

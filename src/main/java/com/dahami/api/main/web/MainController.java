@@ -258,6 +258,13 @@ public class MainController {
 		
 		boardCdList = mainService.SelectNotLst(boardVO);
 		
+		for(int i=0; i<boardCdList.size(); i++) {
+			String f_body = boardCdList.get(i).getBody();
+			String pattern = "[\\[_](.*?)[\\_]]";
+			f_body = f_body.replaceAll(pattern, "");
+			boardCdList.get(i).setBody(f_body);
+		}
+		
 		boardVO.setEndPageSize(11);
 		NoticeCnt = mainService.SelectNotCnt(boardVO);
 		
@@ -287,6 +294,12 @@ public class MainController {
 		boardVO.setEndPageSize(between);
 		
 		boardCdList = mainService.SelectNotLst(boardVO);
+		for(int i=0; i<boardCdList.size(); i++) {
+			String f_body = boardCdList.get(i).getBody();
+			String pattern = "[\\[_](.*?)[\\_]]";
+			f_body = f_body.replaceAll(pattern, "");
+			boardCdList.get(i).setBody(f_body);
+		}
 		NoticeCnt = mainService.SelectNotCnt(boardVO);
 		
 		for(int i=0; i<boardCdList.size(); i++) {
