@@ -35,7 +35,7 @@
                 마케팅, 저작권 관리 등 전문가들
             </div>
             <div class="sub_tit">고객 가치</div>
-            <div class="sub_txt">고객 가치를 생각하는 회사
+            <div class="sub_txt">고객의 고민을 함께 경험하고<br>가치를 만드는 회사
             </div>
         </div>
     </section>
@@ -70,9 +70,8 @@
                 <div class="li3_imgbox"></div>
                 <div class="li3_box">
                     <div class="li3_tit">고객 가치</div>
-                    <div class="li3_txt">고객 가치를 생각하는 회사</div>
-                    <div class="li3_cont">제품과 서비스는 고객 가치를 고려해 제공합니다.<br>
-제품을 위한 제품, 기술을 위한 기술을 추구하지 않습니다. 사람과 고객 중심의 제품과 서비스를 제공합니다.</div>
+                    <div class="li3_txt">고객의 고민을 함께 경험하고<br>가치를 만드는 회사</div>
+                    <div class="li3_cont">모든 회사의 제품과 서비스는 고객의 고민을 함께 경험하며 만들어 갑니다. <br>제품을 위한 제품이나 기술을 위한 기술을 추구하지 않습니다. <br>고객을 이해하고 고객에게 가치를 드리는 서비스를 추구합니다.</div>
                 </div>
             </div>
         </div>

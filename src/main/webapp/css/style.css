@@ -443,6 +443,10 @@ section{width: 100%; padding: 5rem 0 8rem;}
 .qna_box *{margin-bottom: 0.5rem; line-height: 1.8;}
 .qna_box span{font-weight: 500; width: 20%; display: inline-block; color: #3457ea;}
 
+.top{position: fixed; right: 30px; bottom:30px; width: 60px; height: 60px; border-radius: 30px; background: #fff; 
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3); z-index: 100; text-indent: -9999px; cursor: pointer;}
+.top a{ display: block; margin-top: 10px; margin-left: 16px; width:32px; height: 32px; transform: rotate(-90deg);  background: url(../images/arrow1.png) 0 0 no-repeat; opacity: 0.6;}
+.top a:hover{transform:translateY(-3px) rotate(-90deg)}
 @media screen and (max-width:1600px){
     html{font-size: 90%;}
     .inner{width: 100%; padding: 0 20px; margin: 0 auto;}
@@ -463,6 +467,7 @@ section{width: 100%; padding: 5rem 0 8rem;}
     footer .f_top{flex-direction: column; gap:40px; }
     header{padding: 18px; height: 60px; border-bottom: 1px #ccc solid; background: #fff;}
     header .gnb, header .util{display: none;}
+    .gnb_mo.on .gnb_2depth{ opacity: 1; display: block}
     header .logo{width: 100px; height: 20px; background-size: contain; background-position: center;}
     .main1 .li1 .li1_imgbox{height: 30vw;}
     .main1 .li1:first-child .li1_imgbox, .main1 .li1:nth-child(2) .li1_imgbox, .main1 .li1:nth-child(3) .li1_imgbox{background-size: cover;}

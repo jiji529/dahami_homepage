@@ -73,6 +73,7 @@
 			</div>        
         </div>
     </footer>
+    <div class="top"><a href="#">top</a></div>
     
     <script>
 	    $('.f_link > a:eq(0)').on('click', function(e) {

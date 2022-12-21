@@ -5,7 +5,9 @@
             <div class="gnbbg"></div>
             <div class="menu"><a href="<%=request.getContextPath()%>/promise/promise.html">약속</a>
                 <div class="gnb_2depth">
-                    <a href="<%=request.getContextPath()%>/promise/promise.html">약속</a>
+                    <a href="<%=request.getContextPath()%>/promise/promise.html#sec1">미디어 허브</a>
+                    <a href="<%=request.getContextPath()%>/promise/promise.html#sec2">전문가 역량</a>
+                    <a href="<%=request.getContextPath()%>/promise/promise.html#sec3">고객 가치</a>
                 </div>
             </div>
             <div class="menu"><a href="<%=request.getContextPath()%>/execution/product.html">실행</a>
@@ -17,7 +19,7 @@
             </div>
             <div class="menu"><a href="<%=request.getContextPath()%>/tech/tech.html">기술</a>
                 <div class="gnb_2depth">
-                    <a href="<%=request.getContextPath()%>/tech/tech.html">기술</a>
+                    <a href="<%=request.getContextPath()%>/tech/tech.html">dAIa</a>
                 </div>
             </div>
             <div class="menu"><a href="<%=request.getContextPath()%>/news/news.html">뉴스</a>
@@ -54,7 +56,9 @@
             <nav class="gnb_mo_nav">
                 <div class=""><a href="<%=request.getContextPath()%>/promise/promise.html">약속</a>
                     <div class="gnb_2depth">
-                        <a href="<%=request.getContextPath()%>/promise/promise.html">약속</a>
+                        <a href="<%=request.getContextPath()%>/promise/promise.html#sec1">미디어 허브</a>
+                    	<a href="<%=request.getContextPath()%>/promise/promise.html#sec2">전문가 역량</a>
+                    	<a href="<%=request.getContextPath()%>/promise/promise.html#sec3">고객 가치</a>
                     </div>
                 </div>
                 <div class=""><a href="<%=request.getContextPath()%>/execution/product.html">실행</a>
@@ -66,7 +70,7 @@
                 </div>
                 <div class=""><a href="<%=request.getContextPath()%>/tech/tech.html">기술</a>
                     <div class="gnb_2depth">
-                        <a href="<%=request.getContextPath()%>/tech/tech.html">기술</a>
+                        <a href="<%=request.getContextPath()%>/tech/tech.html">dAIa</a>
                     </div>
                 </div>
                 <div class=""><a href="<%=request.getContextPath()%>/news/news.html">뉴스</a>

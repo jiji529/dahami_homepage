@@ -25,7 +25,7 @@
         <div class="inner">
             <div class="sub_tit">제휴/서비스 문의</div>
             <h2 class="sub_txt">제휴 또는 서비스 상담을 원하시면 아래 전화 또는 메일로 연락 주세요.<br>
-                기타 사항은 질문하기를 이용해 주시면 신속히 안내해드리겠습니다.</h2>
+                기타 사항은 문의하기를 이용해 주시면 신속히 안내해드리겠습니다.</h2>
         </div>
     </section>
     <section class="subimg img_qna"></section>

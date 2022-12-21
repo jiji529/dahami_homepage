@@ -21,11 +21,9 @@
             <source type="video/mp4" src="<%=request.getContextPath()%>/images/main.mp4">
         </video>
         <div class="inner">
-            <div class="main_v_tit1">뉴스를 가장 잘 이해하는<br>위기관리 파트너</div>
-            <div class="main_v_tit2 reveal">조직의 홍보, 마케팅, 전략 결정 등에 활용할 수 있도록<br>
-                수많은 뉴스 콘텐츠를 공급하고<br>
-                언론 위기에 선제 대응할 수 있도록 도와드립니다.</div>
-            <div class="main_v_tit3 reveal">지속적인 IT혁신을 통해 <br>비즈니스 경쟁력을 강화하고 <br>업계를 선도하고 있습니다.</div>            
+            <div class="main_v_tit1" style="display:none;">뉴스를 가장 잘 이해하는<br>위기관리 파트너</div>
+            <div class="main_v_tit2 reveal">조직의 홍보, 마케팅, 전략 결정 등에 필요한<br>뉴스 콘텐츠와 미디어 정보 솔루션을 제공하고 있습니다.<br></div>
+            <div class="main_v_tit3 reveal">최고의 미디어 정보 전문가들이<br>고객 맞춤형으로 정보를 넘어 지식을 제공합니다.</div>            
         </div>
         <span class="ico_scroll"></span>
     </section>
@@ -47,7 +45,7 @@
                 <div class="li1 reveal">
                     <div class="li1_imgbox"></div>
                     <div class="li1_tit">고객 가치</div>
-                    <div class="li1_txt">고객 가치를 생각하는 회사</div>
+                    <div class="li1_txt">고객의 고민을 함께 경험하고<br>가치를 만드는 회사</div>
                 </div>
             </div>
         </div>
@@ -69,8 +67,7 @@
                     <div class="li2">
                     <a href="<%=request.getContextPath()%>/execution/product_sub/clippingon.html">
                         <div class="li2_tit">클리핑온</div>
-                        <div class="li2_txt">방송사의 영상 뉴스는 시청자들에게 직접적인 인상을 남겨 파급력이 매우 큽니다.
-                            클리핑온은 주요 뉴스 시간에 실시간 알림으로 효율적인 위기 대응을 지원합니다.</div>
+                        <div class="li2_txt"><b>클리핑온은</b> 주요 뉴스 시간에 <b>실시간 알림</b>으로 효율적인 위기 대응을 지원합니다.</div>
                     </a>
                     </div>                    
                     <div class="li2">
@@ -87,7 +84,7 @@
     <section class="main3 animated">
         <div class="inner reveal">
             <h2 class="main_tit animated">미디어 문화 사업</h2>
-            <p class="main_txt animated">디지털 시대에 더 중요한 읽기문화의 보급, 신문활용교육 등 미디어를 활용한 문화 사업을 수행하고 있습니다.<br>
+            <p class="main_txt animated">디지털 시대에 중요한 읽기문화의 보급, 신문활용교육 등 미디어를 활용한 문화 사업을 수행하고 있습니다.<br>
                 우리는 미디어가 사회나 문화 발전에 기여할 수 있는 사업을 발굴해 운영하고 있습니다.</p>
             <div class="grid2">
                 <div class="li2">
@@ -107,7 +104,7 @@
                     <div class="li2">
                     	<a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">
                         <div class="li2_tit">e-NIE</div>
-                        <div class="li2_txt">신문 기사와 구성은 학습자 특히 청소년의 인지학습능력을 키우고 가치관 및 인성을 발달시키는 데 큰 도움이 됩니다.</div>
+                        <div class="li2_txt">종이신문을 그대로 컴퓨터로 옮겨 인터넷이 접속되는 곳에서<br>편리하게 <b>신문을 스크랩하여 교육에 활용</b>할 수 있습니다.</div>
                         </a>
                     </div>
                 </div>
@@ -144,7 +141,7 @@
     <section class="main5">
         <div class="inner reveal">
             <h2 class="main_tit">파트너쉽</h2>
-            <p class="main_txt">600여개 신문과 언론재단이 다하미와 함께합니다.</p>
+            <p class="main_txt">600여개의 언론사, 한국언론진흥재단이 다하미와 함께합니다.</p>
               <div class="m_partner">
                 <div class="scroll">
                     <div class="scroll-wrap">
@@ -295,9 +292,31 @@
 			  $("#dt"+newwin).addClass("on");
 			}
 		}
+        
+        // 스크롤시, 문구가 겹쳐보이는 현상이 있어 트랜지션의 시점을 캐치하여 개선하였음
+        const transition = document.querySelector('.main_v_tit2');
+        
+        // 트랜지션 시작시점
+        transition.ontransitionstart = function() {
+          if($('.main_v_tit2').hasClass('active')) {
+          	$('.main_v_tit1').css('display','none');
+          }
+        };
+          
+       	// 트랜지션 종료시점
+        transition.ontransitionend = function() {
+          if($('.main_v_tit2').hasClass('active')==false) {
+        	$('.main_v_tit1').css('display','block');
+          } 
+        };
 
         window.addEventListener('scroll', function() {
-            var body = document.body,html = document.documentElement;
+        	// 스크롤시 이벤트 트리거
+        	scrollText();
+        });	      
+        
+        function scrollText() {
+        	var body = document.body,html = document.documentElement;
 
             var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
             var eHeight = window.scrollY / height;
@@ -315,25 +334,27 @@
             var second = first + between;
             var third = second + between;
             var forth = third + between;
+            
+            // 최초 시작시점에는 무조건 보이게 한다.
+            if($('.main_v_tit2').hasClass('active')==false && $('.main_v_tit3').hasClass('active')==false) {
+            	$('.main_v_tit1').css('display','block');
+            }
 
+            // 그리고 스크롤이 시작되면, 아래의 조건식에서 분기한다.
             if (eHeight >= 0 && eHeight < first) {
-                $('.main_v_tit1').css('display','block');
                 $('.main_v_tit2').removeClass('active');
                 $('.main_v_tit3').removeClass('active');
             } else if (eHeight >= first && eHeight < second) {
-                $('.main_v_tit1').css('display','none');
                 $('.main_v_tit2').addClass('active');
                 $('.main_v_tit3').removeClass('active');
             } else if (eHeight >= second && eHeight < third) {
-            	$('.main_v_tit1').css('display','none');
                 $('.main_v_tit2').addClass('active');
                 $('.main_v_tit3').addClass('active');
             } else if (eHeight >= third) {
-            	$('.main_v_tit1').css('display','none');
                 $('.main_v_tit2').addClass('active');
                 $('.main_v_tit3').addClass('active');
             }
-        });	      
+        }
 	      
 	      function getCookie(name) {
 	            var wcname = name + '=', wcstart, wcend, end, i = 0;
@@ -363,6 +384,9 @@
 	        }
         
         $(document).ready(function() {
+        	// 스크롤이 특정 위치에 있을때, 새로고침 등으로 새 페이지를 열면 겹치는 현상을 제어함
+        	scrollText();
+        	
         	popup('2022-11-24', // 'YYYY-MM-DD' : startDate
 	                  '2022-11-29', // 'YYYY-MM-DD': endDate
 	                  400, // n : imgWidth
