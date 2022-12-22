@@ -33,13 +33,13 @@
 - pwd : dahamijb!@2
 - 내 애플리케이션>앱 설정>플랫폼 에서 WEB 도메인 등록을 해야 사용가능
 
-# 인스타 (60일 장기토큰까지만 발행가능하므로, 만료시 갱신해줘야함 - 기존 발급일(2022-11-24))
+# 인스타 (60일 장기토큰까지만 발행가능하므로, 만료시 갱신해줘야함 - 기존 발급일(2022-12-22) / 만료일(2023-02-20 10:42:00))
 - SNS ID: dahamisns@dahami.com 
 - password: dahamijb!@2
-- access_token: IGQVJYZAXh0VzcydG5mLUVhRGJiZA2E4alNJUE91UTRGUWFOci13YnczMHBhRjJIczJBMFNoaWozbWVoODFzYmFueEdjRWJvNWRpa3dJdE02aU14MUlfUFNSV2NfdmNYREljVzdyQTBn,
+- access_token: IGQVJXSW9FVnl6ZAS1lUERad2NrdEdkbEV1RTR5QVZAheTVtWWtXdjRFVVg2QTM1b1ZAXS2dwNjAyZAUNpRWlqWGtvaGZAsNHVuTjhXT2xjSFF5N25fY0RSLXdybGJWU1NMbzRfdWlEa3NB,
 - token_type: bearer,
 - expires_in: 5184000
-- API 사용예시 : https://graph.instagram.com/17841452306963734/media?fields=id,media_type,media_url,permalink,thumbnail_url,username,caption&access_token=IGQVJYZAXh0VzcydG5mLUVhRGJiZA2E4alNJUE91UTRGUWFOci13YnczMHBhRjJIczJBMFNoaWozbWVoODFzYmFueEdjRWJvNWRpa3dJdE02aU14MUlfUFNSV2NfdmNYREljVzdyQTBn&limit=100
+- API 사용예시 : https://graph.instagram.com/17841452306963734/media?fields=id,media_type,media_url,permalink,thumbnail_url,username,caption&access_token=IGQVJXSW9FVnl6ZAS1lUERad2NrdEdkbEV1RTR5QVZAheTVtWWtXdjRFVVg2QTM1b1ZAXS2dwNjAyZAUNpRWlqWGtvaGZAsNHVuTjhXT2xjSFF5N25fY0RSLXdybGJWU1NMbzRfdWlEa3NB&limit=100
 
 - classpath:/dahami/props/globals.properties 내부
 - Globals.insta.userId / Globals.insta.accessToken 존재하므로, 새로 발급받은 토큰으로 교체해주면 됨
@@ -60,4 +60,9 @@
 # 서비스로고
 - http://board.scrapmaster.co.kr/admin/
 - scrapmaster board > 서비스 매체에서 등록된 로고가 scrap_logo.php 가 실행되어 rsync로 로고 이미지를 받아옴
-
+- 접속정보
+- sftp : 211.233.16.126
+- port : 41740
+- id : root
+- pwd : 16yrp.ekgkal]
+- path : /data/www/dahami/new/admin/scrapmaster/scrap_logo.php
