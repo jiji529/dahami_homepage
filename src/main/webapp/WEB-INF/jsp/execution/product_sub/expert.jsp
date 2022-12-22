@@ -10,6 +10,17 @@
 <body>
     <jsp:include page="../../common/header.jsp"/>
     <section class="subpg_tit">
+    	<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<a href="<%=request.getContextPath()%>/execution/product.html" class="location_list">위기관리 솔루션</a>
+			</li>
+			<li>
+				<span class="location_list">전문가 서비스</span>
+			</li>
+		</ul>
         <div class="inner">
             <div>
                 <h2>전문가의 맞춤형 상담과 서비스</h2>

@@ -11,6 +11,17 @@
     <jsp:include page="../../common/header.jsp"/>
 
     <section class="subpg_tit">
+    	<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<a href="<%=request.getContextPath()%>/execution/culture.html" class="location_list">미디어 문화 사업</a>
+			</li>
+			<li>
+				<span class="location_list">뉴스뱅크</span>
+			</li>
+		</ul>
         <div class="inner">
             <div>
                 <h2>대한민국 보도사진 박물관 </h2>

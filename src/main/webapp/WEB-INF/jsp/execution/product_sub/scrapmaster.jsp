@@ -11,6 +11,17 @@
     <jsp:include page="../../common/header.jsp"/>
 
     <section class="subpg_tit">
+		<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<a href="<%=request.getContextPath()%>/execution/product.html" class="location_list">위기관리 솔루션</a>
+			</li>
+			<li>
+				<span class="location_list">스크랩마스터</span>
+			</li>
+		</ul>
         <div class="inner">
             <div>
                 <h2>세계 최초의 신문 스크랩 프로그램</h2>

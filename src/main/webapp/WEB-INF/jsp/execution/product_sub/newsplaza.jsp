@@ -11,6 +11,17 @@
     <jsp:include page="../../common/header.jsp"/>
 
     <section class="subpg_tit">
+    	<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<a href="<%=request.getContextPath()%>/execution/product.html" class="location_list">위기관리 솔루션</a>
+			</li>
+			<li>
+				<span class="location_list">뉴스플라자</span>
+			</li>
+		</ul>
         <div class="inner">
             <div>
                 <h2>온라인 뉴스 통합이용 서비스</h2>

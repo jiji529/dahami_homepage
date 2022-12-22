@@ -11,6 +11,17 @@
     <jsp:include page="../../common/header.jsp"/>
 
     <section class="subpg_tit">
+    	<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<a href="<%=request.getContextPath()%>/execution/culture.html" class="location_list">미디어 문화 사업</a>
+			</li>
+			<li>
+				<span class="location_list">e-NIE</span>
+			</li>
+		</ul>
         <div class="inner">
             <div>
                 <h2>컴퓨터로 신문을 보며 공부해요</h2>
@@ -23,8 +34,7 @@
     </section>
     <section class="subimg img_enie"></section>
     <section class="prod_head">
-        <div class="inner">신문 기사와 구성은 학습자 특히 청소년의 인지학습능력을 키우고 <br>
-            가치관 및 인성을 발달시키는 데 큰 도움이 됩니다. <br>
+        <div class="inner">종이신문을 그대로 컴퓨터로 옮겨 인터넷이 접속되는 곳에서<br>편리하게 <b>신문을 스크랩하여 교육에 활용</b>할 수 있습니다. <br>
             현재 <b>한국언론진흥재단과 함께 신문활용교육(e-NIE) 사업 운영</b>을 하고 있습니다.</div>
     </section>
     <section class="prod_detail1">

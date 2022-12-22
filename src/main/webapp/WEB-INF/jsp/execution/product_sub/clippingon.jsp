@@ -10,6 +10,17 @@
 <body>
     <jsp:include page="../../common/header.jsp"/>
     <section class="subpg_tit">
+    	<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<a href="<%=request.getContextPath()%>/execution/product.html" class="location_list">위기관리 솔루션</a>
+			</li>
+			<li>
+				<span class="location_list">클리핑온</span>
+			</li>
+		</ul>
         <div class="inner">
             <div>
                 <h2>실시간 방송 뉴스 모니터링 솔루션 </h2>
@@ -18,7 +29,7 @@
                     예상치 못한 보도에 대한 즉각적인 대응 및 위기 관리가 가능합니다.<br>
                     또한, 스크랩마스터와 연동을 통해 언론 스크랩 업무를 통합해 드립니다. </p>
             </div>
-            <a href="https://www.clippingon.co.kr/" target="_blank" class="btn_bk">서비스 바로가기</a>
+            <a href="http://www.clippingon.co.kr/" target="_blank" class="btn_bk">서비스 바로가기</a>
         </div>
     </section>
     <section class="subimg img_clippingon"></section>

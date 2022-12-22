@@ -15,13 +15,20 @@
     <jsp:include page="../common/header.jsp"/>
 
     <section class="sublist_area">
+		<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<span class="location_list">약속</span>
+			</li>
+		</ul>
         <div class="inner">
             <h2>약속</h2>
             <div class="subtit_tit row">
                 <h3 class="col5">미디어를 가장 잘 아는<br>
                     위기관리 파트너가 되겠습니다.</h3>
-                <p class="subtit_txt col7">우리는 언제 어디서나 신뢰할 만한 파트너가 되겠습니다.<br>
-                    제품과 서비스의 혁신, 최고의 전문가 역량 보유, 휴머니즘 정신의 추구는<br>
+                <p class="subtit_txt col7">미디어 콘텐츠 허브로서 최고의 미디어 전문가 역량을 바탕으로 새로운 가치를 제공하는 것은,<br>
                     모든 고객과 비즈니스 파트너에 대한 우리의 약속입니다.</p>
             </div>
         </div>

@@ -11,6 +11,17 @@
     <jsp:include page="../../common/header.jsp"/>
 
     <section class="subpg_tit">
+    	<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<a href="<%=request.getContextPath()%>/execution/culture.html" class="location_list">미디어 문화 사업</a>
+			</li>
+			<li>
+				<span class="location_list">티페이퍼</span>
+			</li>
+		</ul>
         <div class="inner">
             <div>
                 <h2>터치스크린과 신문의 만남 </h2>
@@ -53,7 +64,7 @@
     </section>
     <section class="prod_head">
         <div class="inner">도서관, 공공건물, 회사 등 로비에서 
-<b>홍보효과</b>를 경험할 수 있습니다</div>
+<b>홍보효과</b>를 경험할 수 있습니다.</div>
     </section>
     <section class="prod_detail2">
         <div class="inner grid3">

@@ -10,6 +10,14 @@
 <body>
     <jsp:include page="../common/header.jsp"/>
     <section class="sublist_area">
+		<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<span class="location_list">회사소개</span>
+			</li>
+		</ul>
         <div class="inner">
             <h2>회사</h2>
             <div class="tab">
@@ -158,35 +166,20 @@
             <p class="sub_txt">다하미커뮤니케이션즈는 다양한 특허를 보유한 전문적인 회사입니다.</p>
             <div class="patent">
                 <ul>
-                    <li>
-                        <div class="pat_tit">출원번호</div>
-                        <div class="pat_num">1020120063704</div>
-                        <div class="pat_txt">인쇄매체에 인쇄된 문서를 스캔하는 펜형 디지털 스캐너를 이용한 인쇄매체 스크랩 서비스 시스템 및 인쇄매체 스크랩 서비스 제공방법</div>
-                    </li>
-                    <li>
-                        <div class="pat_tit">출원번호</div>
-                        <div class="pat_num">1020130124216</div>
-                        <div class="pat_txt">매체 이미지의 테두리 자동 검출 방법, 이를 이용한 매체 이미지 처리 시스템 및 처리 방법</div>
-                    </li>
-                    <li>
-                        <div class="pat_tit">출원번호</div>
-                        <div class="pat_num">1020130120174</div>
-                        <div class="pat_txt">사용자 동작 인식에 기초한 디지털 인쇄매체의 스크랩 처리 장치 및 그 방법</div>
-                    </li>
-                    <li>
+                	<li>
                         <div class="pat_tit">출원번호</div>
                         <div class="pat_num">1020060093266</div>
                         <div class="pat_txt">통신망을 통해 제공되는 매스미디어 정보에 대한 고객열람현황 분석정보 서비스 방법 및 그에 따른 분석정보서비스 장치</div>
                     </li>
                     <li>
                         <div class="pat_tit">출원번호</div>
-                        <div class="pat_num">1020140056623</div>
-                        <div class="pat_txt">인쇄매체에 인쇄된 문서를 스캔하는 펜형 디지털 스캐너를 이용한 인쇄매체 스크랩 서비스 시스템 및 인쇄매체 스크랩 서비스 제공방법</div>
+                        <div class="pat_num">1020100033972</div>
+                        <div class="pat_txt">저작권 보호 기반의 디지털 사진 유통시스템 및 방법</div>
                     </li>
                     <li>
                         <div class="pat_tit">출원번호</div>
-                        <div class="pat_num">1020130047341</div>
-                        <div class="pat_txt">음향패턴을 이용하여 휴대형 단말기용 이어폰 인식하는 음향처리 시스템, 음향패턴을 이용한 휴대형 단말기용 이어폰 인식방법 및 이를 이용한 입력음향 처리 방법</div>
+                        <div class="pat_num">1020120063704</div>
+                        <div class="pat_txt">인쇄매체에 인쇄된 문서를 스캔하는 펜형 디지털 스캐너를 이용한 인쇄매체 스크랩 서비스 시스템 및 인쇄매체 스크랩 서비스 제공방법</div>
                     </li>
                     <li>
                         <div class="pat_tit">출원번호</div>
@@ -200,14 +193,30 @@
                     </li>
                     <li>
                         <div class="pat_tit">출원번호</div>
-                        <div class="pat_num">1020200103497</div>
-                        <div class="pat_txt">뉴스 스크랩을 위한 추천 키워드 제공 시스템, 이를 이용한 뉴스 스크랩에 사용되는 키워드 사전 구성 및 업데이트 방법, 및 이를 포함하는 추천 키워드 제공방법</div>
+                        <div class="pat_num">1020130047341</div>
+                        <div class="pat_txt">음향패턴을 이용하여 휴대형 단말기용 이어폰 인식하는 음향처리 시스템, 음향패턴을 이용한 휴대형 단말기용 이어폰 인식방법 및 이를 이용한 입력음향 처리 방법</div>
                     </li>
                     <li>
                         <div class="pat_tit">출원번호</div>
-                        <div class="pat_num">1020100033972</div>
-                        <div class="pat_txt">저작권 보호 기반의 디지털 사진 유통시스템 및 방법</div>
+                        <div class="pat_num">1020130120174</div>
+                        <div class="pat_txt">사용자 동작 인식에 기초한 디지털 인쇄매체의 스크랩 처리 장치 및 그 방법</div>
                     </li>
+                    <li>
+                        <div class="pat_tit">출원번호</div>
+                        <div class="pat_num">1020130124216</div>
+                        <div class="pat_txt">매체 이미지의 테두리 자동 검출 방법, 이를 이용한 매체 이미지 처리 시스템 및 처리 방법</div>
+                    </li>                                       
+                    <li>
+                        <div class="pat_tit">출원번호</div>
+                        <div class="pat_num">1020140056623</div>
+                        <div class="pat_txt">인쇄매체에 인쇄된 문서를 스캔하는 펜형 디지털 스캐너를 이용한 인쇄매체 스크랩 서비스 시스템 및 인쇄매체 스크랩 서비스 제공방법</div>
+                    </li>                                        
+                    <li>
+                        <div class="pat_tit">출원번호</div>
+                        <div class="pat_num">1020200103497</div>
+                        <div class="pat_txt">뉴스 스크랩을 위한 추천 키워드 제공 시스템, 이를 이용한 뉴스 스크랩에 사용되는 키워드 사전 구성 및 업데이트 방법, 및 이를 포함하는 추천 키워드 제공방법</div>
+                    </li>
+                    
                 </ul>
             </div>
         </div>

@@ -10,6 +10,14 @@
 <body>
     <jsp:include page="../common/header.jsp"/>
     <section class="sublist_area">
+    	    	<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<span class="location_list">미디어 문화 사업</span>
+			</li>
+		</ul>
         <div class="inner">
             <h2>실행</h2>
             <div class="tab">
@@ -19,7 +27,7 @@
             </div>
             <div class="subtit_tit row">
                 <h3 class="col4">생활에서 느끼는 미디어 문화</h3>
-                <p class="subtit_txt col7">디지털 시대에 더 중요한 읽기문화의 보급, 신문활용교육 등 미디어를 활용한 문화 사업을 수행하고 있습니다. <br>
+                <p class="subtit_txt col7">디지털 시대에 중요한 읽기문화의 보급, 신문활용교육 등 미디어를 활용한 문화 사업을 수행하고 있습니다. <br>
                     온라인 환경에서 뿐 만 아니라 학교, 도서관, 공공시설 등 일상 공간에서 미디어를 보급하는 사업을 수행하고 있습니다.</p>
             </div>
         </div>

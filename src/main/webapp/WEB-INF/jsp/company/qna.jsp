@@ -11,6 +11,14 @@
     <jsp:include page="../common/header.jsp"/>
 
     <section class="sublist_area">
+		<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<span class="location_list">문의하기</span>
+			</li>
+		</ul>
         <div class="inner">
             <h2>회사</h2>
             <div class="tab">

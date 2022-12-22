@@ -22,6 +22,14 @@
 
 
     <section class="sublist_area">
+    	<ul class="location">
+			<li>
+				<a href="<%=request.getContextPath()%>/index.html" class="location_list">홈</a>
+			</li>
+			<li>
+				<span class="location_list">파트너쉽</span>
+			</li>
+		</ul>
         <div class="inner">
             <h2>실행</h2>
             <div class="tab">
