@@ -23,15 +23,14 @@
             <h2>기술</h2>
             <div class="subtit_tit row">
                 <h3 class="col4">dAIa Framework</h3>
-                <p class="subtit_txt col7">dAIa는 AI기반의 빅데이터 분석 플랫폼입니다.
-                    Dahami Artificial Intelligence Application Framework의 약자인 dAIa Framework에는
-                    다이아몬드처럼 빛나는 보석을 빅데이터 속에서 찾아주는 플랫폼을 만들겠다는
-                    다하미의 각오와 의지와 기술이 하나로 함축되어 있습니다.
-                    <br>
-                    <br>
-                    뉴스 빅데이터 기반 인공지능 분석 플랫폼 dAIa는
-                    방대한 데이터 속에 숨은 다이아몬드를 캐내는 최적의 동반자가 될 것입니다.
-                    다이아몬드처럼 빛나는 업무 성과 dAIa 프레임워크가 함께합니다. </p>
+                <p class="subtit_txt col7">dAIa는 AI기반의 빅데이터 분석 플랫폼입니다.<br>
+Dahami Artificial Intelligence Application Framework의 약자인 dAIa Framework에는<br>
+다이아몬드처럼 빛나는 보석을 빅데이터 속에서 찾아주는 플랫폼을 만들겠다는<br>
+다하미의 각오와 의지와 기술이 하나로 함축되어 있습니다.
+<br><br>
+뉴스 빅데이터 기반 인공지능 분석 플랫폼 dAIa는<br>
+방대한 데이터 속에 숨은 다이아몬드를 캐내는 최적의 동반자가 될 것입니다.<br>
+다이아몬드처럼 빛나는 업무 성과 dAIa 프레임워크가 함께합니다.</p>
             </div>
         </div>
     </section>

@@ -35,7 +35,7 @@
                 <div class="li1 reveal">
                     <div class="li1_imgbox"></div>
                     <div class="li1_tit">미디어 서비스 허브</div>
-                    <div class="li1_txt">미디어 콘텐츠와 기술에 기반한 서비스의 허브(HUB)로!</div>
+                    <div class="li1_txt">미디어 콘텐츠와 기술에 기반한 <br>서비스의 허브(HUB)로!</div>
                 </div>
                 <div class="li1 reveal">
                     <div class="li1_imgbox"></div>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="li1 reveal">
                     <div class="li1_imgbox"></div>
-                    <div class="li1_tit">고객 가치</div>
+                    <div class="li1_tit">고객가치 우선</div>
                     <div class="li1_txt">고객의 고민을 함께 경험하고<br>가치를 만드는 회사</div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
     <section class="main2">
         <div class="inner reveal">
             <h2 class="main_tit ">위기관리 솔루션</h2>
-            <p class="main_txt">위기관리를 위한 전용 솔루션은 신문, 방송, 온라인 뉴스, SNS 등 <br>복잡한 미디어 환경에서 통찰을 제공하는
+            <p class="main_txt">위기관리를 위한 전용 솔루션은 <span class="none">신문, 방송, 온라인 뉴스, SNS 등</span> <br>복잡한 미디어 환경에서 <span class="none">통찰을 제공하는</span>
                 최적의 제품과 서비스를 제공합니다.</p>
             <div class="grid2 reveal">
                 <div class="li2">
@@ -73,8 +73,8 @@
                     <div class="li2">
                     <a href="<%=request.getContextPath()%>/execution/product_sub/newsplaza.html">
                         <div class="li2_tit">뉴스플라자</div>
-                        <div class="li2_txt">국내 주요 언론사의 온라인 뉴스를 일괄 제공하고 있습니다. <br>
-                            뉴스 모니터링 등 내부 업무뿐 아니라 홍보 목적의 대외 배포에 적합한 상품입니다.</div>
+                        <div class="li2_txt">국내 주요 언론사의 온라인 뉴스를 일괄 제공하고 있습니다.<span class="none"><br>
+                            뉴스 모니터링 등 내부 업무뿐 아니라 홍보 목적의 대외 배포에 적합한 상품입니다.</span></div>
                     </a>
                     </div>
                 </div>
@@ -84,27 +84,27 @@
     <section class="main3 animated">
         <div class="inner reveal">
             <h2 class="main_tit animated">미디어 문화 사업</h2>
-            <p class="main_txt animated">디지털 시대에 중요한 읽기문화의 보급, 신문활용교육 등 미디어를 활용한 문화 사업을 수행하고 있습니다.<br>
-                우리는 미디어가 사회나 문화 발전에 기여할 수 있는 사업을 발굴해 운영하고 있습니다.</p>
+            <p class="main_txt animated"><span class="none">디지털 시대에 중요한 읽기문화의 보급, 신문활용교육 등 </span>미디어를 활용한 문화 사업을 수행하고 있습니다.<span class="none"><br>
+                우리는 미디어가 사회나 문화 발전에 기여할 수 있는 사업을 발굴해 운영하고 있습니다.</span></p>
             <div class="grid2">
                 <div class="li2">
                 	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">
                     <div class="li2_tit">티페이퍼</div>
-                    <div class="li2_txt">키오스크의 큰 화면으로 고화질의 신문/잡지를 볼 수 있습니다.<br>
-직관적인 UI로 사용자들이 편하게 콘텐츠를 감상할 수 있습니다.</div>
+                    <div class="li2_txt">키오스크의 큰 화면으로 고화질의 신문/잡지를 볼 수 있습니다.<span class="none"><br>
+직관적인 UI로 사용자들이 편하게 콘텐츠를 감상할 수 있습니다.</span></div>
                     </a>
                 </div>
                 <div class="grid2r">
                     <div class="li2">
                     	<a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank.html">
                         <div class="li2_tit">뉴스뱅크</div>
-                        <div class="li2_txt">대한민국 역사의 현장을 생생하게 담은 보도사진 박물관입니다. 대한민국 격동의 근대사에서 현대사에 이르기까지 수 백만 건 이상의 보도사진을 제공합니다.</div>
+                        <div class="li2_txt"><span class="none">대한민국 역사의 현장을 생생하게 담은 보도사진 박물관입니다. </span>대한민국 격동의 근대사에서 현대사에 이르기까지 수 백만 건 이상의 보도사진을 제공합니다.</div>
                         </a>
                     </div>
                     <div class="li2">
                     	<a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">
                         <div class="li2_tit">e-NIE</div>
-                        <div class="li2_txt">종이신문을 그대로 컴퓨터로 옮겨 인터넷이 접속되는 곳에서<br>편리하게 <b>신문을 스크랩하여 교육에 활용</b>할 수 있습니다.</div>
+                        <div class="li2_txt">종이신문을 그대로 컴퓨터로 옮겨 <span class="none">인터넷이 접속되는 곳에서</span><br>편리하게 <b>신문을 스크랩하여 교육에 활용</b>할 수 있습니다.</div>
                         </a>
                     </div>
                 </div>

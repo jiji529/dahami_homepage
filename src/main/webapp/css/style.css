@@ -6,7 +6,7 @@
 
 @import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css');
 
-* {font-family: 'SUIT', Roboto,'Noto Sans KR','Apple SD Gothic Neo',sans-serif; line-height: 1.5; box-sizing:border-box;}
+* {font-family: 'SUIT', Roboto,'Noto Sans KR','Apple SD Gothic Neo',sans-serif; line-height: 1.5; box-sizing:border-box; word-break: keep-all;}
 
 ::-moz-selection {background: #3457ea; color:#fff;}
 ::selection {background: #3457ea; color:#fff;}
@@ -127,10 +127,10 @@ footer .f_family .f_li:nth-child(6) a{background: url(../images/f_np.png) center
 .li1 .li1_tit{font-size: 2.2rem; font-weight: 600;}
 .li1 .li1_txt{font-size: 1.45rem; }
 
-.grid2 > .li2 .li2_tit, .grid2 > .li2 .li2_txt{color: #111; text-shadow: 0 0 20px white; }
+.grid2 > .li2 .li2_tit, .grid2 > .li2 .li2_txt, .grid2 > .li2 .li2_tit span, .grid2 > .li2 .li2_txt span {color: #111; text-shadow: 0 0 20px white; }
 
 .li2 .li2_tit{font-size: 2.5rem; font-weight: 600;}
-.li2 .li2_txt{font-size: 1.2rem; margin-top: 1rem; font-weight: 600;}
+.li2 .li2_txt{font-size: 1.2rem; margin-top: 1rem; font-weight: 600; }
 
 
 section{width: 100%; padding: 4rem 0;}
@@ -510,7 +510,7 @@ section{width: 100%; padding: 4rem 0;}
     .main1 .li1 .li1_imgbox{height: 30vw;}
     .main1 .li1:first-child .li1_imgbox, .main1 .li1:nth-child(2) .li1_imgbox, .main1 .li1:nth-child(3) .li1_imgbox{background-size: cover;}
     .gnb_2depth{opacity: 1; margin: 0; text-indent: 20px; font-size: 1.5rem;}
-    .gnb_mo_nav > div {display: grid; grid-template-columns: 40% 60%; margin-bottom: 25px;}
+    .gnb_mo_nav > div {display: grid; grid-template-columns: 40% 60%; margin-bottom: 20px;}
     .gnb_mo_nav > div > a{font-size: 2rem; color: #333; font-weight: 500; }
     header .logo{z-index: 501;}
     .gnb_close{position: absolute; top: 30px; right: 16px; width: 24px; height: 24px;}
@@ -593,7 +593,7 @@ section{width: 100%; padding: 4rem 0;}
 }
 
 @media screen and (max-width:768px){
-    
+    .none{display: none;}
     html{font-size: 62.5%;}
     .sublist_area{padding: 2rem 0;}
     .row{margin: 2rem 0;}
@@ -675,6 +675,6 @@ section{width: 100%; padding: 4rem 0;}
 
 
 @media screen and (max-height:670px){
-    .main_vis div{top: 5%;}
+    .main_vis div{top: 8%; margin-bottom: 4rem;}
 }
     

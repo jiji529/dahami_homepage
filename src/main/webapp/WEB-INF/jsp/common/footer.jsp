@@ -11,7 +11,7 @@
                         <dt><a href="<%=request.getContextPath()%>/promise/promise.html">약속</a></dt>
                         <dd><a href="<%=request.getContextPath()%>/promise/promise.html#sec1">미디어 허브</a></dd>
                         <dd><a href="<%=request.getContextPath()%>/promise/promise.html#sec2">전문가 역량</a></dd>
-                        <dd><a href="<%=request.getContextPath()%>/promise/promise.html#sec3">고객 가치</a></dd>
+                        <dd><a href="<%=request.getContextPath()%>/promise/promise.html#sec3">고객가치 우선</a></dd>
 
                     </dl>
                     <dl>

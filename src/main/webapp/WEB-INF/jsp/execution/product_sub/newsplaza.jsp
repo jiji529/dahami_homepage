@@ -50,8 +50,7 @@
             <div class="prod_box">
                 <div class="prod_img"><img src="<%=request.getContextPath()%>/images/newsplaza1-2.png"></div>
                 <div class="prod_box_txt">
-                    <p>이용 범위별 상품군 구성</p><span>키워드 상품, 통합 데이터베이스 상품 등
-                        이용 범위에 따라 선택가능 </span>
+                    <p>이용 범위별 상품군 구성</p><span>키워드 상품, 통합 데이터베이스 상품 등<br>이용 범위에 따라 선택가능</span>
                 </div>
             </div>
             <div class="prod_box">
@@ -73,24 +72,20 @@
                 <div class="prod_img"><img src="<%=request.getContextPath()%>/images/newsplaza2-1.png"></div>
                 <div class="prod_box_txt">
                     <p>다양한 용도로 활용</p>
-                    <span>홈페이지 게시, 스크랩, 인트라넷 활용 등
-                        온라인 뉴스를 다양한 목적에 맞게
-                        간편하게 이용할 수 있습니다.</span>
+                    <span>홈페이지 게시, 스크랩, 인트라넷 활용 등<br>온라인 뉴스를 다양한 목적에 맞게<br>간편하게 이용할 수 있습니다.</span>
                 </div>
             </div>
             <div class="prod_box">
                 <div class="prod_img"><img src="<%=request.getContextPath()%>/images/newsplaza2-2.png"></div>
                 <div class="prod_box_txt">
                     <p>키워드 서비스</p>
-                    <span>사용자가 원하는 여러 키워드를 등록하여 정책/기업/업종 등 다양한 분야의 맞춤형 뉴스를 제공합니다.</span>
+                    <span>사용자가 원하는 여러 키워드를 등록하여 <br>정책/기업/업종 등 다양한 분야의 <br>맞춤형 뉴스를 제공합니다.</span>
                 </div>
             </div>
             <div class="prod_box">
                 <div class="prod_img"><img src="<%=request.getContextPath()%>/images/newsplaza2-3.png"></div>
                 <div class="prod_box_txt">
-                    <p>통합 서비스</p> <span>고객사 내부망에서 활용할 수 있도록
-                        카테고리별로 분류된 뉴스의
-                        원문 데이터를 통합하여 제공합니다.</span>
+                    <p>통합 서비스</p> <span>고객사 내부망에서 활용할 수 있도록<br>카테고리별로 분류된 뉴스의<br>원문 데이터를 통합하여 제공합니다.</span>
                 </div>
             </div>
         </div>
@@ -98,7 +93,7 @@
     <section class="prod_btn">
         <div class="inner">
             <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/product_sub/clippingon.html">클리핑온</a></div>
-            <div class="prod_btn_right"><a href="<%=request.getContextPath()%>/execution/product_sub/expert.html">위기관리 전문가 서비스</a></div>
+            <div class="prod_btn_right"></div>
         </div>
     </section>
     <jsp:include page="../../common/footer.jsp"/>

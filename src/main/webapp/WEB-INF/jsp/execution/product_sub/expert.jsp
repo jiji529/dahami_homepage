@@ -30,7 +30,7 @@
     </section>
     <section class="subimg img_expert"></section>
     <section class="prod_head">
-        <div class="inner">경험이 풍부한 미디어 <b>위기관리 전문가</b>가 고객과 상담 후 가장 적합한 서비스를 제안합니다.
+        <div class="inner">경험이 풍부한 미디어 <b>위기관리 전문가</b>가 고객과 상담 후 가장 적합한 서비스를 제안합니다.<br>
 고품질의 신뢰도 높은 <b>미디어 인사이트</b>를 만나보세요.</div>
     </section>
     <section class="prod_detail1">
@@ -74,9 +74,9 @@
     
     </section>
     <section class="prod_btn">
-            <div class="inner">
-            <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/product_sub/newsplaza.html">뉴스플라자</a></div>
-            <div class="prod_btn_right"></div>
+        <div class="inner">
+            <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/product_sub/scrapmaster.html">스크랩마스터</a></div>
+            <div class="prod_btn_right"><a href="<%=request.getContextPath()%>/execution/product_sub/clippingon.html">클리핑온</a></div>
         </div>
     </section>
     <jsp:include page="../../common/footer.jsp"/>
