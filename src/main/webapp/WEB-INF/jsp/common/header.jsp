@@ -56,9 +56,9 @@
             <nav class="gnb_mo_nav">
                 <div class=""><a href="<%=request.getContextPath()%>/promise/promise.html">약속</a>
                     <div class="gnb_2depth">
-                        <a href="<%=request.getContextPath()%>/promise/promise.html#sec1">미디어 허브</a>
-                    	<a href="<%=request.getContextPath()%>/promise/promise.html#sec2">전문가 역량</a>
-                    	<a href="<%=request.getContextPath()%>/promise/promise.html#sec3">고객가치 우선</a>
+                        <a href="<%=request.getContextPath()%>/promise/promise.html#sec1" onclick="closeHeader()">미디어 허브</a>
+                    	<a href="<%=request.getContextPath()%>/promise/promise.html#sec2" onclick="closeHeader()">전문가 역량</a>
+                    	<a href="<%=request.getContextPath()%>/promise/promise.html#sec3" onclick="closeHeader()">고객가치 우선</a>
                     </div>
                 </div>
                 <div class=""><a href="<%=request.getContextPath()%>/execution/product.html">실행</a>
@@ -96,3 +96,11 @@
 
         </div>
     </header>
+    <script>
+    	function closeHeader() {
+    		if($('.gnb_mo').hasClass('on')) {
+    			$('.gnb_mo').removeClass('on');
+    			$('body').removeClass('scroll_hidden');
+    		}
+    	}
+    </script>

@@ -138,6 +138,9 @@
         		tempPhone = $('#Num').val();
         		tempEmail = $('#mail').val();
         		chkflag = $('#agree').prop('checked');
+        		
+        		// 이메일 정규표현식 유효성 체크        		
+        		var email_regex =  /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
 
         		if(chkflag  == false){
         			alert("개인정보 수집에 동의 하여 주십시오");
@@ -161,6 +164,10 @@
         		}else if(contents == ""){
         			alert("내용을 기입하여 주십시오");
         			$('#commuContents').focus();
+        			return false;
+        		}else if(!email_regex.test(tempEmail)) {
+        			alert("이메일 형식이 올바르지 않습니다. 형식을 맞춰 다시 입력해주세요.");
+        			$('#mail').focus();
         			return false;
         		}else{
         			$.ajax({

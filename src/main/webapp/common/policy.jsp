@@ -423,10 +423,10 @@ font-size: 22px;
 			</li>
 			<li>이용자는 자신의 개인정보에 관하여 침해의 발생 또는 그 염려로 인하여 상담이 필요한 때에는 제1항의 회사 개인정보보호 담당 부서뿐만 아니라 다음의 기관 등에 문의할 수 있습니다.
 				<ol>
-					<li>한국인터넷진흥원 개인정보침해신고센터 (<a href="https://privacy.kisa.or.kr/main.do/">https://privacy.kisa.or.kr/main.do/</a> 국번 없이 118)</li>
-					<li>개인정보 분쟁조정위원회  (<a href="https://www.kopico.go.kr/">https://www.kopico.go.kr/</a> 국번 없이 1833-6972)</li>
-					<li>대검찰청 사이버수사과 (<a href="https://cybercid.spo.go.kr/">https://cybercid.spo.go.kr/</a> 국번 없이 1301)</li>
-					<li>경찰청 사이버범죄 신고시스템 (<a href="https://ecrm.cyber.go.kr/minwon/main/">https://ecrm.cyber.go.kr/minwon/main/</a> 국번 없이 182)</li>
+					<li>한국인터넷진흥원 개인정보침해신고센터 (<a href="https://privacy.kisa.or.kr/main.do" target="_blank">https://privacy.kisa.or.kr/main.do</a> 국번 없이 118)</li>
+					<li>개인정보 분쟁조정위원회  (<a href="https://www.kopico.go.kr/" target="_blank">https://www.kopico.go.kr/</a> 국번 없이 1833-6972)</li>
+					<li>대검찰청 사이버수사과 (<a href="https://cybercid.spo.go.kr/" target="_blank">https://cybercid.spo.go.kr/</a> 국번 없이 1301)</li>
+					<li>경찰청 사이버범죄 신고시스템 (<a href="https://ecrm.cyber.go.kr/minwon/main/" target="_blank">https://ecrm.cyber.go.kr/minwon/main/</a> 국번 없이 182)</li>
 				</ol>
 			</li>
 		</ol>
@@ -503,11 +503,11 @@ font-size: 22px;
 	</section>
 	<section class="policy_cont" id="section14">
 		<h4>개인정보처리방침 변경사항</h4>
-		<p><a class="otherPrivacy" href="policy_210607.jsp">이전 개인정보처리방침(2021. 6. 7. ~) 보기</a></p>
-		<p><a class="otherPrivacy" href="policy_210408.jsp">이전 개인정보처리방침(2021. 4. 8. ~) 보기</a></p>
-		<p><a class="otherPrivacy" href="policy_200319.jsp">이전 개인정보처리방침(2020. 3. 19. ~) 보기</a></p>
-		<p><a class="otherPrivacy" href="policy_190813.jsp">이전 개인정보처리방침(2019. 8. 13. ~) 보기</a></p>
-		<p><a class="otherPrivacy" href="policy_180901.jsp">이전 개인정보처리방침(2018. 9. 1. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_210607.jsp" target="_blank">이전 개인정보처리방침(2021. 6. 7. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_210408.jsp" target="_blank">이전 개인정보처리방침(2021. 4. 8. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_200319.jsp" target="_blank">이전 개인정보처리방침(2020. 3. 19. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_190813.jsp" target="_blank">이전 개인정보처리방침(2019. 8. 13. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_180901.jsp" target="_blank">이전 개인정보처리방침(2018. 9. 1. ~) 보기</a></p>
 	</section>
 </section>
 </body>

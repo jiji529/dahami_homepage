@@ -48,7 +48,8 @@
 
     <section class="sub_promise2">
         <div class="inner">
-            <div class="li3 reveal" id="sec1">
+        	<div id="sec1"></div>
+            <div class="li3 reveal">
                 <div class="li3_imgbox"></div>
                 <div class="li3_box">
                     <div class="li3_tit">미디어 서비스 허브</div>
@@ -59,7 +60,8 @@
 다하미는 미디어 콘텐츠, 데이터와 기술에 기반한 통합 솔루션을 제공합니다.</div>
                 </div>
             </div>
-            <div class="li3 reveal" id="sec2">
+            <div id="sec2"></div>
+            <div class="li3 reveal">
                 <div class="li3_imgbox"></div>
                 <div class="li3_box">
 
@@ -69,7 +71,8 @@
                     <div class="li3_cont">경험과 역량을 갖춘 미디어 위기관리 전문가들이 고객과 상담을 통해 <br>모니터링, 리뷰, 분석, 대응 등 다양한 서비스를 제공합니다.<br><br>미디어 분야 콘텐츠 수급, 관련 R&amp;D와 마케팅, 저작권 관리 등 경험을 가진 <br>전문가들이 함께 하고 있습니다.<br><br>신뢰성, 안정성, 전문성을 갖춘 전문가들이 최상의 서비스를 제공할 것입니다.</div>
                 </div>
             </div>
-            <div class="li3 reveal" id="sec3">
+            <div id="sec3"></div>
+            <div class="li3 reveal">
                 <div class="li3_imgbox"></div>
                 <div class="li3_box">
                     <div class="li3_tit">고객가치 우선</div>

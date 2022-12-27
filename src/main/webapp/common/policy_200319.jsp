@@ -384,9 +384,9 @@ a.otherPrivacy {
 			</li>
 			<li>이용자는 자신의 개인정보에 관하여 침해의 발생 또는 그 염려로 인하여 상담이 필요한 때에는 제1항의 회사 개인정보보호 담당부서뿐만 아니라 다음의 기관 등에 문의할 수 있습니다.
 				<ol>
-					<li>한국인터넷진흥원 개인정보침해신고센터 (privacy.kisa.or.kr/국번 없이 118)</li>
-					<li>대검찰청 사이버범죄수사단 (<a href="http://www.spo.go.kr/02-3480-3571">www.spo.go.kr/02-3480-3571</a>)</li>
-					<li>경찰청 사이버안전국 (www.ctrc.go.kr/국번 없이 182)</li>
+					<li>한국인터넷진흥원 개인정보침해신고센터 (<a href="http://privacy.kisa.or.kr" target="_blank">privacy.kisa.or.kr</a> 국번 없이 118)</li>
+					<li>대검찰청 사이버범죄수사단 (<a href="https://cybercid.spo.go.kr" target="_blank">www.spo.go.kr</a> 국번 없이 1301)</li>
+					<li>경찰청 사이버안전국 (<a href="https://cyberbureau.police.go.kr" target="_blank">cyberbureau.police.go.kr</a> 국번 없이 182)</li>
 				</ol>
 			</li>
 		</ol>
@@ -463,10 +463,11 @@ a.otherPrivacy {
 	</section>
 	<section class="policy_cont" id="section14">
 		<h4>개인정보처리방침 변경사항</h4>
-		<p><a class="otherPrivacy" href="policy_210607.jsp">이후 개인정보처리방침(2021. 6. 7. ~) 보기</a></p>
-    <p><a class="otherPrivacy" href="policy_210408.jsp">이후 개인정보처리방침(2021. 4. 8. ~) 보기</a></p>
-		<p><a class="otherPrivacy" href="policy_190813.jsp">이전 개인정보처리방침(2019. 8. 13. ~) 보기</a></p>
-		<p><a class="otherPrivacy" href="policy_180901.jsp">이전 개인정보처리방침(2018. 9. 1. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy.jsp" target="_blank">이후 개인정보처리방침(2022. 6. 2. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_210607.jsp" target="_blank">이후 개인정보처리방침(2021. 6. 7. ~) 보기</a></p>
+    	<p><a class="otherPrivacy" href="policy_210408.jsp" target="_blank">이후 개인정보처리방침(2021. 4. 8. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_190813.jsp" target="_blank">이전 개인정보처리방침(2019. 8. 13. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_180901.jsp" target="_blank">이전 개인정보처리방침(2018. 9. 1. ~) 보기</a></p>
 	</section>
 </section>
 </body>

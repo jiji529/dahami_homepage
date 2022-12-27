@@ -41,7 +41,7 @@ Dahami Artificial Intelligence Application Framework의 약자인 dAIa Framework
             <div class="sub_tit">인공지능 기반의<br>
                 뉴스 빅데이터 분석 프레임웍<br>
                 dAIa Framework</div>
-            <div class="sub_txt"><br>자연어처리와 Ai기술을 바탕으로 <br>
+            <div class="sub_txt"><br>자연어처리와 AI기술을 바탕으로 <br>
                 방대한 뉴스 데이터 속의 보석을 찾아주는 분석 기술입니다.</div>
 
         </div>
