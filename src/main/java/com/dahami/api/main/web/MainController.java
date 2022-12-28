@@ -88,7 +88,7 @@ public class MainController {
 	@Resource(name="suvService")
 	private MainService mainService;
 	
-	@RequestMapping("index.html")
+	@RequestMapping("/index.html")
 	public String indexs(ModelMap model, HttpServletRequest request) throws Exception {	
 		List<BoardVO> boardCdList = new ArrayList<BoardVO>();
 		BoardVO boardVO = new BoardVO();

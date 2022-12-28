@@ -25,10 +25,6 @@
     <meta name="google-site-verification" content="-4UuMBM7cFV7Hs9xMd19RdIrT3oh_bCDpmj49pgStB4" />
 	<c:choose>
 		<c:when test='${URL=="/index.html"}'></c:when>
-		<c:when test='${URL=="/company/company.html"}'></c:when>
-		<c:when test='${URL=="/service/scrapmaster.html"}'></c:when>
-		<c:when test='${URL=="/recruit/recruit.html"}'></c:when>
-		<c:when test='${URL=="/community/community.html"}'></c:when>
 		<c:otherwise>
 			<meta name="robots" content="noindex">
 		</c:otherwise>
