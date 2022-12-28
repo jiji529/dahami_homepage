@@ -34,7 +34,7 @@
             <div class="sub_tit">
                 <h3>왓썹뉴스</h3>
             </div>
-            <p class="sub_txt">내일을 읽는 뉴스를 소개합니다. <br>인스타그램에서 whatssupnews를 검색하세요</p>
+            <p class="sub_txt">내일을 읽는 뉴스를 소개합니다. <br>인스타그램에서 <b>whatssupnews</b>를 검색하세요</p>
             <div class="m_card">
                 <div class="m_card_sub">                
                 </div>

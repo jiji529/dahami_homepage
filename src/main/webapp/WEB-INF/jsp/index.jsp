@@ -243,7 +243,7 @@
     <section class="main6">
         <div class="inner reveal">
             <h2 class="main_tit">왓썹뉴스</h2>
-            <p class="main_txt">내일을 읽는 뉴스를 소개합니다. <br>인스타그램에서 whatssupnews를 검색하세요</p>
+            <p class="main_txt">내일을 읽는 뉴스를 소개합니다. <br>인스타그램에서 <b>whatssupnews</b>를 검색하세요</p>
             <div class="m_card">
             </div>
         </div> 

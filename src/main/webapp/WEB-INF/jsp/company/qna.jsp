@@ -38,17 +38,11 @@
     </section>
     <section class="subimg img_qna"></section>
     <section class="sub_qna1">
-        <div class="inner grid2">
+        <div class="inner">
             <div class="qna_box">
-                <h2>매체 제휴</h2>
-                <p><span>연락처</span>02-593-4174 (내선 218)</p>
-                <p><span>메일</span>seoski@dahami.com</p>
-            </div>
-            <div class="qna_box">
-                <h2>서비스 상담</h2>
-                <p><span>연락처</span>02-593-4174 (내선 220, 230)</p>
-                <p><span>메일</span>junggyu123@dahami.com<br>
-                    <span></span>khim83@dahami.com</p>
+                <h2>연락처</h2>
+                <p><span>전화번호</span>02-593-4174</p>
+                <p><span>메일</span>helpdesk@dahami.com</p>
             </div>
         </div>
     </section>

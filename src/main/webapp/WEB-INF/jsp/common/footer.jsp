@@ -22,7 +22,7 @@
                     </dl>
                     <dl>
                         <dt><a href="<%=request.getContextPath()%>/tech/tech.html">기술</a></dt>
-                        <dd><a href="<%=request.getContextPath()%>/tech/tech.html#daia">dAIa</a></dd>
+                        <dd><a href="<%=request.getContextPath()%>/tech/tech.html#">dAIa</a></dd>
 
                     </dl>
                     <dl>
