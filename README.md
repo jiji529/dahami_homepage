@@ -66,3 +66,7 @@
 - id : root
 - pwd : 16yrp.ekgkal]
 - path : /data/www/dahami/new/admin/scrapmaster/scrap_logo.php
+
+# ROOT.war 배포시 주의사항
+- images/partnership 디렉토리는 chmod 777 -R ./partnership 으로 권한 777로 변경해줘야한다.
+(그래야 scrap_log.php가 접근하여, 파일을 rsync로 전달해줄 수 있으니 주의바람)
