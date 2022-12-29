@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://www.dahami.com/sitemap.xml
-#DaumWebMasterTool:3fdcd67c292ab787b030d20ee1146d267e9aeb71d3453c75e43c7968d37151ef:Fl8g65CcW/45h1fBxnFQ2Q==
+#DaumWebMasterTool:3fdcd67c292ab787b030d20ee1146d267e9aeb71d3453c75e43c7968d37151ef:5xLH/OK3P8Sjo2vhzVySVw==
