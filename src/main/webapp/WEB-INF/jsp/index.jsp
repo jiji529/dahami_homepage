@@ -408,12 +408,23 @@
         		var html = '';
 				html += '<ul>';
         		for(var i=0; i<6; i++) {
-					html += '<li><a href='+json[0].data[i].permalink+' target="_blank"><img src='+json[0].data[i].media_url+'></a></li>';						
+					html += '<li><a id="instaLink'+i+'" href='+json[0].data[i].permalink+' target="_blank"><img id="insta'+i+'" src='+json[0].data[i].media_url+' onerror="noImage(\''+i+'\')"></a></li>';					
         		}
 				html += '</ul>';					
 		        $('.m_card').html(html);
-        	}        	      	
+        	}
         })
+        
+		function noImage(i) {
+        	// 이미지가 문제가 생길경우, 디폴트 이미지를 보여주기 위한 예외처리
+			if(i>=0 && i<=5) {
+        		var instaURL = ["https://www.instagram.com/p/Cms8Akdy25W/","https://www.instagram.com/p/CmcwKAKyDbp/",
+        			"https://www.instagram.com/p/CmaLCAUvo9J/","https://www.instagram.com/p/CmLj4S_SCdX/",
+        			"https://www.instagram.com/p/Cl7TYsRyiy7/","https://www.instagram.com/p/ClUwC99ykUJ/"];
+	        	$('#insta'+i+'').attr('src','/images/insta'+i+'.jpg');
+	        	$('#instaLink'+i+'').attr('href',instaURL[i]);
+        	}        	     	
+        }
     </script>
     
 </html>

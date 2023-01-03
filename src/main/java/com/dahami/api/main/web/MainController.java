@@ -131,12 +131,14 @@ public class MainController {
 					// 첫페이지를 체크해보고 만약 저장데이터와 같다면, 다음페이지는 보지않는것으로 한다.
 					List<Map<String,String>> dataList = (List<Map<String, String>>) jsonObject.get("data");
 					String renewal_first = dataList.get(0).get("id");
+					String renewal_img = dataList.get(0).get("media_url");
 					
 					JSONObject saveJsonObject = (JSONObject) instaArray.get(0);
 					List<Map<String,String>> saveDataList = (List<Map<String, String>>) saveJsonObject.get("data");
-					String saved_first = saveDataList.get(0).get("id"); 
+					String saved_first = saveDataList.get(0).get("id");
+					String saved_img = saveDataList.get(0).get("media_url");
 					
-					if(!renewal_first.equals(saved_first)) {
+					if(!renewal_first.equals(saved_first) || !renewal_img.equals(saved_img)) {
 						diffCheck = true;
 					}
 				}	
