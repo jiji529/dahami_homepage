@@ -33,13 +33,13 @@
 - pwd : dahamijb!@2
 - 내 애플리케이션>앱 설정>플랫폼 에서 WEB 도메인 등록을 해야 사용가능
 
-# 인스타 (60일 장기토큰까지만 발행가능하므로, 만료시 갱신해줘야함 - 기존 발급일(2022-12-22) / 만료일(2023-02-20 10:42:00))
+# 인스타 (60일 장기토큰까지만 발행가능하므로, 만료시 갱신해줘야함 - 기존 발급일(2023-02-15 08:19:00) / 만료일(2023-04-16 08:19:00))
 - SNS ID: dahamisns@dahami.com 
 - password: dahamijb!@2
-- access_token: IGQVJXSW9FVnl6ZAS1lUERad2NrdEdkbEV1RTR5QVZAheTVtWWtXdjRFVVg2QTM1b1ZAXS2dwNjAyZAUNpRWlqWGtvaGZAsNHVuTjhXT2xjSFF5N25fY0RSLXdybGJWU1NMbzRfdWlEa3NB,
+- access_token: IGQVJWbmp1V1lsYlJ0OFE0a2pDMkVWVUxBMDByaUh0dk5uQ1h1WEZAYUlhuRjZASajgtS01EY21vQTNzdlc2d3BEZAEtMcE1NWi1leFdBSEhmZAnc5T0JOUGRtSllWR1lBa3pvUFZAIc2pB,
 - token_type: bearer,
 - expires_in: 5184000
-- API 사용예시 : https://graph.instagram.com/17841452306963734/media?fields=id,media_type,media_url,permalink,thumbnail_url,username,caption&access_token=IGQVJXSW9FVnl6ZAS1lUERad2NrdEdkbEV1RTR5QVZAheTVtWWtXdjRFVVg2QTM1b1ZAXS2dwNjAyZAUNpRWlqWGtvaGZAsNHVuTjhXT2xjSFF5N25fY0RSLXdybGJWU1NMbzRfdWlEa3NB&limit=100
+- API 사용예시 : https://graph.instagram.com/17841452306963734/media?fields=id,media_type,media_url,permalink,thumbnail_url,username,caption&access_token=IGQVJWbmp1V1lsYlJ0OFE0a2pDMkVWVUxBMDByaUh0dk5uQ1h1WEZAYUlhuRjZASajgtS01EY21vQTNzdlc2d3BEZAEtMcE1NWi1leFdBSEhmZAnc5T0JOUGRtSllWR1lBa3pvUFZAIc2pB&limit=100
 
 - classpath:/dahami/props/globals.properties 내부
 - Globals.insta.userId / Globals.insta.accessToken 존재하므로, 새로 발급받은 토큰으로 교체해주면 됨
