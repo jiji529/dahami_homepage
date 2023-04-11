@@ -36,10 +36,10 @@
 # 인스타 (60일 장기토큰까지만 발행가능하므로, 만료시 갱신해줘야함 - 기존 발급일(2023-04-11 13:53:00) / 만료일(2023-06-10 13:53:00))
 - SNS ID: dahamisns@dahami.com 
 - password: dahamijb!@2
-- access_token: IGQVJWUzZA3bTEwWm5MOHBLWFZAqOTJRaUhvTjhha25lckl1V2NkYmNuOEhTaEJ2S1Vpalp2OUhpZAl8xbGd1VG93bXR5WmcyMnlaUVRfYXBqSlZAyT3J3REJvSncwTUIyXzFIN3pmSVRHMUhnRThYZADNOWGU1X1ctZAl94Sl9N,
+- access_token: IGQVJVQThWM2xxZAzhYSzZAKbDZAXc3VBOEE5ZA2ZAyMGJrLU5OeGVWajh3cldoc2ptX01FbDdJTzV1dkdoNFUxVkFKYlEza2o0LU1CVS1kNXAwLTR4R1RZAMFQ1ci1BMXhGUE1MUTF0Q1dR,
 - token_type: bearer,
 - expires_in: 5184000
-- API 사용예시 : https://graph.instagram.com/17841452306963734/media?fields=id,media_type,media_url,permalink,thumbnail_url,username,caption&access_token=IGQVJWUzZA3bTEwWm5MOHBLWFZAqOTJRaUhvTjhha25lckl1V2NkYmNuOEhTaEJ2S1Vpalp2OUhpZAl8xbGd1VG93bXR5WmcyMnlaUVRfYXBqSlZAyT3J3REJvSncwTUIyXzFIN3pmSVRHMUhnRThYZADNOWGU1X1ctZAl94Sl9N&limit=100
+- API 사용예시 : https://graph.instagram.com/17841452306963734/media?fields=id,media_type,media_url,permalink,thumbnail_url,username,caption&access_token=IGQVJVQThWM2xxZAzhYSzZAKbDZAXc3VBOEE5ZA2ZAyMGJrLU5OeGVWajh3cldoc2ptX01FbDdJTzV1dkdoNFUxVkFKYlEza2o0LU1CVS1kNXAwLTR4R1RZAMFQ1ci1BMXhGUE1MUTF0Q1dR&limit=100
 
 - classpath:/dahami/props/globals.properties 내부
 - Globals.insta.userId / Globals.insta.accessToken 존재하므로, 새로 발급받은 토큰으로 교체해주면 됨
