@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import com.dahami.api.main.service.MainService;
 import com.dahami.api.main.service.vo.BizVO;
 import com.dahami.api.main.service.vo.BoardVO;
+import com.dahami.api.main.service.vo.InstaTokenVO;
 import com.dahami.api.main.service.vo.LogoVO;
 import com.dahami.api.main.service.dao.MyDAO;
 
@@ -87,5 +88,17 @@ public class MainServiceImpl extends AbstractServiceImpl implements MainService 
 			l.setClassText(t.trim());
 		}
 		return logoList;
+	}
+
+	@Override
+	public List<InstaTokenVO> getInstaTokenData() {
+		List<InstaTokenVO> getInstaTokenData = this.myCDAO.selectInstaTokenData();
+		
+		return getInstaTokenData;
+	}
+
+	@Override
+	public void insertNewToken(InstaTokenVO itVO) {
+		this.myCDAO.insertNewToken(itVO);
 	}
 }

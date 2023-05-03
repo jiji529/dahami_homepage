@@ -60,6 +60,7 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import com.dahami.api.lgn.service.user.DebugStream;
 import com.dahami.api.main.service.vo.BizVO;
 import com.dahami.api.main.service.vo.BoardVO;
+import com.dahami.api.main.service.vo.InstaTokenVO;
 import com.dahami.api.main.JsonReader;
 import com.dahami.api.main.service.MainService;
 
@@ -70,20 +71,14 @@ public class MainController {
 	
 	// 인스타 데이터를 담아놓을 변수
 	private static JSONArray instaArray;
-	private static String instaSaveTime;
+	private static String instaCheckTime;
 	private static final int instaRenewalTime; 
 	
 	static {
 		instaArray = new JSONArray();
-		instaSaveTime = getNowTime();
+		instaCheckTime = getNowTime();
 		instaRenewalTime = 1;
 	}
-	
-	@Value("${Globals.insta.userId}")
-	private String userId;
-	
-	@Value("${Globals.insta.accessToken}")
-	private String accessToken;
 	
 	@Resource(name="suvService")
 	private MainService mainService;
@@ -113,9 +108,11 @@ public class MainController {
 		JSONArray cell = new JSONArray();
 		try {
 			String nowTime = getNowTime();		
-			if(instaArray.size()==0 || getDiffTime(nowTime, instaSaveTime)) {				
-				String user_id = userId;
-				String access_token = accessToken;
+			if(instaArray.size()==0 || getDiffTime(nowTime, instaCheckTime)) {
+				List<InstaTokenVO> instaTokenData = mainService.getInstaTokenData();
+				
+				String user_id = instaTokenData.get(0).getUserId();
+				String access_token = instaTokenData.get(0).getToken();
 				String fields = "id,media_type,media_url,permalink,thumbnail_url,username,caption";
 				String limit = "100";
 				
@@ -163,13 +160,14 @@ public class MainController {
 					}
 					// 마지막으로 전역데이터 및 저장시간을 갱신해준다.
 					instaArray = cell;
-					instaSaveTime = nowTime;
 				} else {
 					// 다른게 없으면, 첫페이지만 조회해보고 그 다음페이지는 볼 필요없이 기존 데이터를 사용한다.
 					// 인스타 게시글은 하루에 1개씩 올린다고 하므로, 데이터가 달라져 갱신시 전체 데이터를 가져오는 과정은 딱 1번 이루어짐
 					// 그 뒤부터는 첫페이지만 계속 달라졌는지 확인하는 구조가 됨 (따라서 1시간 200번 내외에서 문제없이 돌릴 수 있음)
 					cell = instaArray;
-				}				
+				}
+				// 여러명의 사용자가 접근해와도 1분동안은 API 계속적인 호출을 막아야하기 때문에, 체크한 시간부터 1분이 지날때까지는 막아야한다.
+				instaCheckTime = nowTime;
 			} else {
 				cell = instaArray;
 			}

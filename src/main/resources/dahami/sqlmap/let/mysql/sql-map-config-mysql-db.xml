@@ -3,6 +3,7 @@
 <sqlMap namespace="tre_ATCdb">
 
 	<typeAlias alias="boardVO" type="com.dahami.api.main.service.vo.BoardVO" />
+	<typeAlias alias="instaTokenVO" type="com.dahami.api.main.service.vo.InstaTokenVO" />
 	
 	<resultMap id="NoticeLstMap" class="com.dahami.api.main.service.vo.BoardVO">
 		<result property="Uid" 			column="f_uid" />
@@ -33,6 +34,14 @@
 		<result property="mediaUntrusted" column="media_untrusted" />
 		<result property="mediaOnline"    column="media_online" />
 		<result property="fileName"       column="file_name" />
+	</resultMap>
+	
+	<resultMap id="InstaTokenMap" class="com.dahami.api.main.service.vo.InstaTokenVO">
+		<result property="seq" 			column="seq" />
+		<result property="userId" 		column="userId" />
+		<result property="token" 		column="token" />
+		<result property="expire" 		column="expire" />
+		<result property="regdate" 		column="regdate" />
 	</resultMap>
 	
 	<select id="NoticeLst" parameterClass="boardVO" resultMap="NoticeLstMap">
@@ -118,4 +127,21 @@
 		ORDER BY
 			kind_serial, media_name
 	</select>
+	
+	<select id="InstaTokenData" resultMap="InstaTokenMap">
+		SELECT 
+			seq,userId,token,expire,regdate
+		FROM 
+			dahami_board.instaToken
+		ORDER BY 
+			seq DESC
+		LIMIT 1
+	</select>
+	
+	<insert id="insertNewToken" parameterClass="instaTokenVO">
+		INSERT INTO dahami_board.instaToken
+		(userId,token,expires_in,expire,regdate)
+		VALUES
+		(#userId#,#token#,#expires_in#,#expire#,NOW())
+	</insert>
 </sqlMap>

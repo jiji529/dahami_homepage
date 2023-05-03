@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.dahami.api.main.service.vo.BoardVO;
+import com.dahami.api.main.service.vo.InstaTokenVO;
 import com.dahami.api.main.service.vo.LogoVO;
 
 public interface MainService {
@@ -16,4 +17,6 @@ public interface MainService {
 	
 	Map<String, String> SelectKindList() throws Exception;
 	List<LogoVO> SelectLogoLst() throws Exception;
+	List<InstaTokenVO> getInstaTokenData();
+	void insertNewToken(InstaTokenVO itVO);	
 }

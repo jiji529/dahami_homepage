@@ -34,6 +34,7 @@
 - 내 애플리케이션>앱 설정>플랫폼 에서 WEB 도메인 등록을 해야 사용가능
 
 # 인스타 (60일 장기토큰까지만 발행가능하므로, 만료시 갱신해줘야함 - 기존 발급일(2023-04-11 13:53:00) / 만료일(2023-06-10 13:53:00))
+# 인스타 토큰 자동갱신 모듈 추가됨 (1분마다 인스타토큰 만료 일주일전인지 확인하고, 맞다면 갱신하여 DB에 신규토큰을 넣어줌)
 - SNS ID: dahamisns@dahami.com 
 - password: dahamijb!@2
 - access_token: IGQVJVQThWM2xxZAzhYSzZAKbDZAXc3VBOEE5ZA2ZAyMGJrLU5OeGVWajh3cldoc2ptX01FbDdJTzV1dkdoNFUxVkFKYlEza2o0LU1CVS1kNXAwLTR4R1RZAMFQ1ci1BMXhGUE1MUTF0Q1dR,
