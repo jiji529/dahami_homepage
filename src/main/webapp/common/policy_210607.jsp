@@ -469,11 +469,13 @@ a.otherPrivacy {
 	</section>
 	<section class="policy_cont" id="section14">
 		<h4>개인정보처리방침 변경사항</h4>
-		<p><a class="otherPrivacy" href="policy.jsp" target="_blank">이후 개인정보처리방침(2022. 6. 2. ~) 보기</a></p>
-		<p><a class="otherPrivacy" href="policy_210408.jsp" target="_blank">이전 개인정보처리방침(2021. 4. 8. ~) 보기</a></p>
-		<p><a class="otherPrivacy" href="policy_200319.jsp" target="_blank">이전 개인정보처리방침(2020. 3. 19. ~) 보기</a></p>
-		<p><a class="otherPrivacy" href="policy_190813.jsp" target="_blank">이전 개인정보처리방침(2019. 8. 13. ~) 보기</a></p>
-		<p><a class="otherPrivacy" href="policy_180901.jsp" target="_blank">이전 개인정보처리방침(2018. 9. 1. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy.jsp">이후 개인정보처리방침(2023. 7. 6. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_230613.jsp">이후 개인정보처리방침(2023. 6. 13. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_220602.jsp">이후 개인정보처리방침(2022. 6. 2. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_210408.jsp">이전 개인정보처리방침(2021. 4. 8. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_200319.jsp">이전 개인정보처리방침(2020. 3. 19. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_190813.jsp">이전 개인정보처리방침(2019. 8. 13. ~) 보기</a></p>
+		<p><a class="otherPrivacy" href="policy_180901.jsp">이전 개인정보처리방침(2018. 9. 1. ~) 보기</a></p>
 	</section>
 </section>
 </body>

@@ -387,8 +387,8 @@
         	// 스크롤이 특정 위치에 있을때, 새로고침 등으로 새 페이지를 열면 겹치는 현상을 제어함
         	scrollText();
         	
-        	popup('2023-01-19', // 'YYYY-MM-DD' : startDate
-	                  '2023-01-25', // 'YYYY-MM-DD': endDate
+        	popup('2023-09-26', // 'YYYY-MM-DD' : startDate
+	                  '2023-10-03', // 'YYYY-MM-DD': endDate
 	                  400, // n : imgWidth
 	                  400 // n : imgHeight
 	            );
