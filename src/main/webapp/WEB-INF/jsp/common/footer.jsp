@@ -6,7 +6,7 @@
             NDPT가 함께 합니다.</h2>
         <a class="btn-ndpt" href="https://ndpt.dahami.com" target="_blank" title="NDPT 바로가기">NDPT 바로가기<span></span></a>
 
-        <div class="float-close"><p>X</p></div>
+        <div class="float-close" onclick="closeNDPTBanner()"><p>X</p></div>
     </div>
 
     <footer>
@@ -97,4 +97,8 @@
 		$('.pop_ok p').on('click', function(e) {
 			$("#pop1").css('display','none');
 		});
+		
+		function closeNDPTBanner() {
+			$('.bn-float').css('display','none');
+		}
     </script>
