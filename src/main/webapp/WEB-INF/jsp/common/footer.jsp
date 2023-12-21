@@ -1,4 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<div class="bn-float">
+        <h1>AI 학습을 위한 뉴스 데이터 공급 서비스</h1>
+        <h2>AI의 시작,<br>
+            NDPT가 함께 합니다.</h2>
+        <a class="btn-ndpt" href="https://ndpt.dahami.com" target="_blank" title="NDPT 바로가기">NDPT 바로가기<span></span></a>
+
+        <div class="float-close"><p>X</p></div>
+    </div>
+
     <footer>
         <div class="inner">
             <div class="f_top">
