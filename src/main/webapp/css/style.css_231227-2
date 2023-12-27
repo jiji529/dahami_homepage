@@ -80,7 +80,6 @@ footer .f_family .f_li:nth-child(3) a{background: url(../images/f_cp.png) center
 footer .f_family .f_li:nth-child(4) a{background: url(../images/f_tp.png) center no-repeat;background-size: contain;}
 footer .f_family .f_li:nth-child(5) a{background: url(../images/f_nb.png) center no-repeat;background-size: contain;}
 footer .f_family .f_li:nth-child(6) a{background: url(../images/f_np.png) center no-repeat;background-size: contain;}
-footer .f_family .f_li:nth-child(7) a{background: url(../images/f_ndpt.png) center no-repeat;background-size: contain;}
 
 
 .row{ width: 100%; display: flex;   flex-wrap:nowrap; gap:40px; flex-direction: row; margin: 3.75rem 0;}

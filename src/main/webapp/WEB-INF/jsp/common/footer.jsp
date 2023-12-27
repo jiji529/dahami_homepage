@@ -58,11 +58,12 @@
             </div>
             <div class="f_family">
                 <div class="f_tit">Family sites</div>
-                <div class="f_li"><a href="http://www.scrapmaster.co.kr" target="_blank">스크랩마스터</a></div>
-                <div class="f_li"><a href="http://www.clippingon.co.kr" target="_blank">클리핑온</a></div>
-                <div class="f_li"><a href="http://www.t-paper.co.kr" target="_blank">티페이퍼</a></div>
-                <div class="f_li"><a href="http://www.newsbank.co.kr" target="_blank">뉴스뱅크</a></div>
-                <div class="f_li"><a href="http://news-plaza.com/" target="_blank">뉴스플라자</a></div>
+                <div class="f_li"><a href="https://www.scrapmaster.co.kr/" target="_blank" title="스크랩마스터 바로가기">스크랩마스터</a></div>
+                <div class="f_li"><a href="http://www.clippingon.co.kr" target="_blank" title="클리핑온 바로가기">클리핑온</a></div>
+                <div class="f_li"><a href="https://www.t-paper.co.kr/" target="_blank" title="티페이퍼 바로가기">티페이퍼</a></div>
+                <div class="f_li"><a href="https://www.t-paper.co.kr/" target="_blank" title="뉴스뱅크 바로가기">뉴스뱅크</a></div>
+                <div class="f_li"><a href="https://news-plaza.com/" target="_blank" title="뉴스플라자 바로가기">뉴스플라자</a></div>
+                <div class="f_li"><a href="https://ndpt.dahami.com/" target="_blank" title="NDPT 바로가기">NDPT</a></div>
             </div>
             <div id="pop1" style="display:none;">
 				<div class="pop_bg"></div>
