@@ -274,7 +274,7 @@ section{width: 100%; padding: 4rem 0;}
 .prod_li li .prod_thumb {text-align: right;}
 .prod_li li .prod_thumb span{width: 300px; height: 300px; border-radius: 150px; display: inline-block;}
 .prod1 li:nth-child(1) .prod_thumb span{background: url(../images/prod1-1.png) right no-repeat; background-size: cover;}
-.prod1 li:nth-child(2) .prod_thumb span{background: url(../images/prod1-2_new.png) right no-repeat; background-size: cover;}
+.prod1 li:nth-child(2) .prod_thumb span{background: url(../images/prod1-4.png) right no-repeat; background-size: cover;}
 .prod1 li:nth-child(3) .prod_thumb span{background: url(../images/prod1-2.png) right no-repeat; background-size: cover;}
 .prod1 li:nth-child(4) .prod_thumb span{background: url(../images/prod1-3.png) right no-repeat; background-size: cover;}
 .prod1 li:nth-child(5) .prod_thumb span{background: url(../images/prod1-4.png) right no-repeat; background-size: cover;}
