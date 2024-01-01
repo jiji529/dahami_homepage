@@ -121,9 +121,10 @@
                 </div>
                 <div class="hst_rt">
                     <ul id="hst1">
+                    	<li><span class="hst_num">2024</span><span class="hst_desc">9년 연속 청년친화강소기업 선정</span></li>
                     	<li><span class="hst_num">2023</span><span class="hst_desc">AI 학습을 위한 뉴스 데이터 공급 서비스 NDPT 런칭</span></li>
                     	<li><span class="hst_num">2023</span><span class="hst_desc">보도자료 실적 집계 솔루션 PRKKOK 런칭</span></li>
-                        <li><span class="hst_num">2022</span><span class="hst_desc">7년연속 청년친화강소기업 선정</span></li>
+                        <li><span class="hst_num">2022</span><span class="hst_desc">청년친화강소기업 선정</span></li>
                         <li><span class="hst_num">2020</span><span class="hst_desc">T-Paper v5.0 GS인증 획득</span></li>
                         <li><span class="hst_num">2020</span><span class="hst_desc">(주)액션파워와 인공지능 분야 MOU 체결</span></li>
                         <li><span class="hst_num">2020</span><span class="hst_desc">데이터바우처 지원사업 판매기업 선정</span></li>
