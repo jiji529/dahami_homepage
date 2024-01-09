@@ -31,6 +31,11 @@
                         <dd><a href="<%=request.getContextPath()%>/execution/partner.html">파트너쉽</a></dd>
                     </dl>
                     <dl>
+                        <dt><a href="<%=request.getContextPath()%>/ndpt/ndpt.html">AI</a></dt>
+                        <dd><a href="<%=request.getContextPath()%>/ndpt/ndpt.html">NDPT</a></dd>
+
+                    </dl>                    
+                    <dl>
                         <dt><a href="<%=request.getContextPath()%>/tech/tech.html">기술</a></dt>
                         <dd><a href="<%=request.getContextPath()%>/tech/tech.html#">dAIa</a></dd>
 

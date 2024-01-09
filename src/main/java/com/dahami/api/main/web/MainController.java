@@ -240,6 +240,11 @@ public class MainController {
 		return "/execution/culture";
 	}
 	
+	@RequestMapping("/ndpt/ndpt.html")
+	public String ndpt(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/ndpt/ndpt";
+	}	
+	
 	@RequestMapping("/tech/tech.html")
 	public String tech(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/tech/tech";

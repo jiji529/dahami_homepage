@@ -39,8 +39,7 @@ header .on .gnbbg{opacity: 1; display: block;}
 .gnb.on .gnb_2depth{ transition: opacity 1s ease 0s; opacity: 1; display: flex;}
 .gnb_2depth a{ color: #666;}
 
-header .gnb .menu{font-size: 1.25rem; font-weight: 600; display: inline-block; margin: 0 10px; width: 120px; vertical-align:top;  z-index: 20; position: relative;} 
-header .gnb .menu.new > a:after{content: ''; width: 6px; height: 6px; background: red; border-radius: 4px; position: absolute; top: 10px; margin-left: 4px; } 
+header .gnb .menu{font-size: 1.25rem; font-weight: 600; display: inline-block; margin: 0 20px; width: 120px; vertical-align:top;  z-index: 20; position: relative;} 
 header .gnb .menu a{ color: #111; line-height: 40px; text-align: center;}
 header .gnb a:hover{ color: #3457ea;}
 header .util{display: flex; align-items: center; justify-content: space-between; column-gap: 20px; font-size: 0.938em; z-index: 20; }
@@ -313,7 +312,6 @@ section{width: 100%; padding: 4rem 0;}
 .prod_head b{ font-weight: 600;}
 .prod_detail1{background: #F2F1F0;}
 .prod_detail2{padding: 0;}
-.prod_detail2.pd{padding-bottom: 8rem;}
 .prod_box{width: 100%;  background: #fff;}
 .prod_img img{width: 100%;}
 .prod_detail1 .prod_box_txt{ padding: 20px 30px;}
@@ -340,10 +338,8 @@ section{width: 100%; padding: 4rem 0;}
 .media_list ul li{width: 100%; height: 3.75rem; border: 1px #ccc solid; padding: 14px 20px; text-align: center; vertical-align: middle;}
 .media_list ul li img{max-width: 100%; max-height: 100%; vertical-align: middle;}
 
-.sub_ndpt{height: 37.5rem; background: url(../images/ndpt_top.png) center top no-repeat; background-size: cover;}
-
 .sub_tech1{height: 37.5rem; background: url(../images/tech_top.png) center top no-repeat; background-size: cover;}
-.sub_ndpt .sub_tit, .sub_ndpt .sub_txt, .sub_tech1 .sub_tit, .sub_tech1 .sub_txt{color: #fff; margin-bottom: 10px; width: 100%; display: inline-block;}
+.sub_tech1 .sub_tit, .sub_tech1 .sub_txt{color: #fff; margin-bottom: 10px; width: 100%; display: inline-block;}
 
 .tech_list{display: grid; grid-template-columns: 1fr 1fr; gap:0 2.5rem; margin-top: 5rem;}
 .tech_list li{display: grid; grid-template-columns: 1fr 5fr; gap:2.5rem; border-bottom: 1px #ccc solid; padding: 3.2rem 30px 3.2rem 0;}

@@ -31,6 +31,12 @@
                     <a href="<%=request.getContextPath()%>/execution/partner.html">파트너쉽</a>
                 </div>
             </div>
+            <div class="menu new">
+            	<a href="<%=request.getContextPath()%>/ndpt/ndpt.html">AI</a>
+                <div class="gnb_2depth">
+                    <a href="<%=request.getContextPath()%>/ndpt/ndpt.html">NDPT</a>
+                </div>
+            </div>            
             <div class="menu"><a href="<%=request.getContextPath()%>/tech/tech.html">기술</a>
                 <div class="gnb_2depth">
                     <a href="<%=request.getContextPath()%>/tech/tech.html">dAIa</a>
@@ -82,6 +88,11 @@
                         <a href="<%=request.getContextPath()%>/execution/partner.html">파트너쉽</a>
                     </div>
                 </div>
+                <div class=""><a href="<%=request.getContextPath()%>/ndpt/ndpt.html">AI</a>
+                    <div class="gnb_2depth">
+                        <a href="<%=request.getContextPath()%>/ndpt/ndpt.html">NDPT</a>
+                    </div>
+                </div>                
                 <div class=""><a href="<%=request.getContextPath()%>/tech/tech.html">기술</a>
                     <div class="gnb_2depth">
                         <a href="<%=request.getContextPath()%>/tech/tech.html">dAIa</a>
