@@ -551,6 +551,7 @@ section{width: 100%; padding: 4rem 0;}
     .gnb_2depth{opacity: 1; margin: 0; text-indent: 20px; font-size: 1.5rem;}
     .gnb_mo_nav > div {display: grid; grid-template-columns: 40% 60%; margin-bottom: 20px;}
     .gnb_mo_nav > div > a{font-size: 2rem; color: #333; font-weight: 500; }
+    header .logo{z-index: 501;}
     .gnb_close{position: absolute; top: 30px; right: 16px; width: 24px; height: 24px;}
     .gnb_close span{width: 28px; height: 2px; background: #333; transform: rotate(45deg); position: absolute; right: 0; top: 0;}
     .gnb_close span:nth-child(2){transform: rotate(-45deg);}
