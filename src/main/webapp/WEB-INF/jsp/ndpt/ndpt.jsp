@@ -15,7 +15,7 @@
             <div>
                 <h2>News Data for Pre-Training</h2>
                 <h3>NDPT</h3>
-                <p class="subtit_txt">Ai의 기술력을 결정짓는 것은 데이터입니다.<br>
+                <p class="subtit_txt">AI의 기술력을 결정짓는 것은 데이터입니다.<br>
                     요구사항 정의부터 인공지능 학습용 데이터 구축, 합법적인 이용 저작권이 확보된 양질의 뉴스 데이터 제공으로 인공지능 개발의 처음부터 끝까지 함께 하겠습니다.</p>
             </div>
             <a href="https://ndpt.dahami.com/" target="_blank" class="btn_bk">홈페이지 바로가기</a>
