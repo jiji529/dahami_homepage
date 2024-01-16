@@ -1,14 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
-<div class="bn-float">
+	<div class="bn-float">
         <h1>AI 학습을 위한 뉴스 데이터 공급 서비스</h1>
         <h2>AI의 시작,<br>
             NDPT가 함께 합니다.</h2>
         <a class="btn-ndpt" href="https://ndpt.dahami.com" target="_blank" title="NDPT 바로가기">NDPT 바로가기<span></span></a>
 
         <div class="float-close" onclick="closeNDPTBanner()"><p>X</p></div>
-    </div>
-
+    </div>    	
     <footer>
         <div class="inner">
             <div class="f_top">
@@ -89,7 +90,7 @@
 			</div>        
         </div>
     </footer>
-    <div class="top"><a href="#">top</a></div>
+    <div class="top"><a href="#">top</a></div>		    	
     
     <script>
 	    $('.f_link > a:eq(0)').on('click', function(e) {

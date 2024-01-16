@@ -24,7 +24,7 @@
     <meta name="naver-site-verification" content="89e659d5cefc79fb82c6b972780928bd1eb4109f" />
     <meta name="google-site-verification" content="-4UuMBM7cFV7Hs9xMd19RdIrT3oh_bCDpmj49pgStB4" />
 	<c:choose>
-		<c:when test='${URL=="/index.html"}'></c:when>
+		<c:when test='${URL=="/index.html" || URL=="/indexEN.html"}'></c:when>
 		<c:otherwise>
 			<meta name="robots" content="noindex">
 		</c:otherwise>
@@ -33,13 +33,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>다하미커뮤니케이션즈</title>
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css?v=20240110">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/modal.css?v=20240110">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css?v=20240110">
-    <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js?v=20240110"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>다하미커뮤니케이션즈</title>         	   
+	<jsp:include page="./common_setting.jsp"></jsp:include>		
 	<jsp:include page="./google_analytics.jsp"></jsp:include>
     

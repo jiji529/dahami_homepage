@@ -29,6 +29,7 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import javax.mail.internet.MimeUtility;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -84,7 +85,7 @@ public class MainController {
 	private MainService mainService;
 	
 	@RequestMapping("/index.html")
-	public String indexs(ModelMap model, HttpServletRequest request) throws Exception {	
+	public String indexs(ModelMap model, HttpServletRequest request, HttpServletResponse response) throws Exception {	
 		List<BoardVO> boardCdList = new ArrayList<BoardVO>();
 		BoardVO boardVO = new BoardVO();
 		
@@ -100,8 +101,31 @@ public class MainController {
 		
 		model.addAttribute("boardCdList", boardCdList);
 		
+		Cookie cookie = new Cookie("language", "KR");
+		response.addCookie(cookie);
+		
 		return "index";
 	}
+	
+	@RequestMapping("/indexEN.html")
+	public String indexsEN(ModelMap model, HttpServletRequest request) throws Exception {	
+		List<BoardVO> boardCdList = new ArrayList<BoardVO>();
+		BoardVO boardVO = new BoardVO();
+		
+		boardVO.setStPageSize(0);
+		boardVO.setEndPageSize(4);
+		
+		boardCdList = mainService.SelectNotLst(boardVO);
+		
+		for(int i=0; i<boardCdList.size(); i++) {
+			boardCdList.get(i).setRegdate(convertDate(boardCdList.get(i).getRegdate()));
+			boardCdList.get(i).setBody(boardCdList.get(i).getBody().replaceAll("\r", "<br/>"));
+		}
+		
+		model.addAttribute("boardCdList", boardCdList);
+		
+		return "indexEN";
+	}	
 	
 	@RequestMapping("/loadInstaData.html")
 	public String loadInstaData(Model model) {
@@ -188,24 +212,49 @@ public class MainController {
 		return "/promise/promise";
 	}
 	
+	@RequestMapping("/promise/promiseEN.html")
+	public String promiseEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/promise/promiseEN";
+	}	
+	
 	@RequestMapping("/execution/product.html")
 	public String product(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/execution/product";
 	}
+	
+	@RequestMapping("/execution/productEN.html")
+	public String productEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/productEN";
+	}	
 	
 	@RequestMapping("/execution/product_sub/scrapmaster.html")
 	public String scramaster(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/execution/product_sub/scrapmaster";
 	}
 	
+	@RequestMapping("/execution/product_sub/scrapmasterEN.html")
+	public String scramasterEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/product_sub/scrapmasterEN";
+	}	
+	
 	@RequestMapping("/execution/product_sub/clippingon.html")
 	public String clippingon(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/execution/product_sub/clippingon";
 	}
 	
+	@RequestMapping("/execution/product_sub/clippingonEN.html")
+	public String clippingonEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/product_sub/clippingonEN";
+	}	
+	
 	@RequestMapping("/execution/product_sub/newsplaza.html")
 	public String newsplaza(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/execution/product_sub/newsplaza";
+	}
+
+	@RequestMapping("/execution/product_sub/newsplazaEN.html")
+	public String newsplazaEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/product_sub/newsplazaEN";
 	}
 	
 	@RequestMapping("/execution/product_sub/expert.html")
@@ -213,20 +262,40 @@ public class MainController {
 		return "/execution/product_sub/expert";
 	}
 	
+	@RequestMapping("/execution/product_sub/expertEN.html")
+	public String expertEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/product_sub/expertEN";
+	}	
+	
 	@RequestMapping("/execution/culture_sub/tpaper.html")
 	public String tpaper(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/execution/culture_sub/tpaper";
 	}
 	
+	@RequestMapping("/execution/culture_sub/tpaperEN.html")
+	public String tpaperEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/culture_sub/tpaperEN";
+	}	
+	
 	@RequestMapping("/execution/culture_sub/newsbank.html")
 	public String newsbank(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/execution/culture_sub/newsbank";
+	}
+
+	@RequestMapping("/execution/culture_sub/newsbankEN.html")
+	public String newsbankEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/culture_sub/newsbankEN";
 	}
 	
 	@RequestMapping("/execution/culture_sub/enie.html")
 	public String enie(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/execution/culture_sub/enie";
 	}
+	
+	@RequestMapping("/execution/culture_sub/enieEN.html")
+	public String enieEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/culture_sub/enieEN";
+	}	
 	
 	@RequestMapping("/execution/partner.html")
 	public String partner(ModelMap model, HttpServletRequest request) throws Exception {
@@ -235,20 +304,42 @@ public class MainController {
 		return "/execution/partner";
 	}
 	
+	@RequestMapping("/execution/partnerEN.html")
+	public String partnerEN(ModelMap model, HttpServletRequest request) throws Exception {
+		model.addAttribute("kindList", mainService.SelectKindList());
+		model.addAttribute("logoList", mainService.SelectLogoLst());
+		return "/execution/partnerEN";
+	}	
+	
 	@RequestMapping("/execution/culture.html")
 	public String culture(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/execution/culture";
 	}
 	
+	@RequestMapping("/execution/cultureEN.html")
+	public String cultureEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/cultureEN";
+	}	
+	
 	@RequestMapping("/ndpt/ndpt.html")
 	public String ndpt(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/ndpt/ndpt";
+	}
+	
+	@RequestMapping("/ndpt/ndptEN.html")
+	public String ndptEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/ndpt/ndptEN";
 	}	
 	
 	@RequestMapping("/tech/tech.html")
 	public String tech(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/tech/tech";
 	}
+	
+	@RequestMapping("/tech/techEN.html")
+	public String techEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/tech/techEN";
+	}	
 	
 	@RequestMapping("/news/news.html")
 	public String news(ModelMap model, HttpServletRequest request) throws Exception {	
@@ -283,6 +374,40 @@ public class MainController {
 		
 		return "/news/news";
 	}
+	
+	@RequestMapping("/news/newsEN.html")
+	public String newsEN(ModelMap model, HttpServletRequest request) throws Exception {
+		List<BoardVO> boardCdList = new ArrayList<BoardVO>();
+		BoardVO boardVO = new BoardVO();
+		
+		int NoticeCnt = 0;
+		int DivideCnt = 0;
+		
+		boardVO.setStPageSize(0);
+		boardVO.setEndPageSize(10);
+		
+		boardCdList = mainService.SelectNotLst(boardVO);
+		
+		for(int i=0; i<boardCdList.size(); i++) {
+			String f_body = boardCdList.get(i).getBody();
+			String pattern = "[\\[_](.*?)[\\_]]";
+			f_body = f_body.replaceAll(pattern, "");
+			boardCdList.get(i).setBody(f_body);
+		}
+		
+		boardVO.setEndPageSize(11);
+		NoticeCnt = mainService.SelectNotCnt(boardVO);
+		
+		for(int i=0; i<boardCdList.size(); i++) {
+			boardCdList.get(i).setRegdate(convertDate(boardCdList.get(i).getRegdate()));
+			boardCdList.get(i).setBody(boardCdList.get(i).getBody().replaceAll("\r", "<br/>"));
+		}
+		
+		model.addAttribute("boardCdList", boardCdList);
+		model.addAttribute("totcnt", NoticeCnt);
+		
+		return "/news/newsEN";
+	}	
 	
 	@RequestMapping("/news/loadMoreNews.html")
 	public String loadMoreNews(Model model, HttpServletRequest request) throws Exception {	
@@ -338,15 +463,30 @@ public class MainController {
 		return "/news/insta";
 	}
 	
+	@RequestMapping("/news/instaEN.html")
+	public String instaEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/news/instaEN";
+	}	
+	
 	@RequestMapping("/company/company.html")
 	public String company(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/company/company";
 	}
 	
+	@RequestMapping("/company/companyEN.html")
+	public String companyEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/company/companyEN";
+	}	
+	
 	@RequestMapping("/company/recruit.html")
 	public String recruit(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/company/recruit";
 	}
+	
+	@RequestMapping("/company/recruitEN.html")
+	public String recruitEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/company/recruitEN";
+	}	
 	
 	@RequestMapping("/company/faq.html")
 	public String faq(ModelMap model, HttpServletRequest request) throws Exception {
@@ -380,6 +520,39 @@ public class MainController {
 		
 		return "/company/faq";
 	}
+	
+	@RequestMapping("/company/faqEN.html")
+	public String faqEN(ModelMap model, HttpServletRequest request) throws Exception {
+		List<BoardVO> faqList = new ArrayList<BoardVO>();
+		BoardVO boardVO = new BoardVO();
+		
+		int FaqCnt = 0;
+		int DivideCnt1 = 0;
+		
+		boardVO.setStPageSize(0);
+		boardVO.setEndPageSize(10);
+		
+		faqList = mainService.FaqLst(boardVO);
+		
+		boardVO.setEndPageSize(11);		
+		FaqCnt 	  = mainService.FaqCnt(boardVO);
+		
+		if(!faqList.isEmpty()){
+			for(int i=0; i<faqList.size(); i++) {
+				faqList.get(i).setGubun(convertTitle(faqList.get(i).getQuest()));
+				faqList.get(i).setQuest(convertWord(faqList.get(i).getQuest()));
+			}
+		}
+		
+		if(FaqCnt !=0){
+			DivideCnt1 = DivideCnt1/10+1;
+		}
+		
+		model.addAttribute("faqList", faqList);
+		model.addAttribute("faqcnt", FaqCnt);
+		
+		return "/company/faqEN";
+	}	
 	
 	@RequestMapping("/company/loadMoreFaq.html")
 	public String loadMoreFaq(Model model, HttpServletRequest request) throws Exception {
@@ -429,6 +602,11 @@ public class MainController {
 	public String qna(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/company/qna";
 	}
+	
+	@RequestMapping("/company/qnaEN.html")
+	public String qnaEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/company/qnaEN";
+	}	
 	
 	@RequestMapping("/community/sendEmail.html")
 	public String sendEmail(ModelMap model, HttpServletRequest request) throws Exception {

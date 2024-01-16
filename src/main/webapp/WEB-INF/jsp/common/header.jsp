@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
     <div class="top-bn">
         <a href="https://ndpt.dahami.com" target="_blank" title="NDPT 바로가기">
             <div class="inner">
@@ -10,9 +12,8 @@
                 <div class="btn-ndpt">NDPT 바로가기<span></span></div>
             </div>
 
-        </a>
-
-    </div>
+        </a>		
+    </div>    	   		
     <header>
         <h1 class="logo"><a href="<%=request.getContextPath()%>/index.html">dahami</a></h1>
         <nav class="gnb">
@@ -60,6 +61,13 @@
         <div class="util">
             <a href="https://www.scrapmaster.co.kr" target="_blank">스크랩마스터</a>
             <a href="<%=request.getContextPath()%>/company/qna.html" target="_blank">문의하기</a>
+            <div class="lang">
+               <a href="javascript:void(0)">언어</a>
+                <ul>
+                    <li class="on" onclick="languageChange('KR')">KR</li>
+                    <li class="" onclick="languageChange('EN')">EN</li>
+                </ul>
+            </div>		            
         </div>
 
         <div class="gnb_btn" onclick="gnb()">
@@ -69,6 +77,12 @@
         </div>
 
         <div class="gnb_mo" id="gnb_mo">
+            <div class="lang">
+                <ul>
+                    <li class="on" onclick="languageChange('KR')">KR</li>
+                    <li class="" onclick="languageChange('EN')">EN</li>
+                </ul>
+            </div>		        
             <div class="gnb_close" onclick="gnbclose()">
                 <span></span>
                 <span></span>
@@ -116,16 +130,28 @@
 
         <div class="util">
             <a href="https://www.scrapmaster.co.kr" target="_blank">스크랩마스터</a>
-            <a href="<%=request.getContextPath()%>/company/qna.html" target="_blank">문의하기</a>
+            <a href="<%=request.getContextPath()%>/company/qna.html" target="_blank">문의하기</a>		            
         </div>
 
         </div>
-    </header>
+    </header>    		
     <script>
     	function closeHeader() {
     		if($('.gnb_mo').hasClass('on')) {
     			$('.gnb_mo').removeClass('on');
     			$('body').removeClass('scroll_hidden');
     		}
-    	}
+    	}    
+    	
+		var langElement = document.querySelector('.lang');
+		
+		langElement.onmouseover = function() {
+		  langElement.classList.add('active');
+		};
+		
+		langElement.onmouseout = function(e) {
+		  if (!e.relatedTarget || !e.relatedTarget.closest('.lang')) {
+		    langElement.classList.remove('active');
+		  }
+		};    	
     </script>

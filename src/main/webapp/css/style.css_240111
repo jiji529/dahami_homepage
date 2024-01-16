@@ -4,14 +4,10 @@
  * {font-family: Roboto,'Noto Sans KR','Apple SD Gothic Neo',sans-serif; letter-spacing:-0.01em; line-height: 1.5;}
 */
 
-@import url(https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css);
-@import url(https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,900&display=swap);
-* {
-    font-family: Pretendard,Roboto,Apple SD Gothic Neo,Noto Sans KR,sans-serif;
-    line-height: 1.5;
-    box-sizing: border-box;
-    word-break: keep-all
-}
+@import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css');
+
+* {font-family: 'SUIT', Roboto,'Noto Sans KR','Apple SD Gothic Neo',sans-serif; line-height: 1.5; box-sizing:border-box; word-break: keep-all;}
+
 ::-moz-selection {background: #3457ea; color:#fff;}
 ::selection {background: #3457ea; color:#fff;}
 
@@ -43,15 +39,14 @@ header .on .gnbbg{opacity: 1; display: block;}
 .gnb.on .gnb_2depth{ transition: opacity 1s ease 0s; opacity: 1; display: flex;}
 .gnb_2depth a{ color: #666;}
 
-header .gnb .menu{font-size: 1.25rem; font-weight: 600; display: inline-block; margin: 0 10px; width: 140px; vertical-align:top;  z-index: 20; position: relative;} 
+header .gnb .menu{font-size: 1.25rem; font-weight: 600; display: inline-block; margin: 0 10px; width: 120px; vertical-align:top;  z-index: 20; position: relative;} 
 header .gnb .menu.new > a:after{content: ''; width: 6px; height: 6px; background: red; border-radius: 4px; position: absolute; top: 10px; margin-left: 4px; } 
 header .gnb .menu a{ color: #111; line-height: 40px; text-align: center;}
-header .gnb .menu .gnb_2depth a{ color: #111; line-height: 18px; margin-bottom: 20px; text-align: center;}
 header .gnb a:hover{ color: #3457ea;}
-header .util{display: flex; align-items: center; justify-content: space-between; column-gap: 10px; font-size: 0.938em; z-index: 20; }
-header .util > a{ padding: 8px 20px; border-radius: 20px; font-weight: 400; font-size: 1rem;}
-header .util > a:first-child{color: #fff; background: #3457ea;}
-header .util > a:nth-child(2){color: #999; background: #fff; border: 1px #ccc solid;}
+header .util{display: flex; align-items: center; justify-content: space-between; column-gap: 20px; font-size: 0.938em; z-index: 20; }
+header .util a{ padding: 8px 20px; border-radius: 20px; font-weight: 400; font-size: 1rem;}
+header .util a:first-child{color: #fff; background: #3457ea;}
+header .util a:nth-child(2){color: #999; background: #fff; border: 1px #ccc solid;}
 
 .gnb_mo{display: none;}
 .gnb_btn{display: none;}
@@ -484,14 +479,6 @@ section{width: 100%; padding: 4rem 0;}
 .location .location_list:hover {  text-decoration: underline;}
 
 
-.lang{position: relative;}
-.lang a{ background: url(../images/lang.png) center no-repeat; width: 36px; height: 36px; text-indent: -9999px;}
-.lang a:hover{background: url(../images/lang_bl.png) center no-repeat; }
-.lang ul{display: none; border: 1px #ccc solid; background: #fff; }
-.lang ul li{padding: 8px 16px; text-align: center; font-size: 1rem; cursor: pointer; font-weight: 700;}
-.lang ul li:hover{color: #3457ea; background: #f6f6f6;}
-.lang ul li.on{color: #3457ea;  font-weight: 900; }
-.lang.active ul{display: block; position: absolute; margin-left: -8px;}
 
 .bn-float{position: fixed; z-index: 1000; width: 420px; height: 227px; right: 30px; bottom: 90px; background: url('../images/bg-float.png') 0 0 no-repeat; background-size: cover; box-shadow: 0 5px 15px rgba(0,0,0,0.5); padding: 30px;}
 
@@ -526,11 +513,9 @@ section{width: 100%; padding: 4rem 0;}
 
 @media screen and (max-width:1600px){
     html{font-size: 90%;}
-    header{padding: 30px;}
     .inner{width: 100%; padding: 0 20px; margin: 0 auto;}
     .location{width: 100%; padding-right:60px;}
-    .top-bn .inner{padding: 0 60px;}
-    header .gnb .menu{width: 110px;}
+        .top-bn .inner{padding: 0 60px;}
 
 }
 
@@ -650,12 +635,8 @@ section{width: 100%; padding: 4rem 0;}
     .btn-ndpt span{margin-top: 6px;}
     .top-bn a h1 p{font-size: 14px;}
     .top-bn a h1 {font-size: 18px;}
-    .top-bn .inner{padding: 0 20px;}
+        .top-bn .inner{padding: 0 20px;}
 
-    .lang{ position: absolute;top: 20px; left: 20px;}
-    .lang ul {display: flex;border: 0; gap:10px;}
-    .lang ul li{padding: 0; font-size: 1.6rem; }
-    .lang li.on{text-decoration: underline;}
 }
 
 @media screen and (max-width:768px){

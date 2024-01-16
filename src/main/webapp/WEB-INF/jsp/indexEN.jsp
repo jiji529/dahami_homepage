@@ -7,74 +7,74 @@
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
-	<jsp:include page="common/head_meta.jsp"/>
+	<jsp:include page="common/head_metaEN.jsp"/>
 </head>
 
 <body>
-	<jsp:include page="common/header.jsp"/>
+	<jsp:include page="common/headerEN.jsp"/>
 
     <section class="main_vis">
         <video id="video" muted="" loop="" playsinline="" autoplay="" video-playable-inline="" poster="">
             <source type="video/mp4" src="<%=request.getContextPath()%>/images/main.mp4">
         </video>
         <div class="inner">
-            <div class="main_v_tit1" style="display:none;">뉴스를 가장 잘 이해하는<br>위기관리 파트너</div>
-            <div class="main_v_tit2 reveal">조직의 홍보, 마케팅, 전략 결정 등에 필요한<br>뉴스 콘텐츠와 미디어 정보 솔루션을 제공하고 있습니다.<br></div>
-            <div class="main_v_tit3 reveal">최고의 미디어 정보 전문가들이<br>고객 맞춤형으로 정보를 넘어 지식을 제공합니다.</div>            
+            <div class="main_v_tit1" style="display:none;">Your risk management partner, <br>who understands the news best.</div>
+            <div class="main_v_tit2 reveal">We provide news content and media intelligence solutions for <br>your organization's public relations, marketing, and strategic decisions.
+<br></div>
+            <div class="main_v_tit3 reveal">Our top media intelligence experts provide knowledge <br>beyond information with a personalized touch.</div>            
         </div>
         <span class="ico_scroll"></span>
     </section>
     <section class="main1">
         <div class="inner">
-            <h2 class="main_tit ">약속</h2>
-            <p class="main_txt ">뉴스를 가장 잘 이해하는 위기관리 파트너가 되겠습니다</p>
+            <h2 class="main_tit ">Our Promise</h2>
+            <p class="main_txt ">We promise to be your risk management partner, who understands the news best.</p>
             <div class="grid3">
                 <div class="li1 reveal">
                     <div class="li1_imgbox"></div>
-                    <div class="li1_tit">미디어 서비스 허브</div>
-                    <div class="li1_txt">미디어 콘텐츠와 기술에 기반한 <br>서비스의 허브(HUB)로!</div>
+                    <div class="li1_tit">Media Service Hub</div>
+                    <div class="li1_txt">A technology-based service hub for <br>media content!</div>
                 </div>
                 <div class="li1 reveal">
                     <div class="li1_imgbox"></div>
-                    <div class="li1_tit">전문가 역량</div>
-                    <div class="li1_txt">미디어 전문가들이 최상의 고객 경험을 제공</div>
+                    <div class="li1_tit">Expert Capabilities</div>
+                    <div class="li1_txt">Media experts deliver the best customer experience.</div>
                 </div>
                 <div class="li1 reveal">
                     <div class="li1_imgbox"></div>
-                    <div class="li1_tit">고객가치 우선</div>
-                    <div class="li1_txt">고객의 고민을 함께 경험하고<br>가치를 만드는 회사</div>
+                    <div class="li1_tit">Customer-First</div>
+                    <div class="li1_txt">A company that creates value by experiencing customer concerns together.</div>
                 </div>
             </div>
         </div>
     </section>
     <section class="main2">
         <div class="inner reveal">
-            <h2 class="main_tit ">위기관리 솔루션</h2>
-            <p class="main_txt">위기관리를 위한 전용 솔루션은 <span class="none">신문, 방송, 온라인 뉴스, SNS 등</span> <br>복잡한 미디어 환경에서 <span class="none">통찰을 제공하는</span>
-                최적의 제품과 서비스를 제공합니다.</p>
+            <h2 class="main_tit ">Risk Management Solutions</h2>
+            <p class="main_txt">Dedicated solutions for risk management that offer insights in the complex media<br> environment <span class="none">of newspapers, broadcasts, online news, SNS, and more</span>.
+               </p>
             <div class="grid2 reveal">
                 <div class="li2">
-                	<a href="<%=request.getContextPath()%>/execution/product_sub/scrapmaster.html">
-                    <div class="li2_tit">스크랩마스터</div>
-                    <div class="li2_txt">세계 최초의 신문 스크랩 프로그램인 스크랩마스터는<br>
-                            각 분야 전문가들이 검증하고 신뢰하는 최고의 미디어 솔루션입니다.</div>
+                	<a href="<%=request.getContextPath()%>/execution/product_sub/scrapmasterEN.html">
+                    <div class="li2_tit">ScrapMaster</div>
+                    <div class="li2_txt">The world's first newspaper clipping program, ScrapMaster is the best media solution trusted and verified by experts from various fields.</div>
                     </a>
                 </div>
                 <div class="grid2r">
                     <div class="li2">
-                    <a href="<%=request.getContextPath()%>/execution/product_sub/clippingon.html">
-                        <div class="li2_tit">클리핑온</div>
-                        <div class="li2_txt"><b>클리핑온은</b> 주요 뉴스 시간에 <b>실시간 알림</b>으로 효율적인 위기 대응을 지원합니다.</div>
+                    <a href="<%=request.getContextPath()%>/execution/product_sub/clippingonEN.html">
+                        <div class="li2_tit">Clipping On</div>
+                        <div class="li2_txt"><b>Clipping On </b>supports efficient risk response with <br>real-time notifications during major news events.</div>
                     </a>
                     </div>                    
                     <div class="li2">
-                    <a href="<%=request.getContextPath()%>/execution/product_sub/newsplaza.html">
-                        <div class="li2_tit">뉴스플라자</div>
-                        <div class="li2_txt">국내 주요 언론사의 온라인 뉴스를 일괄 제공하고 있습니다.<span class="none"><br>
-                            뉴스 모니터링 등 내부 업무뿐 아니라 홍보 목적의 대외 배포에 적합한 상품입니다.</span></div>
+                    <a href="<%=request.getContextPath()%>/execution/product_sub/newsplazaEN.html">
+                        <div class="li2_tit">News Plaza</div>
+                        <div class="li2_txt">We provide a comprehensive range of online news from major Korean media outlets.<span class="none">
+Suitable for both internal use, such as news monitoring, and external distribution for promotional purposes.</span></div>
                     </a>
                     </div>
                 </div>
@@ -83,28 +83,28 @@
     </section>
     <section class="main3 animated">
         <div class="inner reveal">
-            <h2 class="main_tit animated">미디어 문화 사업</h2>
-            <p class="main_txt animated"><span class="none">디지털 시대에 중요한 읽기문화의 보급, 신문활용교육 등 </span>미디어를 활용한 문화 사업을 수행하고 있습니다.<span class="none"><br>
-                우리는 미디어가 사회나 문화 발전에 기여할 수 있는 사업을 발굴해 운영하고 있습니다.</span></p>
+            <h2 class="main_tit animated">Media Culture Business</h2>
+            <p class="main_txt animated">We conduct cultural projects utilizing media<span class="none">, such as spreading reading culture <br>and newspaper literacy education, which are important in the digital age.<br>
+                We are discovering and operating projects that can contribute to the development of society and culture through the media</span>.</p>
             <div class="grid2">
                 <div class="li2">
-                	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">
-                    <div class="li2_tit">티페이퍼</div>
-                    <div class="li2_txt">키오스크의 큰 화면으로 고화질의 신문/잡지를 볼 수 있습니다.<span class="none"><br>
-직관적인 UI로 사용자들이 편하게 콘텐츠를 감상할 수 있습니다.</span></div>
+                	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaperEN.html">
+                    <div class="li2_tit">T-Paper</div>
+                    <div class="li2_txt">Enjoy high-quality newspapers and magazines on the large screen of the kiosk.<span class="none">
+The intuitive UI makes it easy for users to enjoy the content.</span></div>
                     </a>
                 </div>
                 <div class="grid2r">
                     <div class="li2">
-                    	<a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank.html">
-                        <div class="li2_tit">뉴스뱅크</div>
-                        <div class="li2_txt"><span class="none">대한민국 역사의 현장을 생생하게 담은 보도사진 박물관입니다. </span>대한민국 격동의 근대사에서 현대사에 이르기까지 수 백만 건 이상의 보도사진을 제공합니다.</div>
+                    	<a href="<%=request.getContextPath()%>/execution/culture_sub/newsbankEN.html">
+                        <div class="li2_tit">NewsBank</div>
+                        <div class="li2_txt">NewsBank is a photo museum that captures the vibrant scenes of Korean history. <span class="none">We provide millions of reportage photos spanning from the turbulent times of modern history to the contemporary era.</span></div>
                         </a>
                     </div>
                     <div class="li2">
-                    	<a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">
+                    	<a href="<%=request.getContextPath()%>/execution/culture_sub/enieEN.html">
                         <div class="li2_tit">e-NIE</div>
-                        <div class="li2_txt">종이신문을 그대로 컴퓨터로 옮겨 <span class="none">인터넷이 접속되는 곳에서</span><br>편리하게 <b>신문을 스크랩하여 교육에 활용</b>할 수 있습니다.</div>
+                        <div class="li2_txt">e-NIE is a service that allows you to conveniently scrap newspapers on the computer by transferring paper newspapers to the computer as is, anywhere with internet access.</div>
                         </a>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
     <section class="main4">
         <div class="inner reveal">
             <div class="grid1-3">
-                <h2 class="main_tit">회사소식</h2>
+                <h2 class="main_tit">Company News</h2>
                 <div class="m_news">
                     <ul>
                     	<c:forEach var="result" items="${boardCdList}" varStatus="status">
@@ -140,8 +140,8 @@
     </section>
     <section class="main5">
         <div class="inner reveal">
-            <h2 class="main_tit">파트너쉽</h2>
-            <p class="main_txt">600여개의 언론사, 한국언론진흥재단이 다하미와 함께합니다.</p>
+            <h2 class="main_tit">Partnerships</h2>
+            <p class="main_txt">Over 600 media outlets and the Korea Press Foundation are working with Dahami.</p>
               <div class="m_partner">
                 <div class="scroll">
                     <div class="scroll-wrap">
@@ -242,8 +242,9 @@
     </section>
     <section class="main6">
         <div class="inner reveal">
-            <h2 class="main_tit">왓썹뉴스</h2>
-            <p class="main_txt">내일을 읽는 뉴스를 소개합니다. <br>인스타그램에서 <b>whatssupnews</b>를 검색하세요</p>
+            <h2 class="main_tit">Whatssupnews</h2>
+            <p class="main_txt">Introducing news that reads tomorrow.
+Search for <b>'whatssupnews'</b> on Instagram.</p>
             <div class="m_card">
             </div>
         </div> 
@@ -252,12 +253,12 @@
     <section class="main7">
         <div class="inner reveal">
 
-            <h2 class="main_tit">다하미와 함께할 도전하는 인재를 찾습니다.</h2>
-            <div class="btn_area"><a class="btn" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=SGVIZUprUTdZRU92OHBMSksrMWF2dz09" target="_blank">채용 중인 공고 보기</a></div>
+            <h2 class="main_tit">We are seeking talented individuals with a spirit of challenge to work with US.</h2>
+            <div class="btn_area"><a class="btn" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=SGVIZUprUTdZRU92OHBMSksrMWF2dz09" target="_blank">View open positions</a></div>
         </div>
     </section>
     
-    <jsp:include page="common/footer.jsp"/>
+    <jsp:include page="common/footerEN.jsp"/>
 
 </body>
 
