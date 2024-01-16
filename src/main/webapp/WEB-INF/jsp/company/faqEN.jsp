@@ -116,7 +116,7 @@
 
         $.ajax({
             type: "GET",
-            url: "<%=request.getContextPath()%>/company/loadMoreFaq.html",
+            url: "<%=request.getContextPath()%>/company/loadMoreFaqEN.html",
             data: {
                 page: page,
                 question: question
@@ -135,7 +135,7 @@
 
         $.ajax({
             type: "GET",
-            url: "<%=request.getContextPath()%>/company/loadMoreFaq.html",
+            url: "<%=request.getContextPath()%>/company/loadMoreFaqEN.html",
             data: {
                 page: page,
                 question: question

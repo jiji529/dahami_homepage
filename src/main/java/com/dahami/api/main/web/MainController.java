@@ -532,10 +532,10 @@ public class MainController {
 		boardVO.setStPageSize(0);
 		boardVO.setEndPageSize(10);
 		
-		faqList = mainService.FaqLst(boardVO);
+		faqList = mainService.FaqLstEN(boardVO);
 		
 		boardVO.setEndPageSize(11);		
-		FaqCnt 	  = mainService.FaqCnt(boardVO);
+		FaqCnt 	  = mainService.FaqCntEN(boardVO);
 		
 		if(!faqList.isEmpty()){
 			for(int i=0; i<faqList.size(); i++) {
@@ -597,6 +597,50 @@ public class MainController {
 		
 		return "/common/suvXmlData";
 	}
+	
+	@RequestMapping("/company/loadMoreFaqEN.html")
+	public String loadMoreFaqEN(Model model, HttpServletRequest request) throws Exception {
+		List<BoardVO> faqList = new ArrayList<BoardVO>();
+		BoardVO boardVO = new BoardVO();
+		
+		String question = request.getParameter("question");
+		int between = 10;
+		int FaqCnt = 0;
+		int page = Integer.parseInt(request.getParameter("page").toString()) * between;
+		
+		boardVO.setQuestion(question);
+		boardVO.setStPageSize(page);
+		boardVO.setEndPageSize(between);
+		
+		faqList = mainService.FaqLstEN(boardVO);
+		FaqCnt  = mainService.FaqCntEN(boardVO);
+		
+		if(!faqList.isEmpty()){
+			for(int i=0; i<faqList.size(); i++) {
+				faqList.get(i).setGubun(convertTitle(faqList.get(i).getQuest()));
+				faqList.get(i).setQuest(convertWord(faqList.get(i).getQuest()));
+			}
+		}
+		
+		JSONArray cell = new JSONArray();
+		
+		for(int i=0; i<faqList.size(); i++) {           			// 루프를 돌려 list에 담긴 데이터를 BeanVO에 주입 
+            JSONObject obj = new JSONObject();             				// 다시 한번 JSONObject로 감싸기 위해 객체 선언
+            
+            obj.put( "seq" , faqList.get(i).getSeq());    			// obj에 객체의 데이터를 꺼내 차례로 담는다
+            obj.put( "gubun" , faqList.get(i).getGubun());    			// obj에 객체의 데이터를 꺼내 차례로 담는다
+            obj.put( "quest" , faqList.get(i).getQuest());    			// obj에 객체의 데이터를 꺼내 차례로 담는다
+            obj.put( "answer" , faqList.get(i).getAnswer());    		// obj에 객체의 데이터를 꺼내 차례로 담는다
+            obj.put( "page", page);										// obj에 객체의 데이터를 꺼내 차례로 담는다
+            obj.put( "totcnt", FaqCnt);
+            
+            cell.add(obj);                                 				// 아까 만들어진 cell Array객체에 VO담은 객체를 주입
+        }		
+		
+		model.addAttribute("writeXml", cell);
+		
+		return "/common/suvXmlData";
+	}	
 	
 	@RequestMapping("/company/qna.html")
 	public String qna(ModelMap model, HttpServletRequest request) throws Exception {		

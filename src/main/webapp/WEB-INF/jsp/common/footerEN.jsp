@@ -79,7 +79,7 @@
 							<p>Close</p>
 						</div>
 						<div class="pop_cont">
-							<iframe style="width:100%;" src="<%=request.getContextPath()%>/common/policyEN.jsp" id="iframePrivacy"></iframe>
+							<iframe style="width:100%;" src="<%=request.getContextPath()%>/common/policy.jsp" id="iframePrivacy"></iframe>
 						</div>
 						<div class="pop_ok">
 							<p style="text-align:center;">Close</p>

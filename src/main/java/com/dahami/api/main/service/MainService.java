@@ -18,5 +18,7 @@ public interface MainService {
 	Map<String, String> SelectKindList() throws Exception;
 	List<LogoVO> SelectLogoLst() throws Exception;
 	List<InstaTokenVO> getInstaTokenData();
-	void insertNewToken(InstaTokenVO itVO);	
+	void insertNewToken(InstaTokenVO itVO);
+	List<BoardVO> FaqLstEN(BoardVO boardVO);
+	int FaqCntEN(BoardVO boardVO);	
 }

@@ -54,4 +54,12 @@ public class MyDAO extends EgovAbstractDAO {
 	public void insertNewToken(InstaTokenVO itVO) {
 		insert("insertNewToken", itVO);
 	}
+
+	public List<BoardVO> selectFaqLstEN(BoardVO boardVO) {
+		return (List<BoardVO>)list("FaqLstEN", boardVO);
+	}
+
+	public int selectFaqCntEN(BoardVO boardVO) {
+		return (Integer)selectByPk("FaqCntEN", boardVO);
+	}
 }

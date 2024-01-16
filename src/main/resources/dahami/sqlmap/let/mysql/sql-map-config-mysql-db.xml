@@ -107,7 +107,37 @@
 			(quest LIKE "%$question$%" or answer LIKE "%$question$%")
 		</isNotEmpty>
 		ORDER BY seq desc
-	</select>	
+	</select>
+	
+	<select id="FaqLstEN" parameterClass="boardVO" resultMap="QnaLstMap">
+		SELECT
+			seq,
+			gubun,
+			quest,
+			answer
+		FROM
+			new_scrapmaster.qna
+		WHERE
+			gubun='FAQ'
+		<isNotEmpty prepend="and" property="question" >
+			(quest LIKE "%$question$%" or answer LIKE "%$question$%")
+		</isNotEmpty>
+		ORDER BY seq desc
+		LIMIT #stPageSize# , #endPageSize#
+	</select>
+	
+	<select id="FaqCntEN" parameterClass="boardVO" resultClass="Integer">
+		SELECT
+			count(seq)as cnt
+		FROM
+			new_scrapmaster.qna
+		WHERE
+			gubun='FAQ'
+		<isNotEmpty prepend="and" property="question" >
+			(quest LIKE "%$question$%" or answer LIKE "%$question$%")
+		</isNotEmpty>
+		ORDER BY seq desc
+	</select>		
 	
 	<select id="LogoLst" resultMap="LogoLstMap">
 		SELECT

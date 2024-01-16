@@ -101,4 +101,18 @@ public class MainServiceImpl extends AbstractServiceImpl implements MainService 
 	public void insertNewToken(InstaTokenVO itVO) {
 		this.myCDAO.insertNewToken(itVO);
 	}
+
+	@Override
+	public List<BoardVO> FaqLstEN(BoardVO boardVO) {
+		List<BoardVO> noticeLst = this.myCDAO.selectFaqLstEN(boardVO);
+		
+		return noticeLst;
+	}
+
+	@Override
+	public int FaqCntEN(BoardVO boardVO) {
+		int boardCnt = this.myCDAO.selectFaqCntEN(boardVO);
+		
+		return boardCnt;
+	}
 }
