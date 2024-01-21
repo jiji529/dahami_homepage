@@ -71,6 +71,24 @@ public class MainServiceImpl extends AbstractServiceImpl implements MainService 
 	}
 	
 	@Override
+	public Map<String, String> SelectKindListEN() throws Exception {
+		Map<String, String> kindList = new LinkedHashMap<>();
+		kindList.put("00_000", "Central daily newspaper"); kindList.put("01_000", "Central economic newspaper");
+		kindList.put("50_000", "Weekly newspaper"); kindList.put("02_000", "Specialty newspaper");
+		kindList.put("04_000", "Sports newspaper"); kindList.put("80_001", "General daily newspaper");
+		kindList.put("03_001", "Regional newspaper (metropolitan area)"); kindList.put("03_002", "Regional newspaper (Chungcheong)");
+		kindList.put("03_003", "Regional newspaper (Daegu, Gyeongbuk)"); kindList.put("03_007", "Regional newspaper (Busan, Ulsan, Gyeongnam)");
+		kindList.put("03_005", "Regional newspaper (Honam)"); kindList.put("03_006", "Regional newspaper (Gangwon)");
+		kindList.put("03_008", "Regional newspaper (Jeju)"); kindList.put("03_004", "Regional newspaper (nationwide)");
+		kindList.put("80_000", "Kiosk"); kindList.put("80_003", "Children's newspaper");
+		kindList.put("90_001", "Other"); kindList.put("05_000", "Magazine");
+		kindList.put("70_000", "Broadcast"); // SM3.paper_kind 70_000,70_001,70_002 합
+		kindList.put("FF_001", "News agency"); // SM3.paper_kind 없음
+		kindList.put("FF_002", "Internet newspaper"); // SM3.paper_kind 없음
+		return kindList;
+	}	
+	
+	@Override
 	public List<LogoVO> SelectLogoLst() throws Exception {
 		List<LogoVO> logoList = this.myCDAO.selectLogoLst();
 		String t;

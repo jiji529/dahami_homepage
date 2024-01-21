@@ -26,7 +26,7 @@
             <div>
                 <h2>Press Photo Museum of Korea</h2>
                 <h3>NewsBank</h3>
-                <p class="subtit_txt">Newsbank is the largest integrated library of news photos in Korea, holding more than 6.5 million images from 25 news organizations.<br>
+                <p class="subtit_txt">NewsBank is the largest integrated library of news photos in Korea, holding more than 6.5 million images from 25 news organizations.<br>
 From the 19th century, through the Japanese occupation, the Korean War, and the industrialization era. to today, important scenes in Korea's modern and contemporary history have been recorded in vivid reportage.
 </p>
             </div>
@@ -35,7 +35,7 @@ From the 19th century, through the Japanese occupation, the Korean War, and the 
     </section>
     <section class="subimg img_newsbank"></section>
     <section class="prod_head">
-        <div class="inner">The <b>Newsbank</b> is a museum of press photographs that vividly captures scenes from Korea's history.<br>
+        <div class="inner">The <b>NewsBank</b> is a museum of press photographs that vividly captures scenes from Korea's history.<br>
 Provides millions of press photos from the early history of Korea to the present day.<br>
             <b>The only integrated library of press photos in Korea.</b> We are recording history.
 </div>
@@ -69,7 +69,7 @@ Provides millions of press photos from the early history of Korea to the present
         </div>
     </section>
     <section class="prod_head">
-        <div class="inner">The <b>unique ID of a newsbank photo</b> is its Universal Content Identifier (UCI).<br>
+        <div class="inner">The <b>unique ID of a NewsBank photo</b> is its Universal Content Identifier (UCI).<br>
 UCI is a scheme for assigning and managing a unique and permanent code to identifiable digital content.</div>
     </section>
     <section class="prod_detail2">

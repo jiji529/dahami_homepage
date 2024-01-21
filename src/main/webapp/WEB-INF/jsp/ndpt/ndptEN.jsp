@@ -28,7 +28,7 @@
         <div class="inner">
             <div class="sub_tit">News data feed service <br>for AI training</div>
             <div class="sub_txt"><br>NDPT is the only service that provides quality news data,<br>
-                free from copyright issues, has the right data<br><br>
+                free from copyright issues, has the right data<br>
                 technology for AI training.</div>
         </div>
     </section>

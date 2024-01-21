@@ -4,7 +4,7 @@
 
 	<div class="bn-float">
         <h1>News data feed service for AI training</h1>
-        <h2>AI is here, and <br> NDPT is here to help.</h2>
+        <h2>AI is here, <br>and NDPT is here to help.</h2>
         <a class="btn-ndpt" href="https://ndpt.dahami.com/en" target="_blank" title="NDPT Shortcut to">Shortcut to NDPT<span></span></a>
 
         <div class="float-close" onclick="closeNDPTBanner()"><p>X</p></div>

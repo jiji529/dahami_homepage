@@ -116,17 +116,17 @@
                         </div>
                     </li>
                     <li>
-                        <div>Support for the SBC Plan<p>
+                        <div>SBC Plan<p>
                                 Enroll in deductions to encourage longevity and build assets.</p>
                         </div>
                     </li>
                     <li>
-                        <div>Support for child tuition and child care
+                        <div>Child tuition and child care
                                <p>We provide childcare allowances and child tuition for employees' children for their care and education.</p>
                         </div>
                     </li>
                     <li>
-                        <div>Support for bereavement benefits and time off
+                        <div>Bereavement benefits and time off
                                <p>We support memorial and bereavement leave to help celebrate the loss of an employee and comfort the family.</p>
                         </div>
                     </li>

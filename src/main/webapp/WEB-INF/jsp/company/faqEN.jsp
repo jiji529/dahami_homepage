@@ -31,7 +31,7 @@
                 <div class="tab_menu"><a href="<%=request.getContextPath()%>/company/companyEN.html">About Us</a></div>
                 <div class="tab_menu"><a href="<%=request.getContextPath()%>/company/recruitEN.html">Careers</a></div>
                 <div class="tab_menu on"><a href="<%=request.getContextPath()%>/company/faqEN.html">FAQ</a></div>
-                <div class="tab_menu"><a href="<%=request.getContextPath()%>/company/qnaEN.html">Contack Us</a></div>
+                <div class="tab_menu"><a href="<%=request.getContextPath()%>/company/qnaEN.html">Contact Us</a></div>
             </div>
 
         </div>

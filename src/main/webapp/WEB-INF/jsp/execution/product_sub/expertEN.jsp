@@ -82,7 +82,7 @@
     </section>
     <section class="prod_btn">
         <div class="inner">
-            <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/product_sub/scrapmasterEN.html">Scrap Master</a></div>
+            <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/product_sub/scrapmasterEN.html">ScrapMaster</a></div>
             <div class="prod_btn_right"><a href="<%=request.getContextPath()%>/execution/product_sub/clippingonEN.html">Clipping On
 </a></div>
         </div>

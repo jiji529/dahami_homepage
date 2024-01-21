@@ -306,7 +306,7 @@ public class MainController {
 	
 	@RequestMapping("/execution/partnerEN.html")
 	public String partnerEN(ModelMap model, HttpServletRequest request) throws Exception {
-		model.addAttribute("kindList", mainService.SelectKindList());
+		model.addAttribute("kindList", mainService.SelectKindListEN());
 		model.addAttribute("logoList", mainService.SelectLogoLst());
 		return "/execution/partnerEN";
 	}	

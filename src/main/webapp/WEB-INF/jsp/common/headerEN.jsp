@@ -44,7 +44,7 @@
             </div>
             <div class="menu"><a href="<%=request.getContextPath()%>/news/newsEN.html">News</a>
                 <div class="gnb_2depth">
-                    <a href="<%=request.getContextPath()%>/news/newsEN.html">Compnay News</a>
+                    <a href="<%=request.getContextPath()%>/news/newsEN.html">Company News</a>
                     <a href="<%=request.getContextPath()%>/news/instaEN.html">Whatssupnews</a>
                 </div>
             </div>

@@ -58,7 +58,7 @@ Stay tuned for more features and content in the future.
                         <div class="prod_cont">
                             <div class="prod_tit">NewsBank</div>
                             <div class="prod_subtit">Press Photo Museum of Korea</div>
-                            <div class="prod_txt">Newsbank is the largest integrated library of news photos in Korea, holding more than 6.5 million images from 25 news organizations.
+                            <div class="prod_txt">NewsBank is the largest integrated library of news photos in Korea, holding more than 6.5 million images from 25 news organizations.
 From the 19th century, through the Japanese occupation, the Korean War, and the industrialization era. to today, important scenes in Korea's modern and contemporary history have been recorded in vivid reportage.
 </div>
                             <div class="more">Learn More</div>
@@ -77,7 +77,7 @@ Newspaper utilization education (e-NIE) is provided through Forme (forme.or.kr),
 
 By transferring paper newspapers to computers, students can conveniently clip newspapers and utilize them for education anytime, anywhere with internet access.<br>
 
-Since the newspapers are provided as they are published, there is no need to worry about students being exposed to harmful content."</div>
+Since the newspapers are provided as they are published, there is no need to worry about students being exposed to harmful content.</div>
                             <div class="more">Learn More</div>
                         </div>
                         <div class="prod_thumb"><span></span></div>

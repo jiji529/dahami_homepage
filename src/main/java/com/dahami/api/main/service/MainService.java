@@ -20,5 +20,6 @@ public interface MainService {
 	List<InstaTokenVO> getInstaTokenData();
 	void insertNewToken(InstaTokenVO itVO);
 	List<BoardVO> FaqLstEN(BoardVO boardVO);
-	int FaqCntEN(BoardVO boardVO);	
+	int FaqCntEN(BoardVO boardVO);
+	Map<String, String> SelectKindListEN() throws Exception;
 }

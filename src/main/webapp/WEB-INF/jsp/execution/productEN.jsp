@@ -81,9 +81,9 @@ We also integrate with ScrapMaster to consolidate your press clipping efforts.
                             <div class="prod_tit">News Plaza</div>
                             <div class="prod_subtit">Online news integration service
 </div>
-                            <div class="prod_txt">"News Plaza is one of the news copyright programs of the Korea Press Foundation and provides online news from 93 media organizations.
+                            <div class="prod_txt">News Plaza is one of the news copyright programs of the Korea Press Foundation and provides online news from 93 media organizations.
 <br>
-Dahami is the official agency for the sale of original online news copyrights for the Korea Press Foundation's News Plaza project. We provide an average of 8,000 to 10,000 news articles per day in the form of full-text data so that our customers can use them according to their preferences."
+Dahami is the official agency for the sale of original online news copyrights for the Korea Press Foundation's News Plaza project. We provide an average of 8,000 to 10,000 news articles per day in the form of full-text data so that our customers can use them according to their preferences.
 </div>
                             <div class="more">Learn More</div>
                         </div>
