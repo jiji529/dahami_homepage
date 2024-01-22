@@ -39,7 +39,7 @@
             <div class="prod_box">
                 <div class="prod_img"><img src="<%=request.getContextPath()%>/images/expert1-1.png"></div>
                 <div class="prod_box_txt">
-                    <p>News clipping, media monitoring
+                    <p>News scraping, media monitoring
 </p>
                 </div>
             </div>
@@ -83,7 +83,7 @@
     <section class="prod_btn">
         <div class="inner">
             <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/product_sub/scrapmasterEN.html">ScrapMaster</a></div>
-            <div class="prod_btn_right"><a href="<%=request.getContextPath()%>/execution/product_sub/clippingonEN.html">Clipping On
+            <div class="prod_btn_right"><a href="<%=request.getContextPath()%>/execution/product_sub/clippingonEN.html">ClippingOn
 </a></div>
         </div>
     </section>

@@ -27,7 +27,7 @@
             </div>
             <div class="subtit_tit row">
                 <h3 class="col4">Media culture in everyday life</h3>
-                <p class="subtit_txt col7">We carry out cultural projects utilizing media, such as the dissemination of reading culture and newspaper utilization education, which are important in the digital age.
+                <p class="subtit_txt col7">We carry out cultural projects utilizing media, such as the promoting a culture of reading and newspaper utilization education, which are important in the digital age.
 We are working to spread media not only in the online environment, but also in everyday spaces such as schools, libraries, and public facilities</p>
             </div>
         </div>
@@ -75,7 +75,7 @@ From the 19th century, through the Japanese occupation, the Korean War, and the 
                             <div class="prod_txt">Dahami is running a project with the Korea Press Foundation.<br>
 Newspaper utilization education (e-NIE) is provided through Forme (forme.or.kr), which is operated by the Korea Press Foundation, and we are working to distribute it to schools at all levels.<br>
 
-By transferring paper newspapers to computers, students can conveniently clip newspapers and utilize them for education anytime, anywhere with internet access.<br>
+By transferring newspapers to computers, students can conveniently clip newspapers and utilize them for education anytime, anywhere with internet access.<br>
 
 Since the newspapers are provided as they are published, there is no need to worry about students being exposed to harmful content.</div>
                             <div class="more">Learn More</div>

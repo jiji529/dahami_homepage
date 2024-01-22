@@ -19,15 +19,15 @@
 				<a href="<%=request.getContextPath()%>/execution/productEN.html" class="location_list">Risk Management Solutions</a>
 			</li>
 			<li>
-				<span class="location_list">News Plaza</span>
+				<span class="location_list">NewsPlaza</span>
 			</li>
 		</ul>
         <div class="inner">
             <div>
                 <h2>Online news integration service</h2>
-                <h3>News Plaza</h3>
-                <p class="subtit_txt">News Plaza is one of the news copyright programs of the Korea Press Foundation and provides online news from 93 media organizations.<br>
-                    Dahami is the official agency for the sale of original online news copyrights for the Korea Press Foundation's News Plaza project. We provide an average of 8,000 to 10,000 news articles per day in the form of full-text data so that our customers can use them according to their preferences.</p>
+                <h3>NewsPlaza</h3>
+                <p class="subtit_txt">NewsPlaza is one of the news copyright programs of the Korea Press Foundation and provides online news from 93 media organizations.<br>
+                    Dahami is the official agency for the sale of original online news copyrights for the Korea Press Foundation's NewsPlaza project. We provide an average of 8,000 to 10,000 news articles per day in the form of full-text data so that our customers can use them according to their preferences.</p>
             </div>
             <a href="http://news-plaza.com/" target="_blank" class="btn_bk">Go to Services
 </a>
@@ -36,7 +36,7 @@
     <section class="subimg img_newsplaza"></section>
     <section class="prod_head">
         <div class="inner">Online news is the perfect media for quick information.<br>
-News Plaza provides online news from major Korean media companies in bulk.<br>
+NewsPlaza provides online news from major Korean media companies in bulk.<br>
 It is suitable for internal work such as news monitoring as well as external distribution for public relations purposes.</div>
     </section>
     <section class="prod_detail1">
@@ -63,7 +63,7 @@ It is suitable for internal work such as news monitoring as well as external dis
         </div>
     </section>
     <section class="prod_head">
-        <div class="inner">News Plaza supports my organization find meaning in media.
+        <div class="inner">NewsPlaza supports my organization find meaning in media.
 </div>
     </section>
     <section class="prod_detail2">
@@ -72,7 +72,7 @@ It is suitable for internal work such as news monitoring as well as external dis
                 <div class="prod_img"><img src="<%=request.getContextPath()%>/images/newsplaza2-1.png"></div>
                 <div class="prod_box_txt">
                     <p>Multiple uses</p>
-                    <span>Whether it's for your homepage, clipping, or intranet use, you can easily use online news for a variety of purposes.</span>
+                    <span>Whether it's for your homepage, scraping, or intranet use, you can easily use online news for a variety of purposes.</span>
                 </div>
             </div>
             <div class="prod_box">
@@ -92,7 +92,7 @@ It is suitable for internal work such as news monitoring as well as external dis
     </section>
     <section class="prod_btn">
         <div class="inner">
-            <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/product_sub/clippingonEN.html">Clipping On</a></div>
+            <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/product_sub/clippingonEN.html">ClippingOn</a></div>
             <div class="prod_btn_right"></div>
         </div>
     </section>

@@ -34,7 +34,7 @@
             <div class="sub_tit">
                 <h3>Whatssupnews</h3>
             </div>
-            <p class="sub_txt">"Introducing news that reads tomorrow.<br>
+            <p class="sub_txt">"Introducing news that can reads tomorrow.<br>
 Search for <b>'whatssupnews'</b> on Instagram."
 </p>
             <div class="m_card">

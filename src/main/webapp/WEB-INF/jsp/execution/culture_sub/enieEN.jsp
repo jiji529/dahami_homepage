@@ -34,7 +34,7 @@ Newspapers not only help develop cognitive learning skills, but also values and 
     </section>
     <section class="subimg img_enie"></section>
     <section class="prod_head">
-        <div class="inner">By transferring paper newspapers to computers, students can conveniently clip newspapers and utilize them for education anytime, anywhere with internet access.<br>Dahami runs the Newspaper Literacy Education (e-NIE) project with the Korea Press Foundation.
+        <div class="inner">By transferring newspapers to computers, students can conveniently clip newspapers and utilize them for education anytime, anywhere with internet access.<br>Dahami runs the Newspaper Literacy Education (e-NIE) project with the Korea Press Foundation.
         </div>
     </section>
     <section class="prod_detail1">

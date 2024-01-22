@@ -27,7 +27,7 @@
                 <div class="tab_menu"><a href="<%=request.getContextPath()%>/company/qnaEN.html">Contact Us</a></div>
             </div>
             <div class="subtit_tit row">
-                <h3 class="col4">The crisis management partner <br>that knows media</h3>
+                <h3 class="col4">The risk management partner <br>that knows media</h3>
                 <p class="subtit_txt col7">Founded in 1998, Dahami Communications is an IT company that provides news content and media information solutions for organizations' public relations, marketing, and strategic decisions.
                     <br>
                     Our top media intelligence experts provide knowledge beyond information with a personalized touch.
@@ -143,7 +143,7 @@ Dahami Communications' customers are now expanding beyond the public relations d
                         <li><span class="hst_num">2013</span><span class="hst_desc">Launched ClippingOn</span></li>
                         <li><span class="hst_num">2013</span><span class="hst_desc">Developed e-NIE for Korea Press Foundation</span></li>
                         <li><span class="hst_num">2012</span><span class="hst_desc">Acquired T-Paper GS certification</span></li>
-                        <li><span class="hst_num">2011</span><span class="hst_desc">Launched Mobile Scrapmaster</span></li>
+                        <li><span class="hst_num">2011</span><span class="hst_desc">Launched Mobile ScrapMaster</span></li>
                         <li><span class="hst_num">2009</span><span class="hst_desc">Launched touch-type T-Paper</span></li>
                         <li><span class="hst_num">2008</span><span class="hst_desc">Developed ScrapMaster Premium</span></li>
                     </ul>

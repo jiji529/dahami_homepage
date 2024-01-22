@@ -24,9 +24,9 @@
 		</ul>
         <div class="inner">
             <div>
-                <h2>The world's first newspaper clipping programqqq</h2>
+                <h2>The world's first newspaper scraping program</h2>
                 <h3>ScrapMaster</h3>
-                <p class="subtit_txt">Dahami delivers more than 380 newspapers every day through Scrapmaster.
+                <p class="subtit_txt">Dahami delivers more than 380 newspapers every day through ScrapMaster.
 <br>
 As an official distributor of [NewsKorea], the news copyright division of the Korea Press Foundation, ScrapMaster is the choice of more than 1000 customers in Korea, including central and local governments, public corporations, public institutions, and general companies.
 </p>
@@ -37,7 +37,7 @@ As an official distributor of [NewsKorea], the news copyright division of the Ko
     </section>
     <section class="subimg img_scrapmaster"></section>
     <section class="prod_head">
-        <div class="inner">As the world's first newspaper clipping program, <b>ScrapMaster</b> is the premier media solution tried and trusted by professionals in public relations, strategy, marketing, support, and more.
+        <div class="inner">As the world's first newspaper scraping program, <b>ScrapMaster</b> is the premier media solution tried and trusted by professionals in public relations, strategy, marketing, support, and more.
 </div>
     </section>
     <section class="prod_detail1">
@@ -73,7 +73,7 @@ Korea Press Foundation contracts with hundreds of media organizations
         </div>
     </section>
     <section class="prod_head">
-        <div class="inner">Scrapmaster suggests services that are appropriate for client's purpose, scope, and method of use.
+        <div class="inner">ScrapMaster suggests services that are appropriate for client's purpose, scope, and method of use.
 </div>
     </section>
     <section class="prod_detail2">
@@ -91,14 +91,14 @@ Build a database of scraped news as well as news valuation and statistics.</span
                 <div class="prod_box_txt">
                     <p>ScrapMaster Mobile +</p>
                     <span>Read articles anytime, anywhere on your mobile device.
-ScrapMaster Mobile + supports autosearch, ground search, and clipping, and makes it easy to share articles.
+ScrapMaster Mobile + supports autosearch, ground search, and scraping, and makes it easy to share articles.
 </span>
                 </div>
             </div>
             <div class="prod_box">
                 <div class="prod_img"><img src="<%=request.getContextPath()%>/images/scrapmaster2-3.png"></div>
                 <div class="prod_box_txt">
-                    <p>News clipping services</p> <span>"Leave your early morning clipping duties to the experts.
+                    <p>News scraping services</p> <span>Leave your early morning scraping duties to the experts.
 We have subject matter experts standing by for fast, accurate delegation.</span>
                 </div>
             </div>

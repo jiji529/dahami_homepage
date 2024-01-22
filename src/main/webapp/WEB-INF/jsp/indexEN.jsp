@@ -60,21 +60,21 @@
                 <div class="li2">
                 	<a href="<%=request.getContextPath()%>/execution/product_sub/scrapmasterEN.html">
                     <div class="li2_tit">ScrapMaster</div>
-                    <div class="li2_txt">The world's first newspaper clipping program, ScrapMaster is the best media solution trusted and verified by experts from various fields.</div>
+                    <div class="li2_txt">The world's first newspaper scraping program, ScrapMaster is the best media solution trusted and verified by experts from various fields.</div>
                     </a>
                 </div>
                 <div class="grid2r">
                     <div class="li2">
                     <a href="<%=request.getContextPath()%>/execution/product_sub/clippingonEN.html">
-                        <div class="li2_tit">Clipping On</div>
-                        <div class="li2_txt"><b>Clipping On </b>supports efficient risk response with <br>real-time notifications during major news events.</div>
+                        <div class="li2_tit">ClippingOn</div>
+                        <div class="li2_txt"><b>ClippingOn </b>supports efficient risk response with <br>real-time notifications during major news events.</div>
                     </a>
                     </div>                    
                     <div class="li2">
                     <a href="<%=request.getContextPath()%>/execution/product_sub/newsplazaEN.html">
-                        <div class="li2_tit">News Plaza</div>
+                        <div class="li2_tit">NewsPlaza</div>
                         <div class="li2_txt">We provide a comprehensive range of online news from major Korean media outlets.<span class="none">
-Suitable for both internal use, such as news monitoring, and external distribution for promotional purposes.</span></div>
+It is suitable for both internal use, such as news monitoring, and external distribution for promotional purposes.</span></div>
                     </a>
                     </div>
                 </div>
@@ -84,8 +84,8 @@ Suitable for both internal use, such as news monitoring, and external distributi
     <section class="main3 animated">
         <div class="inner reveal">
             <h2 class="main_tit animated">Media Culture Business</h2>
-            <p class="main_txt animated">We conduct cultural projects utilizing media<span class="none">, such as spreading reading culture <br>and newspaper literacy education, which are important in the digital age.<br>
-                We are discovering and operating projects that can contribute to the development of society and culture through the media</span>.</p>
+            <p class="main_txt animated">We conduct cultural projects utilizing media, such as promoting a culture of reading and newspaper literacy education, which are important in the digital age.
+We are discovering and operating projects that can contribute to the development of society and culture through the media.</p>
             <div class="grid2">
                 <div class="li2">
                 	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaperEN.html">
@@ -104,7 +104,7 @@ The intuitive UI makes it easy for users to enjoy the content.</span></div>
                     <div class="li2">
                     	<a href="<%=request.getContextPath()%>/execution/culture_sub/enieEN.html">
                         <div class="li2_tit">e-NIE</div>
-                        <div class="li2_txt">e-NIE is a service that allows you to conveniently scrap newspapers on the computer by transferring paper newspapers to the computer as is, anywhere with internet access.</div>
+                        <div class="li2_txt">e-NIE is a service that allows you to conveniently scrap newspapers on the computer by transferring newspapers to the computer as is, anywhere with internet access.</div>
                         </a>
                     </div>
                 </div>
@@ -243,7 +243,7 @@ The intuitive UI makes it easy for users to enjoy the content.</span></div>
     <section class="main6">
         <div class="inner reveal">
             <h2 class="main_tit">Whatssupnews</h2>
-            <p class="main_txt">Introducing news that reads tomorrow.
+            <p class="main_txt">Introducing news that can reads tomorrow.
 Search for <b>'whatssupnews'</b> on Instagram.</p>
             <div class="m_card">
             </div>
@@ -253,7 +253,7 @@ Search for <b>'whatssupnews'</b> on Instagram.</p>
     <section class="main7">
         <div class="inner reveal">
 
-            <h2 class="main_tit">We are seeking talented individuals with a spirit of challenge to work with US.</h2>
+            <h2 class="main_tit">We are looking talented individuals with a spirit of challenge to work with us.</h2>
             <div class="btn_area"><a class="btn" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=SGVIZUprUTdZRU92OHBMSksrMWF2dz09" target="_blank">View open positions</a></div>
         </div>
     </section>
