@@ -37,7 +37,7 @@
             <div class="sub_tit">Media Service Hub</div>
             <div class="sub_txt">A service hub based on media content and technology</div>
             <div class="sub_tit">Expert Capabilities</div>
-            <div class="sub_txt">Experts in media content procurement, production, r&amp;d, quality control, marketing <br>and copyright management provide <br>the best possible experience for customers.
+            <div class="sub_txt">Experts in media content procurement, production, R&amp;D, quality control, marketing <br>and copyright management provide <br>the best possible experience for customers.
 
             </div>
             <div class="sub_tit">Customer-First</div>

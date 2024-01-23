@@ -42,9 +42,9 @@
                         <div class="prod_num">01</div>
                         <div class="prod_cont">
                             <div class="prod_tit">ScrapMaster</div>
-                            <div class="prod_subtit">The world's first newspaper clipping program</div>
+                            <div class="prod_subtit">The world's first newspaper scraping program</div>
                             <div class="prod_txt">Dahami delivers more than 380 newspapers every day through ScrapMaster.<br>
-As an official distributor of [NewsKorea], the news copyright division of the Korea Press Foundation, ScrapMaster is the choice of more than 1000 customers in Korea, including central and local governments, public corporations, public institutions, and general companies.</div>
+As an official distributor of [NewsKorea], the news copyright division of the Korea Press Foundation, ScrapMaster is the choice of more than 1000 customers in Korea, including central and local governments, public corporations, public institutions, and private companies.</div>
                             <div class="more">Learn More</div>
                         </div>
                         <div class="prod_thumb"><span></span></div>
@@ -81,7 +81,7 @@ We also integrate with ScrapMaster to consolidate your press clipping efforts.
                             <div class="prod_tit">NewsPlaza</div>
                             <div class="prod_subtit">Online news integration service
 </div>
-                            <div class="prod_txt">NewsPlaza is one of the news copyright programs of the Korea Press Foundation and provides online news from 93 media organizations.
+                            <div class="prod_txt">News Plaza is one of the news copyright programs of the Korea Press Foundation and provides online news from 93 media organizations.
 <br>
 Dahami is the official agency for the sale of original online news copyrights for the Korea Press Foundation's News Plaza project. We provide an average of 8,000 to 10,000 news articles per day in the form of full-text data so that our customers can use them according to their preferences.
 </div>

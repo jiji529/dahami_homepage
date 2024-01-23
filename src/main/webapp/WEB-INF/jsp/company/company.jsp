@@ -62,12 +62,12 @@
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company3.png" alt="임직원 상단이미지">
                     <div class="comp_tit">임직원</div>
-                    <div class="comp_txt">98명</div>
+                    <div class="comp_txt">96명</div>
                 </li>
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company4.png" alt="매출액 상단이미지">
                     <div class="comp_tit">매출액</div>
-                    <div class="comp_txt">210억</div>
+                    <div class="comp_txt">231억</div>
                 </li>
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company5.png" alt="언론 모니터링 상단이미지">
@@ -77,7 +77,7 @@
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company6.png" alt="미디어 연구 개발 상단이미지">
                     <div class="comp_tit">미디어 연구 개발 </div>
-                    <div class="comp_txt">24년</div>
+                    <div class="comp_txt">26년</div>
                 </li>
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company7.png" alt="매체 및 고객 파트너 상단이미지">
@@ -87,7 +87,7 @@
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company8.png" alt="콘텐츠 보유 상단이미지">
                     <div class="comp_tit">콘텐츠 보유</div>
-                    <div class="comp_txt">4.9억여개</div>
+                    <div class="comp_txt" id="ContentHoldingAmount"></div>
                 </li>
             </ul>
         </div>
@@ -275,6 +275,22 @@
         div.forEach(function(element) {
             observer.observe(element);
         })
+        
+        $(document).ready(function() {
+        	// 콘텐츠 보유량 매일 갱신처리
+        	$.ajax({
+				url : "https://ndpt.dahami.com/api/dataCount.json",
+				cache : false,
+			    dataType: 'json',
+			    contentType: 'application/json; charset=utf-8',
+				data: {},
+				success: function(data) {
+					var totalCount = data.dataCount.articleInfo.totalCount.toLocaleString().toString();
+					var newsNum = parseInt(data.dataCount.articleInfo.totalCount / 100000000) + "." + parseInt((data.dataCount.articleInfo.totalCount % 100000000) / 10000000) + "억여개";
+					$('#ContentHoldingAmount').text(newsNum);
+				}
+			});
+        });
     </script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=eb40819794cf812aebffe77690d02fbd"></script>
 	<script>

@@ -64,12 +64,12 @@ Dahami Communications' customers are now expanding beyond the public relations d
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company3.png" alt="Employees">
                     <div class="comp_tit">Employees</div>
-                    <div class="comp_txt">98 employees</div>
+                    <div class="comp_txt">96 employees</div>
                 </li>
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company4.png" alt="Revenue">
                     <div class="comp_tit">Revenue</div>
-                    <div class="comp_txt">21B</div>
+                    <div class="comp_txt">23.1B</div>
                 </li>
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company5.png" alt="Media Monitoring">
@@ -79,7 +79,7 @@ Dahami Communications' customers are now expanding beyond the public relations d
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company6.png" alt="Media R&amp;D">
                     <div class="comp_tit">Media R&amp;D</div>
-                    <div class="comp_txt">24 years</div>
+                    <div class="comp_txt">26 years</div>
                 </li>
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company7.png" alt="Media &amp; Customer Partners">
@@ -89,7 +89,7 @@ Dahami Communications' customers are now expanding beyond the public relations d
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company8.png" alt="Contents">
                     <div class="comp_tit">Contents</div>
-                    <div class="comp_txt">Over 4.9B</div>
+                    <div class="comp_txt" id="ContentHoldingAmount"></div>
                 </li>
             </ul>
         </div>
@@ -278,6 +278,22 @@ media image processing system and processing method using the same</div>
     div.forEach(function(element) {
         observer.observe(element);
     })
+    
+    $(document).ready(function() {
+       	// 콘텐츠 보유량 매일 갱신처리
+       	$.ajax({
+			url : "https://ndpt.dahami.com/api/dataCount.json",
+			cache : false,
+		    dataType: 'json',
+		    contentType: 'application/json; charset=utf-8',
+			data: {},
+			success: function(data) {
+				var totalCount = data.dataCount.articleInfo.totalCount.toLocaleString().toString();
+				var newsNum = "Over " + parseInt((data.dataCount.articleInfo.totalCount / 1000000)) + "M";
+				$('#ContentHoldingAmount').text(newsNum);
+			}
+		});
+	});
 </script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=eb40819794cf812aebffe77690d02fbd"></script>
 <script>

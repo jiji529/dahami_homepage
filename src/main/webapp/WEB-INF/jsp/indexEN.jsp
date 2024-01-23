@@ -243,7 +243,7 @@ The intuitive UI makes it easy for users to enjoy the content.</span></div>
     <section class="main6">
         <div class="inner reveal">
             <h2 class="main_tit">Whatssupnews</h2>
-            <p class="main_txt">Introducing news that can reads tomorrow.
+            <p class="main_txt">Introducing news that can read tomorrow.
 Search for <b>'whatssupnews'</b> on Instagram.</p>
             <div class="m_card">
             </div>
@@ -253,7 +253,7 @@ Search for <b>'whatssupnews'</b> on Instagram.</p>
     <section class="main7">
         <div class="inner reveal">
 
-            <h2 class="main_tit">We are looking talented individuals with a spirit of challenge to work with us.</h2>
+            <h2 class="main_tit">We are looking for talented individuals with a spirit of challenge to work with us.</h2>
             <div class="btn_area"><a class="btn" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=SGVIZUprUTdZRU92OHBMSksrMWF2dz09" target="_blank">View open positions</a></div>
         </div>
     </section>

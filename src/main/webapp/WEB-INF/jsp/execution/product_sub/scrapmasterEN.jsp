@@ -28,7 +28,7 @@
                 <h3>ScrapMaster</h3>
                 <p class="subtit_txt">Dahami delivers more than 380 newspapers every day through ScrapMaster.
 <br>
-As an official distributor of [NewsKorea], the news copyright division of the Korea Press Foundation, ScrapMaster is the choice of more than 1000 customers in Korea, including central and local governments, public corporations, public institutions, and general companies.
+As an official distributor of [NewsKorea], the news copyright division of the Korea Press Foundation, ScrapMaster is the choice of more than 1000 customers in Korea, including central and local governments, public corporations, public institutions, and private companies.
 </p>
             </div>
             <a href="https://www.scrapmaster.co.kr/" target="_blank" class="btn_bk">Go to Services
