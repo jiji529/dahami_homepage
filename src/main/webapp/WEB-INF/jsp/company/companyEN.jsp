@@ -74,7 +74,7 @@ Dahami Communications' customers are now expanding beyond the public relations d
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company5.png" alt="Media Monitoring">
                     <div class="comp_tit">Media Monitoring</div>
-                    <div class="comp_txt">1 in the industry</div>
+                    <div class="comp_txt">#1 in the industry</div>
                 </li>
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company6.png" alt="Media R&amp;D">
