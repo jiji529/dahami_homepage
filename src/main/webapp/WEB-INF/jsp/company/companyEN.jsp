@@ -69,7 +69,7 @@ Dahami Communications' customers are now expanding beyond the public relations d
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company4.png" alt="Revenue">
                     <div class="comp_tit">Revenue</div>
-                    <div class="comp_txt">23.1B</div>
+                    <div class="comp_txt">23.1Billion</div>
                 </li>
                 <li>
                     <img src="<%=request.getContextPath()%>/images/company5.png" alt="Media Monitoring">
@@ -289,7 +289,7 @@ media image processing system and processing method using the same</div>
 			data: {},
 			success: function(data) {
 				var totalCount = data.dataCount.articleInfo.totalCount.toLocaleString().toString();
-				var newsNum = "Over " + parseInt((data.dataCount.articleInfo.totalCount / 1000000)) + "M";
+				var newsNum = "Over " + parseInt((data.dataCount.articleInfo.totalCount / 1000000)) + "Million";
 				$('#ContentHoldingAmount').text(newsNum);
 			}
 		});
