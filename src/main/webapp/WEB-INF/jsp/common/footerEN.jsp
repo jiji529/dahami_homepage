@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="f_bottom">
-                <div class="f_copy">Copyright ⓒ DAHAMI Corp. All Rights Reserved.</div>
+                <div class="f_copy">Copyright Dahami Communications Inc. All Rights Reserved.</div>
                 <div class="f_link">
                 	<a href="javascript:void(0)">Privacy Policy</a>
                 	<a href="<%=request.getContextPath()%>/company/qnaEN.html">Partnerships &#38; Services</a>

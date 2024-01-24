@@ -24,7 +24,7 @@
             <div class="subtit_tit row">
                 <h3 class="col4">dAIa Framework</h3>
                 <p class="subtit_txt col7">dAIa is an AI-based big data analytics platform.
-                    The dAIa Framework, which stands for Dahami Artificial Intelligence Application Framework, combines Dahami's determination, will, and technology to create a platform that finds jewels that shine like diamonds in big data.
+                    The dAIa Framework, which stands for Dahami Artificial Intelligence Application Framework, combines Dahami Communications' determination, will, and technology to create a platform that finds jewels that shine like diamonds in big data.
                     <br>
                     <br>
                     As a big data-based artificial intelligence analysis platform, dAIa will be your optimal companion in digging out diamonds hidden in massive data. dAIa Framework will accompany you in your diamond-like work performance.

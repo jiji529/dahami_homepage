@@ -230,7 +230,7 @@ media image processing system and processing method using the same</div>
     <section class="sub_company5 reveal">
         <div class="inner">
             <h2 class="sub_tit">Directions</h2>
-            <p class="sub_txt">Dahami Communications (Co., Ltd.)<br>
+            <p class="sub_txt">Dahami Communications Inc.<br>
                 140, Marneunae-ro, Jung-gu, Seoul, Korea<br><br>
                 Tel. 02 593 4174<br>
                 Mail. helpdesk@dahami.com</p>

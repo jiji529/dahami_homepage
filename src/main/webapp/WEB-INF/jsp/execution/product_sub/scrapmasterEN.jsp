@@ -26,7 +26,7 @@
             <div>
                 <h2>The world's first newspaper scraping program</h2>
                 <h3>ScrapMaster</h3>
-                <p class="subtit_txt">Dahami delivers more than 380 newspapers every day through ScrapMaster.
+                <p class="subtit_txt">Dahami Communications delivers more than 380 newspapers every day through ScrapMaster.
 <br>
 As an official distributor of [NewsKorea], the news copyright division of the Korea Press Foundation, ScrapMaster is the choice of more than 1000 customers in Korea, including central and local governments, public corporations, public institutions, and private companies.
 </p>

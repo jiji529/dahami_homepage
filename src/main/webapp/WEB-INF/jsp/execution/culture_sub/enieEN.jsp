@@ -26,7 +26,7 @@
             <div>
                 <h2>Study newspapers on the computer</h2>
                 <h3>e-NIE</h3>
-                <p class="subtit_txt">Dahami is running a project with the Korea Press Foundation.<br>
+                <p class="subtit_txt">Dahami Communications is running a project with the Korea Press Foundation.<br>
 Newspapers not only help develop cognitive learning skills, but also values and character.</p>
             </div>
             <a href="http://enie.forme.or.kr/" target="_blank" class="btn_bk">Go to Services</a>
@@ -34,7 +34,7 @@ Newspapers not only help develop cognitive learning skills, but also values and 
     </section>
     <section class="subimg img_enie"></section>
     <section class="prod_head">
-        <div class="inner">By transferring newspapers to computers, students can conveniently clip newspapers and utilize them for education anytime, anywhere with internet access.<br>Dahami runs the Newspaper Literacy Education (e-NIE) project with the Korea Press Foundation.
+        <div class="inner">By transferring newspapers to computers, students can conveniently clip newspapers and utilize them for education anytime, anywhere with internet access.<br>Dahami Communications runs the Newspaper Literacy Education (e-NIE) project with the Korea Press Foundation.
         </div>
     </section>
     <section class="prod_detail1">

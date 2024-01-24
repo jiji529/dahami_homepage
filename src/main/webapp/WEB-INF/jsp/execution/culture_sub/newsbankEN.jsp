@@ -78,7 +78,7 @@ UCI is a scheme for assigning and managing a unique and permanent code to identi
                 <div class="prod_img"><img src="<%=request.getContextPath()%>/images/newsbank2-1.png"></div>
                 <div class="prod_box_txt">
                     <p>Uniform Code Identifier (UCI) Registrar</p>
-                    <span>Dahami was designated as the UCI Registrar for Press Photographs in 2016 by the Korean Copyright Commission, the governing body of the UCI.<br>A registrar is an organization that receives identifying information about content from digital content registrants and issues UCIs to that content.
+                    <span>Dahami Communications was designated as the UCI Registrar for Press Photographs in 2016 by the Korean Copyright Commission, the governing body of the UCI.<br>A registrar is an organization that receives identifying information about content from digital content registrants and issues UCIs to that content.
 </span>
                 </div>
             </div>

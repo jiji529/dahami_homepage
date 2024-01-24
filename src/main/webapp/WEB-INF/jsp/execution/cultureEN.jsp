@@ -72,7 +72,7 @@ From the 19th century, through the Japanese occupation, the Korean War, and the 
                             <div class="prod_tit">e-NIE</div>
                             <div class="prod_subtit">Study newspapers on the computer
 </div>
-                            <div class="prod_txt">Dahami is running a project with the Korea Press Foundation.<br>
+                            <div class="prod_txt">Dahami Communications is running a project with the Korea Press Foundation.<br>
 Newspaper utilization education (e-NIE) is provided through Forme (forme.or.kr), which is operated by the Korea Press Foundation, and we are working to distribute it to schools at all levels.<br>
 
 By transferring newspapers to computers, students can conveniently clip newspapers and utilize them for education anytime, anywhere with internet access.<br>

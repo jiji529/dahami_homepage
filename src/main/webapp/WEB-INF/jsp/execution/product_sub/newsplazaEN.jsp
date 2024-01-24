@@ -27,7 +27,7 @@
                 <h2>Online news integration service</h2>
                 <h3>NewsPlaza</h3>
                 <p class="subtit_txt">NewsPlaza is one of the news copyright programs of the Korea Press Foundation and provides online news from 93 media organizations.<br>
-                    Dahami is the official agency for the sale of original online news copyrights for the Korea Press Foundation's NewsPlaza project. We provide an average of 8,000 to 10,000 news articles per day in the form of full-text data so that our customers can use them according to their preferences.</p>
+                    Dahami Communications is the official agency for the sale of original online news copyrights for the Korea Press Foundation's NewsPlaza project. We provide an average of 8,000 to 10,000 news articles per day in the form of full-text data so that our customers can use them according to their preferences.</p>
             </div>
             <a href="http://news-plaza.com/" target="_blank" class="btn_bk">Go to Services
 </a>

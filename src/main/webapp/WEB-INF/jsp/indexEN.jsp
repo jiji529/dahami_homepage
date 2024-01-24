@@ -141,7 +141,7 @@ The intuitive UI makes it easy for users to enjoy the content.</span></div>
     <section class="main5">
         <div class="inner reveal">
             <h2 class="main_tit">Partnerships</h2>
-            <p class="main_txt">Over 600 media outlets and the Korea Press Foundation are working with Dahami.</p>
+            <p class="main_txt">Over 600 media outlets and the Korea Press Foundation are working with Dahami Communications.</p>
               <div class="m_partner">
                 <div class="scroll">
                     <div class="scroll-wrap">
