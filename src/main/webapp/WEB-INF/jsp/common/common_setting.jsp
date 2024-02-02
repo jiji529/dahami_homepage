@@ -68,8 +68,8 @@
 			// 팝업설정
 			if(getContextPath().indexOf("index.html")!=-1 
 			|| getContextPath().indexOf("indexEN.html")!=-1) {
-	        	popup('2023-12-27', // 'YYYY-MM-DD' : startDate
-	                  '2024-01-06', // 'YYYY-MM-DD': endDate
+	        	popup('2024-02-05', // 'YYYY-MM-DD' : startDate
+	                  '2024-02-12', // 'YYYY-MM-DD': endDate
 	                  400, // n : imgWidth
 	                  400 // n : imgHeight
 	            );				
