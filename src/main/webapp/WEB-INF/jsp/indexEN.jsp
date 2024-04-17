@@ -376,7 +376,11 @@ Search for <b>'whatssupnews'</b> on Instagram.</p>
         		var html = '';
 				html += '<ul>';
         		for(var i=0; i<6; i++) {
-					html += '<li><a id="instaLink'+i+'" href='+json[0].data[i].permalink+' target="_blank"><img id="insta'+i+'" src='+json[0].data[i].media_url+' onerror="noImage(\''+i+'\')"></a></li>';					
+        			if(json[0].data[i].thumbnail_url==undefined) {
+						html += '<li><a id="instaLink'+i+'" href='+json[0].data[i].permalink+' target="_blank"><img id="insta'+i+'" src='+json[0].data[i].media_url+' onerror="noImage(\''+i+'\')"></a></li>';					        				
+        			} else {
+        				html += '<li><a id="instaLink'+i+'" href='+json[0].data[i].permalink+' target="_blank"><img id="insta'+i+'" src='+json[0].data[i].thumbnail_url+' onerror="noImage(\''+i+'\')"></a></li>';
+        			}
         		}
 				html += '</ul>';					
 		        $('.m_card').html(html);

@@ -83,9 +83,17 @@ Search for <b>'whatssupnews'</b> on Instagram."
 					for(var j=0; j<json[i].data.length; j++) {
 						insta_index = parseInt(index/6);
 						if(insta_index==0) {
-							html += '<li class="insta_'+insta_index+'"><a id="instaLink'+index+'" href='+json[i].data[j].permalink+' target="_blank"><img id="insta'+index+'" src='+json[i].data[j].media_url+' onerror="noImage(\''+index+'\')"></a></li>';							
+							if(json[i].data[j].thumbnail_url==undefined) {
+								html += '<li class="insta_'+insta_index+'"><a id="instaLink'+index+'" href='+json[i].data[j].permalink+' target="_blank"><img id="insta'+index+'" src='+json[i].data[j].media_url+' onerror="noImage(\''+index+'\')"></a></li>';															
+							} else {
+								html += '<li class="insta_'+insta_index+'"><a id="instaLink'+index+'" href='+json[i].data[j].permalink+' target="_blank"><img id="insta'+index+'" src='+json[i].data[j].thumbnail_url+' onerror="noImage(\''+index+'\')"></a></li>';							
+							}
 						} else {
-							html += '<li class="insta_'+insta_index+'" style="display:none;"><a id="instaLink'+index+'" href='+json[i].data[j].permalink+' target="_blank"><img id="insta'+index+'" data-src='+json[i].data[j].media_url+' onerror="noImage(\''+index+'\')"></a></li>';							
+							if(json[i].data[j].thumbnail_url==undefined) {
+								html += '<li class="insta_'+insta_index+'" style="display:none;"><a id="instaLink'+index+'" href='+json[i].data[j].permalink+' target="_blank"><img id="insta'+index+'" data-src='+json[i].data[j].media_url+' onerror="noImage(\''+index+'\')"></a></li>';															
+							} else {
+								html += '<li class="insta_'+insta_index+'" style="display:none;"><a id="instaLink'+index+'" href='+json[i].data[j].permalink+' target="_blank"><img id="insta'+index+'" data-src='+json[i].data[j].thumbnail_url+' onerror="noImage(\''+index+'\')"></a></li>';							
+							}
 						}
 						index++;						
 					}
