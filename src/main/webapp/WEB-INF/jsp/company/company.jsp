@@ -291,8 +291,7 @@
 				}
 			});
         });
-    </script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=eb40819794cf812aebffe77690d02fbd"></script>
+    </script>    
 	<script>
 		var Latitude = 37.56450601381505;
 		var longitude = 127.00357105178638;
