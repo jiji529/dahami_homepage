@@ -68,7 +68,7 @@
             <div class="pro_sec">
             	<c:forEach var="kind" items="${kindList}" varStatus="status">
 	            		<dl class="media_list" id="${kind.key}">
-	                        <dt id="title${kind.key}">${fn:replace(kind.value,'가판','초판')}</dt>
+	                        <dt id="title${kind.key}">${fn:replace(kind.value,'Kiosk','First edition')}</dt>
 	                        <dd>
 	                            <ul>
 	                                <c:forEach var="logo" items="${logoList}" varStatus="status">
