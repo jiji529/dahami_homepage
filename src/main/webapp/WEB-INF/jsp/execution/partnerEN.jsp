@@ -68,7 +68,7 @@
             <div class="pro_sec">
             	<c:forEach var="kind" items="${kindList}" varStatus="status">
 	            		<dl class="media_list" id="${kind.key}">
-	                        <dt id="title${kind.key}">${kind.value}</dt>
+	                        <dt id="title${kind.key}">${fn:replace(kind.value,'가판','초판')}</dt>
 	                        <dd>
 	                            <ul>
 	                                <c:forEach var="logo" items="${logoList}" varStatus="status">
@@ -77,7 +77,7 @@
 		                                        <c:if test="${logo.mediaDelegated eq 'Y'}">
 		                                        	<span style="color:red; font-size:20px; margin-right:5px;">*</span>
 		                                        </c:if>
-	                                        	<img src="<%=request.getContextPath()%>/images/partnership/${logo.fileName}" alt="${logo.mediaName}" title="${logo.mediaName}" />
+	                                        	<img src="<%=request.getContextPath()%>/images/partnership/${logo.fileName}" alt="${fn:replace(logo.mediaName,'가판','초판')}" title="${fn:replace(logo.mediaName,'가판','초판')}" />
 	                                        </li>
 	                                 	</c:if>
 	                             	</c:forEach>
