@@ -59,8 +59,22 @@
                         <div class="prod_thumb"><span></span></div>
                     </a>
                 </li>
-                <li><a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">
+				<li><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nyt.html">
                         <div class="prod_num">03</div>
+                        <div class="prod_cont">
+                            <div class="prod_tit">뉴욕타임스 X 뉴스뱅크</div>
+                            <div class="prod_subtit">세상의 모든 순간을, 뉴스뱅크에서 </div>
+                            <div class="prod_txt">1851년 창간한 뉴욕타임스의 수많은 보도사진을 보유하며,
+매일 200여 건 이상의 새로운 사진이 업데이트 됩니다.<br>
+20세기 역사적 사건부터 최신 뉴스까지 중요한 순간들을 담으며
+연구, 교육, 보도 등 다양한 분야에 활용이 가능합니다.</div>
+                            <div class="more">자세히 보기</div>
+                        </div>
+                        <div class="prod_thumb"><span></span></div>
+                    </a>
+                </li>                
+                <li><a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">
+                        <div class="prod_num">04</div>
                         <div class="prod_cont">
                             <div class="prod_tit">e-NIE</div>
                             <div class="prod_subtit">컴퓨터로 신문을 보며 공부해요</div>

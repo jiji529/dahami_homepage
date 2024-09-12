@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>	
 
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css?v=20240424">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/modal.css?v=20240424">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css?v=20240424">
-    <script type="text/javascript" src="<%=request.getContextPath()%>/js/kakao.js?v=20240424"></script>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js?v=20240424"></script>
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css?v=20240911">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/modal.css?v=20240911">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css?v=20240911">
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/kakao.js?v=20240911"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js?v=20240911"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -65,6 +65,35 @@
 		    return '';
 		}
 		
+		// 240911 배너 팝업 하루 그만보기 기능 추가
+		function setBannerCookie(name, value, expiredays) {
+			var today = new Date();
+		    today.setDate(today.getDate() + expiredays);
+		
+		    document.cookie = name + '=' + escape(value) + '; path=/; expires=' + today.toGMTString() + ';'
+		}
+		
+		function closeBannerPop() {
+			setBannerCookie('banner', 'start', 1);			
+			$('.bn-wrap').css('display','none');
+		}
+		
+		function BannerCheck() { // 오늘 하루동안 그만 보기 팝업
+		    if ((getCookie('banner') != 'start')) {
+		        $('.bn-wrap').css('display','block');
+		    } else {
+				$('.bn-wrap').css('display','none');
+		    }
+		}
+		
+		window.addEventListener('resize', function() {
+			if(window.innerWidth < 768) {
+				$('.bn-wrap').css('display','none');
+			} else {
+				$('.bn-wrap').css('display','block');
+			}
+		});
+		
 		$(document).ready(function() {						
 			// 팝업설정
 			if(getContextPath().indexOf("index.html")!=-1 
@@ -75,5 +104,7 @@
 	                  400 // n : imgHeight
 	            );				
 			}
+			// 배너설정
+			BannerCheck();
 		})
 	</script>

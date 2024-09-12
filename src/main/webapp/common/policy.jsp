@@ -225,7 +225,7 @@ font-size: 22px;
 						<td width="113" valign="top"><p>다하미 홈페이지</p></td>
 						<td width="246" valign="top"><p>[선택] 성명, 연락처, 이메일</p></td>
 						<td width="246" valign="top"><p>- 문의하기: 고객 응대 및 안내</p></td>
-						<td width="246" valign="top" rowspan="16">
+						<td width="246" valign="top" rowspan="17">
 							<p>- 회원탈퇴 혹은 동의철회시까지</p>
 							<p>- 관련법령에 따른 보존기간까지</p>
 							<p>- 수집 및 이용 목적 달성시까지</p>

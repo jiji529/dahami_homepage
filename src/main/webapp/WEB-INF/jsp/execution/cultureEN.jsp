@@ -66,8 +66,20 @@ From the 19th century, through the Japanese occupation, the Korean War, and the 
                         <div class="prod_thumb"><span></span></div>
                     </a>
                 </li>
-                <li><a href="<%=request.getContextPath()%>/execution/culture_sub/enieEN.html">
+<li><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nytEN.html">
                         <div class="prod_num">03</div>
+                        <div class="prod_cont">
+                            <div class="prod_tit">NYT X Newsbank</div>
+                            <div class="prod_subtit">Every second in the world, in the Newsbank</div>
+                            <div class="prod_txt">We have a large collection of press photos from The New York Times dating back to 1851, with more than 200 press photos added daily.<br>
+From 20th-century historical events to the latest news, photographs of important moments can be used for research, education, reporting, and more.</div>
+                            <div class="more">Learn More</div>
+                        </div>
+                        <div class="prod_thumb"><span></span></div>
+                    </a>
+                </li>                
+                <li><a href="<%=request.getContextPath()%>/execution/culture_sub/enieEN.html">
+                        <div class="prod_num">04</div>
                         <div class="prod_cont">
                             <div class="prod_tit">e-NIE</div>
                             <div class="prod_subtit">Study newspapers on the computer

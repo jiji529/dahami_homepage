@@ -1,14 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+    
+    <div class="bn-wrap" id="bn">
+        <div class="float-close" onclick="closeBanner()">
+            <p>X</p>
+        </div>
+        <div class="bn-float bn-nyt" id="bn1">
+            <h1>Every second in the world, in the Newsbank</h1>
+            <h2>Buy a global press photo for the New York Times, one of the top three U.S. daily newspapers</h2>
+            <a class="bn-btn btn-nyt" href="https://providers-nyt.newsbank.co.kr" target="_blank" title="뉴욕타임스 뉴스뱅크 바로가기">뉴욕타임스 뉴스뱅크 바로가기<span></span></a>
 
-	<div class="bn-float">
-        <h1>News data feed service for AI training</h1>
-        <h2>AI is here, <br>and NDPT is here to help.</h2>
-        <a class="btn-ndpt" href="https://ndpt.dahami.com/en" target="_blank" title="NDPT Shortcut to">Shortcut to NDPT<span></span></a>
+        </div>
 
-        <div class="float-close" onclick="closeNDPTBanner()"><p>X</p></div>
-    </div>    	
+        <div class="bn-float bn-ndpt" id="bn2">
+            <h1>News data feed service for AI training</h1>
+            <h2>AI is here, <br>and NDPT is here to help.</h2>
+            <a class="bn-btn btn-ndpt" href="https://ndpt.dahami.com/en" target="_blank" title="NDPT 바로가기">Shortcut to NDPT<span></span></a>
+
+        </div>
+
+        <div class="bn-ft" onclick="closeBannerPop()">
+            <p>Prevent for the day</p>
+        </div>
+    </div>    
     <footer>
         <div class="inner">
             <div class="f_top">
@@ -104,7 +119,7 @@
 			$("#pop1").css('display','none');
 		});
 		
-		function closeNDPTBanner() {
-			$('.bn-float').css('display','none');
+		function closeBanner() {
+			$('.bn-wrap').css('display','none');
 		}
     </script>

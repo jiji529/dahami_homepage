@@ -87,24 +87,33 @@
             <p class="main_txt animated"><span class="none">디지털 시대에 중요한 읽기문화의 보급, 신문활용교육 등 </span>미디어를 활용한 문화 사업을 수행하고 있습니다.<span class="none"><br>
                 우리는 미디어가 사회나 문화 발전에 기여할 수 있는 사업을 발굴해 운영하고 있습니다.</span></p>
             <div class="grid2">
-                <div class="li2">
-                	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">
-                    <div class="li2_tit">티페이퍼</div>
-                    <div class="li2_txt">키오스크의 큰 화면으로 고화질의 신문/잡지를 볼 수 있습니다.<span class="none"><br>
-직관적인 UI로 사용자들이 편하게 콘텐츠를 감상할 수 있습니다.</span></div>
-                    </a>
+            	<div class="grid2r">
+	                <div class="li2">
+	                	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">
+	                    <div class="li2_tit">티페이퍼</div>
+	                    <div class="li2_txt">키오스크의 큰 화면으로 고화질의 신문/잡지를 볼 수 있습니다.<br>
+	                            직관적인 UI로 사용자들이 편하게 콘텐츠를 감상할 수 있습니다.</div>
+	                    </a>
+	                </div>
+                	<div class="li2">
+                		<a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nyt.html">
+                        <div class="li2_tit">뉴욕타임스 X 뉴스뱅크</div>
+                        <div class="li2_txt">국내 최대의 보도사진 통합 라이브러리 뉴스뱅크, <br>미국 3대 일간지 뉴욕타임스와 제휴로<br>
+                            세계적인 보도사진을 한국에서 직접 구매할 수 있습니다.</div>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid2r">
                     <div class="li2">
                     	<a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank.html">
                         <div class="li2_tit">뉴스뱅크</div>
-                        <div class="li2_txt"><span class="none">대한민국 역사의 현장을 생생하게 담은 보도사진 박물관입니다. </span>대한민국 격동의 근대사에서 현대사에 이르기까지 수 백만 건 이상의 보도사진을 제공합니다.</div>
+                        <div class="li2_txt">대한민국 역사의 현장을 생생하게 담은 보도사진 박물관입니다.<br> 대한민국 격동의 근대사에서 현대사에 이르기까지 <br>수 백만 건 이상의 보도사진을 제공합니다.</div>
                         </a>
                     </div>
                     <div class="li2">
                     	<a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">
                         <div class="li2_tit">e-NIE</div>
-                        <div class="li2_txt">종이신문을 그대로 컴퓨터로 옮겨 <span class="none">인터넷이 접속되는 곳에서</span><br>편리하게 <b>신문을 스크랩하여 교육에 활용</b>할 수 있습니다.</div>
+                        <div class="li2_txt">신문 기사와 구성은 학습자 특히 청소년의 인지학습능력을 키우고 <br>가치관 및 인성을 발달시키는 데 큰 도움이 됩니다.</div>
                         </a>
                     </div>
                 </div>

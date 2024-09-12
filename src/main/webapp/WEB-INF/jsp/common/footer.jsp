@@ -2,14 +2,30 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
-	<div class="bn-float">
-        <h1>AI 학습을 위한 뉴스 데이터 공급 서비스</h1>
-        <h2>AI의 시작,<br>
-            NDPT가 함께 합니다.</h2>
-        <a class="btn-ndpt" href="https://ndpt.dahami.com" target="_blank" title="NDPT 바로가기">NDPT 바로가기<span></span></a>
+    <div class="bn-wrap" id="bn">
+        <div class="float-close" onclick="closeBanner()">
+            <p>X</p>
+        </div>
+        <div class="bn-float bn-nyt" id="bn1">
+            <h1>세상의 모든 순간을, 뉴스뱅크에서</h1>
+            <h2>미국 3대 일간지 뉴욕타임스의<br>
+                세계적인 보도사진 구매</h2>
+            <a class="bn-btn btn-nyt" href="https://providers-nyt.newsbank.co.kr" target="_blank" title="뉴욕타임스 뉴스뱅크 바로가기">뉴욕타임스 뉴스뱅크 바로가기<span></span></a>
 
-        <div class="float-close" onclick="closeNDPTBanner()"><p>X</p></div>
-    </div>    	
+        </div>
+
+        <div class="bn-float bn-ndpt" id="bn2">
+            <h1>AI 학습을 위한 뉴스 데이터 공급 서비스</h1>
+            <h2>AI의 시작,<br>
+                NDPT가 함께 합니다.</h2>
+            <a class="bn-btn btn-ndpt" href="https://ndpt.dahami.com" target="_blank" title="NDPT 바로가기">NDPT 바로가기<span></span></a>
+
+        </div>
+
+        <div class="bn-ft" onclick="closeBannerPop()">
+            <p>오늘 하루 그만보기</p>
+        </div>
+    </div>        	
     <footer>
         <div class="inner">
             <div class="f_top">
@@ -105,7 +121,7 @@
 			$("#pop1").css('display','none');
 		});
 		
-		function closeNDPTBanner() {
-			$('.bn-float').css('display','none');
+		function closeBanner() {
+			$('.bn-wrap').css('display','none');
 		}
     </script>

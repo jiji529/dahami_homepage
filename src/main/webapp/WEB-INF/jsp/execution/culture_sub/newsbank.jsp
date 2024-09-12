@@ -103,7 +103,7 @@ UCI는 식별이 가능한 디지털 콘텐츠에 <b>유일하고 영구한 코�
     <section class="prod_btn">
         <div class="inner">
             <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">티페이퍼</a></div>
-            <div class="prod_btn_right"><a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">e-NIE</a></div>
+            <div class="prod_btn_right"><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nyt.html">뉴욕타임스 X 뉴스뱅크</a></div>
         </div>
     </section>
     <jsp:include page="../../common/footer.jsp"/>

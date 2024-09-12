@@ -32,7 +32,7 @@ html{font-size: 100% }
 .main_vis .reveal{opacity: 0;}
 .main_vis .reveal.active{opacity: 1;}
 .inner{width: 1520px; margin: 0 auto;}
-header{width: 100%; height: 100px; padding: 30px 60px 0;  display: flex; align-items: flex-start; justify-content: space-between; z-index: 20; position: sticky; top: 0; background: #fff;}
+header{width: 100%; height: 100px; padding: 30px 60px;  display: flex; align-items: flex-start; justify-content: space-between; z-index: 20; position: sticky; top: 0; background: #fff;}
 header .logo{width: 130px; height: 25px; background: url(../images/logo.png) 0 0 no-repeat; text-indent: -9999px; z-index: 20;}
 
 /*
@@ -61,10 +61,9 @@ header .on .gnbbg{opacity: 1; display: block;}
 .gnb.on .gnb_2depth{ transition: opacity 1s ease 0s; opacity: 1; display: flex; position: relative; }
 .gnb_2depth a{ color: #666;}
 
-header .gnb .menu{font-size: 1.25rem; font-weight: 600;  display: inline-block; width: 160px; vertical-align:top;  z-index: 20; position: relative;} 
+header .gnb .menu{font-size: 1.25rem; font-weight: 600; display: inline-block; margin: 0 10px; width: 140px; vertical-align:top;  z-index: 20; position: relative;} 
 header .gnb .menu.new > a:after{content: ''; width: 6px; height: 6px; background: red; border-radius: 4px; position: absolute; top: 10px; margin-left: 4px; } 
-header .gnb .menu a{text-align: center;height: 70px;}
-header .gnb a{ color: #111; line-height: 40px;  }
+header .gnb a{ color: #111; line-height: 40px; }
 header .gnb  .gnb_2depth > a{ color: #111; line-height: 18px; margin-bottom: 8px;font-size: 1.1rem;  }
 header .gnb  .gnb_2depth:hover:before{content: ''; position: absolute;width: 100%; height: 2px; background: #3457ea; top: 0; left: 0; 
     animation-name: dth; 
@@ -77,9 +76,7 @@ header .gnb  .gnb_2depth:hover:before{content: ''; position: absolute;width: 100
     100% { transform: scaleX(1); }
 }
 header .gnb  .gnb_2depth p{font-size: 1rem; padding-bottom: 10px; border-bottom: 1px #eee solid; font-weight: 600; margin-bottom: 10px;}
-header .gnb  .gnb_3depth > a{ color: #777; line-height: 18px; margin-bottom: 10px; font-size: 1rem;  padding-left: 12px; position: relative; }
-.gnb_3depth > a{display: flex; align-items: center;}
-.gnb_3depth > a.new:after{ content: 'N'; display: inline-block; font-size: 8px; color: #fff; background: red; padding: 1px 3px; border-radius: 10px; line-height: 10px; margin-left: 3px; font-weight: bold; text-indent: 0}
+header .gnb  .gnb_3depth > a{ color: #777; line-height: 18px; margin-bottom: 10px; font-size: 1rem;  padding-left: 12px; position: relative;}
 header .gnb  .gnb_3depth > a:hover::before{content: '●'; display: inline-block; font-size: 0.4rem; position: absolute;
     animation-duration: 0.3s;
     animation-delay: 0s;
@@ -205,7 +202,7 @@ section{width: 100%; padding: 4rem 0;}
 .main3{background: #DDE2ED; z-index: 10; position: relative;}
 .main4, .main6{background: #fff; z-index: 10; position: relative;}
 
-.main2 .li2, .main3 .li2{ height: 350px; padding: 2.75rem;  }
+.main2 .li2, .main3 .li2{ height: 350px; padding: 3.75rem;  }
 .main2 .li2 a, .main3 .li2 a{width: 100%; height: 100%;}
 .main2 .li2 *, .main3 .li2 *{color: #fff; text-shadow: 0 0 20px black;}
 .grid2r .li2{ display: flex; flex-direction: column; justify-content: flex-end;}
@@ -213,10 +210,9 @@ section{width: 100%; padding: 4rem 0;}
 .main2 .grid2r .li2:nth-child(1){background: url(../images/main-prod1-2.png) 0 0 no-repeat; background-size: cover; }
 .main2 .grid2r .li2:nth-child(2){background: url(../images/main-prod1-3.png) 0 0 no-repeat; background-size: cover; }
 
-.main3 .grid2r .li2{background: url(../images/main-prod2-1-1.png) right no-repeat; background-size: cover; }
-.main3 .grid2r .li2:nth-child(2){background: url(../images/main-prod2-1-2.png) right no-repeat; background-size: cover;  justify-content: flex-start;}
-.main3 .grid2r:nth-child(2) .li2:nth-child(1){background: url(../images/main-prod2-2.png) 0 0 no-repeat; background-size: cover; }
-.main3 .grid2r:nth-child(2) .li2:nth-child(2){background: url(../images/main-prod2-3.png) 0 0 no-repeat; background-size: cover;  justify-content: flex-start;}
+.main3 .grid2 > .li2{background: url(../images/main-prod2-1.png) right no-repeat; height: 740px; background-size: cover; }
+.main3 .grid2r .li2:nth-child(1){background: url(../images/main-prod2-2.png) 0 0 no-repeat; background-size: cover; }
+.main3 .grid2r .li2:nth-child(2){background: url(../images/main-prod2-3.png) 0 0 no-repeat; background-size: cover; }
 
 .main4 .main_tit{text-align: left;}
 .m_news li{width: 100%; border-top: 1px #ccc solid; padding: 2.5rem; font-weight: 500; font-size:1.5rem; display: flex; flex-direction: row;}
@@ -604,8 +600,8 @@ section{width: 100%; padding: 4rem 0;}
 
 #bn2 {
     right: -420px;
-    animation: slideInOut 7s infinite; 
-    animation-delay: 10s; 
+    animation: slideInOut 8s infinite; 
+    animation-delay: 4s; 
 }
 
 
@@ -633,11 +629,10 @@ section{width: 100%; padding: 4rem 0;}
 @media screen and (max-width:1600px){
     html{font-size: 90%;}
     header{padding: 30px;}
-    .gnbover{width: 90vw; margin-left: 5vw;}
     .inner{width: 100%; padding: 0 20px; margin: 0 auto;}
     .location{width: 100%; padding-right:60px;}
     .top-bn .inner{padding: 0 60px;}
-    header .gnb .menu{width: 100px;}
+    header .gnb .menu{width: 110px;}
 
 }
 
@@ -645,8 +640,6 @@ section{width: 100%; padding: 4rem 0;}
 @media screen and (max-width:1300px){
     html{font-size: 85%;}
     header .gnb .menu{margin: 0;}
-        .gnbover{width: 100vw; margin-left: 0;}
-
     header .logo{width: 100px; background-size: contain; margin-top: 8px;}
     
 }
@@ -681,7 +674,7 @@ section{width: 100%; padding: 4rem 0;}
     .scroll_hidden{overflow: hidden;}
     .gnb_btn{display: flex; }
     .gnb_mo .gnb_3depth{font-size:90%; }
-    .gnb_mo .gnb_3depth a:before{content: '-';display: inline-block; }
+    .gnb_mo .gnb_3depth a:before{content: '-';display: inline-block; margin-right: 8px;}
     .gnb_mo .util{display: flex; justify-content: flex-start; flex-direction: row; gap: 10px;}
     .gnb_mo .util a{width: 100%; height: 50px; text-align: center; border-radius: 25px; line-height: 36px;}
     .grid2r, .grid2, .grid3{gap:20px;}
@@ -780,7 +773,7 @@ section{width: 100%; padding: 4rem 0;}
     .partner1 li img{max-height: 58px;}
     .li1{gap:1rem;}
     
-    .bn-wrap {display: none;}
+    .bn-float {display: none;}
     .top-bn .btn-ndpt{display: none;}
 
     

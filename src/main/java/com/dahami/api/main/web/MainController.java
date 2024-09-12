@@ -281,11 +281,21 @@ public class MainController {
 	public String newsbank(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/execution/culture_sub/newsbank";
 	}
-
+	
 	@RequestMapping("/execution/culture_sub/newsbankEN.html")
 	public String newsbankEN(ModelMap model, HttpServletRequest request) throws Exception {		
 		return "/execution/culture_sub/newsbankEN";
 	}
+	
+	@RequestMapping("/execution/culture_sub/newsbank_nyt.html")
+	public String newsbank_nyt(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/culture_sub/newsbank_nyt";
+	}	
+	
+	@RequestMapping("/execution/culture_sub/newsbank_nytEN.html")
+	public String newsbank_nytEN(ModelMap model, HttpServletRequest request) throws Exception {		
+		return "/execution/culture_sub/newsbank_nytEN";
+	}	
 	
 	@RequestMapping("/execution/culture_sub/enie.html")
 	public String enie(ModelMap model, HttpServletRequest request) throws Exception {		

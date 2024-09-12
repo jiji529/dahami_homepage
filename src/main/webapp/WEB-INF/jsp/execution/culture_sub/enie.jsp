@@ -61,7 +61,7 @@
     </section>
     <section class="prod_btn">
         <div class="inner">
-            <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank.html">뉴스뱅크</a></div>
+            <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nyt.html">뉴욕타임스 X 뉴스뱅크</a></div>
             <div class="prod_btn_right"></div>
         </div>
     </section>
