@@ -4,19 +4,19 @@
 <html lang="ko">
 
 <head>
-	<jsp:include page="../../common/head_meta.jsp"/>
+	<jsp:include page="../../common/head_metaEN.jsp"/>
 </head>
 
 <body>
-    <jsp:include page="../../common/header.jsp"/>
+    <jsp:include page="../../common/headerEN.jsp"/>
 
     <section class="subpg_tit">
     	<ul class="location">
 			<li>
-				<a href="<%=request.getContextPath()%>/index.html" class="location_list">Home</a>
+				<a href="<%=request.getContextPath()%>/indexEN.html" class="location_list">Home</a>
 			</li>
 			<li>
-				<a href="<%=request.getContextPath()%>/execution/culture.html" class="location_list">Media Culture Business</a>
+				<a href="<%=request.getContextPath()%>/execution/cultureEN.html" class="location_list">Media Culture Business</a>
 			</li>
 			<li>
 				<span class="location_list">NYT X Newsbank</span>
@@ -28,7 +28,7 @@
                 <h3>NYT X Newsbank</h3>
                 <p class="subtit_txt">Newsbank, the largest integrated library of press photos in Korea, has partnered with The New York Times, one of the top three daily newspapers in the United States. You can purchase world-class press photos directly in Korea.</p>
             </div>
-            <a href="https://www.providers-nyt.newsbank.co.kr/" target="_blank" class="btn_bk">Shortcut to NYT X Newsbank</a>
+            <a href="https://www.providers-nyt.newsbank.co.kr/" target="_blank" class="btn_bk" style="width:300px">Shortcut to NYT X Newsbank</a>
         </div>
     </section>
     <section class="subimg img_nyt"></section>
@@ -64,7 +64,7 @@
             <div class="prod_btn_right"><a href="<%=request.getContextPath()%>/execution/culture_sub/enieEN.html">e-NIE</a></div>
         </div>
     </section>
-    <jsp:include page="../../common/footer.jsp"/>
+    <jsp:include page="../../common/footerEN.jsp"/>
 
 </body>
 
