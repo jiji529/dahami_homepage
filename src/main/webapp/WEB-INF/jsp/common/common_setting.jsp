@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>	
 
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css?v=20240911">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/modal.css?v=20240911">
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css?v=20240911">
-    <script type="text/javascript" src="<%=request.getContextPath()%>/js/kakao.js?v=20240911"></script>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js?v=20240911"></script>
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/reset.css?v=20240912">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/modal.css?v=20240912">
+    <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css?v=20240912">
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/kakao.js?v=20240912"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/js/gnb.js?v=20240912"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
