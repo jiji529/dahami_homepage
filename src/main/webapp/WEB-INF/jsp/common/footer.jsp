@@ -84,6 +84,7 @@
                 <div class="f_li"><a href="http://www.clippingon.co.kr" target="_blank" title="클리핑온 바로가기">클리핑온</a></div>
                 <div class="f_li"><a href="https://www.t-paper.co.kr/" target="_blank" title="티페이퍼 바로가기">티페이퍼</a></div>
                 <div class="f_li"><a href="https://www.newsbank.co.kr/" target="_blank" title="뉴스뱅크 바로가기">뉴스뱅크</a></div>
+                <div class="f_li"><a href="https://providers-nyt.newsbank.co.kr" target="_blank" title="뉴욕타임즈 X 뉴스뱅크 바로가기">뉴욕타임즈 X 뉴스뱅크</a></div>
                 <div class="f_li"><a href="https://news-plaza.com/" target="_blank" title="뉴스플라자 바로가기">뉴스플라자</a></div>
                 <div class="f_li"><a href="https://ndpt.dahami.com/" target="_blank" title="NDPT 바로가기">NDPT</a></div>
             </div>

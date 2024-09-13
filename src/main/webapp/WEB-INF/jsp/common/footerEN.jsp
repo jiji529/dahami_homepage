@@ -82,6 +82,7 @@
                 <div class="f_li"><a href="http://www.clippingon.co.kr" target="_blank" title="Shortcut to ClippingON">ClippingON</a></div>
                 <div class="f_li"><a href="https://www.t-paper.co.kr/" target="_blank" title="Shortcut to T-Paper">T-Paper</a></div>
                 <div class="f_li"><a href="https://www.newsbank.co.kr/" target="_blank" title="Shortcut to Newsbank">Newsbank</a></div>
+                <div class="f_li"><a href="https://providers-nyt.newsbank.co.kr" target="_blank" title="Shortcut to NYT X Newsbank">NYT X Newsbank</a></div>
                 <div class="f_li"><a href="https://news-plaza.com/" target="_blank" title="Shortcut to NewsPlaza">NewsPlaza</a></div>
                 <div class="f_li"><a href="https://ndpt.dahami.com/en" target="_blank" title="Shortcut to NDPT">NDPT</a></div>
             </div>

@@ -79,11 +79,14 @@
 		}
 		
 		function BannerCheck() { // 오늘 하루동안 그만 보기 팝업
-		    if ((getCookie('banner') != 'start')) {
-		        $('.bn-wrap').css('display','block');
-		    } else {
-				$('.bn-wrap').css('display','none');
-		    }
+			// 가로너비 768 이하에서 모바일에서는 안뜨도록 조건 추가
+			if(window.innerWidth >= 768) {				
+			    if ((getCookie('banner') != 'start')) {
+			        $('.bn-wrap').css('display','block');
+			    } else {
+					$('.bn-wrap').css('display','none');
+			    }
+			}
 		}
 		
 		window.addEventListener('resize', function() {
