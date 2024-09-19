@@ -6,13 +6,6 @@
         <div class="float-close" onclick="closeBanner()">
             <p>X</p>
         </div>
-        <div class="bn-float bn-nyt" id="bn1">
-            <h1>세상의 모든 순간을, 뉴스뱅크에서</h1>
-            <h2>미국 3대 일간지 뉴욕타임스의<br>
-                세계적인 보도사진 구매</h2>
-            <a class="bn-btn btn-nyt" href="https://providers-nyt.newsbank.co.kr" target="_blank" title="뉴욕타임스 뉴스뱅크 바로가기">뉴욕타임스 뉴스뱅크 바로가기<span></span></a>
-
-        </div>
 
         <div class="bn-float bn-ndpt" id="bn2">
             <h1>AI 학습을 위한 뉴스 데이터 공급 서비스</h1>
@@ -84,7 +77,6 @@
                 <div class="f_li"><a href="http://www.clippingon.co.kr" target="_blank" title="클리핑온 바로가기">클리핑온</a></div>
                 <div class="f_li"><a href="https://www.t-paper.co.kr/" target="_blank" title="티페이퍼 바로가기">티페이퍼</a></div>
                 <div class="f_li"><a href="https://www.newsbank.co.kr/" target="_blank" title="뉴스뱅크 바로가기">뉴스뱅크</a></div>
-                <div class="f_li"><a href="https://providers-nyt.newsbank.co.kr" target="_blank" title="뉴욕타임즈 X 뉴스뱅크 바로가기">뉴욕타임즈 X 뉴스뱅크</a></div>
                 <div class="f_li"><a href="https://news-plaza.com/" target="_blank" title="뉴스플라자 바로가기">뉴스플라자</a></div>
                 <div class="f_li"><a href="https://ndpt.dahami.com/" target="_blank" title="NDPT 바로가기">NDPT</a></div>
             </div>

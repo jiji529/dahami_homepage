@@ -108,7 +108,7 @@ UCI will serve as a distribution base for resources and is applied to a variety 
     <section class="prod_btn">
         <div class="inner">
             <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/culture_sub/tpaperEN.html">T-Paper</a></div>
-            <div class="prod_btn_right"><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nytEN.html">NYT X Newsbank</a></div>
+			<div class="prod_btn_right"><a href="<%=request.getContextPath()%>/execution/culture_sub/enieEN.html">e-NIE</a></div>
         </div>
     </section>
     <jsp:include page="../../common/footerEN.jsp"/>

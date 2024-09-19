@@ -18,7 +18,7 @@
         <h1 class="logo"><a href="<%=request.getContextPath()%>/index.html">dahami</a></h1>
         <nav class="gnb">
 			<div class="menu"><a href="<%=request.getContextPath()%>/promise/promise.html">약속</a></div>
-            <div class="menu new"><a href="<%=request.getContextPath()%>/execution/product.html">서비스</a></div>
+            <div class="menu"><a href="<%=request.getContextPath()%>/execution/product.html">서비스</a></div>
             <div class="menu"><a href="<%=request.getContextPath()%>/ndpt/ndpt.html">AI</a></div>
             <div class="menu"><a href="<%=request.getContextPath()%>/tech/tech.html">기술</a></div>
             <div class="menu"><a href="<%=request.getContextPath()%>/news/news.html">뉴스</a></div>
@@ -43,7 +43,6 @@
 		                <div class="gnb_3depth">
 		                    <a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">티페이퍼</a>
 		                    <a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank.html">뉴스뱅크</a>
-		                    <a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nyt.html" class="new">뉴욕타임스 X 뉴스뱅크</a>
 		                    <a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">e-NIE</a>
 		                </div>
 		                <a href="<%=request.getContextPath()%>/execution/partner.html">파트너쉽</a>
@@ -106,7 +105,7 @@
                         <a href="<%=request.getContextPath()%>/promise/promise.html">약속</a>
                     </div>
                 </div>
-                <div class=""><a href="<%=request.getContextPath()%>/execution/product.html">실행</a>
+                <div class=""><a href="<%=request.getContextPath()%>/execution/product.html">서비스</a>
                     <div class="gnb_2depth">
                         <a href="<%=request.getContextPath()%>/execution/product.html">위기관리 솔루션</a>
                         <div class="gnb_3depth">                        
@@ -119,7 +118,6 @@
                         <div class="gnb_3depth">                        
 	                        <a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">티페이퍼</a>
 	                        <a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank.html">뉴스뱅크</a>
-	                        <a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nyt.html" class="new">뉴욕타임스 X 뉴스뱅크</a>
 	                        <a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">e-NIE</a>
                         </div>
                         <a href="<%=request.getContextPath()%>/execution/partner.html">파트너쉽</a>

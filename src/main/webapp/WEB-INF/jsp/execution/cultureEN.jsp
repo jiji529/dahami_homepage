@@ -66,7 +66,7 @@ From the 19th century, through the Japanese occupation, the Korean War, and the 
                         <div class="prod_thumb"><span></span></div>
                     </a>
                 </li>
-<li><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nytEN.html">
+<%-- <li><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nytEN.html">
                         <div class="prod_num">03</div>
                         <div class="prod_cont">
                             <div class="prod_tit">NYT X Newsbank</div>
@@ -77,9 +77,9 @@ From 20th-century historical events to the latest news, photographs of important
                         </div>
                         <div class="prod_thumb"><span></span></div>
                     </a>
-                </li>                
+                </li>                 --%>
                 <li><a href="<%=request.getContextPath()%>/execution/culture_sub/enieEN.html">
-                        <div class="prod_num">04</div>
+                        <div class="prod_num">03</div>
                         <div class="prod_cont">
                             <div class="prod_tit">e-NIE</div>
                             <div class="prod_subtit">Study newspapers on the computer

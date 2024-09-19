@@ -87,20 +87,12 @@ It is suitable for both internal use, such as news monitoring, and external dist
             <p class="main_txt animated">We conduct cultural projects utilizing media, such as promoting a culture of reading and newspaper literacy education, which are important in the digital age.
 We are discovering and operating projects that can contribute to the development of society and culture through the media.</p>
             <div class="grid2">
-            	<div class="grid2r">
-	                <div class="li2">
-	                	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaperEN.html">
-	                    <div class="li2_tit">T-Paper</div>
-	                    <div class="li2_txt">Enjoy high-quality newspapers and magazines on the large screen of the kiosk.<span class="none">
-	The intuitive UI makes it easy for users to enjoy the content.</span></div>
-	                    </a>
-	                </div>
-	                <div class="li2">
-	                	<a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nytEN.html">
-                        <div class="li2_tit">NYT X Newsbank</div>
-                        <div class="li2_txt">Newsbank, the largest integrated library of press photos in Korea, has partnered with The New York Times, one of the top three daily newspapers in the United States. You can purchase world-class press photos directly in Korea.</div>
-                        </a>
-                    </div>
+                <div class="li2">
+                	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaperEN.html">
+                    <div class="li2_tit">T-Paper</div>
+                    <div class="li2_txt">Enjoy high-quality newspapers and magazines on the large screen of the kiosk.<span class="none">
+The intuitive UI makes it easy for users to enjoy the content.</span></div>
+                    </a>
                 </div>
                 <div class="grid2r">
                     <div class="li2">

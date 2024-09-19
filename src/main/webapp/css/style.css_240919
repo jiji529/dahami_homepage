@@ -138,8 +138,9 @@ footer .f_family .f_li:nth-child(2) a{background: url(../images/f_sm.png) center
 footer .f_family .f_li:nth-child(3) a{background: url(../images/f_cp.png) center no-repeat;background-size: contain;}
 footer .f_family .f_li:nth-child(4) a{background: url(../images/f_tp.png) center no-repeat;background-size: contain;}
 footer .f_family .f_li:nth-child(5) a{background: url(../images/f_nb.png) center no-repeat;background-size: contain;}
-footer .f_family .f_li:nth-child(6) a{background: url(../images/f_np.png) center no-repeat;background-size: contain;}
-footer .f_family .f_li:nth-child(7) a{background: url(../images/f_ndpt.png) center no-repeat;background-size: contain;}
+footer .f_family .f_li:nth-child(6) a{background: url(../images/f_nyt.png) center no-repeat;background-size: contain;}
+footer .f_family .f_li:nth-child(7) a{background: url(../images/f_np.png) center no-repeat;background-size: contain;}
+footer .f_family .f_li:nth-child(8) a{background: url(../images/f_ndpt.png) center no-repeat;background-size: contain;}
 
 
 .row{ width: 100%; display: flex;   flex-wrap:nowrap; gap:40px; flex-direction: row; margin: 3.75rem 0;}
@@ -204,7 +205,7 @@ section{width: 100%; padding: 4rem 0;}
 .main3{background: #DDE2ED; z-index: 10; position: relative;}
 .main4, .main6{background: #fff; z-index: 10; position: relative;}
 
-.main2 .li2, .main3 .li2{ height: 350px; padding: 3.75rem;  }
+.main2 .li2, .main3 .li2{ height: 350px; padding: 2.75rem;  }
 .main2 .li2 a, .main3 .li2 a{width: 100%; height: 100%;}
 .main2 .li2 *, .main3 .li2 *{color: #fff; text-shadow: 0 0 20px black;}
 .grid2r .li2{ display: flex; flex-direction: column; justify-content: flex-end;}
@@ -212,9 +213,10 @@ section{width: 100%; padding: 4rem 0;}
 .main2 .grid2r .li2:nth-child(1){background: url(../images/main-prod1-2.png) 0 0 no-repeat; background-size: cover; }
 .main2 .grid2r .li2:nth-child(2){background: url(../images/main-prod1-3.png) 0 0 no-repeat; background-size: cover; }
 
-.main3 .grid2 > .li2{background: url(../images/main-prod2-1.png) right no-repeat; height: 740px; background-size: cover; }
-.main3 .grid2r .li2:nth-child(1){background: url(../images/main-prod2-2.png) 0 0 no-repeat; background-size: cover; }
-.main3 .grid2r .li2:nth-child(2){background: url(../images/main-prod2-3.png) 0 0 no-repeat; background-size: cover;  justify-content: flex-start;}
+.main3 .grid2r .li2{background: url(../images/main-prod2-1-1.png) right no-repeat; background-size: cover; }
+.main3 .grid2r .li2:nth-child(2){background: url(../images/main-prod2-1-2.png) right no-repeat; background-size: cover;  justify-content: flex-start;}
+.main3 .grid2r:nth-child(2) .li2:nth-child(1){background: url(../images/main-prod2-2.png) 0 0 no-repeat; background-size: cover; }
+.main3 .grid2r:nth-child(2) .li2:nth-child(2){background: url(../images/main-prod2-3.png) 0 0 no-repeat; background-size: cover;  justify-content: flex-start;}
 
 .main4 .main_tit{text-align: left;}
 .m_news li{width: 100%; border-top: 1px #ccc solid; padding: 2.5rem; font-weight: 500; font-size:1.5rem; display: flex; flex-direction: row;}
@@ -578,10 +580,8 @@ section{width: 100%; padding: 4rem 0;}
 .bn-float .btn-ndpt:hover{background-image:linear-gradient(to right ,#086FFF, #FF941C);}
 .bn-btn span{float: right;width: 16px; height: 16px; background: url('../images/arrow1.png') 0 0 no-repeat; filter: invert(50%) sepia(85%) saturate(2110%) hue-rotate(188deg) brightness(103%) contrast(101%); background-size: cover;margin-left: 20px; margin-top: 12px;}
 .bn-float .bn-btn:hover span{filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(53deg) brightness(105%) contrast(109%); animation:move 0.5s ease-in infinite alternate; }
-.bn-ft{width: 100%; height: 36px; padding: 0 16px; background: #333; display: flex; align-items: center; position: absolute; bottom: 0; cursor: pointer; }
-.bn-ft:hover{ background: #444;}
-.bn-ft:hover p{font-weight: 700;}
-.bn-ft p{color: #fff; width: 100%; text-align: center;font-size: 14px;}
+.bn-ft{width: 100%; height: 30px; padding: 0 16px; background: #111; display: flex; align-items: center; position: absolute; bottom: 0;}
+.bn-ft p{color: #fff; width: 100%; text-align: center; cursor: pointer}
 @keyframes move{
   0%{transform:translate(-5px, 0)}
   100%{transform:translate(5px, 0)}
@@ -598,10 +598,10 @@ section{width: 100%; padding: 4rem 0;}
 
     
 
-#bn2 {
+#bn1 {
     right: 0;
 }
-/*
+
 #bn2 {
     right: -420px;
     animation: slideInOut 7s infinite; 
@@ -628,7 +628,7 @@ section{width: 100%; padding: 4rem 0;}
 }
 
 
-*/
+
 
 @media screen and (max-width:1600px){
     html{font-size: 90%;}

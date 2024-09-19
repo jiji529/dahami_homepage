@@ -6,12 +6,6 @@
         <div class="float-close" onclick="closeBanner()">
             <p>X</p>
         </div>
-        <div class="bn-float bn-nyt" id="bn1">
-            <h1>Every second in the world, in the Newsbank</h1>
-            <h2>Buy a global press photo for the New York Times, one of the top three U.S. daily newspapers</h2>
-            <a class="bn-btn btn-nyt" href="https://providers-nyt.newsbank.co.kr" target="_blank" title="뉴욕타임스 뉴스뱅크 바로가기">뉴욕타임스 뉴스뱅크 바로가기<span></span></a>
-
-        </div>
 
         <div class="bn-float bn-ndpt" id="bn2">
             <h1>News data feed service for AI training</h1>
@@ -82,7 +76,6 @@
                 <div class="f_li"><a href="http://www.clippingon.co.kr" target="_blank" title="Shortcut to ClippingON">ClippingON</a></div>
                 <div class="f_li"><a href="https://www.t-paper.co.kr/" target="_blank" title="Shortcut to T-Paper">T-Paper</a></div>
                 <div class="f_li"><a href="https://www.newsbank.co.kr/" target="_blank" title="Shortcut to Newsbank">Newsbank</a></div>
-                <div class="f_li"><a href="https://providers-nyt.newsbank.co.kr" target="_blank" title="Shortcut to NYT X Newsbank">NYT X Newsbank</a></div>
                 <div class="f_li"><a href="https://news-plaza.com/" target="_blank" title="Shortcut to NewsPlaza">NewsPlaza</a></div>
                 <div class="f_li"><a href="https://ndpt.dahami.com/en" target="_blank" title="Shortcut to NDPT">NDPT</a></div>
             </div>

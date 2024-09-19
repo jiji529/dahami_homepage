@@ -17,7 +17,7 @@
           <h1 class="logo"><a href="<%=request.getContextPath()%>/indexEN.html">dahami</a></h1>
         <nav class="gnb">
             <div class="menu"><a href="<%=request.getContextPath()%>/promise/promiseEN.html">Our Promise</a></div>
-            <div class="menu new"><a href="<%=request.getContextPath()%>/execution/productEN.html">Service</a></div>
+            <div class="menu"><a href="<%=request.getContextPath()%>/execution/productEN.html">Service</a></div>
             <div class="menu"><a href="<%=request.getContextPath()%>/ndpt/ndptEN.html">AI</a></div>
             <div class="menu"><a href="<%=request.getContextPath()%>/tech/techEN.html">Technology</a></div>
             <div class="menu"><a href="<%=request.getContextPath()%>/news/newsEN.html">News</a></div>
@@ -42,7 +42,6 @@
 		                <div class="gnb_3depth">
 		                    <a href="<%=request.getContextPath()%>/execution/culture_sub/tpaperEN.html">Tpaper</a>
 		                    <a href="<%=request.getContextPath()%>/execution/culture_sub/newsbankEN.html">Newsbank</a>
-		                    <a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nytEN.html" class="new">NYT X Newsbank</a>
 		                    <a href="<%=request.getContextPath()%>/execution/culture_sub/enie.htmlEN">e-NIE</a>
 		                </div>
 		                <a href="<%=request.getContextPath()%>/execution/partnerEN.html">Partnerships</a>
@@ -105,7 +104,7 @@
                         <a href="<%=request.getContextPath()%>/promise/promiseEN.html">Our Promise</a>
                     </div>
                 </div>
-                <div class=""><a href="<%=request.getContextPath()%>/execution/productEN.html">Execution</a>
+                <div class=""><a href="<%=request.getContextPath()%>/execution/productEN.html">Service</a>
                     <div class="gnb_2depth">
                         <a href="<%=request.getContextPath()%>/execution/productEN.html">Risk Management Solutions</a>
                         <div class="gnb_3depth">                        
@@ -118,7 +117,6 @@
                         <div class="gnb_3depth">                        
 	                        <a href="<%=request.getContextPath()%>/execution/culture_sub/tpaperEN.html">Tpaper</a>
 	                        <a href="<%=request.getContextPath()%>/execution/culture_sub/newsbankEN.html">Newsbank</a>
-	                        <a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nytEN.html" class="new">NYT X Newsbank</a>
 	                        <a href="<%=request.getContextPath()%>/execution/culture_sub/enieEN.html">e-NIE</a>
                         </div>
                         <a href="<%=request.getContextPath()%>/execution/partnerEN.html">Partnerships</a>

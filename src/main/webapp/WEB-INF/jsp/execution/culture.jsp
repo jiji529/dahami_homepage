@@ -59,7 +59,7 @@
                         <div class="prod_thumb"><span></span></div>
                     </a>
                 </li>
-				<li><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nyt.html">
+				<%-- <li><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nyt.html">
                         <div class="prod_num">03</div>
                         <div class="prod_cont">
                             <div class="prod_tit">뉴욕타임스 X 뉴스뱅크</div>
@@ -72,9 +72,9 @@
                         </div>
                         <div class="prod_thumb"><span></span></div>
                     </a>
-                </li>                
+                </li>    --%>             
                 <li><a href="<%=request.getContextPath()%>/execution/culture_sub/enie.html">
-                        <div class="prod_num">04</div>
+                        <div class="prod_num">03</div>
                         <div class="prod_cont">
                             <div class="prod_tit">e-NIE</div>
                             <div class="prod_subtit">컴퓨터로 신문을 보며 공부해요</div>

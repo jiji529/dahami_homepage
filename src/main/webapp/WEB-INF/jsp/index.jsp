@@ -87,21 +87,12 @@
             <p class="main_txt animated"><span class="none">디지털 시대에 중요한 읽기문화의 보급, 신문활용교육 등 </span>미디어를 활용한 문화 사업을 수행하고 있습니다.<span class="none"><br>
                 우리는 미디어가 사회나 문화 발전에 기여할 수 있는 사업을 발굴해 운영하고 있습니다.</span></p>
             <div class="grid2">
-            	<div class="grid2r">
-	                <div class="li2">
-	                	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">
-	                    <div class="li2_tit">티페이퍼</div>
-	                    <div class="li2_txt">키오스크의 큰 화면으로 고화질의 신문/잡지를 볼 수 있습니다.<br>
-	                            직관적인 UI로 사용자들이 편하게 콘텐츠를 감상할 수 있습니다.</div>
-	                    </a>
-	                </div>
-                	<div class="li2">
-                		<a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nyt.html">
-                        <div class="li2_tit">뉴욕타임스 X 뉴스뱅크</div>
-                        <div class="li2_txt">국내 최대의 보도사진 통합 라이브러리 뉴스뱅크, <br>미국 3대 일간지 뉴욕타임스와 제휴로<br>
-                            세계적인 보도사진을 한국에서 직접 구매할 수 있습니다.</div>
-                        </a>
-                    </div>
+                <div class="li2">
+                	<a href="<%=request.getContextPath()%>/execution/culture_sub/tpaper.html">
+                    <div class="li2_tit">티페이퍼</div>
+                    <div class="li2_txt">키오스크의 큰 화면으로 고화질의 신문/잡지를 볼 수 있습니다.<br>
+                            직관적인 UI로 사용자들이 편하게 콘텐츠를 감상할 수 있습니다.</div>
+                    </a>
                 </div>
                 <div class="grid2r">
                     <div class="li2">

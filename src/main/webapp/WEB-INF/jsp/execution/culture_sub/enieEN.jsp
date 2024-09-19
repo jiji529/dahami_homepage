@@ -61,7 +61,7 @@ Newspapers not only help develop cognitive learning skills, but also values and 
     </section>
     <section class="prod_btn">
         <div class="inner">
-            <div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbank_nytEN.html">NYT X Newsbank</a></div>
+			<div class="prod_btn_left"><a href="<%=request.getContextPath()%>/execution/culture_sub/newsbankEN.html">NewsBank</a></div>
             <div class="prod_btn_right"></div>
         </div>
     </section>
